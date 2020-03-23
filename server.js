@@ -40,7 +40,7 @@ app.post('/upload',function(req,res){
 });
 
 app.get('/process', function (req, res) {
-    var workerProcess = child_process.exec('python processing.py ' + (index-1), function (error, stdout, stderr) {
+    var workerProcess = child_process.exec('python xianyu.py ' + (index-1), function (error, stdout, stderr) {
         if (error) {
             console.log(error.stack);
             console.log('Error code: '+error.code);
