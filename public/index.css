@@ -1,7 +1,13 @@
 .showOrg{
+    width: 48%;
     float: left;
+    border: #3388ff solid 1px;
 }
 
 .showProcessed{
+    width: 48%;
     float: left;
+    display: block;
+    border: #3388ff solid 1px;
+    margin-left: 20px;
 }
