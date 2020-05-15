@@ -21,6 +21,7 @@ app.use(express.static("public"));
 app.use(express.static("data/inputs"));
 app.use(express.static("data/outputs"));
 app.use(express.static("processing"));
+app.use(express.static("."));
 
 
 app.get('/',function(req,res){
