@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -37,12 +37,16 @@
 
     <div class="container-fluid row" id="process">
 
-        <div class="container col-lg-6 text-center" id="select-input">
+        <div class="container col-lg-5 text-center">
             <h3 class="lead">Select your input image</h3>
             <div class="text-center">
-                <form  id="uploadImg" enctype="multipart/form-data" action="/upload" method="post">
-                    <input type="file" class="btn btn-lg btn-proc" id="customFile" name="filename" style="margin: 0 auto">
-                </form>
+                <div class="btn-group">
+                    <a class="btn btn-lg btn-proc" id="upload-img-btn">Upload Image</a>
+                    <form id="upload-img-form" enctype="multipart/form-data" action="/upload" method="post">
+                        <input type="submit" class="btn btn-lg" id="submit-btn" value="Upload" name="submit">
+                        <input type="file" class="btn btn-lg btn-proc" id="upload-img-input" name="image" style="margin: 0 auto">
+                    </form>
+                </div>
             </div>
 
             <h3 class="lead"> Or </h3>
@@ -56,8 +60,10 @@
             </div>
         </div>
 
-        <div class="container col-lg-6 text-center" id="show-input">
-            <div class="sec-400"></div>
+        <div class="container col-lg-7 text-center">
+            <div class="sec-400">
+                <img id="show-img" style="height: 95%">
+            </div>
         </div>
     </div>
 </main>
@@ -74,10 +80,38 @@
     </div>
 </footer>
 
-
+</body>
 
 <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
 
-</body>
+<script>
+    $(document).ready(function () {
+        $("#upload-img-btn").click(function () {
+            $("#upload-img-input").click()
+        });
+
+        $("#upload-img-form").submit(function () {
+            $(this).ajaxSubmit({
+                success: function (response) {
+                    if(response.code == 1){
+                        console.log('Org image: ' + response.imgPath);
+                        $('#show-img').attr('src', response.imgPath);
+                    }else {
+                        $('#show-img').html('Upload failed');
+                    }
+                }
+            });
+            return false
+        })
+    });
+
+    $("#upload-img-input").on("change", function () {
+        $('#upload-img-btn').text($(this).val());
+        $('#submit-btn').slideDown("slow")
+    })
+
+
+</script>
 </html>

@@ -2,7 +2,7 @@ var child_process = require('child_process');
 var express	= require("express");
 var app	= express();
 
-var uploadPath = './data/inputs';
+var uploadPath = 'data/inputs';
 var index = 0;
 
 var multer	=	require('multer');
@@ -14,7 +14,7 @@ var storage	=	multer.diskStorage({
         callback(null, index.toString() + '.png');
     }
 });
-var upload = multer({ storage : storage}).single('userPhoto');
+var upload = multer({ storage : storage}).single('image');
 
 
 app.use(express.static("public"));

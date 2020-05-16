@@ -57,3 +57,14 @@ option{
     /*background: radial-gradient(#0069d9 5%, #0062cc);*/
     background: rgb(51 122 183);
 }
+
+#upload-img-input{
+    display: none;
+}
+
+#submit-btn{
+    margin-top: 20px;
+    display: none;
+    background-color: white;
+    color: #7c7e7e;
+}
