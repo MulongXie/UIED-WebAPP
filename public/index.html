@@ -171,6 +171,7 @@
         let name = $("#examples-select option:selected").text();
         let car_index = parseInt(name.split('.')[0]) - 1;
         let carousel = $('#show-examples-carousel');
+        $('#show-example-image').children('img').hide();
         carousel.carousel(car_index);
         carousel.fadeIn();
         confirm_selection(name)
@@ -204,7 +205,7 @@
         let nav_bar = $('#navigation');
         let nav_container = $('#navigation-container');
         if(scroll_top > 100){
-            nav_container.css('padding', '15px');
+            nav_container.css('padding', '0px');
             nav_bar.css('background', 'white')
         }
         else {
