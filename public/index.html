@@ -9,15 +9,15 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+    <div class="container" id="navigation-container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#page-top">UI2CODE</a>
-            <button class="btn navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+            <button class="btn navbar-toggle" data-toggle="collapse" data-target="#menu">
                 <span class="glyphicon glyphicon-align-justify"></span>
             </button>
         </div>
-        <div class="collapse navbar-collapse" id="myNavBar">
+        <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="nav-link" href="#masthead">About</a></li>
                 <li><a class="nav-link" href="#process">Get Start</a></li>
@@ -28,41 +28,83 @@
 
 <main>
     <div class="container-fluid" id="masthead">
-        <div class="row text-center ">
+        <div class="row text-center my-center">
             <div class="col-lg-8 alignse"></div>
-            <h1>Start </h1>
+            <h1>MAGICAL TOOL TURING IMAGE TO WORKING CODE</h1>
+            <hr class="my-hr">
+            <p class="lead">UI2CODE reverse engineering system can convert UI design image or screenshot to highly maintainable working code</p>
             <a class="btn btn-lg btn-primary" style="width: 200px" href="#process">Get Start</a>
         </div>
     </div>
 
-    <div class="container-fluid row" id="process">
-
+    <div class="container-fluid" id="process">
+        <!--Upload or select input-->
         <div class="container col-lg-5 text-center">
+            <!--Upload-->
             <h3 class="lead">Select your input image</h3>
-            <div class="text-center">
-                <div class="btn-group">
-                    <a class="btn btn-lg btn-proc" id="upload-img-btn">Upload Image</a>
-                    <form id="upload-img-form" enctype="multipart/form-data" action="/upload" method="post">
-                        <input type="submit" class="btn btn-lg" id="submit-btn" value="Upload" name="submit">
-                        <input type="file" class="btn btn-lg btn-proc" id="upload-img-input" name="image" style="margin: 0 auto">
-                    </form>
-                </div>
+            <div class="btn-group text-center">
+                <a class="btn btn-lg btn-proc" id="upload-img-btn">Upload Image</a>
+                <form id="upload-img-form" enctype="multipart/form-data" action="/upload" method="post">
+                    <input type="submit" class="btn btn-lg" id="submit-btn" value="Upload" name="submit">
+                    <input type="file" class="btn btn-lg btn-proc" id="upload-img-input" name="image" style="margin: 0 auto">
+                </form>
             </div>
-
             <h3 class="lead"> Or </h3>
-            <div class="text-center">
-                <select class="btn btn-lg btn-proc">
-                    <option selected>Use Examples</option>
-                    <option value="1">1.png</option>
-                    <option value="2">2.png</option>
-                    <option value="3">3.png</option>
-                </select>
+            <!--Use example-->
+            <select class="btn btn-lg btn-proc" id="examples-select" onchange="select_example()">
+                <option class="examples-opt" value="empty" selected>Use Examples</option>
+                <option class="examples-opt" value="1">1.png</option>
+                <option class="examples-opt" value="2">2.png</option>
+                <option class="examples-opt" value="3">3.png</option>
+                <option class="examples-opt" value="4">4.png</option>
+            </select>
+            <!--Confirm-->
+            <div class="text-center" id="confirm-input" style="display: none">
+                <h3 class="lead"></h3>
+                <a class="btn btn-lg btn-proc" id="btn-process">Process</a>
             </div>
         </div>
 
+        <!--Show image-->
         <div class="container col-lg-7 text-center">
-            <div class="sec-400">
-                <img id="show-img" style="height: 95%">
+            <div id="show-examples-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#show-examples-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="1"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="2"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" style="height: 500px">
+                    <div class="item active">
+                        <img style="height: 500px; margin: 0 auto" src="../data/example/exp1.jpg" alt="exp1">
+                    </div>
+
+                    <div class="item">
+                        <img style="height: 500px; margin: 0 auto" src="../data/example/exp2.jpg" alt="exp2">
+                    </div>
+
+                    <div class="item">
+                        <img style="height: 500px; margin: 0 auto" src="../data/example/exp3.jpg" alt="exp3">
+                    </div>
+
+                    <div class="item">
+                        <img style="height: 500px; margin: 0 auto" src="../data/example/exp4.jpg" alt="exp4">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#show-examples-carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#show-examples-carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <div id="show-example-image" style="overflow: auto">
+                <img class="my-display-img" style="display: none">
             </div>
         </div>
     </div>
@@ -88,30 +130,88 @@
 
 <script>
     $(document).ready(function () {
+        var img_name = '';
+
         $("#upload-img-btn").click(function () {
             $("#upload-img-input").click()
+        });
+
+        $("#upload-img-input").on("change", function () {
+            let val = $(this).val();
+            if (val != ''){
+                let split = val.split('\\');
+                img_name = split.pop();
+            }
+            $('#upload-img-btn').text(img_name);
+            $('#submit-btn').slideDown("slow")
         });
 
         $("#upload-img-form").submit(function () {
             $(this).ajaxSubmit({
                 success: function (response) {
+                    carousel_out();
                     if(response.code == 1){
-                        console.log('Org image: ' + response.imgPath);
-                        $('#show-img').attr('src', response.imgPath);
+                        let path = '../' + response.imgPath;
+                        let showImage = $('#show-example-image').children('img');
+                        console.log('Org image: ' + path);
+                        showImage.attr('src', path);
+                        showImage.fadeIn(2000);
+                        confirm_selection(img_name);
                     }else {
-                        $('#show-img').html('Upload failed');
+                        $('#show-example-image').html('Upload failed');
                     }
                 }
             });
-            return false
-        })
+            return false;
+        });
+
     });
 
-    $("#upload-img-input").on("change", function () {
-        $('#upload-img-btn').text($(this).val());
-        $('#submit-btn').slideDown("slow")
-    })
+    function select_example() {
+        let name = $("#examples-select option:selected").text();
+        let car_index = parseInt(name.split('.')[0]) - 1;
+        let carousel = $('#show-examples-carousel');
+        carousel.carousel(car_index);
+        carousel.fadeIn();
+        confirm_selection(name)
+    }
 
+    function carousel_out() {
+        let carousel = $('#show-examples-carousel');
+        carousel.fadeOut();
+        $("#examples-select").val("empty");
+    }
+
+    function confirm_selection(input_name) {
+        let confirm = $("#confirm-input");
+        confirm.fadeIn();
+        if (input_name.search('.jpg|.png') != -1){
+            confirm.children('h3').text("Use Image " + input_name);
+            $("#btn-process").removeClass('disabled');
+        }
+        else {
+            confirm.children('h3').text("Only accept image formats(.jpg/.png)");
+            $("#btn-process").addClass('disabled');
+        }
+    }
+
+    $(window).scroll(function () {
+        scrollFunc();
+    });
+
+    function scrollFunc() {
+        let scroll_top = parseInt($(document).scrollTop());
+        let nav_bar = $('#navigation');
+        let nav_container = $('#navigation-container');
+        if(scroll_top > 100){
+            nav_container.css('padding', '15px');
+            nav_bar.css('background', 'white')
+        }
+        else {
+            nav_container.css('padding', '60px');
+            nav_bar.css('background', 'rgba(0,0,0,0.2)');
+        }
+    }
 
 </script>
 </html>

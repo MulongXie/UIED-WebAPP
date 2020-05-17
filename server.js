@@ -34,7 +34,7 @@ app.post('/upload',function(req,res){
             console.log(err);
             res.json({code: 0});
         }else {
-            res.json({code:1, imgPath:index.toString() + '.png'});
+            res.json({code:1,  imgPath:uploadPath + '/' + index.toString() + '.png'});
             index += 1;
         }
     });
