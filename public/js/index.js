@@ -48,7 +48,8 @@ function scrollFunc() {
     let nav_container = $('#navigation-container');
     if(scroll_top > 100){
         nav_container.css('padding', '0px');
-        nav_bar.css('background', 'white')
+        nav_bar.css('background', 'white');
+        nav_bar.css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2)')
     }
     else {
         nav_container.css('padding', '60px');

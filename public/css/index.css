@@ -89,6 +89,11 @@ option{
     background: rgb(51 122 183);
 }
 
+#contact{
+    height: 500px;
+    padding-top: 8rem;
+}
+
 #upload-img-input{
     display: none;
 }
@@ -106,6 +111,6 @@ option{
 }
 
 #footer{
-    background-color: black;
+    background-color: #f8f9fa;
     height: 20vh;
 }
