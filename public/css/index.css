@@ -89,6 +89,13 @@ option{
     background: rgb(51 122 183);
 }
 
+#result{
+    height: 680px;
+    padding-top: 3rem;
+    background: #1b6d85;
+    display: none;
+}
+
 #contact{
     height: 500px;
     padding-top: 8rem;

@@ -1,0 +1,123 @@
+{
+    "compos": [
+        {
+            "row_min": 48,
+            "column_max": 283,
+            "row_max": 70,
+            "column_min": 19,
+            "category": "Text"
+        },
+        {
+            "row_min": 86,
+            "column_max": 450,
+            "row_max": 161,
+            "column_min": 0,
+            "category": "Compo"
+        },
+        {
+            "row_min": 172,
+            "column_max": 441,
+            "row_max": 201,
+            "column_min": 159,
+            "category": "Compo"
+        },
+        {
+            "row_min": 212,
+            "column_max": 308,
+            "row_max": 380,
+            "column_min": 145,
+            "category": "Compo"
+        },
+        {
+            "row_min": 419,
+            "column_max": 421,
+            "row_max": 468,
+            "column_min": 32,
+            "category": "Compo"
+        },
+        {
+            "row_min": 499,
+            "column_max": 308,
+            "row_max": 601,
+            "column_min": 145,
+            "category": "Compo"
+        },
+        {
+            "row_min": 762,
+            "column_max": 110,
+            "row_max": 787,
+            "column_min": 87,
+            "category": "Compo"
+        },
+        {
+            "row_min": 762,
+            "column_max": 237,
+            "row_max": 786,
+            "column_min": 213,
+            "category": "Compo"
+        },
+        {
+            "row_min": 762,
+            "column_max": 363,
+            "row_max": 784,
+            "column_min": 340,
+            "category": "Compo"
+        },
+        {
+            "row_min": 2,
+            "column_max": 157,
+            "row_max": 25,
+            "column_min": 12,
+            "category": "Text"
+        },
+        {
+            "row_min": 2,
+            "column_max": 438,
+            "row_max": 25,
+            "column_min": 130,
+            "category": "Text"
+        },
+        {
+            "row_min": 2,
+            "column_max": 247,
+            "row_max": 25,
+            "column_min": 237,
+            "category": "Text"
+        },
+        {
+            "row_min": 334,
+            "column_max": 226,
+            "row_max": 349,
+            "column_min": 153,
+            "category": "Text"
+        },
+        {
+            "row_min": 334,
+            "column_max": 296,
+            "row_max": 349,
+            "column_min": 252,
+            "category": "Text"
+        },
+        {
+            "row_min": 353,
+            "column_max": 245,
+            "row_max": 368,
+            "column_min": 204,
+            "category": "Text"
+        },
+        {
+            "row_min": 541,
+            "column_max": 269,
+            "row_max": 559,
+            "column_min": 180,
+            "category": "Text"
+        },
+        {
+            "row_min": 618,
+            "column_max": 448,
+            "row_max": 785,
+            "column_min": 0,
+            "category": "Text"
+        }
+    ]
+}

@@ -19,8 +19,9 @@
         </div>
         <div class="collapse navbar-collapse" id="menu">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="nav-link" href="#masthead">About</a></li>
-                <li><a class="nav-link" href="#process">Get Start</a></li>
+                <li><a class="nav-link slide" href="#masthead">About</a></li>
+                <li><a class="nav-link slide" href="#process">Get Start</a></li>
+                <li><a class="nav-link" href="#result" style="display: none" id="li-nav-result">Result</a></li>
                 <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -41,7 +42,7 @@
         <!--Upload or select input-->
         <div class="container col-lg-5 text-center">
             <!--Upload-->
-            <h3 class="lead">Select your input image</h3>
+            <h3 class="lead">Upload your input image</h3>
             <div class="btn-group text-center">
                 <a class="btn btn-lg btn-proc" id="upload-img-btn">Upload Image</a>
                 <form id="upload-img-form" enctype="multipart/form-data" action="/upload" method="post">
@@ -51,12 +52,13 @@
             </div>
             <h3 class="lead"> Or </h3>
             <!--Use example-->
-            <select class="btn btn-lg btn-proc" id="examples-select" onchange="select_example()">
+            <select class="btn btn-lg btn-proc" id="examples-select">
                 <option class="examples-opt" value="empty" selected>Use Examples</option>
-                <option class="examples-opt" value="1">1.png</option>
-                <option class="examples-opt" value="2">2.png</option>
-                <option class="examples-opt" value="3">3.png</option>
-                <option class="examples-opt" value="4">4.png</option>
+                <option class="examples-opt" value="1">1.jpg</option>
+                <option class="examples-opt" value="2">2.jpg</option>
+                <option class="examples-opt" value="3">3.jpg</option>
+                <option class="examples-opt" value="4">4.jpg</option>
+                <option class="examples-opt" value="5">5.jpg</option>
             </select>
             <!--Confirm-->
             <div class="text-center" id="confirm-input" style="display: none">
@@ -74,24 +76,29 @@
                     <li data-target="#show-examples-carousel" data-slide-to="1"></li>
                     <li data-target="#show-examples-carousel" data-slide-to="2"></li>
                     <li data-target="#show-examples-carousel" data-slide-to="3"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="4"></li>
                 </ol>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" style="height: 500px">
                     <div class="item active">
-                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/exp1.jpg" alt="exp1" title="Use example 1.png">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/1.jpg" alt="1" title="Use example 1.jpg">
                     </div>
 
                     <div class="item">
-                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/exp2.jpg" alt="exp2" title="Use example 2.png">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/2.jpg" alt="2" title="Use example 2.jpg">
                     </div>
 
                     <div class="item">
-                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/exp3.jpg" alt="exp3" title="Use example 3.png">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/3.jpg" alt="3" title="Use example 3.jpg">
                     </div>
 
                     <div class="item">
-                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/exp4.jpg" alt="exp4" title="Use example 4.png">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/4.jpg" alt="4" title="Use example 4.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/5.jpg" alt="5" title="Use example 5.jpg">
                     </div>
                 </div>
 
@@ -103,8 +110,31 @@
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
             </div>
-            <div id="show-example-image" style="overflow: auto">
+            <div id="show-upload-image" style="overflow: auto">
                 <img class="my-display-img" style="display: none">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="result">
+        <div class="row">
+            <div class="col-lg-5 text-center">
+                <h3 class="lead">Your Input GUI Image</h3>
+                <div style="overflow: auto">
+                    <img id="display-input-img" style="height: 500px; margin: 0 auto">
+                </div>
+            </div>
+            <div class="col-lg-2 text-center" style="padding-top: 25rem">
+                <span style="font-size:50px; color: aliceblue" class="glyphicon glyphicon-arrow-right"></span>
+                <div class="text-center" style="margin-top: 5rem">
+                    <a id="btn_go_dashboard" class="btn btn-lg btn-primary">Go Dashboard</a>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <h3 class="lead">Processing Result</h3>
+                <div style="overflow: auto">
+                    <img id="display-result-img" style="height: 500px; margin: 0 auto">
+                </div>
             </div>
         </div>
     </div>
@@ -121,8 +151,7 @@
                 <div>+1 (555) 123-4567</div>
             </div>
             <div class="col-lg-4">
-                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
-                ><!-- Make sure to change the email address in BOTH the anchor text and the link target below!--><a class="d-block" href="mailto:contact@yourwebsite.com">contact@yourwebsite.com</a>
+                <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
             </div>
         </div>
     </div>
@@ -152,40 +181,7 @@
         $(window).scroll(function () {
             scrollFunc();
         });
-
-        var img_name = '';
-        $("#upload-img-input").on("change", function () {
-            let val = $(this).val();
-            if (val != ''){
-                let split = val.split('\\');
-                img_name = split.pop();
-            }
-            $('#upload-img-btn').text(img_name);
-            $('#submit-btn').slideDown("slow")
-        });
-
-        $("#upload-img-form").submit(function () {
-            $(this).ajaxSubmit({
-                success: function (response) {
-                    carousel_out();
-                    if(response.code == 1){
-                        let path = '../' + response.imgPath;
-                        let showImage = $('#show-example-image').children('img');
-                        console.log('Org image: ' + path);
-                        showImage.attr('src', path);
-                        showImage.fadeIn(2000);
-                        confirm_selection(img_name);
-                    }else {
-                        $('#show-example-image').html('Upload failed');
-                    }
-                }
-            });
-            return false;
-        });
-
     });
-
-
 
 </script>
 </html>

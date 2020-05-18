@@ -105,7 +105,7 @@ def xianyu(input_path_img,
     text = ocr.ocr(org, show=show)
     compo_merge, categories = merge.incorporate(img, compo, text, show=show)
 
-    output_path_img = output_path.split('.')[0] + '.png'
+    output_path_img = output_path.split('.')[0] + '.jpg'
     output_path_json = output_path.split('.')[0] + '.json'
 
     utils.draw_bounding_box_class(img, compo_merge, categories, output=output_path_img)

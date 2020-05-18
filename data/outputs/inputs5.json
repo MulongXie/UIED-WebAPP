@@ -1,0 +1,116 @@
+{
+    "compos": [
+        {
+            "category": "Compo",
+            "row_min": 3,
+            "column_min": 3,
+            "row_max": 713,
+            "column_max": 1892
+        },
+        {
+            "category": "Text",
+            "row_min": 728,
+            "column_min": 74,
+            "row_max": 779,
+            "column_max": 197
+        },
+        {
+            "category": "Compo",
+            "row_min": 3,
+            "column_min": 3,
+            "row_max": 713,
+            "column_max": 1892
+        },
+        {
+            "category": "Text",
+            "row_min": 728,
+            "column_min": 74,
+            "row_max": 779,
+            "column_max": 197
+        },
+        {
+            "category": "Text",
+            "row_min": 146,
+            "column_min": 74,
+            "row_max": 158,
+            "column_max": 194
+        },
+        {
+            "category": "Text",
+            "row_min": 113,
+            "column_min": 560,
+            "row_max": 152,
+            "column_max": 997
+        },
+        {
+            "category": "Text",
+            "row_min": 278,
+            "column_min": 29,
+            "row_max": 317,
+            "column_max": 230
+        },
+        {
+            "category": "Text",
+            "row_min": 134,
+            "column_min": 1051,
+            "row_max": 284,
+            "column_max": 1896
+        },
+        {
+            "category": "Text",
+            "row_min": 284,
+            "column_min": 1108,
+            "row_max": 476,
+            "column_max": 1899
+        },
+        {
+            "category": "Text",
+            "row_min": 443,
+            "column_min": 0,
+            "row_max": 638,
+            "column_max": 1303
+        },
+        {
+            "category": "Text",
+            "row_min": 638,
+            "column_min": 0,
+            "row_max": 725,
+            "column_max": 1042
+        },
+        {
+            "category": "Text",
+            "row_min": 308,
+            "column_min": 1153,
+            "row_max": 359,
+            "column_max": 1423
+        },
+        {
+            "category": "Text",
+            "row_min": 371,
+            "column_min": 1165,
+            "row_max": 422,
+            "column_max": 1411
+        },
+        {
+            "category": "Text",
+            "row_min": 539,
+            "column_min": 0,
+            "row_max": 638,
+            "column_max": 961
+        },
+        {
+            "category": "Text",
+            "row_min": 500,
+            "column_min": 1662,
+            "row_max": 551,
+            "column_max": 1887
+        },
+        {
+            "category": "Text",
+            "row_min": 62,
+            "column_min": 1048,
+            "row_max": 659,
+            "column_max": 1051
+        }
+    ]
+}
