@@ -28,6 +28,10 @@ app.get('/',function(req,res){
     res.sendfile("public/index.html");
 });
 
+app.get('/dashboard',function(req,res){
+    res.sendfile("public/dashboard.html");
+});
+
 app.post('/upload',function(req,res){
     upload(req,res,function(err) {
         if(err) {
