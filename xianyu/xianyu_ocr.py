@@ -5,7 +5,7 @@ import time
 
 import xianyu_utils as utils
 
-pyt.pytesseract.tesseract_cmd = 'D:\\tesseract\\tesseract\\tesseract'
+# pyt.pytesseract.tesseract_cmd = 'D:\\tesseract\\tesseract\\tesseract'
 
 
 def merge_text(corners, max_word_gad=40):

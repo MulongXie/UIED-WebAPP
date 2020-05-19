@@ -101,7 +101,7 @@ option{
     height: 680px;
     padding-top: 3rem;
     background: #1b6d85;
-    /*display: none;*/
+    display: none;
 }
 
 #contact{
