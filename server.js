@@ -47,7 +47,7 @@ app.post('/upload',function(req,res){
 app.get('/process', function (req, res) {
     let img_path = req.query.image_path;
     let output_path = 'data/outputs/' + img_path.split('/')[1] + img_path.split('/')[2];
-    var workerProcess = child_process.exec('python xianyu.py ' + img_path + ' ' + output_path,
+    var workerProcess = child_process.exec('python3 xianyu.py ' + img_path + ' ' + output_path,
         function (error, stdout, stderr) {
         if (error) {
             console.log(stdout);
