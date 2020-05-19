@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+      $('html, body').animate({
+        scrollTop: $("#section2").offset().top
+      })
+  });
+});
+</script>
+ <style>
+body, html, .main {
+  height: 100%;
+}
+
+section {
+  min-height: 100%;
+}
+</style>
 </head>
 <body>
 
-<div class="container">
-    <h3 data-toggle="tooltip" title="sbsbsb">Tooltip Example</h3>
-    <p>The data-placement attribute specifies the tooltip position.</p>
-    <ul class="list-inline">
-        <li><a href="#" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
-        <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
-        <li><a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
-        <li><a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
-    </ul>
+<a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+
+<div class="main">
+  <section></section>
 </div>
 
-<script>
-    $(document).ready(function(){
-        $('[data-toggle="tooltip"]').tooltip();
-        $('h3').tooltip();
-        
-    });
-</script>
+<div class="main" id="section2">
+  <section style="background-color:blue"></section>
+</div>
 
 </body>
 </html>

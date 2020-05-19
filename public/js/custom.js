@@ -15,17 +15,22 @@ $(document).ready(function() {
     /* load canvas */
     var canvas_init = function(){
         $.ajaxSettings.async = false;
-        $.getJSON('./data/compo.json',function(result){
+        $.getJSON('../data/outputs/compo.json',function(result){
             let html = "";
             /* background image */
-            html += '<div id="bg"><img src="images/clip/bg.jpg"></div>';
+            html += '<div id="bg"><img src="../data/outputs/clips/bkg.jpg"></div>';
             /* elements */
+            console.log(result);
             for (let i = 0; i < result["compos"].length; i++) {
                 let c = result["compos"][i]["class"];
                 let idx = result["compos"][i]["id"];
                 img_dict[c+idx] =result["compos"][i];
                 count_dict[c] ++;
-                $("#"+c).append('<li class="list-group-item"><img src="images/clip/'+c+'/'+idx+'.png" /></li>');
+
+                let clip_path = "../data/outputs/clips/" + c + "/" +idx+ ".jpg";
+                console.log(clip_path);
+
+                $("#"+c).append('<li class="list-group-item"><img src=' + clip_path + '/></li>');
                 let height = result["compos"][i]["height"];
                 let width = result["compos"][i]["width"];
                 let x = result["compos"][i]["row_min"];
@@ -34,7 +39,7 @@ $(document).ready(function() {
                 html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y+'px; ">';
                 html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
                 // html += '		<a class="objects" data-toggle="tooltip" data-placement="top" title="'+c+': '+width+'x'+height+'">';
-                html += '			<img class="image" src="images/clip/'+c+'/'+idx+'.png" id="'+id+'header">';
+                html += '			<img class="image" src="../data/outputs/clips/'+c+'/'+idx+'.jpg" id="'+id+'header">';
                 // html += '		</a>';
                 html += '   </div>';
                 html += '</div>';

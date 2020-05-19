@@ -94,8 +94,12 @@ def detect_compo(org, output_path=None, show=False):
 
 
 def xianyu(input_path_img,
-           output_path,
+           output_path_img,
            show=False):
+
+    output_root = '/'.join(output_path_img.split('/')[:-1])
+    output_path_json = output_root + '/compo.json'
+    clip_root = output_root + '/clips'
 
     start = time.clock()
     org = cv2.imread(input_path_img)
@@ -104,10 +108,9 @@ def xianyu(input_path_img,
     compo = detect_compo(img, show=show)
     text = ocr.ocr(org, show=show)
     compo_merge, categories = merge.incorporate(img, compo, text, show=show)
+    compos = utils.cvt_json(compo_merge, categories)
 
-    output_path_img = output_path.split('.')[0] + '.png'
-    output_path_json = output_path.split('.')[0] + '.json'
-
+    utils.dissemble_clip_img(clip_root, img, compos)
     utils.draw_bounding_box_class(img, compo_merge, categories, output=output_path_img)
-    utils.save_corners_json(output_path_json, compo_merge, categories)
+    utils.save_corners_json(output_path_json, compos)
     print('[%.3fs] %s' % (time.clock() - start, input_path_img))
