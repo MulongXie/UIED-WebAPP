@@ -75,6 +75,7 @@ $('.my-carousel-img').click(function () {
 // *************************************
 
 $('#btn-process').click(function () {
+    processing_wait();
     $.ajax({
         url: '/process',
         type: 'get',
@@ -88,10 +89,14 @@ $('#btn-process').click(function () {
                 $('#result').slideDown('slow');
                 $('#display-input-img').attr('src', processing_img_path);
                 $('#display-result-img').attr('src', response.result_path);
+                $('html, body').animate({
+                    scrollTop: $("#result").offset().top
+                })
             }
             else {
                 alert('failed')
             }
+            processing_done();
         }
     })
 });
@@ -117,6 +122,16 @@ function confirm_selection(input_name, saved_path='') {
         confirm.children('h3').text("Only accept image formats(.jpg/.png)");
         $("#btn-process").addClass('disabled');
     }
+}
+
+function processing_wait() {
+    $("#btn-process").addClass('disabled');
+    $("#confirm-input").children('p').text('Processing ...')
+}
+
+function processing_done() {
+    $("#btn-process").removeClass('disabled');
+    $("#confirm-input").children('p').text('Processing Done')
 }
 
 function scrollFunc() {
