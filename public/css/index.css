@@ -60,6 +60,14 @@ option{
     height: 450px;
 }
 
+.my-contact-font-color{
+    color: #7c7e7e;
+}
+
+.my-primary-color{
+    color: rgb(51 122 183);
+}
+
 #navigation{
     transition: 0.4s;
     background: rgba(0,0,0,0.2);
@@ -93,11 +101,11 @@ option{
     height: 680px;
     padding-top: 3rem;
     background: #1b6d85;
-    display: none;
+    /*display: none;*/
 }
 
 #contact{
-    height: 500px;
+    height: 450px;
     padding-top: 8rem;
 }
 
