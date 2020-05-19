@@ -2,8 +2,34 @@ import cv2
 import numpy as np
 import json
 from random import randint as rint
+import os
+import shutil
 
 color_map = {'Text':(255,6,6), 'Compo':(6,255,6)}
+
+
+def dissemble_clip_img(clip_root, org, compos):
+    shutil.rmtree(clip_root)
+    os.mkdir(clip_root)
+    cls_dirs = []
+
+    compos = compos['compos']
+    bkg = org.copy()
+    for compo in compos:
+        cls = compo['class']
+        c_root = os.path.join(clip_root, cls)
+        c_path = os.path.join(c_root, str(compo['id']) + '.jpg')
+        if cls not in cls_dirs:
+            c_root = os.path.join(clip_root, cls)
+            os.mkdir(c_root)
+            cls_dirs.append(cls)
+
+        col_min, row_min, col_max, row_max = compo['column_min'], compo['row_min'], compo['column_max'], compo['row_max']
+        cv2.rectangle(bkg, (col_min, row_min), (col_max, row_max), (255,255,255), -1)
+        clip = org[row_min:row_max, col_min: col_max]
+
+        cv2.imwrite(c_path, clip)
+    cv2.imwrite(os.path.join(clip_root, 'bkg.jpg'), bkg)
 
 
 def resize_by_height(org, resize_height):
@@ -54,19 +80,20 @@ def draw_bounding_box(org, slices, color=(0, 255, 0), line=2, name='board', show
     return board
 
 
-def save_corners_json(file_path, corners, category, new=True):
+def cvt_json(corners, category):
     '''
     :param corners: [[col_min, row_min, col_max, row_max]]
     '''
-    if not new:
-        f_in = open(file_path, 'r')
-        components = json.load(f_in)
-    else:
-        components = {'compos': []}
-    f_out = open(file_path, 'w')
-
+    components = {'compos':[]}
     for i in range(len(corners)):
         corner = corners[i]
-        c = {'category': category[i], 'column_min': corner[0], 'row_min': corner[1], 'column_max': corner[2], 'row_max': corner[3]}
+        c = {'class': category[i], 'id': i,
+             'column_min': corner[0], 'row_min': corner[1], 'column_max': corner[2], 'row_max': corner[3],
+             'width': corner[2] - corner[0], 'height': corner[3] - corner[1]}
         components['compos'].append(c)
+    return components
+
+
+def save_corners_json(file_path, components):
+    f_out = open(file_path, 'w')
     json.dump(components, f_out, indent=4)
