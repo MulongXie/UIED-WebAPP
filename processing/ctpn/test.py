@@ -1,1 +1,0 @@
-f = open('ctpn/text.yml', 'r')

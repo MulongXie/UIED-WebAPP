@@ -47,7 +47,7 @@ app.post('/upload',function(req,res){
 app.get('/process', function (req, res) {
     let img_path = req.query.image_path;
     let output_path = 'data/outputs/' + img_path.split('/')[1] + img_path.split('/')[2];
-    var workerProcess = child_process.exec('python3 xianyu.py ' + img_path + ' ' + output_path,
+    var workerProcess = child_process.exec('python xianyu.py ' + img_path + ' ' + output_path,
         function (error, stdout, stderr) {
         if (error) {
             console.log(stdout);
@@ -65,6 +65,30 @@ app.get('/process', function (req, res) {
         console.log('Program Invoked');
     });
 });
+
+
+app.get('/uied', function (req, res) {
+    let img_path = 'data/example/2.jpg';
+    let output_path = 'data/outputs/';
+    var workerProcess = child_process.exec('python uied.py ' + img_path + ' ' + output_path,
+        function (error, stdout, stderr) {
+            if (error) {
+                console.log(stdout);
+                console.log(error.stack);
+                console.log('Error code: '+error.code);
+                console.log('Signal received: '+error.signal);
+                res.json({code:0});
+            }else{
+                res.json({code:1, result_path:output_path});
+                console.log('stdout: ' + stdout + '\n');
+            }
+        });
+
+    workerProcess.on('exit', function () {
+        console.log('Program Invoked');
+    });
+});
+
 
 app.listen(8000,function(){
     console.log("Working on port 8000");

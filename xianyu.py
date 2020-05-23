@@ -3,7 +3,7 @@ import sys
 # *** set project root directory ***
 root = '/'.join(__file__.split('/')[:-1])
 sys.path.append(root)
-sys.path.append(os.path.join(root, 'xianyu'))
+sys.path.append(os.path.join(root, 'backend/xianyu'))
 # **********************************
 
 import xianyu_main as xy
