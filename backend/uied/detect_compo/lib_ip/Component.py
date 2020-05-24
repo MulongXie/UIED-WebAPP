@@ -21,12 +21,13 @@ def compos_containment(compos):
 
 
 def compos_update(compos):
-    for compo in compos:
-        compo.compo_update()
+    for i, compo in enumerate(compos):
+        compo.compo_update(i)
 
 
 class Component:
     def __init__(self, region, image_shape):
+        self.id = None
         self.region = region
         self.boundary = self.compo_get_boundary()
         self.bbox = self.compo_get_bbox()
@@ -38,13 +39,14 @@ class Component:
         self.image_shape = image_shape
         self.area = self.width * self.height
 
-        self.category = None
+        self.category = 'Compo'
         self.contain = []
 
         self.rect_ = None
         self.line_ = None
 
-    def compo_update(self):
+    def compo_update(self, id):
+        self.id = id
         self.width = self.bbox.width
         self.height = self.bbox.height
         self.bbox_area = self.bbox.box_area

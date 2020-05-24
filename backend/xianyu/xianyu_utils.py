@@ -20,7 +20,6 @@ def dissemble_clip_img(clip_root, org, compos):
         c_root = os.path.join(clip_root, cls)
         c_path = os.path.join(c_root, str(compo['id']) + '.jpg')
         if cls not in cls_dirs:
-            c_root = os.path.join(clip_root, cls)
             os.mkdir(c_root)
             cls_dirs.append(cls)
 

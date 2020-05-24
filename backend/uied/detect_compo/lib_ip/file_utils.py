@@ -34,7 +34,7 @@ def save_corners_json(file_path, compos, new=True):
     f_out = open(file_path, 'w')
 
     for compo in compos:
-        c = {'category': compo.category}
+        c = {'id': compo.id, 'class': compo.category}
         (c['column_min'], c['row_min'], c['column_max'], c['row_max']) = compo.put_bbox()
         c['width'] = compo.width
         c['height'] = compo.height

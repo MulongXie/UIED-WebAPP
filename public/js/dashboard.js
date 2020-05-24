@@ -12,7 +12,7 @@ $(document).ready(function() {
         });
     };
 
-    var output_root = '../data/outputs/xianyu/example2/';
+    var output_root = '../data/outputs/uied/example2/';
     var clip_root = output_root + 'clips/';
 
     /* load canvas */

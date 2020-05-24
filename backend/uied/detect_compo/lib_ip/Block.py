@@ -9,7 +9,7 @@ from lib_ip.Component import Component
 class Block(Component):
     def __init__(self, region, image_shape):
         super().__init__(region, image_shape)
-        self.category = 'block'
+        self.category = 'Block'
         self.parent = None
         self.children = []
         self.uicompo_ = None

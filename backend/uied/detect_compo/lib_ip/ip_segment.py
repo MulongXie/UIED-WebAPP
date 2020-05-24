@@ -1,5 +1,6 @@
 import cv2
 import numpy as np
+import shutil
 import os
 from os.path import join as pjoin
 
@@ -29,14 +30,31 @@ def clipping(img, components, pad=0, show=False):
     """
     clips = []
     for component in components:
-        (column_min, row_min, column_max, row_max) = component.put_bbox()
-        column_min = max(column_min - pad, 0)
-        column_max = min(column_max + pad, img.shape[1])
-        row_min = max(row_min - pad, 0)
-        row_max = min(row_max + pad, img.shape[0])
-        clip = img[row_min:row_max, column_min:column_max]
+        clip = component.compo_clipping(img, pad=pad)
         clips.append(clip)
         if show:
             cv2.imshow('clipping', clip)
             cv2.waitKey()
     return clips
+
+
+def dissemble_clip_img(clip_root, org, compos):
+    if os.path.exists(clip_root):
+        shutil.rmtree(clip_root)
+    os.mkdir(clip_root)
+    cls_dirs = []
+
+    bkg = org.copy()
+    for compo in compos:
+        cls = compo.category
+        c_root = pjoin(clip_root, cls)
+        c_path = pjoin(c_root, str(compo.id) + '.jpg')
+        if cls not in cls_dirs:
+            os.mkdir(c_root)
+            cls_dirs.append(cls)
+        clip = compo.compo_clipping(org)
+        cv2.imwrite(c_path, clip)
+
+        col_min, row_min, col_max, row_max = compo.put_bbox()
+        cv2.rectangle(bkg, (col_min, row_min), (col_max, row_max), (255, 255, 255), -1)
+    cv2.imwrite(os.path.join(clip_root, 'bkg.jpg'), bkg)

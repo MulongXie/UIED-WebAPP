@@ -65,12 +65,10 @@ def compo_detection(input_img_path, output_root,
 
     # *** Step 4 *** results refinement: remove top and bottom compos -> merge words into line
     uicompos = det.rm_top_or_bottom_corners(uicompos, org.shape)
-    file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
     uicompos = det.merge_text(uicompos, org.shape)
-    # draw.draw_bounding_box(org, uicompos, show=show)
+    file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
     # uicompos = det.merge_intersected_corner(uicompos, org.shape)
     Compo.compos_containment(uicompos)
-    draw.draw_bounding_box(org, uicompos, show=show, write_path=pjoin(output_root, 'result.jpg') if write_img else None)
 
     # # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection
     # if classifier['Image'] is not None:
@@ -95,6 +93,8 @@ def compo_detection(input_img_path, output_root,
     # draw.draw_bounding_box(org, uicompos, show=show)
 
     file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
+    draw.draw_bounding_box(org, uicompos, show=show, write_path=pjoin(output_root, 'result.jpg') if write_img else None)
+    seg.dissemble_clip_img(pjoin(output_root, 'clips'), org, uicompos)
     print("[Compo Detection Completed in %.3f s] %d %s" % (time.clock() - start, num, input_img_path))
     if show:
         cv2.destroyAllWindows()
