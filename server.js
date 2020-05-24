@@ -45,9 +45,12 @@ app.post('/upload',function(req,res){
 });
 
 app.get('/process', function (req, res) {
-    let img_path = req.query.image_path;
-    let output_path = 'data/outputs/' + img_path.split('/')[1] + img_path.split('/')[2];
-    var workerProcess = child_process.exec('python xianyu.py ' + img_path + ' ' + output_path,
+    let input_img_path = req.query.image_path;
+    let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
+    let output_root = 'data/outputs/xianyu/' + name;
+    let result_img = output_root + '/result.jpg';
+
+    var workerProcess = child_process.exec('python xianyu.py ' + input_img_path + ' ' + output_root,
         function (error, stdout, stderr) {
         if (error) {
             console.log(stdout);
@@ -56,8 +59,8 @@ app.get('/process', function (req, res) {
             console.log('Signal received: '+error.signal);
             res.json({code:0});
         }else{
-            res.json({code:1, result_path:output_path});
             console.log('stdout: ' + stdout);
+            res.json({code:1, result_path:result_img});
         }
     });
 
@@ -68,9 +71,13 @@ app.get('/process', function (req, res) {
 
 
 app.get('/uied', function (req, res) {
-    let img_path = 'data/example/2.jpg';
-    let output_path = 'data/outputs/';
-    var workerProcess = child_process.exec('python uied.py ' + img_path + ' ' + output_path,
+    let input_img_path = 'data/example/2.jpg';
+    // let input_img_path = req.query.image_path;
+    let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
+    let output_root = 'data/outputs/uied/' + name;
+    let result_img = output_root + '/result.jpg';
+
+    var workerProcess = child_process.exec('python uied.py ' + input_img_path + ' ' + output_root,
         function (error, stdout, stderr) {
             if (error) {
                 console.log(stdout);
@@ -79,8 +86,8 @@ app.get('/uied', function (req, res) {
                 console.log('Signal received: '+error.signal);
                 res.json({code:0});
             }else{
-                res.json({code:1, result_path:output_path});
                 console.log('stdout: ' + stdout + '\n');
+                res.json({code:1, result_path:result_img});
             }
         });
 

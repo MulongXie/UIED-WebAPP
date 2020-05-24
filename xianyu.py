@@ -10,7 +10,7 @@ import xianyu_main as xy
 
 # input_path = 'data/example/1.jpg'
 # output_path = 'data/outputs/1.jpg'
-input_path, output_path = sys.argv[1:3]
-print("Processing:", input_path, 'to', output_path)
+input_path, output_root = sys.argv[1:3]
+print("Processing:", input_path, 'to', output_root)
 
-xy.xianyu(input_path, output_path, show=False)
+xy.xianyu(input_path, output_root, show=False)

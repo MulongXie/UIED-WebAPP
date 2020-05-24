@@ -13,8 +13,8 @@ import cv2
 
 import uied_main as uied
 
-start = time.clock()
+input_path, output_root = sys.argv[1:3]
+if not os.path.exists(output_root):
+    os.mkdir(output_root)
 
-input_path, output_path = sys.argv[1:3]
-
-uied.uied(input_path, output_path)
+uied.uied(input_path, output_root)

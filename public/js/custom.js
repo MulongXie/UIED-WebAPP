@@ -12,13 +12,16 @@ $(document).ready(function() {
         });
     };
 
+    var output_root = '../data/outputs/xianyu/example2/';
+    var clip_root = output_root + 'clips/';
+
     /* load canvas */
     var canvas_init = function(){
         $.ajaxSettings.async = false;
-        $.getJSON('../data/outputs/compo.json',function(result){
+        $.getJSON(output_root + 'compo.json',function(result){
             let html = "";
             /* background image */
-            html += '<div id="bg"><img src="../data/outputs/clips/bkg.jpg"></div>';
+            html += '<div id="bg"><img src="'+clip_root+'bkg.jpg"></div>';
             /* elements */
             console.log(result);
             for (let i = 0; i < result["compos"].length; i++) {
@@ -27,10 +30,10 @@ $(document).ready(function() {
                 img_dict[c+idx] =result["compos"][i];
                 count_dict[c] ++;
 
-                let clip_path = "../data/outputs/clips/" + c + "/" +idx+ ".jpg";
+                let clip_path = clip_root + c + "/" +idx+ ".jpg";
                 console.log(clip_path);
 
-                $("#"+c).append('<li class="list-group-item"><img src=' + clip_path + '/></li>');
+                $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'/></li>');
                 let height = result["compos"][i]["height"];
                 let width = result["compos"][i]["width"];
                 let x = result["compos"][i]["row_min"];
@@ -39,7 +42,7 @@ $(document).ready(function() {
                 html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y+'px; ">';
                 html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
                 // html += '		<a class="objects" data-toggle="tooltip" data-placement="top" title="'+c+': '+width+'x'+height+'">';
-                html += '			<img class="image" src="../data/outputs/clips/'+c+'/'+idx+'.jpg" id="'+id+'header">';
+                html += '			<img class="image" src="'+clip_root+c+'/'+idx+'.jpg" id="'+id+'header">';
                 // html += '		</a>';
                 html += '   </div>';
                 html += '</div>';

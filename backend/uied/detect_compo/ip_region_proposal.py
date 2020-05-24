@@ -70,7 +70,7 @@ def compo_detection(input_img_path, output_root,
     # draw.draw_bounding_box(org, uicompos, show=show)
     # uicompos = det.merge_intersected_corner(uicompos, org.shape)
     Compo.compos_containment(uicompos)
-    draw.draw_bounding_box(org, uicompos, show=show, write_path=pjoin(ip_root, name + '_ip.png') if write_img else None)
+    draw.draw_bounding_box(org, uicompos, show=show, write_path=pjoin(output_root, 'result.jpg') if write_img else None)
 
     # # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection
     # if classifier['Image'] is not None:
@@ -93,10 +93,8 @@ def compo_detection(input_img_path, output_root,
 
     # uicompos = det.compo_filter(uicompos, org)
     # draw.draw_bounding_box(org, uicompos, show=show)
-    # file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
 
+    file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
     print("[Compo Detection Completed in %.3f s] %d %s" % (time.clock() - start, num, input_img_path))
-    # Record run time
-    # open('time.txt', 'a').write(str(round(time.clock() - start, 3)) + '\n')
     if show:
         cv2.destroyAllWindows()

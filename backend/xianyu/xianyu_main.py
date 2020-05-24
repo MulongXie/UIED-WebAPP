@@ -5,6 +5,7 @@ import time
 import json
 from os.path import join as pjoin
 import multiprocessing
+import os
 
 import xianyu_ocr as ocr
 import xianyu_merge as merge
@@ -94,12 +95,17 @@ def detect_compo(org, output_path=None, show=False):
 
 
 def xianyu(input_path_img,
-           output_path_img,
+           output_root,
            show=False):
 
-    output_root = '/'.join(output_path_img.split('/')[:-1])
     output_path_json = output_root + '/compo.json'
+    output_path_img = output_root + '/result.jpg'
     clip_root = output_root + '/clips'
+
+    if not os.path.exists(output_root):
+        os.mkdir(output_root)
+    if not os.path.exists(clip_root):
+        os.mkdir(clip_root)
 
     start = time.clock()
     org = cv2.imread(input_path_img)
