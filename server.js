@@ -50,35 +50,9 @@ app.post('/upload',function(req,res){
     });
 });
 
-app.get('/process', function (req, res) {
-    let input_img_path = req.query.image_path;
-    let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
-    output_root = 'data/outputs/xianyu/' + name;
-    let result_img = output_root + '/result.jpg';
-
-    var workerProcess = child_process.exec('python xianyu.py ' + input_img_path + ' ' + output_root,
-        function (error, stdout, stderr) {
-        if (error) {
-            console.log(stdout);
-            console.log(error.stack);
-            console.log('Error code: '+error.code);
-            console.log('Signal received: '+error.signal);
-            res.json({code:0});
-        }else{
-            console.log('stdout: ' + stdout);
-            res.json({code:1, result_path:result_img});
-        }
-    });
-
-    workerProcess.on('exit', function () {
-        console.log('Program Invoked');
-    });
-});
-
-
 app.get('/uied', function (req, res) {
-    let input_img_path = 'data/example/2.jpg';
-    // let input_img_path = req.query.image_path;
+    // let input_img_path = 'data/example/2.jpg';
+    let input_img_path = req.query.image_path;
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/uied/' + name;
     let result_img = output_root + '/result.jpg';

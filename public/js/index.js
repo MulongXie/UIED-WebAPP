@@ -77,7 +77,7 @@ $('.my-carousel-img').click(function () {
 $('#btn-process').click(function () {
     processing_wait();
     $.ajax({
-        url: '/process',
+        url: '/uied',
         type: 'get',
         data: {
             image_path: processing_img_path
