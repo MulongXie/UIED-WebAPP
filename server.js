@@ -3,6 +3,7 @@ var express	= require("express");
 var app	= express();
 
 var uploadPath = 'data/inputs';
+var output_root = '';
 var index = 0;
 
 var multer	=	require('multer');
@@ -29,7 +30,12 @@ app.get('/',function(req,res){
 });
 
 app.get('/dashboard',function(req,res){
-    res.sendfile("public/dashboard.html");
+    // using ejs to set result path dynamically
+    app.set('view engine', 'ejs');
+    app.set('views', 'public');
+
+    res.render('dashboard', {outputRoot: output_root})
+    // res.sendfile("public/dashboard.html");
 });
 
 app.post('/upload',function(req,res){
@@ -47,7 +53,7 @@ app.post('/upload',function(req,res){
 app.get('/process', function (req, res) {
     let input_img_path = req.query.image_path;
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
-    let output_root = 'data/outputs/xianyu/' + name;
+    output_root = 'data/outputs/xianyu/' + name;
     let result_img = output_root + '/result.jpg';
 
     var workerProcess = child_process.exec('python xianyu.py ' + input_img_path + ' ' + output_root,
@@ -74,7 +80,7 @@ app.get('/uied', function (req, res) {
     let input_img_path = 'data/example/2.jpg';
     // let input_img_path = req.query.image_path;
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
-    let output_root = 'data/outputs/uied/' + name;
+    output_root = 'data/outputs/uied/' + name;
     let result_img = output_root + '/result.jpg';
 
     var workerProcess = child_process.exec('python uied.py ' + input_img_path + ' ' + output_root,

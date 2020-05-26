@@ -12,8 +12,10 @@ $(document).ready(function() {
         });
     };
 
-    var output_root = '../data/outputs/uied/example2/';
+    var output_root = '../' + $('#resultPath').attr('data-value') + '/';
+    // var output_root = '../data/outputs/uied/example2/';
     var clip_root = output_root + 'clips/';
+    console.log(output_root);
 
     /* load canvas */
     var canvas_init = function(){
@@ -23,7 +25,6 @@ $(document).ready(function() {
             /* background image */
             html += '<div id="bg"><img src="'+clip_root+'bkg.jpg"></div>';
             /* elements */
-            console.log(result);
             for (let i = 0; i < result["compos"].length; i++) {
                 let c = result["compos"][i]["class"];
                 let idx = result["compos"][i]["id"];
@@ -31,7 +32,6 @@ $(document).ready(function() {
                 count_dict[c] ++;
 
                 let clip_path = clip_root + c + "/" +idx+ ".jpg";
-                console.log(clip_path);
 
                 $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'/></li>');
                 let height = result["compos"][i]["height"];

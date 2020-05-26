@@ -101,9 +101,6 @@ $('#btn-process').click(function () {
     })
 });
 
-$('#btn_go_dashboard').click(function () {
-});
-
 function confirm_selection(input_name, saved_path='') {
     let confirm = $("#confirm-input");
     confirm.fadeIn();
