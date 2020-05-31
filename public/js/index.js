@@ -33,7 +33,7 @@ $("#upload-img-form").submit(function () {
                 console.log('Org image: ' + uploaded_img_path);
                 showImage.attr('src', uploaded_img_path);
                 showImage.fadeIn(2000);
-                confirm_selection(uploaded_img_name, uploaded_img_path);
+                method_selection(uploaded_img_name, uploaded_img_path);
             }else {
                 $('#show-upload-image').html('Upload failed');
             }
@@ -60,7 +60,7 @@ $('#examples-select').on('change', function () {
     $('#show-upload-image').children('img').hide();
     carousel.carousel(car_index);
     carousel.fadeIn();
-    confirm_selection(name)
+    method_selection(name);
 });
 
 $('.my-carousel-img').click(function () {
@@ -70,11 +70,11 @@ $('.my-carousel-img').click(function () {
 
     $('#show-examples-carousel').carousel(index - 1);
     $("#examples-select").val(index);
-    confirm_selection(name);
+    method_selection(name);
 });
 // *************************************
 
-$('#btn-process').click(function () {
+function processing_start() {
     processing_wait();
     $.ajax({
         url: '/uied',
@@ -99,19 +99,30 @@ $('#btn-process').click(function () {
             processing_done();
         }
     })
-});
+}
 
-function confirm_selection(input_name, saved_path='') {
+function method_selection(input_name, saved_path=''){
+    $("#select-methods-section").fadeIn();
+    let method_select = $("#method-select");
+    method_select.on('change', function () {
+        let method = $("#method-select option:selected").text();
+        confirm_selection(input_name, method, saved_path);
+    })
+}
+
+function confirm_selection(input_name, method, saved_path='') {
     let confirm = $("#confirm-input");
     confirm.fadeIn();
     if (input_name.search('.jpg|.png') != -1){
         $("#btn-process").removeClass('disabled');
         if (using_example){
             confirm.children('h3').text("Use Image Example " + input_name);
+            confirm.children('h2').text("Use Method " + method);
             processing_img_path = 'data/example/' + input_name;
         }
         else {
             confirm.children('h3').text("Use Image Example " + input_name);
+            confirm.children('h2').text("Use Method " + method);
             processing_img_path = saved_path;
         }
     }

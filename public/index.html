@@ -63,10 +63,21 @@
                 <option class="examples-opt" value="4">4.jpg</option>
                 <option class="examples-opt" value="5">5.jpg</option>
             </select>
+
+            <div id="select-methods-section" style="display: none">
+                <h1 class="lead">Select a processing method</h1>
+                <select class="btn btn-lg btn-proc" id="method-select">
+                    <option class="methods-opt" value="empty" selected>Select Detection Method</option>
+                    <option class="methods-opt" value="uied">UIED</option>
+                    <option class="methods-opt" value="frcnn">FASTER-RCNN</option>
+                </select>
+            </div>
+
             <!--Confirm-->
             <div class="text-center" id="confirm-input" style="display: none">
                 <h3 class="lead"></h3>
-                <a class="btn btn-lg btn-proc" id="btn-process">Process</a>
+                <h2 class="lead"></h2>
+                <a class="btn btn-lg btn-proc" id="btn-process" onclick="processing_start()">Process</a>
                 <p class="lead" style="margin-top: 20px"></p>
             </div>
         </div>
