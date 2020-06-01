@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div style="height: 200px; background: #1b6d85" class="test">
+
+</div>
+
+</body>
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.test').click(function () {
+            console.log($('.test').offset()['top'] + $('.test').height());
+            alert($('.test').offset())
+        })
+    })
+</script>
+</html>

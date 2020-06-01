@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/file_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/file_utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Block/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Block/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Compo/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Compo/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Compo/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Compo/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/Compo/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/compo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/plugins/ecaps/js/ecaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/plugins/ecaps/js/ecaps.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,15 +22,16 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45704058">
+    <splitter split-orientation="horizontal" split-proportion="0.51252985">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="310">
-                  <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+                <state relative-caret-position="260">
+                  <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
                   <folding>
+                    <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -56,15 +48,24 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="854">
-                  <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+                  <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
                   <folding>
                     <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#button#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="287">
+                  <caret line="187" column="35" lean-forward="true" selection-start-line="187" selection-start-column="35" selection-end-line="187" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -76,8 +77,8 @@
           <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="324">
-                  <caret line="190" column="35" lean-forward="true" selection-start-line="190" selection-start-column="35" selection-end-line="190" selection-end-column="35" />
+                <state relative-caret-position="205">
+                  <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
@@ -87,20 +88,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="ecaps.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/js/ecaps.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="180" selection-start-line="180" selection-end-line="180" />
+                <state relative-caret-position="391">
+                  <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -113,16 +105,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>generate</find>
-      <find>bkg</find>
       <find>dragg</find>
       <find>general</find>
       <find>main</find>
@@ -151,6 +141,8 @@
       <find>name</find>
       <find>acco</find>
       <find>accordion-menu</find>
+      <find>models</find>
+      <find>sub-menu list-group list-group-flush</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,7 +163,6 @@
         <option value="$PROJECT_DIR$/xianyu/xianyu_utils.py" />
         <option value="$PROJECT_DIR$/xianyu/xianyu_ocr.py" />
         <option value="$PROJECT_DIR$/backend/uied/main.py" />
-        <option value="$PROJECT_DIR$/public/test.html" />
         <option value="$PROJECT_DIR$/xianyu.py" />
         <option value="$PROJECT_DIR$/backend/xianyu/xianyu_main.py" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
@@ -188,13 +179,14 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/js/index.js" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
-        <option value="$PROJECT_DIR$/public/css/dashboard.css" />
         <option value="$PROJECT_DIR$/data/outputs/uied/example1/compo.json" />
         <option value="$PROJECT_DIR$/public/dashboard.html" />
         <option value="$PROJECT_DIR$/public/test.js" />
-        <option value="$PROJECT_DIR$/public/dashboard.ejs" />
         <option value="$PROJECT_DIR$/public/js/dashboard.js" />
         <option value="$PROJECT_DIR$/public/plugins/ecaps/js/ecaps.js" />
+        <option value="$PROJECT_DIR$/public/test.html" />
+        <option value="$PROJECT_DIR$/public/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/public/dashboard.ejs" />
       </list>
     </option>
   </component>
@@ -320,98 +312,7 @@
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="uied" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="uied" type="462c0819:PsiDirectoryNode" />
-              <item name="example2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="uied" type="462c0819:PsiDirectoryNode" />
-              <item name="example2" type="462c0819:PsiDirectoryNode" />
-              <item name="clips" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="uied" type="462c0819:PsiDirectoryNode" />
-              <item name="example2" type="462c0819:PsiDirectoryNode" />
-              <item name="clips" type="462c0819:PsiDirectoryNode" />
-              <item name="Block" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="uied" type="462c0819:PsiDirectoryNode" />
-              <item name="example3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
-              <item name="uied" type="462c0819:PsiDirectoryNode" />
-              <item name="example3" type="462c0819:PsiDirectoryNode" />
-              <item name="clips" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="ecaps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="ecaps" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="ecaps" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -540,12 +441,12 @@
       <workItem from="1590444546223" duration="10467000" />
       <workItem from="1590648834407" duration="2285000" />
       <workItem from="1590958694029" duration="4148000" />
-      <workItem from="1590966144803" duration="23633000" />
+      <workItem from="1590966144803" duration="29353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156990000" />
+    <option name="totallyTimeSpent" value="162710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -556,7 +457,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32461873" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32352942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -632,7 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/test.html" />
     <entry file="file://$PROJECT_DIR$/data/outputs/1.jpg" />
     <entry file="file://$PROJECT_DIR$/data/outputs/compo.json" />
     <entry file="file://$PROJECT_DIR$/data/outputs/inputs0.jpg" />
@@ -740,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="25" column="17" lean-forward="true" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
@@ -806,25 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="190" column="35" lean-forward="true" selection-start-line="190" selection-start-column="35" selection-end-line="190" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/css/ecaps.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="172">
@@ -834,29 +708,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/js/ecaps.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="180" selection-start-line="180" selection-end-line="180" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="445">
+          <caret line="163" column="27" selection-start-line="163" selection-start-column="27" selection-end-line="163" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="854">
-          <caret line="65" column="29" lean-forward="true" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
+          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="30" column="53" lean-forward="true" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="187" column="35" lean-forward="true" selection-start-line="187" selection-start-column="35" selection-end-line="187" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="66" column="23" lean-forward="true" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="61" column="51" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
