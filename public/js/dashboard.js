@@ -23,7 +23,7 @@ $(document).ready(function() {
         $.getJSON(output_root + 'compo.json',function(result){
             let html = "";
             /* background image */
-            html += '<div id="bg"><img src="'+clip_root+'bkg.jpg"></div>';
+            // html += '<div id="bg"><img src="'+clip_root+'bkg.jpg"></div>';
             /* elements */
             for (let i = 0; i < result["compos"].length; i++) {
                 let c = result["compos"][i]["class"];
@@ -42,7 +42,13 @@ $(document).ready(function() {
                 html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y+'px; ">';
                 html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
                 // html += '		<a class="objects" data-toggle="tooltip" data-placement="top" title="'+c+': '+width+'x'+height+'">';
-                html += '			<img class="image" src="'+clip_root+c+'/'+idx+'.jpg" id="'+id+'header">';
+
+                if(c == 'background'){
+                    html += '			<img class="image" src="'+clip_root+'bkg.jpg" id="'+id+'header">';
+                }
+                else{
+                    html += '			<img class="image" src="'+clip_root+c+'/'+idx+'.jpg" id="'+id+'header">';
+                }
                 // html += '		</a>';
                 html += '   </div>';
                 html += '</div>';
@@ -140,55 +146,55 @@ $(document).ready(function() {
     };
 
     /* add image click function */
-    var add_img_init = function(){
-        $("#add").click(function(){
-            var type = $('#right-sidebar-type-component').text();
-            var width = $('#right-sidebar-width-component').val();
-            var height = $('#right-sidebar-height-component').val();
-            var top = $('#right-sidebar-top-component').val();
-            var left = $('#right-sidebar-left-component').val();
-            if (width == ""){width = $('#right-sidebar-width-component').attr("placeholder");}
-            if (height == ""){height = $('#right-sidebar-height-component').attr("placeholder");}
-            if (top == ""){top = $('#right-sidebar-top-component').attr("placeholder");}
-            if (left == ""){left = $('#right-sidebar-left-component').attr("placeholder");}
-            $("#right-sidebar-width").val("");
-            $("#right-sidebar-height").val("");
-            $("#right-sidebar-top").val("");
-            $("#right-sidebar-left").val("");
-            $("#right-sidebar-width").attr("placeholder",width);
-            $("#right-sidebar-height").attr("placeholder",height);
-            $("#right-sidebar-top").attr("placeholder",top);
-            $("#right-sidebar-left").attr("placeholder",left);
-            document.getElementById("right-sidebar-type").innerHTML = type;
-            document.getElementById("right-sidebar-img").src = document.getElementById("right-sidebar-img-component").src;
-            $("#main-right-sidebar").addClass("visible");
-            $("#main-right-sidebar-component").removeClass("visible");
-
-            count_dict[type] ++;
-            let id = 'draggable_'+type+'_'+count_dict[type];
-            let html = "";
-            html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
-            html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
-            html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
-            html += '   </div>'
-			html += '</div>'
-            $(".box").append(html);
-            
-            $('#'+id).addClass("active-component").siblings().removeClass('active-component');
-            drag_and_click(scale);
-            
-            img_dict[type+count_dict[type]] = {
-                "column_min": 0,
-                "id": count_dict[type],
-                "height": height,
-                "width": width,
-                "column_max": 0,
-                "row_max": 0,
-                "row_min": 0,
-                "class": type,
-            };
-        });
-    };
+    // var add_img_init = function(){
+    //     $("#add").click(function(){
+    //         var type = $('#right-sidebar-type-component').text();
+    //         var width = $('#right-sidebar-width-component').val();
+    //         var height = $('#right-sidebar-height-component').val();
+    //         var top = $('#right-sidebar-top-component').val();
+    //         var left = $('#right-sidebar-left-component').val();
+    //         if (width == ""){width = $('#right-sidebar-width-component').attr("placeholder");}
+    //         if (height == ""){height = $('#right-sidebar-height-component').attr("placeholder");}
+    //         if (top == ""){top = $('#right-sidebar-top-component').attr("placeholder");}
+    //         if (left == ""){left = $('#right-sidebar-left-component').attr("placeholder");}
+    //         $("#right-sidebar-width").val("");
+    //         $("#right-sidebar-height").val("");
+    //         $("#right-sidebar-top").val("");
+    //         $("#right-sidebar-left").val("");
+    //         $("#right-sidebar-width").attr("placeholder",width);
+    //         $("#right-sidebar-height").attr("placeholder",height);
+    //         $("#right-sidebar-top").attr("placeholder",top);
+    //         $("#right-sidebar-left").attr("placeholder",left);
+    //         document.getElementById("right-sidebar-type").innerHTML = type;
+    //         document.getElementById("right-sidebar-img").src = document.getElementById("right-sidebar-img-component").src;
+    //         $("#main-right-sidebar").addClass("visible");
+    //         $("#main-right-sidebar-component").removeClass("visible");
+    //
+    //         count_dict[type] ++;
+    //         let id = 'draggable_'+type+'_'+count_dict[type];
+    //         let html = "";
+    //         html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
+    //         html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
+    //         html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
+    //         html += '   </div>'
+		// 	html += '</div>'
+    //         $(".box").append(html);
+    //
+    //         $('#'+id).addClass("active-component").siblings().removeClass('active-component');
+    //         drag_and_click(scale);
+    //
+    //         img_dict[type+count_dict[type]] = {
+    //             "column_min": 0,
+    //             "id": count_dict[type],
+    //             "height": height,
+    //             "width": width,
+    //             "column_max": 0,
+    //             "row_max": 0,
+    //             "row_min": 0,
+    //             "class": type,
+    //         };
+    //     });
+    // };
 
     components_init()
     canvas_init()
@@ -197,7 +203,7 @@ $(document).ready(function() {
     delete_init()
     apply_init()
     component_img_init()
-    add_img_init()
+    // add_img_init()
     
 });
 

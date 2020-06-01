@@ -10,7 +10,6 @@ def cvt_compos_relative_pos(compos, col_min_base, row_min_base):
 
 
 def compos_containment(compos):
-    compos_update(compos)
     for i in range(len(compos) - 1):
         for j in range(i + 1, len(compos)):
             relation = compos[i].compo_relation(compos[j])
@@ -22,7 +21,8 @@ def compos_containment(compos):
 
 def compos_update(compos):
     for i, compo in enumerate(compos):
-        compo.compo_update(i)
+        # start from 1, id 0 is background
+        compo.compo_update(i + 1)
 
 
 class Component:
