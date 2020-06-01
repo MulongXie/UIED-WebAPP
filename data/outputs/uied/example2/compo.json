@@ -1,63 +1,63 @@
 {
     "compos": [
         {
-            "class": "Compo",
-            "id": 0,
             "height": 40,
             "row_max": 73,
+            "id": 0,
             "width": 97,
-            "column_max": 97,
+            "class": "Compo",
             "column_min": 0,
+            "column_max": 97,
             "row_min": 33
         },
         {
-            "class": "Compo",
-            "id": 1,
             "height": 75,
             "row_max": 199,
+            "id": 1,
             "width": 347,
-            "column_max": 386,
+            "class": "Compo",
             "column_min": 39,
+            "column_max": 386,
             "row_min": 124
         },
         {
-            "class": "Block",
-            "id": 2,
             "height": 38,
             "row_max": 263,
+            "id": 2,
             "width": 371,
-            "column_max": 410,
+            "class": "Block",
             "column_min": 39,
+            "column_max": 410,
             "row_min": 225
         },
         {
-            "class": "Compo",
-            "id": 3,
             "height": 21,
             "row_max": 254,
+            "id": 3,
             "width": 133,
-            "column_max": 292,
+            "class": "Compo",
             "column_min": 159,
+            "column_max": 292,
             "row_min": 233
         },
         {
-            "class": "Block",
-            "id": 4,
             "height": 37,
             "row_max": 335,
+            "id": 4,
             "width": 371,
-            "column_max": 410,
+            "class": "Block",
             "column_min": 39,
+            "column_max": 410,
             "row_min": 298
         },
         {
-            "class": "Compo",
-            "id": 5,
             "height": 20,
             "row_max": 327,
+            "id": 5,
             "width": 161,
-            "column_max": 306,
+            "class": "Compo",
             "column_min": 145,
+            "column_max": 306,
             "row_min": 307
         }
     ]

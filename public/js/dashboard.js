@@ -200,3 +200,11 @@ $(document).ready(function() {
     add_img_init()
     
 });
+
+
+$('#uikits_sidebar').click(function () {
+    let kits = $('#show_kits');
+    kits.animate({
+        width: 'toggle'
+    });
+});

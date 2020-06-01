@@ -23,7 +23,7 @@
 .sketch {
 	position: relative;
 	width: auto;
-	height: 500px; 
+	height: 100vh;
 	overflow: auto;
     background: url(../images/trans.png);
   }
@@ -54,4 +54,18 @@
 .thumb{
     width:100%;
 	height:auto;
+}
+
+#board{
+    width: 100%;
+    height: 100%;
+}
+
+#show_kits{
+    text-align: center;
+    width: 150px;
+    height: 100vh;
+    position: absolute;
+    z-index: 1;
+    background: white;
 }

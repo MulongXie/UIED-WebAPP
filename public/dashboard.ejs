@@ -1,460 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="UI2Code">
-        <meta name="keywords" content="GUI, code generation">
-        <meta name="author" content="sidongfeng">
-        <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        
-        <!-- Title -->
-        <title>Home</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="UI2Code">
+    <meta name="keywords" content="GUI, code generation">
+    <meta name="author" content="sidongfeng">
+    <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <!-- Styles -->
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
-        <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-        <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
-        <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-        <link href="plugins/icomoon/style.css" rel="stylesheet">
-        <link href="plugins/uniform/css/default.css" rel="stylesheet"/>
-        <link href="plugins/switchery/switchery.min.css" rel="stylesheet"/>
-        <link href="plugins/nvd3/nv.d3.min.css" rel="stylesheet">  
-        <link href="plugins/ecaps/css/ecaps.min.css" rel="stylesheet">
-        <!-- Custom Theme Styles -->
-        <link href="css/dashboard.css" rel="stylesheet">
+    <!-- Title -->
+    <title>Home</title>
 
-    </head>
-    <body>
-        
-        <!-- Page Container -->
-        <div class="page-container">
-            <!-- Page Sidebar -->
-            <div class="page-sidebar">
-                <a class="logo-box" href="/">
-                    <span>UI2Code</span>
-                    <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
-                    <i class="icon-close" id="sidebar-toggle-button-close"></i>
-                </a>
-                <div class="page-sidebar-inner">
-                    <div class="page-sidebar-menu">
-                        <ul class="accordion-menu">
-                            <li class="">
-                                <a href="">
-                                    <i class="menu-icon icon-home4"></i><span>Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="menu-icon icon-flash_on"></i><span>UI Kits</span><i class="accordion-icon fa fa-angle-left"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li class="components" data-type="0"><a href="javascript:void(0)">Button</a></li>
-                                    <li class="components" data-type="1"><a href="javascript:void(0)">Image</a></li>
-                                    <li class="components" data-type="2"><a href="javascript:void(0)">Input</a></li>
-                                </ul>
-                            </li>
-                            <!-- <li>
-                                <a href="javascript:void(0)">
-                                    <i class="menu-icon icon-layers"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-left"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href=""></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="menu-icon icon-code"></i><span>Forms</span><i class="accordion-icon fa fa-angle-left"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href=""></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="menu-icon icon-format_list_bulleted"></i><span>Tables</span><i class="accordion-icon fa fa-angle-left"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href=""></a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="charts.html">
-                                    <i class="menu-icon icon-show_chart"></i><span>Charts</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="menu-icon icon-my_location"></i><span>Maps</span><i class="accordion-icon fa fa-angle-left"></i>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li><a href=""></a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-divider"></li>
-                            <li>
-                                <a href="">
-                                    <i class="menu-icon icon-help_outline"></i><span>Tutorial</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <i class="menu-icon icon-public"></i><span>Changelog</span><span class="label label-danger">1.0</span>
-                                </a>
-                            </li> -->
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="plugins/icomoon/style.css" rel="stylesheet">
+    <link href="plugins/uniform/css/default.css" rel="stylesheet"/>
+    <link href="plugins/switchery/switchery.min.css" rel="stylesheet"/>
+    <link href="plugins/nvd3/nv.d3.min.css" rel="stylesheet">
+    <link href="plugins/ecaps/css/ecaps.min.css" rel="stylesheet">
+    <!-- Custom Theme Styles -->
+    <link href="css/dashboard.css" rel="stylesheet">
+
+</head>
+<body>
+
+<!-- Page Container -->
+<div class="page-container">
+    <!-- Page Sidebar -->
+    <div class="page-sidebar">
+        <a class="logo-box" href="/">
+            <span>UI2Code</span>
+            <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
+            <i class="icon-close" id="sidebar-toggle-button-close"></i>
+        </a>
+        <div class="page-sidebar-inner">
+            <div class="page-sidebar-menu">
+                <ul class="accordion-menu">
+                    <li class="">
+                        <a href="">
+                            <i class="menu-icon icon-home4"></i><span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" id="uikits_sidebar">
+                            <i class="menu-icon icon-flash_on"></i><span>UI Kits</span><i class="accordion-icon fa fa-angle-left"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li class="components" data-type="0"><a href="javascript:void(0)">Button</a></li>
+                            <li class="components" data-type="1"><a href="javascript:void(0)">Image</a></li>
+                            <li class="components" data-type="2"><a href="javascript:void(0)">Input</a></li>
                         </ul>
-                    </div>
+                    </li>
+                    <!-- <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon icon-layers"></i><span>Layouts</span><i class="accordion-icon fa fa-angle-left"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon icon-code"></i><span>Forms</span><i class="accordion-icon fa fa-angle-left"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon icon-format_list_bulleted"></i><span>Tables</span><i class="accordion-icon fa fa-angle-left"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="charts.html">
+                            <i class="menu-icon icon-show_chart"></i><span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <i class="menu-icon icon-my_location"></i><span>Maps</span><i class="accordion-icon fa fa-angle-left"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href=""></a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li>
+                        <a href="">
+                            <i class="menu-icon icon-help_outline"></i><span>Tutorial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="menu-icon icon-public"></i><span>Changelog</span><span class="label label-danger">1.0</span>
+                        </a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+        <!--<div class="text-center btn-gen-code" style="margin-top: 20rem;">-->
+        <!--<a class="btn btn-lg btn-primary" style="color: white;">Generate Code</a>-->
+        <!--</div>-->
+    </div><!-- /Page Sidebar -->
+
+    <!-- Page Content -->
+    <div class="page-content">
+        <!-- Page Header -->
+        <!--<div class="page-header" style="padding:0">-->
+        <!--<nav class="navbar navbar-default">-->
+        <!--<div class="container-fluid">-->
+        <!--&lt;!&ndash; Brand and toggle get grouped for better mobile display &ndash;&gt;-->
+        <!--<div class="navbar-header">-->
+        <!--<div class="logo-sm">-->
+        <!--<a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>-->
+        <!--<a class="logo-box" href="index.html"><span>ecaps</span></a>-->
+        <!--</div>-->
+        <!--<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
+        <!--<i class="fa fa-angle-down"></i>-->
+        <!--</button>-->
+        <!--</div>-->
+        <!---->
+        <!--&lt;!&ndash; Collect the nav links, forms, and other content for toggling &ndash;&gt;-->
+        <!--<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+        <!--<ul class="nav">-->
+        <!--<li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>-->
+        <!--<li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>-->
+        <!--</ul>-->
+        <!--</div>&lt;!&ndash; /.navbar-collapse &ndash;&gt;-->
+        <!--</div>&lt;!&ndash; /.container-fluid &ndash;&gt;-->
+        <!--</nav>-->
+        <!--</div>&lt;!&ndash; /Page Header &ndash;&gt;-->
+        <!-- Page Inner -->
+        <div class="page-inner" style="padding: 0">
+
+            <div id="show_kits" style="display: none">
+                <div class="page-title">
+                    <h3 id="name" class="breadcrumb-header">Button</h3>
                 </div>
-                <div class="text-center btn-gen-code" style="margin-top: 20rem;">
-                    <a class="btn btn-lg btn-primary" style="color: white;">Generate Code</a>
+                <!-- Left components box -->
+                <div class="pic">
+                    <ul id="button" class="list-group list-group-flush"></ul>
+                    <ul id="img" class="list-group list-group-flush"></ul>
+                    <ul id="input" class="list-group list-group-flush"></ul>
                 </div>
-            </div><!-- /Page Sidebar -->
-            
-            <!-- Page Content -->
-            <div class="page-content">
-                <!-- Page Header -->
-                <div class="page-header">
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                            <!-- Brand and toggle get grouped for better mobile display -->
-                            <div class="navbar-header">
-                                <div class="logo-sm">
-                                    <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                                    <a class="logo-box" href="index.html"><span>ecaps</span></a>
-                                </div>
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                                    <i class="fa fa-angle-down"></i>
-                                </button>
-                            </div>
-                        
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav">
-                                    <li><a href="javascript:void(0)" id="collapsed-sidebar-toggle-button"><i class="fa fa-bars"></i></a></li>
-                                    <li><a href="javascript:void(0)" id="toggle-fullscreen"><i class="fa fa-expand"></i></a></li>
-                                </ul>
-                            </div><!-- /.navbar-collapse -->
-                        </div><!-- /.container-fluid -->
-                    </nav>
-                </div><!-- /Page Header -->
-                <!-- Page Inner -->
-                <div class="page-inner">
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <div class="page-title">
-                                <h3 id="name" class="breadcrumb-header">Dashboard</h3>
-                            </div>
-                            <!-- Left components box -->
-                            <div class="pic">
-                                <ul id="button" class="list-group list-group-flush"></ul>
-                                <ul id="img" class="list-group list-group-flush"></ul>
-                                <ul id="input" class="list-group list-group-flush"></ul>
-                            </div>
-                        </div>
-                        <!-- Right sketch box -->
-
-                        <div class="col-lg-10">
-                            <div class="sketch">
-                                <div class="box">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="page-title">
-                        <!-- <h3 class="breadcrumb-header">Dashboard</h3> -->
-                    </div>
-                    <div id="main-wrapper">
-                    </div><!-- Main Wrapper -->
-                    <!-- <div class="page-footer">
-                        <p>Copyright &copy; 2020. UI2Code All rights reserved.</p>
-                    </div> -->
-                </div><!-- /Page Inner -->
-
-                <!-- Right SideBar -->
-                <div class="page-right-sidebar" id="main-right-sidebar">
-                    <div class="page-right-sidebar-inner">
-                        <div class="right-sidebar-top">
-                            <div class="right-sidebar-tabs">
-                                <!-- Nav tabs -->
-                                <ul class="nav nav-tabs" role="tablist">
-                                    <li role="presentation" class="active" id="settings-tab"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>
-                                </ul>
-                            </div>
-                            <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="icon-close"></i></a>
-                        </div>
-                        <div class="right-sidebar-content">
-                            <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active" id="settings">
-                                    <div class="right-sidebar-settings">
-                                        <span class="settings-title">General Settings</span>
-                                        <ul class="sidebar-setting-list list-unstyled">
-                                            <li><img class="image thumb" id="right-sidebar-img" src="images/clip/img/2.png"></li>
-                                            <li>
-                                                <span class="settings-option">Type</span>
-                                                <div id="right-sidebar-type" class="float-right w-50"></div>
-                                            </li>
-                                            <li>
-                                                <span class="settings-option">Width</span>
-                                                <div class="input-group input-group-sm float-right w-50">
-                                                    <input id="right-sidebar-width" type="text" class="form-control input-sm" placeholder="">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">px</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span class="settings-option">Height</span>
-                                                <div class="input-group input-group-sm float-right w-50">
-                                                    <input id="right-sidebar-height" type="text" class="form-control input-sm" placeholder="">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">px</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span class="settings-option">Left</span>
-                                                <div class="input-group input-group-sm float-right w-50">
-                                                    <input id="right-sidebar-left" type="text" class="form-control input-sm" placeholder="">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">px</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <span class="settings-option">Top</span>
-                                                <div class="input-group input-group-sm float-right w-50">
-                                                    <input id="right-sidebar-top" type="text" class="form-control input-sm" placeholder="">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">px</span>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <button id="return" type="button" class="btn btn-warning" style="margin-right: 15px;">Return</button>
-                                                <button id="apply" type="button" class="btn btn-success">Apply</button>
-                                            </li>
-                                            <li style="text-align: center;">
-                                                <button id="delete" type="button" class="btn btn-danger" style="margin-right: 15px;">DELETE</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-            <!-- Right Component SideBar -->
-            <div class="page-right-sidebar" id="main-right-sidebar-component">
-                <div class="page-right-sidebar-inner">
-                    <div class="right-sidebar-top">
-                        <div class="right-sidebar-tabs">
-                            <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active" id="settings-tab-component"><a href="#settings-component" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>
-                            </ul>
-                        </div>
-                        <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar-component"><i class="icon-close"></i></a>
-                    </div>
-                    <div class="right-sidebar-content">
-                        <!-- Tab panes -->
-                        <div class="tab-content">
-                            <div role="tabpanel" class="tab-pane active">
-                                <div class="right-sidebar-settings">
-                                    <span class="settings-title">General Settings</span>
-                                    <ul class="sidebar-setting-list list-unstyled">
-                                        <li><img class="image thumb" id="right-sidebar-img-component" src=""></li>
-                                        <li>
-                                            <span class="settings-option">Type</span>
-                                            <div id="right-sidebar-type-component" class="float-right w-50"></div>
-                                        </li>
-                                        <li>
-                                            <span class="settings-option">Width</span>
-                                            <div class="input-group input-group-sm float-right w-50">
-                                                <input id="right-sidebar-width-component" type="text" class="form-control input-sm" placeholder="">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">px</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="settings-option">Height</span>
-                                            <div class="input-group input-group-sm float-right w-50">
-                                                <input id="right-sidebar-height-component" type="text" class="form-control input-sm" placeholder="">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">px</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="settings-option">Left</span>
-                                            <div class="input-group input-group-sm float-right w-50">
-                                                <input id="right-sidebar-left-component" type="text" class="form-control input-sm" placeholder="">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">px</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <span class="settings-option">Top</span>
-                                            <div class="input-group input-group-sm float-right w-50">
-                                                <input id="right-sidebar-top-component" type="text" class="form-control input-sm" placeholder="">
-                                                <div class="input-group-append">
-                                                    <span class="input-group-text">px</span>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li style="text-align: center;">
-                                            <button id="add" type="button" class="btn btn-success">Add</button>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+            </div>
+            <!-- Right sketch box -->
+            <div id="board">
+                <div class="sketch">
+                    <div class="box">
                     </div>
                 </div>
             </div>
 
 
-            </div><!-- /Page Content -->
-        </div><!-- /Page Container -->
-        
-        
-        <!-- Javascripts -->
-        <script src="js/plugins/jquery.js"></script>
-        <script src="js/plugins/jquery-ui.min.js"></script>
-        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-        <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
-        <script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
-        <script src="plugins/switchery/switchery.min.js"></script>
-        <script src="plugins/d3/d3.min.js"></script>
-        <script src="plugins/nvd3/nv.d3.min.js"></script>
-        <script src="plugins/ecaps/js/ecaps.js"></script>
 
-        <!-- Record Processing Result Paths -->
-        <div id="resultPath" data-value=<%-JSON.stringify(outputRoot)%>></div>
-        <!-- Custom Javascripts -->
-        <script src="js/dashboard.js"></script>
+            <div class="page-title">
+                <!-- <h3 class="breadcrumb-header">Dashboard</h3> -->
+            </div>
+            <div id="main-wrapper">
+            </div><!-- Main Wrapper -->
+            <!-- <div class="page-footer">
+                <p>Copyright &copy; 2020. UI2Code All rights reserved.</p>
+            </div> -->
+        </div><!-- /Page Inner -->
 
-        <!-- Script -->
-        <script type="text/javascript" language=JavaScript charset="UTF-8">
-            window.onload = function () {
-                scale = 0.6;
-                // Scale
-                resize(scale);
-                // Draggable and Clickable
-                drag_and_click(scale);
-                // attach keyDown event
-                document.addEventListener("keydown", keyDownHandler, false);
-            };
-            function keyDownHandler(e) {
-                var keyCode = e.keyCode;
-                var myNode = document.getElementsByClassName("active1");
-                // if DELETE or BACKSPACE
-                if (keyCode == 8 || keyCode == 46) {
-                    document.getElementsByClassName("box")[0].removeChild(document.getElementsByClassName("active-component")[0]);
-                    $("#main-right-sidebar").removeClass("visible");
-                }else if (keyCode == 187){
-                    scale += 0.1;
-                    resize(scale);
-                    drag_and_click(scale)
-                }else if (keyCode == 189){
-                    scale -= 0.1;
-                    resize(scale);
-                    drag_and_click(scale)
+        <!-- Right SideBar -->
+        <div class="page-right-sidebar" id="main-right-sidebar">
+            <div class="page-right-sidebar-inner">
+                <div class="right-sidebar-top">
+                    <div class="right-sidebar-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active" id="settings-tab"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar"><i class="icon-close"></i></a>
+                </div>
+                <div class="right-sidebar-content">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="settings">
+                            <div class="right-sidebar-settings">
+                                <span class="settings-title">General Settings</span>
+                                <ul class="sidebar-setting-list list-unstyled">
+                                    <li><img class="image thumb" id="right-sidebar-img" src="images/clip/img/2.png"></li>
+                                    <li>
+                                        <span class="settings-option">Type</span>
+                                        <div id="right-sidebar-type" class="float-right w-50"></div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Width</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-width" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Height</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-height" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Left</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-left" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Top</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-top" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <button id="return" type="button" class="btn btn-warning" style="margin-right: 15px;">Return</button>
+                                        <button id="apply" type="button" class="btn btn-success">Apply</button>
+                                    </li>
+                                    <li style="text-align: center;">
+                                        <button id="delete" type="button" class="btn btn-danger" style="margin-right: 15px;">DELETE</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Component SideBar -->
+        <div class="page-right-sidebar" id="main-right-sidebar-component">
+            <div class="page-right-sidebar-inner">
+                <div class="right-sidebar-top">
+                    <div class="right-sidebar-tabs">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active" id="settings-tab-component"><a href="#settings-component" aria-controls="settings" role="tab" data-toggle="tab">settings</a></li>
+                        </ul>
+                    </div>
+                    <a href="javascript:void(0)" class="right-sidebar-toggle right-sidebar-close" data-sidebar-id="main-right-sidebar-component"><i class="icon-close"></i></a>
+                </div>
+                <div class="right-sidebar-content">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active">
+                            <div class="right-sidebar-settings">
+                                <span class="settings-title">General Settings</span>
+                                <ul class="sidebar-setting-list list-unstyled">
+                                    <li><img class="image thumb" id="right-sidebar-img-component" src=""></li>
+                                    <li>
+                                        <span class="settings-option">Type</span>
+                                        <div id="right-sidebar-type-component" class="float-right w-50"></div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Width</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-width-component" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Height</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-height-component" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Left</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-left-component" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="settings-option">Top</span>
+                                        <div class="input-group input-group-sm float-right w-50">
+                                            <input id="right-sidebar-top-component" type="text" class="form-control input-sm" placeholder="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text">px</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li style="text-align: center;">
+                                        <button id="add" type="button" class="btn btn-success">Add</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div><!-- /Page Content -->
+</div><!-- /Page Container -->
+
+
+<!-- Javascripts -->
+<script src="js/plugins/jquery.js"></script>
+<script src="js/plugins/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="plugins/uniform/js/jquery.uniform.standalone.js"></script>
+<script src="plugins/switchery/switchery.min.js"></script>
+<script src="plugins/d3/d3.min.js"></script>
+<script src="plugins/nvd3/nv.d3.min.js"></script>
+<script src="plugins/ecaps/js/ecaps.js"></script>
+
+<!-- Record Processing Result Paths -->
+<div id="resultPath" data-value=<%-JSON.stringify(outputRoot)%>></div>
+<!-- Custom Javascripts -->
+<script src="js/dashboard.js"></script>
+
+<!-- Script -->
+<script type="text/javascript" language=JavaScript charset="UTF-8">
+    window.onload = function () {
+        scale = 0.6;
+        // Scale
+        resize(scale);
+        // Draggable and Clickable
+        drag_and_click(scale);
+        // attach keyDown event
+        document.addEventListener("keydown", keyDownHandler, false);
+    };
+    function keyDownHandler(e) {
+        var keyCode = e.keyCode;
+        var myNode = document.getElementsByClassName("active1");
+        // if DELETE or BACKSPACE
+        if (keyCode == 8 || keyCode == 46) {
+            document.getElementsByClassName("box")[0].removeChild(document.getElementsByClassName("active-component")[0]);
+            $("#main-right-sidebar").removeClass("visible");
+        }else if (keyCode == 187){
+            scale += 0.1;
+            resize(scale);
+            drag_and_click(scale)
+        }else if (keyCode == 189){
+            scale -= 0.1;
+            resize(scale);
+            drag_and_click(scale)
+        };
+    };
+    function resize(scale){
+        document.getElementsByClassName("box")[0].style.transform = "scale("+scale+")"
+    }
+    function drag_and_click(s){
+        var click = {x: 0,y: 0}
+        $('.draggable').draggable({
+            cursor: "move",
+            start: function(event) {
+                click.x = event.clientX;
+                click.y = event.clientY;
+                var id = $(this).attr('id');
+                var type = id.split("_")[1];
+                var element = document.getElementById(id);
+                var width = element.offsetWidth;
+                var height = element.offsetHeight;
+                var top = element.offsetTop;
+                var left = element.offsetLeft;
+                var imgsrc = document.getElementById(id+'header').src;
+                document.getElementById("right-sidebar-img").src = imgsrc;
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+                $(this).addClass("active-component").siblings().removeClass('active-component');
+            },
+            drag: function(event, ui) {
+                var zoom = s;
+                var original = ui.originalPosition;
+                ui.position = {
+                    left: (event.clientX - click.x + original.left) / zoom,
+                    top:  (event.clientY - click.y + original.top ) / zoom
                 };
-            };
-            function resize(scale){
-                document.getElementsByClassName("box")[0].style.transform = "scale("+scale+")"
+                var id = $(this).attr('id');
+                var type = id.split("_")[1];
+                var element = document.getElementById(id);
+                var width = element.offsetWidth;
+                var height = element.offsetHeight;
+                var top = element.offsetTop;
+                var left = element.offsetLeft;
+                var imgsrc = document.getElementById(id+'header').src;
+                document.getElementById("right-sidebar-img").src = imgsrc;
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            },
+            stop: function(event, ui){
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
             }
-            function drag_and_click(s){
-                var click = {x: 0,y: 0}
-                $('.draggable').draggable({
-                    cursor: "move",
-                    start: function(event) {
-                        click.x = event.clientX;
-                        click.y = event.clientY;
-                        var id = $(this).attr('id');
-                        var type = id.split("_")[1];
-                        var element = document.getElementById(id);
-                        var width = element.offsetWidth;
-                        var height = element.offsetHeight;
-                        var top = element.offsetTop;
-                        var left = element.offsetLeft;
-                        var imgsrc = document.getElementById(id+'header').src;
-                        document.getElementById("right-sidebar-img").src = imgsrc;
-                        document.getElementById("right-sidebar-type").innerHTML = type;
-                        $("#right-sidebar-width").attr("placeholder",width);
-                        $("#right-sidebar-height").attr("placeholder",height);
-                        $("#right-sidebar-top").attr("placeholder",top);
-                        $("#right-sidebar-left").attr("placeholder",left);
-                        $("#main-right-sidebar").addClass("visible");
-                        $("#main-right-sidebar-component").removeClass("visible");
-                        $(this).addClass("active-component").siblings().removeClass('active-component');
-                    },
-                    drag: function(event, ui) {
-                        var zoom = s;
-                        var original = ui.originalPosition;
-                        ui.position = {
-                            left: (event.clientX - click.x + original.left) / zoom,
-                            top:  (event.clientY - click.y + original.top ) / zoom
-                        };
-                        var id = $(this).attr('id');
-                        var type = id.split("_")[1];
-                        var element = document.getElementById(id);
-                        var width = element.offsetWidth;
-                        var height = element.offsetHeight;
-                        var top = element.offsetTop;
-                        var left = element.offsetLeft;
-                        var imgsrc = document.getElementById(id+'header').src;
-                        document.getElementById("right-sidebar-img").src = imgsrc;
-                        document.getElementById("right-sidebar-type").innerHTML = type;
-                        $("#right-sidebar-width").attr("placeholder",width);
-                        $("#right-sidebar-height").attr("placeholder",height);
-                        $("#right-sidebar-top").attr("placeholder",top);
-                        $("#right-sidebar-left").attr("placeholder",left);
-                        $("#main-right-sidebar").addClass("visible");
-                        $("#main-right-sidebar-component").removeClass("visible");
-                    },
-                    stop: function(event, ui){
-                        $("#main-right-sidebar").addClass("visible");
-                        $("#main-right-sidebar-component").removeClass("visible");
-                    }
-                });
+        });
 
-                /* Click function */
-                $('.draggable').on('click', function(){
-                    if ($("#main-right-sidebar").hasClass("visible")){
-                        $("#main-right-sidebar").removeClass("visible");
-                        $("#main-right-sidebar-component").removeClass("visible");
-                    }else{
-                        var id = $(this).attr('id');
-                        var type = id.split("_")[1];
-                        var element = document.getElementById(id);
-                        var width = element.offsetWidth;
-                        var height = element.offsetHeight;
-                        var top = element.offsetTop;
-                        var left = element.offsetLeft;
-                        var imgsrc = document.getElementById(id+'header').src;
-                        document.getElementById("right-sidebar-img").src = imgsrc;
-                        document.getElementById("right-sidebar-type").innerHTML = type;
-                        $("#right-sidebar-width").attr("placeholder",width);
-                        $("#right-sidebar-height").attr("placeholder",height);
-                        $("#right-sidebar-top").attr("placeholder",top);
-                        $("#right-sidebar-left").attr("placeholder",left);
-                        $("#main-right-sidebar").toggleClass("visible");
-                        $("#main-right-sidebar-component").removeClass("visible");
-                        $(this).addClass("active-component").siblings().removeClass('active-component');
-                    }
-                });
+        /* Click function */
+        $('.draggable').on('click', function(){
+            if ($("#main-right-sidebar").hasClass("visible")){
+                $("#main-right-sidebar").removeClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            }else{
+                var id = $(this).attr('id');
+                var type = id.split("_")[1];
+                var element = document.getElementById(id);
+                var width = element.offsetWidth;
+                var height = element.offsetHeight;
+                var top = element.offsetTop;
+                var left = element.offsetLeft;
+                var imgsrc = document.getElementById(id+'header').src;
+                document.getElementById("right-sidebar-img").src = imgsrc;
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#main-right-sidebar").toggleClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+                $(this).addClass("active-component").siblings().removeClass('active-component');
             }
+        });
+    }
 
-        </script>
+</script>
 
-    </body>
+</body>
 </html>
