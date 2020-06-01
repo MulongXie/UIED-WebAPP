@@ -177,17 +177,24 @@ $(document).ready(function() {
                 hide_active_menu = function() {
                     $('.accordion-menu > li.open > .sub-menu').slideUp(submenu_animation_speed);
                     active_list_element.removeClass('open');
+                },
+
+                /*******/
+                hide_self = function () {
+                    sub_menu.slideUp(submenu_animation_speed);
+                    parent_list_el.removeClass('open')
                 };
             
             if((sub_menu.length)&&(!body.hasClass('page-sidebar-collapsed'))) {
                 
                 if(!parent_list_el.hasClass('open')) {
-                    if(active_list_element.length) {
-                        hide_active_menu();
-                    };
+                    // if(active_list_element.length) {
+                    //     hide_active_menu();
+                    // };
                     show_sub_menu();
                 } else {
-                    hide_sub_menu();
+                    // hide_sub_menu();
+                    hide_self();
                 };
                 
                 return false;
