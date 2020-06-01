@@ -2,15 +2,9 @@ $(document).ready(function() {
     
     "use strict";
     var img_dict = {};
-    var count_dict = {"img":0, "button":0, "input":0};
-    
-    var components_init = function(){
-        $(".components").click(function () {
-            $(this).addClass("active-page").siblings().removeClass('active-page');
-            $(".pic>ul").removeClass('on').eq($(this).attr('data-type')).addClass("on");
-            document.getElementById("name").innerHTML = $(this).text();
-        });
-    };
+    var classes = [];
+    var count_class = {};
+    var num_class = 0;
 
     var output_root = '../' + $('#resultPath').attr('data-value') + '/';
     // var output_root = '../data/outputs/uied/example2/';
@@ -28,12 +22,28 @@ $(document).ready(function() {
             for (let i = 0; i < result["compos"].length; i++) {
                 let c = result["compos"][i]["class"];
                 let idx = result["compos"][i]["id"];
+                if(c != 'Background'){
+                    var clip_path = clip_root + c + "/" +idx+ ".jpg";
+                }
+                else {
+                    var clip_path = clip_root+'bkg.jpg';
+                }
                 img_dict[c+idx] =result["compos"][i];
-                count_dict[c] ++;
 
-                let clip_path = clip_root + c + "/" +idx+ ".jpg";
+                /* add UI kits lists */
+                if(c in count_class){
+                    count_class[c] = 0;
+                    $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
+                }
+                else{
+                    $('#menu-uikits').append('<li class="components" data-type="'+ num_class + '"><a href="javascript:void(0)">' + c + '</a></li>')
+                    $('.pic').append('<ul id="' + c + '" class="list-group list-group-flush"></ul>');
+                    $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
+                    num_class ++;
+                    classes.push(c);
+                    count_class[c] ++;
+                }
 
-                $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'/></li>');
                 let height = result["compos"][i]["height"];
                 let width = result["compos"][i]["width"];
                 let x = result["compos"][i]["row_min"];
@@ -42,13 +52,7 @@ $(document).ready(function() {
                 html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y+'px; ">';
                 html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
                 // html += '		<a class="objects" data-toggle="tooltip" data-placement="top" title="'+c+': '+width+'x'+height+'">';
-
-                if(c == 'background'){
-                    html += '			<img class="image" src="'+clip_root+'bkg.jpg" id="'+id+'header">';
-                }
-                else{
-                    html += '			<img class="image" src="'+clip_root+c+'/'+idx+'.jpg" id="'+id+'header">';
-                }
+                html += '			<img class="image" src="'+ clip_path + '" id="'+id+'header">';
                 // html += '		</a>';
                 html += '   </div>';
                 html += '</div>';
@@ -56,7 +60,40 @@ $(document).ready(function() {
             $(".box").append(html);
         });
     };
-    
+
+    /* sidebar components collection kit */
+    var components_init = function(){
+        $("#menu-uikits").eq(0).addClass('active-page');
+        $(".pic>ul").eq(0).addClass("on");
+        $("#name").text(classes[0]);
+
+        $(".components").click(function () {
+            $(this).addClass("active-page").siblings().removeClass('active-page');
+            $(".pic>ul").removeClass('on').eq($(this).attr('data-type')).addClass("on");
+            document.getElementById("name").innerHTML = $(this).text();
+        });
+    };
+
+    /* component image click function */
+    var component_img_init = function(){
+        $(".pic li img").click(function(){
+            var imgsrc = $(this).attr('src');
+            var img_info = img_dict[imgsrc.split('/')[2]+imgsrc.split('/')[3].split('.')[0]];
+            var c = img_info["class"];
+            var height = img_info["height"];
+            var width = img_info["width"];
+            document.getElementById("right-sidebar-img-component").src = imgsrc;
+            document.getElementById("right-sidebar-type-component").innerHTML = c;
+            $("#right-sidebar-width-component").attr("placeholder",width);
+            $("#right-sidebar-height-component").attr("placeholder",height);
+            $("#right-sidebar-top-component").attr("placeholder",0);
+            $("#right-sidebar-left-component").attr("placeholder",0);
+            $("#main-right-sidebar").removeClass("visible");
+            $("#main-right-sidebar-component").addClass("visible");
+        });
+    };
+
+
     /* allow tooltip */
 	$(function () {
 		$('[data-toggle="tooltip"]').tooltip();
@@ -126,25 +163,6 @@ $(document).ready(function() {
         });
     };
 
-    /* component image click function */
-    var component_img_init = function(){
-        $(".pic li img").click(function(){
-            var imgsrc = $(this).attr('src');
-            var img_info = img_dict[imgsrc.split('/')[2]+imgsrc.split('/')[3].split('.')[0]];
-            var c = img_info["class"];
-            var height = img_info["height"];
-            var width = img_info["width"];
-            document.getElementById("right-sidebar-img-component").src = imgsrc;
-            document.getElementById("right-sidebar-type-component").innerHTML = c;
-            $("#right-sidebar-width-component").attr("placeholder",width);
-            $("#right-sidebar-height-component").attr("placeholder",height);
-            $("#right-sidebar-top-component").attr("placeholder",0);
-            $("#right-sidebar-left-component").attr("placeholder",0);
-            $("#main-right-sidebar").removeClass("visible");
-            $("#main-right-sidebar-component").addClass("visible");
-        });
-    };
-
     /* add image click function */
     // var add_img_init = function(){
     //     $("#add").click(function(){
@@ -196,8 +214,8 @@ $(document).ready(function() {
     //     });
     // };
 
-    components_init()
     canvas_init()
+    components_init()
     sidebar_init()
     return_init()
     delete_init()
