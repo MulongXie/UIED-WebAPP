@@ -66,7 +66,7 @@ def compo_detection(input_img_path, output_root,
     # *** Step 4 *** results refinement: remove top and bottom compos -> merge words into line
     uicompos = det.rm_top_or_bottom_corners(uicompos, org.shape)
     uicompos = det.merge_text(uicompos, org.shape)
-    Compo.compos_update(uicompos)
+    Compo.compos_update(uicompos, org.shape)
     Compo.compos_containment(uicompos)
     file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
     # uicompos = det.merge_intersected_corner(uicompos, org.shape)

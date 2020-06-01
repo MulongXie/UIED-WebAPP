@@ -1,6 +1,6 @@
 $(document).ready(function() {
-    
-    "use strict";
+
+    var scale = 0.6;
     var img_dict = {};
     var classes = [];
     var count_class = {};
@@ -16,9 +16,21 @@ $(document).ready(function() {
         $.ajaxSettings.async = false;
         $.getJSON(output_root + 'compo.json',function(result){
             let html = "";
-            /* background image */
-            // html += '<div id="bg"><img src="'+clip_root+'bkg.jpg"></div>';
-            /* elements */
+
+            console.log($(window).height());
+            console.log(result['compos'][0]['width']*scale);
+            console.log(result['compos'][0]['height']*scale);
+            console.log($('.box').offset());
+            let offset_top = 0;
+            let offset_left = 0;
+            if (result['compos'][0]['class'] == 'Background'){
+                offset_top = Math.round(($(window).height() - result['compos'][0]['height']*scale - $('#board').offset()['top'])/2);
+                offset_left = Math.round(($('#board').width() - result['compos'][0]['width']*scale - $('#board').offset()['left'])/2);
+                // offset_left = Math.round(($('#board').width() - 270 - $('#board').offset()['left'])/2);
+            }
+
+
+            /* get detection results */
             for (let i = 0; i < result["compos"].length; i++) {
                 let c = result["compos"][i]["class"];
                 let idx = result["compos"][i]["id"];
@@ -44,12 +56,18 @@ $(document).ready(function() {
                     count_class[c] ++;
                 }
 
+                /* add image on sketch board */
                 let height = result["compos"][i]["height"];
                 let width = result["compos"][i]["width"];
                 let x = result["compos"][i]["row_min"];
                 let y = result["compos"][i]["column_min"];
                 let id = 'draggable_'+c+'_'+idx;
-                html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y+'px; ">';
+
+                // alert($(window).height() - height)
+
+                x += offset_top;
+                y += offset_left;
+                html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y +'px; ">';
                 html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
                 // html += '		<a class="objects" data-toggle="tooltip" data-placement="top" title="'+c+': '+width+'x'+height+'">';
                 html += '			<img class="image" src="'+ clip_path + '" id="'+id+'header">';

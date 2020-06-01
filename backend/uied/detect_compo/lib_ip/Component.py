@@ -19,10 +19,10 @@ def compos_containment(compos):
                 compos[i].contain.append(j)
 
 
-def compos_update(compos):
+def compos_update(compos, org_shape):
     for i, compo in enumerate(compos):
         # start from 1, id 0 is background
-        compo.compo_update(i + 1)
+        compo.compo_update(i + 1, org_shape)
 
 
 class Component:
@@ -45,8 +45,9 @@ class Component:
         self.rect_ = None
         self.line_ = None
 
-    def compo_update(self, id):
+    def compo_update(self, id, org_shape):
         self.id = id
+        self.image_shape = org_shape
         self.width = self.bbox.width
         self.height = self.bbox.height
         self.bbox_area = self.bbox.box_area

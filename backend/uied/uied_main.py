@@ -34,3 +34,6 @@ def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=False, is_mer
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
         merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=True,
                           write_img=True)
+
+
+# uied('data/5.jpg', 'data')
