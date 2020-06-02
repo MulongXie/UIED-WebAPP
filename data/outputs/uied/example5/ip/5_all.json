@@ -1,114 +1,114 @@
 {
     "compos": [
         {
-            "height": 800,
-            "class": "Background",
             "row_min": 0,
             "width": 450,
-            "column_max": 450,
             "id": 0,
             "row_max": 800,
-            "column_min": 0
+            "class": "Background",
+            "column_min": 0,
+            "column_max": 450,
+            "height": 800
         },
         {
-            "height": 20,
-            "column_max": 46,
             "row_min": 47,
             "width": 27,
-            "row_max": 67,
             "id": 1,
+            "row_max": 67,
+            "class": "Compo",
             "column_min": 19,
-            "class": "Compo"
+            "column_max": 46,
+            "height": 20
         },
         {
-            "height": 21,
-            "column_max": 319,
             "row_min": 46,
             "width": 193,
-            "row_max": 67,
             "id": 2,
+            "row_max": 67,
+            "class": "Compo",
             "column_min": 126,
-            "class": "Compo"
+            "column_max": 319,
+            "height": 21
         },
         {
-            "height": 20,
-            "column_max": 306,
             "row_min": 320,
             "width": 167,
-            "row_max": 340,
             "id": 3,
+            "row_max": 340,
+            "class": "Compo",
             "column_min": 139,
-            "class": "Compo"
+            "column_max": 306,
+            "height": 20
         },
         {
-            "height": 40,
-            "column_max": 366,
             "row_min": 367,
             "width": 281,
-            "row_max": 407,
             "id": 4,
+            "row_max": 407,
+            "class": "Compo",
             "column_min": 85,
-            "class": "Compo"
+            "column_max": 366,
+            "height": 40
         },
         {
-            "height": 27,
-            "column_max": 273,
             "row_min": 427,
             "width": 94,
-            "row_max": 454,
             "id": 5,
+            "row_max": 454,
+            "class": "Compo",
             "column_min": 179,
-            "class": "Compo"
+            "column_max": 273,
+            "height": 27
         },
         {
-            "height": 20,
-            "column_max": 366,
             "row_min": 680,
             "width": 286,
-            "row_max": 700,
             "id": 6,
+            "row_max": 700,
+            "class": "Compo",
             "column_min": 80,
-            "class": "Compo"
+            "column_max": 366,
+            "height": 20
         },
         {
-            "height": 69,
-            "column_max": 260,
             "row_min": 217,
             "width": 69,
-            "row_max": 286,
             "id": 7,
+            "row_max": 286,
+            "class": "Block",
             "column_min": 191,
-            "class": "Block"
+            "column_max": 260,
+            "height": 69
         },
         {
-            "height": 60,
-            "column_max": 259,
             "row_min": 220,
             "width": 66,
-            "row_max": 280,
             "id": 8,
+            "row_max": 280,
+            "class": "Compo",
             "column_min": 193,
-            "class": "Compo"
+            "column_max": 259,
+            "height": 60
         },
         {
-            "height": 40,
-            "column_max": 333,
             "row_min": 600,
             "width": 217,
-            "row_max": 640,
             "id": 9,
+            "row_max": 640,
+            "class": "Block",
             "column_min": 116,
-            "class": "Block"
+            "column_max": 333,
+            "height": 40
         },
         {
-            "height": 14,
-            "column_max": 259,
             "row_min": 613,
             "width": 67,
-            "row_max": 627,
             "id": 10,
+            "row_max": 627,
+            "class": "Compo",
             "column_min": 192,
-            "class": "Compo"
+            "column_max": 259,
+            "height": 14
         }
     ]
 }

@@ -3,6 +3,89 @@ $(document).ready(function () {
     set_draggable();
 });
 
+
+function drag_and_click(s){
+    var click = {x: 0,y: 0}
+    $('.draggable').draggable({
+        cursor: "move",
+        start: function(event) {
+            click.x = event.clientX;
+            click.y = event.clientY;
+            var id = $(this).attr('id');
+            var type = id.split("_")[1];
+            var element = document.getElementById(id);
+            var width = element.offsetWidth;
+            var height = element.offsetHeight;
+            var top = element.offsetTop;
+            var left = element.offsetLeft;
+            var imgsrc = document.getElementById(id+'header').src;
+            document.getElementById("right-sidebar-img").src = imgsrc;
+            document.getElementById("right-sidebar-type").innerHTML = type;
+            $("#right-sidebar-width").attr("placeholder",width);
+            $("#right-sidebar-height").attr("placeholder",height);
+            $("#right-sidebar-top").attr("placeholder",top);
+            $("#right-sidebar-left").attr("placeholder",left);
+            $("#main-right-sidebar").addClass("visible");
+            $("#main-right-sidebar-component").removeClass("visible");
+            $(this).addClass("active-component").siblings().removeClass('active-component');
+        },
+        drag: function(event, ui) {
+            var zoom = s;
+            var original = ui.originalPosition;
+            ui.position = {
+                left: (event.clientX - click.x + original.left) / zoom,
+                top:  (event.clientY - click.y + original.top ) / zoom
+            };
+            var id = $(this).attr('id');
+            var type = id.split("_")[1];
+            var element = document.getElementById(id);
+            var width = element.offsetWidth;
+            var height = element.offsetHeight;
+            var top = element.offsetTop;
+            var left = element.offsetLeft;
+            var imgsrc = document.getElementById(id+'header').src;
+            document.getElementById("right-sidebar-img").src = imgsrc;
+            document.getElementById("right-sidebar-type").innerHTML = type;
+            $("#right-sidebar-width").attr("placeholder",width);
+            $("#right-sidebar-height").attr("placeholder",height);
+            $("#right-sidebar-top").attr("placeholder",top);
+            $("#right-sidebar-left").attr("placeholder",left);
+            $("#main-right-sidebar").addClass("visible");
+            $("#main-right-sidebar-component").removeClass("visible");
+        },
+        stop: function(event, ui){
+            $("#main-right-sidebar").addClass("visible");
+            $("#main-right-sidebar-component").removeClass("visible");
+        }
+    });
+
+    /* Click function */
+    $('.draggable').on('click', function(){
+        if ($("#main-right-sidebar").hasClass("visible")){
+            $("#main-right-sidebar").removeClass("visible");
+            $("#main-right-sidebar-component").removeClass("visible");
+        }else{
+            var id = $(this).attr('id');
+            var type = id.split("_")[1];
+            var element = document.getElementById(id);
+            var width = element.offsetWidth;
+            var height = element.offsetHeight;
+            var top = element.offsetTop;
+            var left = element.offsetLeft;
+            var imgsrc = document.getElementById(id+'header').src;
+            document.getElementById("right-sidebar-img").src = imgsrc;
+            document.getElementById("right-sidebar-type").innerHTML = type;
+            $("#right-sidebar-width").attr("placeholder",width);
+            $("#right-sidebar-height").attr("placeholder",height);
+            $("#right-sidebar-top").attr("placeholder",top);
+            $("#right-sidebar-left").attr("placeholder",left);
+            $("#main-right-sidebar").toggleClass("visible");
+            $("#main-right-sidebar-component").removeClass("visible");
+            $(this).addClass("active-component").siblings().removeClass('active-component');
+        }
+    });
+}
+
 function dashboard_init(output_root=null) {
 
     var scale = 0.6;
@@ -24,10 +107,7 @@ function dashboard_init(output_root=null) {
         $.getJSON(output_root + 'compo.json',function(result){
             let html = "";
 
-            console.log($(window).height());
-            console.log(result['compos'][0]['width']*scale);
-            console.log(result['compos'][0]['height']*scale);
-            console.log($('.box').offset());
+            /* put components on the center of dashboard */
             let offset_top = 0;
             let offset_left = 0;
             if (result['compos'][0]['class'] == 'Background'){
@@ -35,7 +115,6 @@ function dashboard_init(output_root=null) {
                 offset_left = Math.round(($('#board').width() - result['compos'][0]['width']*scale - $('#board').offset()['left'])/2);
                 // offset_left = Math.round(($('#board').width() - 270 - $('#board').offset()['left'])/2);
             }
-
 
             /* get detection results */
             for (let i = 0; i < result["compos"].length; i++) {
@@ -51,16 +130,16 @@ function dashboard_init(output_root=null) {
 
                 /* add UI kits lists */
                 if(c in count_class){
-                    count_class[c] = 0;
                     $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
+                    count_class[c] ++;
                 }
                 else{
-                    $('#menu-uikits').append('<li class="components" data-type="'+ num_class + '"><a href="javascript:void(0)">' + c + '</a></li>')
+                    $('#menu-uikits').append('<li class="components" data-type="'+ num_class + '"><a href="javascript:void(0)">' + c + '</a></li>');
                     $('.pic').append('<ul id="' + c + '" class="list-group list-group-flush"></ul>');
                     $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
                     num_class ++;
                     classes.push(c);
-                    count_class[c] ++;
+                    count_class[c] = 0;
                 }
 
                 /* add image on sketch board */
@@ -68,9 +147,7 @@ function dashboard_init(output_root=null) {
                 let width = result["compos"][i]["width"];
                 let x = result["compos"][i]["row_min"];
                 let y = result["compos"][i]["column_min"];
-                let id = 'draggable_'+c+'_'+idx;
-
-                // alert($(window).height() - height)
+                let id = 'draggable_'+c+'_'+count_class[c];
 
                 x += offset_top;
                 y += offset_left;
@@ -103,7 +180,17 @@ function dashboard_init(output_root=null) {
     var component_img_init = function(){
         $(".pic li img").click(function(){
             var imgsrc = $(this).attr('src');
-            var img_info = img_dict[imgsrc.split('/')[2]+imgsrc.split('/')[3].split('.')[0]];
+            var imgsrc_split = imgsrc.split('/');
+
+            if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
+                var img_info = img_dict['Background0'];
+                $('#add').hide();
+            }
+            else{
+                var img_info = img_dict[imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]];
+                $('#add').show();
+            }
+
             var c = img_info["class"];
             var height = img_info["height"];
             var width = img_info["width"];
@@ -117,7 +204,6 @@ function dashboard_init(output_root=null) {
             $("#main-right-sidebar-component").addClass("visible");
         });
     };
-
 
     /* allow tooltip */
     $(function () {
@@ -189,64 +275,68 @@ function dashboard_init(output_root=null) {
     };
 
     /* add image click function */
-    // var add_img_init = function(){
-    //     $("#add").click(function(){
-    //         var type = $('#right-sidebar-type-component').text();
-    //         var width = $('#right-sidebar-width-component').val();
-    //         var height = $('#right-sidebar-height-component').val();
-    //         var top = $('#right-sidebar-top-component').val();
-    //         var left = $('#right-sidebar-left-component').val();
-    //         if (width == ""){width = $('#right-sidebar-width-component').attr("placeholder");}
-    //         if (height == ""){height = $('#right-sidebar-height-component').attr("placeholder");}
-    //         if (top == ""){top = $('#right-sidebar-top-component').attr("placeholder");}
-    //         if (left == ""){left = $('#right-sidebar-left-component').attr("placeholder");}
-    //         $("#right-sidebar-width").val("");
-    //         $("#right-sidebar-height").val("");
-    //         $("#right-sidebar-top").val("");
-    //         $("#right-sidebar-left").val("");
-    //         $("#right-sidebar-width").attr("placeholder",width);
-    //         $("#right-sidebar-height").attr("placeholder",height);
-    //         $("#right-sidebar-top").attr("placeholder",top);
-    //         $("#right-sidebar-left").attr("placeholder",left);
-    //         document.getElementById("right-sidebar-type").innerHTML = type;
-    //         document.getElementById("right-sidebar-img").src = document.getElementById("right-sidebar-img-component").src;
-    //         $("#main-right-sidebar").addClass("visible");
-    //         $("#main-right-sidebar-component").removeClass("visible");
-    //
-    //         count_dict[type] ++;
-    //         let id = 'draggable_'+type+'_'+count_dict[type];
-    //         let html = "";
-    //         html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
-    //         html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
-    //         html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
-    //         html += '   </div>'
-    // 	html += '</div>'
-    //         $(".box").append(html);
-    //
-    //         $('#'+id).addClass("active-component").siblings().removeClass('active-component');
-    //         drag_and_click(scale);
-    //
-    //         img_dict[type+count_dict[type]] = {
-    //             "column_min": 0,
-    //             "id": count_dict[type],
-    //             "height": height,
-    //             "width": width,
-    //             "column_max": 0,
-    //             "row_max": 0,
-    //             "row_min": 0,
-    //             "class": type,
-    //         };
-    //     });
-    // };
+    var add_img_init = function(){
+        $("#add").click(function(){
+            var type = $('#right-sidebar-type-component').text();
+            var width = $('#right-sidebar-width-component').val();
+            var height = $('#right-sidebar-height-component').val();
+            var top = $('#right-sidebar-top-component').val();
+            var left = $('#right-sidebar-left-component').val();
+            if (width == ""){width = $('#right-sidebar-width-component').attr("placeholder");}
+            if (height == ""){height = $('#right-sidebar-height-component').attr("placeholder");}
+            if (top == ""){top = $('#right-sidebar-top-component').attr("placeholder");}
+            if (left == ""){left = $('#right-sidebar-left-component').attr("placeholder");}
+            $("#right-sidebar-width").val("");
+            $("#right-sidebar-height").val("");
+            $("#right-sidebar-top").val("");
+            $("#right-sidebar-left").val("");
+            $("#right-sidebar-width").attr("placeholder",width);
+            $("#right-sidebar-height").attr("placeholder",height);
+            $("#right-sidebar-top").attr("placeholder",top);
+            $("#right-sidebar-left").attr("placeholder",left);
+            document.getElementById("right-sidebar-type").innerHTML = type;
+            document.getElementById("right-sidebar-img").src = document.getElementById("right-sidebar-img-component").src;
+            $("#main-right-sidebar").addClass("visible");
+            $("#main-right-sidebar-component").removeClass("visible");
 
-    canvas_init()
-    components_init()
-    sidebar_init()
-    return_init()
-    delete_init()
-    apply_init()
-    component_img_init()
-    // add_img_init()
+            count_class[type] ++;
+
+            console.log(count_class);
+            console.log(count_class[type]);
+
+            let id = 'draggable_'+type+'_'+count_class[type];
+            let html = "";
+            html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
+            html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
+            html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
+            html += '   </div>';
+    	    html += '</div>';
+            $(".box").append(html);
+
+            $('#'+id).addClass("active-component").siblings().removeClass('active-component');
+            drag_and_click(scale);
+
+            img_dict[type+count_class[type]] = {
+                "column_min": 0,
+                "id": count_class[type],
+                "height": height,
+                "width": width,
+                "column_max": 0,
+                "row_max": 0,
+                "row_min": 0,
+                "class": type,
+            };
+        });
+    };
+
+    canvas_init();
+    components_init();
+    sidebar_init();
+    return_init();
+    delete_init();
+    apply_init();
+    component_img_init();
+    add_img_init();
 
 }
 
@@ -280,87 +370,7 @@ function set_draggable(){
     function resize(scale){
         document.getElementsByClassName("box")[0].style.transform = "scale("+scale+")"
     }
-    function drag_and_click(s){
-        var click = {x: 0,y: 0}
-        $('.draggable').draggable({
-            cursor: "move",
-            start: function(event) {
-                click.x = event.clientX;
-                click.y = event.clientY;
-                var id = $(this).attr('id');
-                var type = id.split("_")[1];
-                var element = document.getElementById(id);
-                var width = element.offsetWidth;
-                var height = element.offsetHeight;
-                var top = element.offsetTop;
-                var left = element.offsetLeft;
-                var imgsrc = document.getElementById(id+'header').src;
-                document.getElementById("right-sidebar-img").src = imgsrc;
-                document.getElementById("right-sidebar-type").innerHTML = type;
-                $("#right-sidebar-width").attr("placeholder",width);
-                $("#right-sidebar-height").attr("placeholder",height);
-                $("#right-sidebar-top").attr("placeholder",top);
-                $("#right-sidebar-left").attr("placeholder",left);
-                $("#main-right-sidebar").addClass("visible");
-                $("#main-right-sidebar-component").removeClass("visible");
-                $(this).addClass("active-component").siblings().removeClass('active-component');
-            },
-            drag: function(event, ui) {
-                var zoom = s;
-                var original = ui.originalPosition;
-                ui.position = {
-                    left: (event.clientX - click.x + original.left) / zoom,
-                    top:  (event.clientY - click.y + original.top ) / zoom
-                };
-                var id = $(this).attr('id');
-                var type = id.split("_")[1];
-                var element = document.getElementById(id);
-                var width = element.offsetWidth;
-                var height = element.offsetHeight;
-                var top = element.offsetTop;
-                var left = element.offsetLeft;
-                var imgsrc = document.getElementById(id+'header').src;
-                document.getElementById("right-sidebar-img").src = imgsrc;
-                document.getElementById("right-sidebar-type").innerHTML = type;
-                $("#right-sidebar-width").attr("placeholder",width);
-                $("#right-sidebar-height").attr("placeholder",height);
-                $("#right-sidebar-top").attr("placeholder",top);
-                $("#right-sidebar-left").attr("placeholder",left);
-                $("#main-right-sidebar").addClass("visible");
-                $("#main-right-sidebar-component").removeClass("visible");
-            },
-            stop: function(event, ui){
-                $("#main-right-sidebar").addClass("visible");
-                $("#main-right-sidebar-component").removeClass("visible");
-            }
-        });
 
-        /* Click function */
-        $('.draggable').on('click', function(){
-            if ($("#main-right-sidebar").hasClass("visible")){
-                $("#main-right-sidebar").removeClass("visible");
-                $("#main-right-sidebar-component").removeClass("visible");
-            }else{
-                var id = $(this).attr('id');
-                var type = id.split("_")[1];
-                var element = document.getElementById(id);
-                var width = element.offsetWidth;
-                var height = element.offsetHeight;
-                var top = element.offsetTop;
-                var left = element.offsetLeft;
-                var imgsrc = document.getElementById(id+'header').src;
-                document.getElementById("right-sidebar-img").src = imgsrc;
-                document.getElementById("right-sidebar-type").innerHTML = type;
-                $("#right-sidebar-width").attr("placeholder",width);
-                $("#right-sidebar-height").attr("placeholder",height);
-                $("#right-sidebar-top").attr("placeholder",top);
-                $("#right-sidebar-left").attr("placeholder",left);
-                $("#main-right-sidebar").toggleClass("visible");
-                $("#main-right-sidebar-component").removeClass("visible");
-                $(this).addClass("active-component").siblings().removeClass('active-component');
-            }
-        });
-    }
 }
 
 /* show UI kits */
