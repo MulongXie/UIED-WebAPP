@@ -61,6 +61,14 @@
     width: 85%;
 }
 
+.my-preview-img-active{
+    border: 2px lightblue solid;
+}
+
+.my-preview-active{
+    background: rgba(51, 122, 183, 0.5);
+}
+
 .page-sidebar{
     height: 100vh;
     overflow-y: auto;

@@ -1,4 +1,9 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    dashboard_init();
+    set_draggable();
+});
+
+function dashboard_init(output_root=null) {
 
     var scale = 0.6;
     var img_dict = {};
@@ -6,7 +11,9 @@ $(document).ready(function() {
     var count_class = {};
     var num_class = 0;
 
-    var output_root = '../' + $('#resultPath').attr('data-value') + '/';
+    if(output_root == null){
+        output_root = '../' + $('#resultPath').attr('data-value') + '/';
+    }
     // var output_root = '../data/outputs/uied/example2/';
     var clip_root = output_root + 'clips/';
     console.log(output_root);
@@ -74,7 +81,7 @@ $(document).ready(function() {
                 // html += '		</a>';
                 html += '   </div>';
                 html += '</div>';
-            } 
+            }
             $(".box").append(html);
         });
     };
@@ -113,8 +120,8 @@ $(document).ready(function() {
 
 
     /* allow tooltip */
-	$(function () {
-		$('[data-toggle="tooltip"]').tooltip();
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
     });
 
     /* right sidebar close click function */
@@ -130,9 +137,9 @@ $(document).ready(function() {
         $("#return").click(function () {
             var id = document.getElementsByClassName("active-component")[0].getAttribute("id");
             var img_info = img_dict[id.split('_')[1]+id.split('_')[2]];
-			var height = img_info["height"];
-			var width = img_info["width"];
-			var top = img_info["row_min"];
+            var height = img_info["height"];
+            var width = img_info["width"];
+            var top = img_info["row_min"];
             var left = img_info["column_min"];
             $("#right-sidebar-width").attr("placeholder",width);
             $("#right-sidebar-height").attr("placeholder",height);
@@ -213,7 +220,7 @@ $(document).ready(function() {
     //         html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
     //         html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
     //         html += '   </div>'
-		// 	html += '</div>'
+    // 	html += '</div>'
     //         $(".box").append(html);
     //
     //         $('#'+id).addClass("active-component").siblings().removeClass('active-component');
@@ -240,13 +247,145 @@ $(document).ready(function() {
     apply_init()
     component_img_init()
     // add_img_init()
-    
-});
 
+}
 
+function set_draggable(){
+
+    var scale = 0.6;
+    // Scale
+    resize(scale);
+    // Draggable and Clickable
+    drag_and_click(scale);
+    // attach keyDown event
+    document.addEventListener("keydown", keyDownHandler, false);
+
+    function keyDownHandler(e) {
+        var keyCode = e.keyCode;
+        var myNode = document.getElementsByClassName("active1");
+        // if DELETE or BACKSPACE
+        if (keyCode == 8 || keyCode == 46) {
+            document.getElementsByClassName("box")[0].removeChild(document.getElementsByClassName("active-component")[0]);
+            $("#main-right-sidebar").removeClass("visible");
+        }else if (keyCode == 187){
+            scale += 0.1;
+            resize(scale);
+            drag_and_click(scale)
+        }else if (keyCode == 189){
+            scale -= 0.1;
+            resize(scale);
+            drag_and_click(scale)
+        };
+    };
+    function resize(scale){
+        document.getElementsByClassName("box")[0].style.transform = "scale("+scale+")"
+    }
+    function drag_and_click(s){
+        var click = {x: 0,y: 0}
+        $('.draggable').draggable({
+            cursor: "move",
+            start: function(event) {
+                click.x = event.clientX;
+                click.y = event.clientY;
+                var id = $(this).attr('id');
+                var type = id.split("_")[1];
+                var element = document.getElementById(id);
+                var width = element.offsetWidth;
+                var height = element.offsetHeight;
+                var top = element.offsetTop;
+                var left = element.offsetLeft;
+                var imgsrc = document.getElementById(id+'header').src;
+                document.getElementById("right-sidebar-img").src = imgsrc;
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+                $(this).addClass("active-component").siblings().removeClass('active-component');
+            },
+            drag: function(event, ui) {
+                var zoom = s;
+                var original = ui.originalPosition;
+                ui.position = {
+                    left: (event.clientX - click.x + original.left) / zoom,
+                    top:  (event.clientY - click.y + original.top ) / zoom
+                };
+                var id = $(this).attr('id');
+                var type = id.split("_")[1];
+                var element = document.getElementById(id);
+                var width = element.offsetWidth;
+                var height = element.offsetHeight;
+                var top = element.offsetTop;
+                var left = element.offsetLeft;
+                var imgsrc = document.getElementById(id+'header').src;
+                document.getElementById("right-sidebar-img").src = imgsrc;
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            },
+            stop: function(event, ui){
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            }
+        });
+
+        /* Click function */
+        $('.draggable').on('click', function(){
+            if ($("#main-right-sidebar").hasClass("visible")){
+                $("#main-right-sidebar").removeClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            }else{
+                var id = $(this).attr('id');
+                var type = id.split("_")[1];
+                var element = document.getElementById(id);
+                var width = element.offsetWidth;
+                var height = element.offsetHeight;
+                var top = element.offsetTop;
+                var left = element.offsetLeft;
+                var imgsrc = document.getElementById(id+'header').src;
+                document.getElementById("right-sidebar-img").src = imgsrc;
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#main-right-sidebar").toggleClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+                $(this).addClass("active-component").siblings().removeClass('active-component');
+            }
+        });
+    }
+}
+
+/* show UI kits */
 $('#uikits_sidebar').click(function () {
     let kits = $('#show_kits');
     kits.animate({
         width: 'toggle'
     });
+});
+
+/* actions of Model previews */
+$('.my-preview').hover(function () {
+    $(this).css('background', 'rgba(51, 122, 183, 0.3)');
+    $(this).children('img').css('border', '2px lightblue solid');
+}, function () {
+    $(this).css('background', '');
+    $(this).children('img').css('border', '');
+});
+
+$('.my-preview').click(function () {
+    $('.my-preview-active').removeClass('my-preview-active');
+    $(this).addClass('my-preview-active');
+    $(this).children('img').addClass('my-preview-img-active');
+
+    $('.box').html('');
+    dashboard_init('../data/outputs/uied/example2/');
+    set_draggable();
 });
