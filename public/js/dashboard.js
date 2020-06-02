@@ -93,6 +93,7 @@ function dashboard_init(output_root=null) {
     var classes = [];
     var count_class = {};
     var num_class = 0;
+    var index_global = 0;
 
     if(output_root == null){
         output_root = '../' + $('#resultPath').attr('data-value') + '/';
@@ -118,6 +119,7 @@ function dashboard_init(output_root=null) {
 
             /* get detection results */
             for (let i = 0; i < result["compos"].length; i++) {
+                index_global ++;
                 let c = result["compos"][i]["class"];
                 let idx = result["compos"][i]["id"];
                 if(c != 'Background'){
@@ -126,7 +128,6 @@ function dashboard_init(output_root=null) {
                 else {
                     var clip_path = clip_root+'bkg.jpg';
                 }
-                img_dict[c+idx] =result["compos"][i];
 
                 /* add UI kits lists */
                 if(c in count_class){
@@ -141,10 +142,9 @@ function dashboard_init(output_root=null) {
                     classes.push(c);
                     count_class[c] = 0;
                 }
+                img_dict[c+count_class[c]] =result["compos"][i];
 
                 /* add image on sketch board */
-                let height = result["compos"][i]["height"];
-                let width = result["compos"][i]["width"];
                 let x = result["compos"][i]["row_min"];
                 let y = result["compos"][i]["column_min"];
                 let id = 'draggable_'+c+'_'+count_class[c];
@@ -181,6 +181,9 @@ function dashboard_init(output_root=null) {
         $(".pic li img").click(function(){
             var imgsrc = $(this).attr('src');
             var imgsrc_split = imgsrc.split('/');
+
+            console.log(img_dict);
+            console.log(imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]);
 
             if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
                 var img_info = img_dict['Background0'];
@@ -277,15 +280,11 @@ function dashboard_init(output_root=null) {
     /* add image click function */
     var add_img_init = function(){
         $("#add").click(function(){
-            var type = $('#right-sidebar-type-component').text();
-            var width = $('#right-sidebar-width-component').val();
-            var height = $('#right-sidebar-height-component').val();
-            var top = $('#right-sidebar-top-component').val();
-            var left = $('#right-sidebar-left-component').val();
-            if (width == ""){width = $('#right-sidebar-width-component').attr("placeholder");}
-            if (height == ""){height = $('#right-sidebar-height-component').attr("placeholder");}
-            if (top == ""){top = $('#right-sidebar-top-component').attr("placeholder");}
-            if (left == ""){left = $('#right-sidebar-left-component').attr("placeholder");}
+            let type = $('#right-sidebar-type-component').text();
+            let width = $('#right-sidebar-width-component').attr("placeholder");
+            let height = $('#right-sidebar-height-component').attr("placeholder");
+            let top = $('#right-sidebar-top-component').attr("placeholder");
+            let left = $('#right-sidebar-left-component').attr("placeholder");
             $("#right-sidebar-width").val("");
             $("#right-sidebar-height").val("");
             $("#right-sidebar-top").val("");
@@ -301,9 +300,6 @@ function dashboard_init(output_root=null) {
 
             count_class[type] ++;
 
-            console.log(count_class);
-            console.log(count_class[type]);
-
             let id = 'draggable_'+type+'_'+count_class[type];
             let html = "";
             html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
@@ -318,7 +314,7 @@ function dashboard_init(output_root=null) {
 
             img_dict[type+count_class[type]] = {
                 "column_min": 0,
-                "id": count_class[type],
+                "id": index_global,
                 "height": height,
                 "width": width,
                 "column_max": 0,
@@ -326,6 +322,7 @@ function dashboard_init(output_root=null) {
                 "row_min": 0,
                 "class": type,
             };
+            index_global ++;
         });
     };
 
