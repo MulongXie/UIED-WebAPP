@@ -3,9 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example4/compo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/clips/bkg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/ip/5_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/ip/5_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/ip/5_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/ip/5_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/ip_segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/ip_segment.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/clips/bkg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_block.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,12 +28,12 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.44415173">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+                <state relative-caret-position="221">
+                  <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -34,7 +41,7 @@
           <file leaf-file-name="ecaps.min.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/css/ecaps.min.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
+                <state relative-caret-position="697">
                   <caret column="41992" selection-start-column="41992" selection-end-column="41992" />
                 </state>
               </provider>
@@ -43,21 +50,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="578">
-                  <caret line="55" column="88" selection-start-line="55" selection-start-column="88" selection-end-line="55" selection-end-column="88" />
+                <state relative-caret-position="298">
+                  <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
                   <folding>
                     <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="e#7530#7976#0" />
-                    <element signature="e#9355#9410#0" />
-                    <element signature="e#9492#9697#0" />
-                    <element signature="e#9764#10632#0" />
-                    <element signature="e#10699#11014#0" />
-                    <element signature="e#11079#12440#0" />
-                    <element signature="e#12511#15209#0" />
                     <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
                   </folding>
@@ -68,7 +68,7 @@
           <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="313">
+                <state relative-caret-position="340">
                   <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
                 </state>
               </provider>
@@ -90,7 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>s</find>
       <find>sub-menu</find>
       <find>show_k</find>
       <find>components</find>
@@ -120,6 +119,7 @@
       <find>icon-home4</find>
       <find>drag_and_click</find>
       <find>menu-uikits</find>
+      <find>bkg</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -265,7 +265,7 @@
       <path value="$PROJECT_DIR$/node_modules/xtend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -312,7 +312,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Web_Presentation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -431,23 +431,23 @@
       <workItem from="1590648834407" duration="2285000" />
       <workItem from="1590958694029" duration="4148000" />
       <workItem from="1590966144803" duration="31253000" />
-      <workItem from="1591046406955" duration="24044000" />
+      <workItem from="1591046406955" duration="24867000" />
+      <workItem from="1591092712323" duration="1344000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188654000" />
+    <option name="totallyTimeSpent" value="190821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.23709168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10484721" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32461873" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32461873" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -465,21 +465,21 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23709168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32461873" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
-      <window_info anchor="bottom" id="Python Console" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32893288" />
+      <window_info anchor="bottom" id="Python Console" order="9" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -672,17 +672,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.html" />
     <entry file="file://$PROJECT_DIR$/data/outputs/uied/example3/compo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -724,38 +714,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/css/ecaps.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
+        <state relative-caret-position="697">
           <caret column="41992" selection-start-column="41992" selection-end-column="41992" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="340">
           <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="7" lean-forward="true" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        <state relative-caret-position="221">
+          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="55" column="88" selection-start-line="55" selection-start-column="88" selection-end-line="55" selection-end-column="88" />
+        <state relative-caret-position="298">
+          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="e#7530#7976#0" />
-            <element signature="e#9355#9410#0" />
-            <element signature="e#9492#9697#0" />
-            <element signature="e#9764#10632#0" />
-            <element signature="e#10699#11014#0" />
-            <element signature="e#11079#12440#0" />
-            <element signature="e#12511#15209#0" />
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
           </folding>

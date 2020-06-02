@@ -94,7 +94,7 @@ def compo_detection(input_img_path, output_root,
     # draw.draw_bounding_box(org, uicompos, show=show)
 
     draw.draw_bounding_box(org, uicompos, show=show, write_path=pjoin(output_root, 'result.jpg') if write_img else None)
-    seg.dissemble_clip_img(pjoin(output_root, 'clips'), org, uicompos)
+    seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
     file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
     print("[Compo Detection Completed in %.3f s] %d %s" % (time.clock() - start, num, input_img_path))
     if show:

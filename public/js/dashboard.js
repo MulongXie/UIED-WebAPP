@@ -44,7 +44,7 @@ function dashboard_init(output_root=null) {
                     var clip_path = clip_root + c + "/" +idx+ ".jpg";
                 }
                 else {
-                    var clip_path = clip_root+'bkg.jpg';
+                    var clip_path = clip_root+'bkg.png';
                 }
 
                 /* add UI kits lists */
