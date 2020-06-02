@@ -142,12 +142,12 @@ function dashboard_init(output_root=null) {
                     classes.push(c);
                     count_class[c] = 0;
                 }
-                img_dict[c+count_class[c]] =result["compos"][i];
+                img_dict[c+idx] =result["compos"][i];
 
                 /* add image on sketch board */
                 let x = result["compos"][i]["row_min"];
                 let y = result["compos"][i]["column_min"];
-                let id = 'draggable_'+c+'_'+count_class[c];
+                let id = 'draggable_'+c+'_'+idx;
 
                 x += offset_top;
                 y += offset_left;
@@ -300,7 +300,7 @@ function dashboard_init(output_root=null) {
 
             count_class[type] ++;
 
-            let id = 'draggable_'+type+'_'+count_class[type];
+            let id = 'draggable_'+type+'_'+index_global;
             let html = "";
             html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
             html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
@@ -312,7 +312,7 @@ function dashboard_init(output_root=null) {
             $('#'+id).addClass("active-component").siblings().removeClass('active-component');
             drag_and_click(scale);
 
-            img_dict[type+count_class[type]] = {
+            img_dict[type+index_global] = {
                 "column_min": 0,
                 "id": index_global,
                 "height": height,
