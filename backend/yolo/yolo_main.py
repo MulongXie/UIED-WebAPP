@@ -34,7 +34,7 @@ class Option:
         self.weights_path = pjoin(cwd, "E:\Mulong\Model\YOLO_cjs_rico\yolov3_ckpt_10.pth")
         # self.weights_path = pjoin(cwd, "model/yolov3_ckpt_10.pth")
         self.model_def = pjoin(cwd, "config/yolov3-rico.cfg")
-        self.class_path = pjoin(cwd, "data/rico/classes.names")
+        self.class_path = pjoin(cwd, "config/rico_classes.names")
         self.conf_thres = 0.8
         self.nms_thres = 0.4
         self.batch_size = 1
@@ -114,7 +114,8 @@ def yolo(input_img_path, output_root):
     for img_i, (path, detections) in enumerate(zip(imgs, img_detections)):
 
         print("YOLO processing img:", path)
-        img = cv2.imread(path)
+        org = cv2.imread(path)
+        img = org.copy()
         img_shape = img.shape
 
         # Rescale boxes to original image
@@ -145,10 +146,11 @@ def yolo(input_img_path, output_root):
         cv2.waitKey()
 
         # Save generated image with detections
-        ip.dissemble_clip_img_hollow(pjoin(output_root, 'clips'), img, compos['compos'])
+        # ip.dissemble_clip_img_hollow(pjoin(output_root, 'clips'), org, compos['compos'])
+        ip.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, compos['compos'])
         cv2.imwrite(pjoin(output_root, 'result.jpg'), img)
         json.dump(compos, open(pjoin(output_root, "compo.json"), 'w'), indent=4)
         print('Write to:', output_root)
 
 
-# yolo('data/input/10.jpg', 'output')
+# yolo('data/input/19.jpg', 'data/output')

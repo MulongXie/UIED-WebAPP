@@ -21,6 +21,8 @@ def dissemble_clip_img_hollow(clip_root, org, compos):
     hollow_out = np.ones(bkg.shape[:2], dtype=np.uint8) * 255
     for compo in compos:
         cls = compo['class']
+        if cls == 'Background':
+            continue
         c_root = pjoin(clip_root, cls)
         c_path = pjoin(c_root, str(compo['id']) + '.jpg')
         if cls not in cls_dirs:
@@ -32,7 +34,10 @@ def dissemble_clip_img_hollow(clip_root, org, compos):
         cv2.imwrite(c_path, clip)
 
         # transparent mask
+        # cv2.imshow('before', hollow_out)
         hollow_out[row_min: row_max, col_min: col_max] = 0
+        # cv2.imshow('hollow', hollow_out)
+        # cv2.waitKey()
 
     bkg = cv2.merge((bkg, hollow_out))
     cv2.imwrite(os.path.join(clip_root, 'bkg.png'), bkg)
@@ -79,16 +84,19 @@ def dissemble_clip_img_fill(clip_root, org, compos, flag='most'):
 
     bkg = org.copy()
     for compo in compos:
-        cls = compo.category
+        cls = compo['class']
+        if cls == 'Background':
+            continue
         c_root = pjoin(clip_root, cls)
-        c_path = pjoin(c_root, str(compo.id) + '.jpg')
+        c_path = pjoin(c_root, str(compo['id']) + '.jpg')
         if cls not in cls_dirs:
             os.mkdir(c_root)
             cls_dirs.append(cls)
-        clip = compo.compo_clipping(org)
+
+        col_min, row_min, col_max, row_max = compo['column_min'], compo['row_min'], compo['column_max'], compo['row_max']
+        clip = org[row_min: row_max, col_min: col_max]
         cv2.imwrite(c_path, clip)
 
-        col_min, row_min, col_max, row_max = compo.put_bbox()
         if flag == 'average':
             color = average_pix_around()
         elif flag == 'most':

@@ -1,0 +1,164 @@
+{
+    "compos": [
+        {
+            "column_min": 0,
+            "row_min": 0,
+            "height": 960,
+            "width": 540,
+            "column_max": 540,
+            "class": "Background",
+            "row_max": 960,
+            "id": 0
+        },
+        {
+            "column_min": 18,
+            "row_min": 45,
+            "height": 41,
+            "width": 40,
+            "column_max": 59,
+            "class": "ImageView",
+            "row_max": 86,
+            "id": 1
+        },
+        {
+            "column_min": 71,
+            "row_min": 113,
+            "height": 46,
+            "width": 403,
+            "column_max": 475,
+            "class": "EditText",
+            "row_max": 160,
+            "id": 2
+        },
+        {
+            "column_min": 73,
+            "row_min": 167,
+            "height": 48,
+            "width": 398,
+            "column_max": 471,
+            "class": "EditText",
+            "row_max": 215,
+            "id": 3
+        },
+        {
+            "column_min": 490,
+            "row_min": 297,
+            "height": 32,
+            "width": 34,
+            "column_max": 524,
+            "class": "ImageView",
+            "row_max": 330,
+            "id": 4
+        },
+        {
+            "column_min": 186,
+            "row_min": 233,
+            "height": 35,
+            "width": 33,
+            "column_max": 220,
+            "class": "ImageView",
+            "row_max": 268,
+            "id": 5
+        },
+        {
+            "column_min": 411,
+            "row_min": 36,
+            "height": 60,
+            "width": 65,
+            "column_max": 476,
+            "class": "ImageButton",
+            "row_max": 96,
+            "id": 6
+        },
+        {
+            "column_min": 14,
+            "row_min": 113,
+            "height": 42,
+            "width": 44,
+            "column_max": 58,
+            "class": "ImageView",
+            "row_max": 155,
+            "id": 7
+        },
+        {
+            "column_min": 53,
+            "row_min": 235,
+            "height": 28,
+            "width": 29,
+            "column_max": 83,
+            "class": "ImageView",
+            "row_max": 264,
+            "id": 8
+        },
+        {
+            "column_min": 455,
+            "row_min": 232,
+            "height": 36,
+            "width": 39,
+            "column_max": 494,
+            "class": "ImageView",
+            "row_max": 268,
+            "id": 9
+        },
+        {
+            "column_min": 478,
+            "row_min": 35,
+            "height": 62,
+            "width": 62,
+            "column_max": 541,
+            "class": "ImageButton",
+            "row_max": 97,
+            "id": 10
+        },
+        {
+            "column_min": 240,
+            "row_min": 394,
+            "height": 54,
+            "width": 60,
+            "column_max": 300,
+            "class": "ImageView",
+            "row_max": 449,
+            "id": 11
+        },
+        {
+            "column_min": 479,
+            "row_min": 113,
+            "height": 51,
+            "width": 51,
+            "column_max": 531,
+            "class": "ImageView",
+            "row_max": 164,
+            "id": 12
+        },
+        {
+            "column_min": 481,
+            "row_min": 169,
+            "height": 44,
+            "width": 45,
+            "column_max": 527,
+            "class": "ImageView",
+            "row_max": 214,
+            "id": 13
+        },
+        {
+            "column_min": 479,
+            "row_min": 166,
+            "height": 48,
+            "width": 50,
+            "column_max": 530,
+            "class": "ImageButton",
+            "row_max": 214,
+            "id": 14
+        },
+        {
+            "column_min": 478,
+            "row_min": 108,
+            "height": 50,
+            "width": 57,
+            "column_max": 535,
+            "class": "ImageButton",
+            "row_max": 159,
+            "id": 15
+        }
+    ]
+}
