@@ -2,18 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/yolo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/clips/bkg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/clips/bkg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/data/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/compo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/data/ip/5_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/ip/5_all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/data/ip/5_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/ip/5_block.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/ip_segment.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/ip_segment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/clips/bkg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example2/ip/2_block.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example3/ip/3_block.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Block/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/Compo/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/clips/bkg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/compo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_binary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/ip/4_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example4/result.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example5/clips/bkg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example5/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example5/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example5/ip/5_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example5/ip/5_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/example5/ip/5_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/example5/ip/5_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,23 +54,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44415173">
+    <splitter split-orientation="horizontal" split-proportion="0.5191289">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+          <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+                <state relative-caret-position="255">
+                  <caret line="60" column="86" selection-start-line="60" selection-start-column="86" selection-end-line="60" selection-end-column="86" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="ecaps.min.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/css/ecaps.min.css">
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="697">
-                  <caret column="41992" selection-start-column="41992" selection-end-column="41992" />
+                <state relative-caret-position="-374">
+                  <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
+                  <folding>
+                    <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -51,25 +82,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="298">
-                  <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                  </folding>
+                <state relative-caret-position="82">
+                  <caret line="323" column="32" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public/js/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="11" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+                <state relative-caret-position="400">
+                  <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
                 </state>
               </provider>
             </entry>
@@ -82,19 +108,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>sub-menu</find>
-      <find>show_k</find>
-      <find>components</find>
-      <find>name</find>
-      <find>acco</find>
       <find>sub-menu list-group list-group-flush</find>
       <find>accordion-menu</find>
       <find>alt</find>
@@ -120,6 +141,11 @@
       <find>drag_and_click</find>
       <find>menu-uikits</find>
       <find>bkg</find>
+      <find>/uied</find>
+      <find>FA</find>
+      <find>method</find>
+      <find>faster</find>
+      <find>selected</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -143,7 +169,6 @@
         <option value="$PROJECT_DIR$/xianyu.py" />
         <option value="$PROJECT_DIR$/backend/xianyu/xianyu_main.py" />
         <option value="$PROJECT_DIR$/public/js/custom.js" />
-        <option value="$PROJECT_DIR$/backend/uied/uied_main.py" />
         <option value="$PROJECT_DIR$/uied.py" />
         <option value="$PROJECT_DIR$/backend/xianyu/xianyu_utils.py" />
         <option value="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/Block.py" />
@@ -152,9 +177,6 @@
         <option value="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/Component.py" />
         <option value="$PROJECT_DIR$/backend/uied/detect_compo/lib_ip/file_utils.py" />
         <option value="$PROJECT_DIR$/test_server.js" />
-        <option value="$PROJECT_DIR$/server.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
-        <option value="$PROJECT_DIR$/public/js/index.js" />
         <option value="$PROJECT_DIR$/public/css/index.css" />
         <option value="$PROJECT_DIR$/data/outputs/uied/example1/compo.json" />
         <option value="$PROJECT_DIR$/public/dashboard.html" />
@@ -164,6 +186,11 @@
         <option value="$PROJECT_DIR$/public/css/dashboard.css" />
         <option value="$PROJECT_DIR$/public/dashboard.ejs" />
         <option value="$PROJECT_DIR$/public/js/dashboard.js" />
+        <option value="$PROJECT_DIR$/backend/uied/uied_main.py" />
+        <option value="$PROJECT_DIR$/yolo.py" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/js/index.js" />
+        <option value="$PROJECT_DIR$/server.js" />
       </list>
     </option>
   </component>
@@ -265,7 +292,7 @@
       <path value="$PROJECT_DIR$/node_modules/xtend/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -288,13 +315,23 @@
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
@@ -320,6 +357,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_file\github\doing\UIED-WebAPP" />
       <recent name="D:\git_file\github\doing\UIED-WebAPP\public\images\clip" />
       <recent name="D:\git_file\github\doing\UIED-WebAPP\public" />
     </key>
@@ -400,7 +438,6 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.server.js" />
-        <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
   </component>
@@ -433,11 +470,13 @@
       <workItem from="1590966144803" duration="31253000" />
       <workItem from="1591046406955" duration="24867000" />
       <workItem from="1591092712323" duration="1344000" />
+      <workItem from="1591140200420" duration="8317000" />
+      <workItem from="1591186365162" duration="1082000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190821000" />
+    <option name="totallyTimeSpent" value="200220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -465,7 +504,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23709168" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10484721" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -494,13 +533,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1343">
-          <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/outputs/1.jpg" />
     <entry file="file://$PROJECT_DIR$/data/outputs/compo.json" />
     <entry file="file://$PROJECT_DIR$/data/outputs/inputs0.jpg" />
@@ -508,13 +540,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/uied_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -548,13 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="41" column="30" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="94" column="18" lean-forward="true" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -601,13 +619,6 @@
     <entry file="file://$PROJECT_DIR$/public/images/screen/2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1802">
-          <caret line="106" column="44" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/outputs/uied/example1/compo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="436">
@@ -628,36 +639,12 @@
         <state relative-caret-position="-610" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/outputs/uied/example4/clips/bkg.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/outputs/uied/example4/compo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1757" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="57" column="47" selection-start-line="57" selection-start-column="47" selection-end-line="57" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/outputs/uied/example4/clips/bkg.jpg" />
+    <entry file="file://$PROJECT_DIR$/data/outputs/uied/example4/compo.json" />
     <entry file="file://$PROJECT_DIR$/data/outputs/uied/example2/clips/Block/3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/public/test.js" />
-    <entry file="file://$PROJECT_DIR$/public/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="65" column="29" selection-start-line="65" selection-start-column="29" selection-end-line="65" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#li#6;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/plugins/ecaps/js/ecaps.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -667,8 +654,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/uied.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="34" lean-forward="true" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="34" />
+        <state relative-caret-position="221">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -683,21 +670,7 @@
     <entry file="file://$PROJECT_DIR$/data/outputs/uied/example5/compo.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="5527" column="20" lean-forward="true" selection-start-line="5527" selection-start-column="20" selection-end-line="5527" selection-end-column="20" />
-          <caret line="5528" column="21" lean-forward="true" selection-start-line="5528" selection-start-column="21" selection-end-line="5528" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="99" column="122" selection-start-line="99" selection-start-column="119" selection-end-line="99" selection-end-column="122" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts" />
     <entry file="file://$PROJECT_DIR$/public/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -719,6 +692,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/uied/uied_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="26" column="51" selection-start-line="26" selection-start-column="51" selection-end-line="26" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -726,22 +713,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+    <entry file="file://$PROJECT_DIR$/yolo.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="35" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="85">
+          <caret line="5" column="55" selection-start-line="5" selection-start-column="55" selection-end-line="5" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="47" column="17" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="17" />
+        <state relative-caret-position="411">
+          <caret line="96" column="32" selection-start-line="96" selection-start-column="32" selection-end-line="96" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="323" column="32" selection-start-line="323" selection-start-column="32" selection-end-line="323" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="84" column="27" selection-start-line="84" selection-start-column="27" selection-end-line="84" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-374">
+          <caret line="71" column="65" selection-start-line="71" selection-start-column="65" selection-end-line="71" selection-end-column="65" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="60" column="86" selection-start-line="60" selection-start-column="86" selection-end-line="60" selection-end-column="86" />
         </state>
       </provider>
     </entry>

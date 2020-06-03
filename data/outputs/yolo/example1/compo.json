@@ -1,0 +1,44 @@
+{
+    "compos": [
+        {
+            "column_min": 0,
+            "height": 1920,
+            "column_max": 1080,
+            "row_min": 0,
+            "class": "Background",
+            "row_max": 1920,
+            "id": 0,
+            "width": 1080
+        },
+        {
+            "column_min": 309,
+            "height": 396,
+            "column_max": 769,
+            "row_min": 520,
+            "class": "ImageView",
+            "row_max": 917,
+            "id": 1,
+            "width": 459
+        },
+        {
+            "column_min": 1011,
+            "height": 73,
+            "column_max": 1065,
+            "row_min": 251,
+            "class": "ImageView",
+            "row_max": 325,
+            "id": 2,
+            "width": 53
+        },
+        {
+            "column_min": 356,
+            "height": 228,
+            "column_max": 720,
+            "row_min": 1207,
+            "class": "Button",
+            "row_max": 1435,
+            "id": 3,
+            "width": 364
+        }
+    ]
+}

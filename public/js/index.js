@@ -76,8 +76,10 @@ $('.my-carousel-img').click(function () {
 
 function processing_start() {
     processing_wait();
+    let method = $("#method-select option:selected").attr('value');
+
     $.ajax({
-        url: '/uied',
+        url: '/' + method,
         type: 'get',
         data: {
             image_path: processing_img_path

@@ -63,7 +63,7 @@ def dissemble_clip_img_hollow(clip_root, org, compos):
     cv2.imwrite(os.path.join(clip_root, 'bkg.png'), bkg)
 
 
-def dissemble_clip_img_fill(clip_root, org, compos):
+def dissemble_clip_img_fill(clip_root, org, compos, flag='most'):
 
     def average_pix_around(pad=6, offset=3):
         up = row_min - pad if row_min - pad >= 0 else 0
@@ -79,6 +79,23 @@ def dissemble_clip_img_fill(clip_root, org, compos):
             avg_right = np.average(org[up:bottom, col_max + offset:right, i])
             average.append(int((avg_up + avg_bot + avg_left + avg_right)/4))
         return average
+
+    def most_pix_around(pad=6, offset=2):
+        up = row_min - pad if row_min - pad >= 0 else 0
+        left = col_min - pad if col_min - pad >= 0 else 0
+        bottom = row_max + pad if row_max + pad < org.shape[0] - 1 else org.shape[0] - 1
+        right = col_max + pad if col_max + pad < org.shape[1] - 1 else org.shape[1] - 1
+
+        most = []
+        for i in range(3):
+            val = np.concatenate((org[up:row_min - offset, left:right, i].flatten(),
+                            org[row_max + offset:bottom, left:right, i].flatten(),
+                            org[up:bottom, left:col_min - offset, i].flatten(),
+                            org[up:bottom, col_max + offset:right, i].flatten()))
+            # print(val)
+            # print(np.argmax(np.bincount(val)))
+            most.append(int(np.argmax(np.bincount(val))))
+        return most
 
     if os.path.exists(clip_root):
         shutil.rmtree(clip_root)
@@ -97,7 +114,10 @@ def dissemble_clip_img_fill(clip_root, org, compos):
         cv2.imwrite(c_path, clip)
 
         col_min, row_min, col_max, row_max = compo.put_bbox()
-        avg = average_pix_around()
-        cv2.rectangle(bkg, (col_min, row_min), (col_max, row_max), avg, -1)
+        if flag == 'average':
+            color = average_pix_around()
+        elif flag == 'most':
+            color = most_pix_around()
+        cv2.rectangle(bkg, (col_min, row_min), (col_max, row_max), color, -1)
 
     cv2.imwrite(os.path.join(clip_root, 'bkg.png'), bkg)
