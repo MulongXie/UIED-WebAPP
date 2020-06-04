@@ -34,7 +34,7 @@ function dashboard_init() {
     console.log(output_root);
 
     /* load canvas main board */
-    var canvas_init = function(){
+    var canvas_init = function(update_kits=true){
         $.ajaxSettings.async = false;
         $.getJSON(output_root + 'compo.json',function(result){
             det_json_result = result;
@@ -61,18 +61,20 @@ function dashboard_init() {
                     var clip_path = clip_root+'bkg.png';
                 }
 
-                // add UI kits lists
-                if(c in count_class){
-                    $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
-                    count_class[c] ++;
-                }
-                else{
-                    $('#menu-uikits').append('<li class="components" data-type="'+ num_class + '"><a href="javascript:void(0)">' + c + '</a></li>');
-                    $('.pic').append('<ul id="' + c + '" class="list-group list-group-flush"></ul>');
-                    $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
-                    num_class ++;
-                    classes.push(c);
-                    count_class[c] = 0;
+                if(update_kits){
+                    // add UI kits lists
+                    if(c in count_class){
+                        $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
+                        count_class[c] ++;
+                    }
+                    else{
+                        $('#menu-uikits').append('<li class="components animation" data-type="'+ num_class + '"><a href="javascript:void(0)">' + c + '</a></li>');
+                        $('.pic').append('<ul id="' + c + '" class="list-group list-group-flush"></ul>');
+                        $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
+                        num_class ++;
+                        classes.push(c);
+                        count_class[c] = 0;
+                    }
                 }
 
                 // add image on sketch board
@@ -135,23 +137,26 @@ function dashboard_init() {
                 $('.my-preview-list-active').removeClass('my-preview-list-active');
                 $(this).addClass('my-preview-list-active');
 
-                // clear dashboard area
+                // refresh sketch board to display target model
                 if ($(this).attr('datatype') == 'img'){
-                    // $('.box').html('');
                     let img = $(this).children('img');
-                    result_path = img.attr('src').repeat('result.jpg', '');
-                    method = img.attr('title');
+                    // click different method preview than current one
+                    if (method != img.attr('title')){
+                        result_path = img.attr('src').repeat('result.jpg', '');
+                        method = img.attr('title');
+
+                        $('.box').html('');
+                        canvas_init(false);
+                        set_draggable();
+                    }
 
                     // dashboard_init();
                     // set_draggable();
                 }
+                // popup more methods selection
                 else if($(this).attr('datatype') == 'more'){
                     show_pop_up();
                 }
-
-                // add additional models
-                // dashboard_init('../data/outputs/uied/example2/');
-                // set_draggable();
             });
 
         };
@@ -481,6 +486,7 @@ $('#add_proc_btn').click(function () {
                 //
                 // $('#menu-models').prepend(preview_list_img);
 
+                $('.box').html('');
                 dashboard_init();
                 set_draggable();
                 close_pop_up();
