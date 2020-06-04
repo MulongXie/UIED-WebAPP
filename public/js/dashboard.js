@@ -20,7 +20,7 @@ function dashboard_init(output_root=null) {
     var clip_root = output_root + 'clips/';
     console.log(output_root);
 
-    /* load canvas */
+    /* load canvas main board */
     var canvas_init = function(){
         $.ajaxSettings.async = false;
         $.getJSON(output_root + 'compo.json',function(result){
@@ -81,183 +81,194 @@ function dashboard_init(output_root=null) {
         });
     };
 
-    /* sidebar components collection kit */
-    var components_init = function(){
-        $("#menu-uikits").eq(0).addClass('active-page');
-        $(".pic>ul").eq(0).addClass("on");
-        $("#name").text(classes[0]);
+    /* left sidebar */
+    /* 1. UI components collection kit */
+    /* 2. Models preview and selection */
+    var left_sidebar_init = function () {
+        var components_init = function(){
+            $("#menu-uikits").eq(0).addClass('active-page');
+            $(".pic>ul").eq(0).addClass("on");
+            $("#name").text(classes[0]);
 
-        $(".components").click(function () {
-            $(this).addClass("active-page").siblings().removeClass('active-page');
-            $(".pic>ul").removeClass('on').eq($(this).attr('data-type')).addClass("on");
-            document.getElementById("name").innerHTML = $(this).text();
-        });
-
-        /* show UI kits */
-        $('#uikits_sidebar').click(function () {
-            let kits = $('#show_kits');
-            kits.animate({
-                width: 'toggle'
+            $(".components").click(function () {
+                $(this).addClass("active-page").siblings().removeClass('active-page');
+                $(".pic>ul").removeClass('on').eq($(this).attr('data-type')).addClass("on");
+                document.getElementById("name").innerHTML = $(this).text();
             });
-        });
 
-        /* component image click function */
-        $(".pic li img").click(function(){
-            var imgsrc = $(this).attr('src');
-            var imgsrc_split = imgsrc.split('/');
+            /* show UI kits */
+            $('#uikits_sidebar').click(function () {
+                let kits = $('#show_kits');
+                kits.animate({
+                    width: 'toggle'
+                });
+            });
 
-            console.log(img_dict);
-            console.log(imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]);
+            /* component image click function */
+            $(".pic li img").click(function(){
+                var imgsrc = $(this).attr('src');
+                var imgsrc_split = imgsrc.split('/');
 
-            if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
-                var img_info = img_dict['Background0'];
-                $('#add').hide();
-            }
-            else{
-                var img_info = img_dict[imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]];
-                $('#add').show();
-            }
+                console.log(img_dict);
+                console.log(imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]);
 
-            var c = img_info["class"];
-            var height = img_info["height"];
-            var width = img_info["width"];
-            document.getElementById("right-sidebar-img-component").src = imgsrc;
-            document.getElementById("right-sidebar-type-component").innerHTML = c;
-            $("#right-sidebar-width-component").attr("placeholder",width);
-            $("#right-sidebar-height-component").attr("placeholder",height);
-            $("#right-sidebar-top-component").attr("placeholder",0);
-            $("#right-sidebar-left-component").attr("placeholder",0);
-            $("#main-right-sidebar").removeClass("visible");
-            $("#main-right-sidebar-component").addClass("visible");
-        });
+                if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
+                    var img_info = img_dict['Background0'];
+                    $('#add').hide();
+                }
+                else{
+                    var img_info = img_dict[imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]];
+                    $('#add').show();
+                }
+
+                var c = img_info["class"];
+                var height = img_info["height"];
+                var width = img_info["width"];
+                document.getElementById("right-sidebar-img-component").src = imgsrc;
+                document.getElementById("right-sidebar-type-component").innerHTML = c;
+                $("#right-sidebar-width-component").attr("placeholder",width);
+                $("#right-sidebar-height-component").attr("placeholder",height);
+                $("#right-sidebar-top-component").attr("placeholder",0);
+                $("#right-sidebar-left-component").attr("placeholder",0);
+                $("#main-right-sidebar").removeClass("visible");
+                $("#main-right-sidebar-component").addClass("visible");
+            });
+
+            /* allow tooltip */
+            $(function () {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+
+        };
+
+        components_init();
     };
 
-    /* allow tooltip */
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-    });
+    /* right sidebar */
+    /* 1. Compo return to original position */
+    /* 2. Apply new shpe to compo */
+    /* 3. Delete compo */
+    /* 4. Add compo selected in the UI kit */
+    var right_sidebar_init = function () {
 
-    /* right sidebar close click function */
-    var sidebar_init = function(){
-        $(".right-sidebar-close").click(function () {
-            $("#main-right-sidebar").removeClass("visible");
-            $("#main-right-sidebar-component").removeClass("visible");
-        });
-    };
+        var close = function(){
+            $(".right-sidebar-close").click(function () {
+                $("#main-right-sidebar").removeClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            });
+        };
 
-    /* return click function */
-    var return_init = function(){
-        $("#return").click(function () {
-            var id = document.getElementsByClassName("active-component")[0].getAttribute("id");
-            var img_info = img_dict[id.split('_')[1]+id.split('_')[2]];
-            var height = img_info["height"];
-            var width = img_info["width"];
-            var top = img_info["row_min"];
-            var left = img_info["column_min"];
-            $("#right-sidebar-width").attr("placeholder",width);
-            $("#right-sidebar-height").attr("placeholder",height);
-            $("#right-sidebar-top").attr("placeholder",top);
-            $("#right-sidebar-left").attr("placeholder",left);
-            $("#"+id).css("top", top+'px');
-            $("#"+id).css("left", left+'px');
-            $("#"+id+"header").css("height", height+'px');
-            $("#"+id+"header").css("width", width+'px');
-        });
-    };
+        var return_compo = function(){
+            $("#return").click(function () {
+                var id = document.getElementsByClassName("active-component")[0].getAttribute("id");
+                var img_info = img_dict[id.split('_')[1]+id.split('_')[2]];
+                var height = img_info["height"];
+                var width = img_info["width"];
+                var top = img_info["row_min"];
+                var left = img_info["column_min"];
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                $("#"+id).css("top", top+'px');
+                $("#"+id).css("left", left+'px');
+                $("#"+id+"header").css("height", height+'px');
+                $("#"+id+"header").css("width", width+'px');
+            });
+        };
 
-    /* delete click function */
-    var delete_init = function(){
-        $("#delete").click(function () {
-            document.getElementsByClassName("box")[0].removeChild(document.getElementsByClassName("active-component")[0]);
-            $("#main-right-sidebar").removeClass("visible");
-            $("#main-right-sidebar-component").removeClass("visible");
-        });
-    };
+        var delete_cmpo = function(){
+            $("#delete").click(function () {
+                document.getElementsByClassName("box")[0].removeChild(document.getElementsByClassName("active-component")[0]);
+                $("#main-right-sidebar").removeClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
+            });
+        };
 
-    /* apply click function */
-    var apply_init = function(){
-        $("#apply").click(function () {
-            var width = $('#right-sidebar-width').val();
-            var height = $('#right-sidebar-height').val();
-            var top = $('#right-sidebar-top').val();
-            var left = $('#right-sidebar-left').val();
-            if (width == ""){width = $('#right-sidebar-width').attr("placeholder");}
-            if (height == ""){height = $('#right-sidebar-height').attr("placeholder");}
-            if (top == ""){top = $('#right-sidebar-top').attr("placeholder");}
-            if (left == ""){left = $('#right-sidebar-left').attr("placeholder");}
-            $("#right-sidebar-width").val("");
-            $("#right-sidebar-height").val("");
-            $("#right-sidebar-top").val("");
-            $("#right-sidebar-left").val("");
-            $("#right-sidebar-width").attr("placeholder",width);
-            $("#right-sidebar-height").attr("placeholder",height);
-            $("#right-sidebar-top").attr("placeholder",top);
-            $("#right-sidebar-left").attr("placeholder",left);
-            var id = document.getElementsByClassName("active-component")[0].getAttribute("id");
-            $("#"+id).css("top", top+'px');
-            $("#"+id).css("left", left+'px');
-            $("#"+id+"header").css("height", height+'px');
-            $("#"+id+"header").css("width", width+'px');
-        });
-    };
+        var apply_compo = function(){
+            $("#apply").click(function () {
+                var width = $('#right-sidebar-width').val();
+                var height = $('#right-sidebar-height').val();
+                var top = $('#right-sidebar-top').val();
+                var left = $('#right-sidebar-left').val();
+                if (width == ""){width = $('#right-sidebar-width').attr("placeholder");}
+                if (height == ""){height = $('#right-sidebar-height').attr("placeholder");}
+                if (top == ""){top = $('#right-sidebar-top').attr("placeholder");}
+                if (left == ""){left = $('#right-sidebar-left').attr("placeholder");}
+                $("#right-sidebar-width").val("");
+                $("#right-sidebar-height").val("");
+                $("#right-sidebar-top").val("");
+                $("#right-sidebar-left").val("");
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                var id = document.getElementsByClassName("active-component")[0].getAttribute("id");
+                $("#"+id).css("top", top+'px');
+                $("#"+id).css("left", left+'px');
+                $("#"+id+"header").css("height", height+'px');
+                $("#"+id+"header").css("width", width+'px');
+            });
+        };
 
-    /* add image click function */
-    var add_img_init = function(){
-        $("#add").click(function(){
-            let type = $('#right-sidebar-type-component').text();
-            let width = $('#right-sidebar-width-component').attr("placeholder");
-            let height = $('#right-sidebar-height-component').attr("placeholder");
-            let top = $('#right-sidebar-top-component').attr("placeholder");
-            let left = $('#right-sidebar-left-component').attr("placeholder");
-            $("#right-sidebar-width").val("");
-            $("#right-sidebar-height").val("");
-            $("#right-sidebar-top").val("");
-            $("#right-sidebar-left").val("");
-            $("#right-sidebar-width").attr("placeholder",width);
-            $("#right-sidebar-height").attr("placeholder",height);
-            $("#right-sidebar-top").attr("placeholder",top);
-            $("#right-sidebar-left").attr("placeholder",left);
-            document.getElementById("right-sidebar-type").innerHTML = type;
-            document.getElementById("right-sidebar-img").src = document.getElementById("right-sidebar-img-component").src;
-            $("#main-right-sidebar").addClass("visible");
-            $("#main-right-sidebar-component").removeClass("visible");
+        var add_new_compo = function(){
+            $("#add").click(function(){
+                let type = $('#right-sidebar-type-component').text();
+                let width = $('#right-sidebar-width-component').attr("placeholder");
+                let height = $('#right-sidebar-height-component').attr("placeholder");
+                let top = $('#right-sidebar-top-component').attr("placeholder");
+                let left = $('#right-sidebar-left-component').attr("placeholder");
+                $("#right-sidebar-width").val("");
+                $("#right-sidebar-height").val("");
+                $("#right-sidebar-top").val("");
+                $("#right-sidebar-left").val("");
+                $("#right-sidebar-width").attr("placeholder",width);
+                $("#right-sidebar-height").attr("placeholder",height);
+                $("#right-sidebar-top").attr("placeholder",top);
+                $("#right-sidebar-left").attr("placeholder",left);
+                document.getElementById("right-sidebar-type").innerHTML = type;
+                document.getElementById("right-sidebar-img").src = document.getElementById("right-sidebar-img-component").src;
+                $("#main-right-sidebar").addClass("visible");
+                $("#main-right-sidebar-component").removeClass("visible");
 
-            count_class[type] ++;
+                count_class[type] ++;
 
-            let id = 'draggable_'+type+'_'+index_global;
-            let html = "";
-            html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
-            html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
-            html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
-            html += '   </div>';
-    	    html += '</div>';
-            $(".box").append(html);
+                let id = 'draggable_'+type+'_'+index_global;
+                let html = "";
+                html += '<div id="'+id+'" class="draggable" style="top:'+top+' px; left: '+left+'px">';
+                html += '   <div href="javascript:void(0)" class="right-sidebar-toggle" data-sidebar-id="main-right-sidebar">';
+                html += '	    <img class="image" src="'+document.getElementById("right-sidebar-img-component").src+'" id="'+id+'header" style="height:'+height+'px; width:'+width+'px;">'
+                html += '   </div>';
+                html += '</div>';
+                $(".box").append(html);
 
-            $('#'+id).addClass("active-component").siblings().removeClass('active-component');
-            drag_and_click(scale);
+                $('#'+id).addClass("active-component").siblings().removeClass('active-component');
+                drag_and_click(scale);
 
-            img_dict[type+index_global] = {
-                "column_min": 0,
-                "id": index_global,
-                "height": height,
-                "width": width,
-                "column_max": 0,
-                "row_max": 0,
-                "row_min": 0,
-                "class": type,
-            };
-            index_global ++;
-        });
+                img_dict[type+index_global] = {
+                    "column_min": 0,
+                    "id": index_global,
+                    "height": height,
+                    "width": width,
+                    "column_max": 0,
+                    "row_max": 0,
+                    "row_min": 0,
+                    "class": type,
+                };
+                index_global ++;
+            });
+        };
+
+        close();
+        return_compo();
+        delete_cmpo();
+        apply_compo();
+        add_new_compo();
     };
 
     canvas_init();
-    components_init();
-    sidebar_init();
-    return_init();
-    delete_init();
-    apply_init();
-    add_img_init();
-
+    left_sidebar_init();
+    right_sidebar_init();
 }
 
 function drag_and_click(s){
