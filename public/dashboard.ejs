@@ -158,8 +158,20 @@
                     </div>
                 </div>
                 <div class="pop-up">
-                    <div id="additional-model">
-                        <span class="close icon-close" onclick="close_pop_up()"></span>
+                    <div id="additional-model" class="card">
+                        <div class="card-header">
+                            <span class="close icon-close" onclick="close_pop_up()"></span>
+                        </div>
+                        <div class="card-body" style="text-align: center">
+                            <h5 style="margin-bottom: 20px"><b>Choose Another Detection Approach</b></h5>
+                            <select class="form-control" id="add_method_select">
+                                <option value="uied">UIED</option>
+                                <option value="yolo">YOLO</option>
+                                <option value="faster-rcnn">Faster RCNN</option>
+                            </select>
+                            <button id="add_proc_btn" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 15px">Process</button>
+                            <p id="add_proc_status"></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -334,6 +346,7 @@
 
 <!-- Record Processing Result Paths -->
 <div id="resultPath" data-value=<%-JSON.stringify(outputRoot)%>></div>
+<div id="inputImgPath" data-value=<%-JSON.stringify(inputImgPath)%>></div>
 <!-- Custom Javascripts -->
 <script src="js/dashboard.js"></script>
 <script>

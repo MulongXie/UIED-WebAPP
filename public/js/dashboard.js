@@ -406,18 +406,35 @@ $('.my-preview').click(function () {
 
 
 /* add additional model pop-up page */
+// close popup while clicking outside
 $(document).click(function (event) {
     let popup = $('.pop-up');
-
-    console.log(event.target);
-    console.log(popup[0]);
-
     if (event.target == popup[0]){
-        // alert('aaaaaa');
-        close_pop_up();
+        $('.pop-up').hide();
     }
 });
 
 function close_pop_up() {
     $('.pop-up').hide();
 }
+
+$('#add_proc_btn').click(function () {
+    $('#add_proc_btn').addClass('disabled');
+    $('#add_proc_status').text('Processing ...');
+
+    let input_img_path = $('#inputImgPath').attr('data-value');
+    let method = $("#add_method_select option:selected").attr('value');
+    $.ajax({
+        url: '/' + method,
+        type: 'get',
+        data:{
+            image_path: input_img_path
+        },
+        success: function (response) {
+            alert('success ' + input_img_path + ' ' + response.result_path);
+        }
+    });
+
+    $(this).removeClass('disabled');
+    $('#add_proc_status').text('Processing Done');
+});
