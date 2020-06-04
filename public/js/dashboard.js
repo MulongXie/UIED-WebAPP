@@ -433,11 +433,7 @@ function set_draggable(){
 }
 
 
-/* actions of Model previews */
-
-
 /* add additional model pop-up page */
-// close popup while clicking outside
 function show_pop_up(){
     $('#add_proc_btn').removeClass('disabled');
     $('#add_proc_status').text('');
@@ -448,6 +444,7 @@ function close_pop_up() {
     $('.pop-up').hide();
 }
 
+// close popup while clicking outside
 $(document).click(function (event) {
     let popup = $('.pop-up');
     if (event.target == popup[0] || event.target == $('.my-preview-list')[0]){
@@ -456,46 +453,49 @@ $(document).click(function (event) {
 });
 
 $('#add_proc_btn').click(function () {
-    $('#add_proc_btn').addClass('disabled');
-    $('#add_proc_status').text('Processing ...');
 
-    method = $("#add_method_select option:selected").attr('value');
-    console.log(input_img_path);
-    $.ajax({
-        url: '/' + method,
-        type: 'get',
-        async: true,
-        data:{
-            image_path: input_img_path
-        },
-        success: function (response) {
-            if (response.code == 1){
-                result_path = response.result_path;
-                alert('success ' + input_img_path + ' ' + result_path);
+    let new_method = $("#add_method_select option:selected").attr('value');
+    console.log(new_method);
+    console.log(existing_methods);
+    console.log(existing_methods.includes(new_method));
+    if(existing_methods.includes(new_method)){
+        alert(new_method.toUpperCase() + ' is Existing');
+    }
+    else{
+        existing_methods.push(new_method);
+        method = new_method;
+        $('#add_proc_btn').addClass('disabled');
+        $('#add_proc_status').text('Processing ...');
+        $.ajax({
+            url: '/' + method,
+            type: 'get',
+            async: true,
+            data:{
+                image_path: input_img_path
+            },
+            success: function (response) {
+                if (response.code == 1){
+                    result_path = response.result_path;
+                    alert('success ' + input_img_path + ' ' + result_path);
 
-                $('#add_proc_btn').removeClass('disabled');
-                $('#add_proc_status').text(method.toUpperCase() + ' Processing Done');
+                    $('#add_proc_btn').removeClass('disabled');
+                    $('#add_proc_status').text(method.toUpperCase() + ' Processing Done');
 
-                $('.my-preview-list-active').removeClass('my-preview-list-active');
-                $('.my-preview-img-active').removeClass('my-preview-img-active');
+                    $('.my-preview-list-active').removeClass('my-preview-list-active');
+                    $('.my-preview-img-active').removeClass('my-preview-img-active');
 
-                // let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-active text-center" datatype="img">' +
-                //     '<h5>' + method.toUpperCase() + '</h5>' +
-                //     '<img title="' + method +'" class="my-preview-img my-preview-img-active" ' +
-                //     'src="' + '../' + result_path + '/result.jpg"></li>';
-                //
-                // $('#menu-models').prepend(preview_list_img);
-
-                $('.box').html('');
-                dashboard_init();
-                set_draggable();
-                close_pop_up();
+                    $('.box').html('');
+                    dashboard_init();
+                    set_draggable();
+                    close_pop_up();
+                }
+                else {
+                    alert('Failed');
+                }
             }
-            else {
-                alert('Failed');
-            }
-        }
-    });
+        });
+    }
+
 
     return false;
 });
