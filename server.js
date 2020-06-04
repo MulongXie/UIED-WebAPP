@@ -59,7 +59,6 @@ app.get('/uied', function (req, res) {
     console.log('Running UIED on ' + input_img_path);
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/uied/' + name;
-    let result_img = output_root + '/result.jpg';
 
     var workerProcess = child_process.exec('python uied.py ' + input_img_path + ' ' + output_root,
         function (error, stdout, stderr) {
@@ -71,7 +70,7 @@ app.get('/uied', function (req, res) {
                 res.json({code:0});
             }else{
                 console.log('stdout: ' + stdout + '\n');
-                res.json({code:1, result_path:result_img});
+                res.json({code:1, result_path:output_root});
             }
         });
 
@@ -87,7 +86,6 @@ app.get('/yolo', function (req, res) {
     console.log('Running YOLO on ' + input_img_path);
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/yolo/' + name;
-    let result_img = output_root + '/result.jpg';
 
     var workerProcess = child_process.exec('python yolo.py ' + input_img_path + ' ' + output_root,
         function (error, stdout, stderr) {
@@ -99,7 +97,7 @@ app.get('/yolo', function (req, res) {
                 res.json({code:0});
             }else{
                 console.log('stdout: ' + stdout + '\n');
-                res.json({code:1, result_path:result_img});
+                res.json({code:1, result_path:output_root});
             }
         });
 
