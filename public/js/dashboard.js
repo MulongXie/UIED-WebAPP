@@ -366,6 +366,7 @@ function set_draggable(){
 
 }
 
+
 /* show UI kits */
 $('#uikits_sidebar').click(function () {
     let kits = $('#show_kits');
@@ -373,6 +374,7 @@ $('#uikits_sidebar').click(function () {
         width: 'toggle'
     });
 });
+
 
 /* actions of Model previews */
 $('.my-preview').hover(function () {
@@ -388,7 +390,34 @@ $('.my-preview').click(function () {
     $(this).addClass('my-preview-active');
     $(this).children('img').addClass('my-preview-img-active');
 
-    $('.box').html('');
-    dashboard_init('../data/outputs/uied/example2/');
-    set_draggable();
+    // clear dashboard area
+    console.log($(this).attr('datatype'));
+    if ($(this).attr('datatype') == 'img'){
+        $('.box').html('');
+    }
+    else if($(this).attr('datatype') == 'more'){
+        $('.pop-up').show();
+    }
+
+    // add additional models
+    // dashboard_init('../data/outputs/uied/example2/');
+    // set_draggable();
 });
+
+
+/* add additional model pop-up page */
+$(document).click(function (event) {
+    let popup = $('.pop-up');
+
+    console.log(event.target);
+    console.log(popup[0]);
+
+    if (event.target == popup[0]){
+        // alert('aaaaaa');
+        close_pop_up();
+    }
+});
+
+function close_pop_up() {
+    $('.pop-up').hide();
+}
