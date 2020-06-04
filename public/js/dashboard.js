@@ -16,12 +16,13 @@ var input_img_path = $('#inputImgPath').attr('data-value');
 var result_path = $('#resultPath').attr('data-value');
 var method = $('#method').attr('data-value');
 
+var det_json_result = '';
 var scale = 0.6;
 var img_dict = {};
 var classes = [];
 var count_class = {};
 var num_class = 0;
-var index_global = 0;
+var index_global = 0;               // useful when adding new compos by clicking kit images
 var existing_methods = [method];
 
 
@@ -36,22 +37,23 @@ function dashboard_init() {
     var canvas_init = function(){
         $.ajaxSettings.async = false;
         $.getJSON(output_root + 'compo.json',function(result){
+            det_json_result = result;
             let html = "";
 
-            /* put components on the center of dashboard */
+            // put components on the center of dashboard
             let offset_top = 0;
             let offset_left = 0;
             if (result['compos'][0]['class'] == 'Background'){
                 offset_top = Math.round(($(window).height() - result['compos'][0]['height']*scale - $('#board').offset()['top'])/2);
                 offset_left = Math.round(($('#board').width() - result['compos'][0]['width']*scale - $('#board').offset()['left'])/2);
-                // offset_left = Math.round(($('#board').width() - 270 - $('#board').offset()['left'])/2);
             }
 
-            /* get detection results */
+            // put resulting compos on dashboard
             for (let i = 0; i < result["compos"].length; i++) {
-                index_global ++;
                 let c = result["compos"][i]["class"];
                 let idx = result["compos"][i]["id"];
+                index_global ++;
+                img_dict[c+idx] = result["compos"][i];
                 if(c != 'Background'){
                     var clip_path = clip_root + c + "/" +idx+ ".jpg";
                 }
@@ -59,7 +61,7 @@ function dashboard_init() {
                     var clip_path = clip_root+'bkg.png';
                 }
 
-                /* add UI kits lists */
+                // add UI kits lists
                 if(c in count_class){
                     $("#"+c).append('<li class="list-group-item"><img src='+clip_path+'></li>');
                     count_class[c] ++;
@@ -72,13 +74,11 @@ function dashboard_init() {
                     classes.push(c);
                     count_class[c] = 0;
                 }
-                img_dict[c+idx] =result["compos"][i];
 
-                /* add image on sketch board */
+                // add image on sketch board
                 let x = result["compos"][i]["row_min"];
                 let y = result["compos"][i]["column_min"];
                 let id = 'draggable_'+c+'_'+idx;
-
                 x += offset_top;
                 y += offset_left;
                 html += '<div id="'+id+'" class="draggable" style="top: '+x+'px; left: '+y +'px; ">';
@@ -109,33 +109,6 @@ function dashboard_init() {
                 $(this).addClass("active-page").siblings().removeClass('active-page');
                 $(".pic>ul").removeClass('on').eq($(this).attr('data-type')).addClass("on");
                 document.getElementById("name").innerHTML = $(this).text();
-            });
-
-            // click image in UI kits and display in right sidebar
-            $(".pic li img").click(function(){
-                var imgsrc = $(this).attr('src');
-                var imgsrc_split = imgsrc.split('/');
-
-                if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
-                    var img_info = img_dict['Background0'];
-                    $('#add').hide();
-                }
-                else{
-                    var img_info = img_dict[imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]];
-                    $('#add').show();
-                }
-
-                var c = img_info["class"];
-                var height = img_info["height"];
-                var width = img_info["width"];
-                document.getElementById("right-sidebar-img-component").src = imgsrc;
-                document.getElementById("right-sidebar-type-component").innerHTML = c;
-                $("#right-sidebar-width-component").attr("placeholder",width);
-                $("#right-sidebar-height-component").attr("placeholder",height);
-                $("#right-sidebar-top-component").attr("placeholder",0);
-                $("#right-sidebar-left-component").attr("placeholder",0);
-                $("#main-right-sidebar").removeClass("visible");
-                $("#main-right-sidebar-component").addClass("visible");
             });
 
             // allow tooltip
@@ -193,6 +166,33 @@ function dashboard_init() {
     /* 3. Delete compo */
     /* 4. Add compo selected in the UI kit */
     var right_sidebar_init = function () {
+
+        // click image in UI kits and display in right sidebar
+        $(".pic li img").click(function(){
+            var imgsrc = $(this).attr('src');
+            var imgsrc_split = imgsrc.split('/');
+
+            if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
+                var img_info = img_dict['Background0'];
+                $('#add').hide();
+            }
+            else{
+                var img_info = img_dict[imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]];
+                $('#add').show();
+            }
+
+            var c = img_info["class"];
+            var height = img_info["height"];
+            var width = img_info["width"];
+            document.getElementById("right-sidebar-img-component").src = imgsrc;
+            document.getElementById("right-sidebar-type-component").innerHTML = c;
+            $("#right-sidebar-width-component").attr("placeholder",width);
+            $("#right-sidebar-height-component").attr("placeholder",height);
+            $("#right-sidebar-top-component").attr("placeholder",0);
+            $("#right-sidebar-left-component").attr("placeholder",0);
+            $("#main-right-sidebar").removeClass("visible");
+            $("#main-right-sidebar-component").addClass("visible");
+        });
 
         var close = function(){
             $(".right-sidebar-close").click(function () {
