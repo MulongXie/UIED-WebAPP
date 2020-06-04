@@ -2,11 +2,12 @@ var child_process = require('child_process');
 var express	= require("express");
 var app	= express();
 
-var uploadPath = 'data/inputs';
 var output_root = '';
 var input_img_path = '';
+var method = '';
 var index = 0;
 
+var uploadPath = 'data/inputs';
 var multer	=	require('multer');
 var storage	=	multer.diskStorage({
     destination: function (req, file, callback) {
@@ -35,7 +36,7 @@ app.get('/dashboard',function(req,res){
     app.set('view engine', 'ejs');
     app.set('views', 'public');
 
-    res.render('dashboard', {inputImgPath: input_img_path, outputRoot: output_root})
+    res.render('dashboard', {inputImgPath: input_img_path, outputRoot: output_root, method: method})
     // res.sendfile("public/dashboard.html");
 });
 
@@ -53,6 +54,7 @@ app.post('/upload',function(req,res){
 
 app.get('/uied', function (req, res) {
     // let input_img_path = 'data/example/2.jpg';
+    method = 'uied';
     input_img_path = req.query.image_path;
     console.log('Running UIED on ' + input_img_path);
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
@@ -79,9 +81,10 @@ app.get('/uied', function (req, res) {
 });
 
 app.get('/yolo', function (req, res) {
-    console.log('Running YOLO');
     // let input_img_path = 'data/example/2.jpg';
+    method = 'yolo';
     input_img_path = req.query.image_path;
+    console.log('Running YOLO on ' + input_img_path);
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/yolo/' + name;
     let result_img = output_root + '/result.jpg';

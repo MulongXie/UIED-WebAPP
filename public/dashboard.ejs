@@ -58,9 +58,7 @@
                             <i class="menu-icon icon-layers"></i><span>Models</span><i class="accordion-icon fa fa-angle-left"></i>
                         </a>
                         <ul class="sub-menu list-group list-group-flush" id="menu-models" style="padding: 0">
-                            <li class="list-group-item my-preview" datatype="img"><img title="UIED" class="my-preview-img" src="../data/outputs/uied/example2/result.jpg"></li>
-                            <li class="list-group-item my-preview" datatype="more" style="text-align: center"><i class="icon-plus" style="margin-right: 10px"></i>More Models</li>
-                            <!--<li class="list-group-item my-preview"><img title="UIED" class="my-preview-img" src="../data/outputs/uied/example2/result.jpg"></li>-->
+                            <li class="list-group-item my-preview-list" datatype="more" style="text-align: center"><i class="icon-plus" style="margin-right: 10px"></i>More Models</li>
                             <!--<li class="list-group-item my-preview"><img title="UIED" class="my-preview-img" src="../data/outputs/uied/example2/result.jpg"></li>-->
                         </ul>
                     </li>
@@ -345,8 +343,9 @@
 <script src="plugins/ecaps/js/ecaps.js"></script>
 
 <!-- Record Processing Result Paths -->
-<div id="resultPath" data-value=<%-JSON.stringify(outputRoot)%>></div>
 <div id="inputImgPath" data-value=<%-JSON.stringify(inputImgPath)%>></div>
+<div id="resultPath" data-value=<%-JSON.stringify(outputRoot)%>></div>
+<div id="method" data-value=<%-JSON.stringify(method)%>></div>
 <!-- Custom Javascripts -->
 <script src="js/dashboard.js"></script>
 <script>

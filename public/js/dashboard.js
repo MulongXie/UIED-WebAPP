@@ -11,10 +11,15 @@ var count_class = {};
 var num_class = 0;
 var index_global = 0;
 
+var input_img_path = $('#inputImgPath').attr('data-value');
+var result_path = $('#resultPath').attr('data-value');
+var method = $('#method').attr('data-value');
+
+
 function dashboard_init(output_root=null) {
 
     if(output_root == null){
-        output_root = '../' + $('#resultPath').attr('data-value') + '/';
+        output_root = '../' + result_path + '/';
     }
     // var output_root = '../data/outputs/uied/example2/';
     var clip_root = output_root + 'clips/';
@@ -141,7 +146,44 @@ function dashboard_init(output_root=null) {
 
         };
 
+        var model_previews_init = function(){
+            let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-active text-center" datatype="img">' +
+                '<h5>' + method.toUpperCase() + '</h5>' +
+                '<img title="' + method +'" class="my-preview-img my-preview-img-active" ' +
+                'src="' + '../' + result_path + '/result.jpg"></li>';
+            $('#menu-models').prepend(preview_list_img);
+
+            $('.my-preview-list').hover(function () {
+                $(this).css('background', 'rgba(51, 122, 183, 0.3)');
+                $(this).children('img').css('border', '2px lightblue solid');
+            }, function () {
+                $(this).css('background', '');
+                $(this).children('img').css('border', '');
+            });
+
+            $('.my-preview-list').click(function () {
+                $('.my-preview-list-active').removeClass('my-preview-list-active');
+                $('.my-preview-img-active').removeClass('my-preview-img-active');
+                $(this).addClass('my-preview-list-active');
+                $(this).children('img').addClass('my-preview-img-active');
+
+                // clear dashboard area
+                if ($(this).attr('datatype') == 'img'){
+                    $('.box').html('');
+                }
+                else if($(this).attr('datatype') == 'more'){
+                    show_pop_up();
+                }
+
+                // add additional models
+                // dashboard_init('../data/outputs/uied/example2/');
+                // set_draggable();
+            });
+
+        };
+
         components_init();
+        model_previews_init();
     };
 
     /* right sidebar */
@@ -386,31 +428,6 @@ function set_draggable(){
 
 
 /* actions of Model previews */
-$('.my-preview').hover(function () {
-    $(this).css('background', 'rgba(51, 122, 183, 0.3)');
-    $(this).children('img').css('border', '2px lightblue solid');
-}, function () {
-    $(this).css('background', '');
-    $(this).children('img').css('border', '');
-});
-
-$('.my-preview').click(function () {
-    $('.my-preview-active').removeClass('my-preview-active');
-    $(this).addClass('my-preview-active');
-    $(this).children('img').addClass('my-preview-img-active');
-
-    // clear dashboard area
-    if ($(this).attr('datatype') == 'img'){
-        $('.box').html('');
-    }
-    else if($(this).attr('datatype') == 'more'){
-        show_pop_up();
-    }
-
-    // add additional models
-    // dashboard_init('../data/outputs/uied/example2/');
-    // set_draggable();
-});
 
 
 /* add additional model pop-up page */
@@ -436,8 +453,7 @@ $('#add_proc_btn').click(function () {
     $('#add_proc_btn').addClass('disabled');
     $('#add_proc_status').text('Processing ...');
 
-    let input_img_path = $('#inputImgPath').attr('data-value');
-    let method = $("#add_method_select option:selected").attr('value');
+    method = $("#add_method_select option:selected").attr('value');
     console.log(input_img_path);
     $.ajax({
         url: '/' + method,
@@ -451,6 +467,15 @@ $('#add_proc_btn').click(function () {
                 alert('success ' + input_img_path + ' ' + response.result_path);
                 $('#add_proc_btn').removeClass('disabled');
                 $('#add_proc_status').text(method.toUpperCase() + ' Processing Done');
+                $('.my-preview-list-active').removeClass('my-preview-list-active');
+                $('.my-preview-img-active').removeClass('my-preview-img-active');
+
+                let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-active text-center" datatype="img">' +
+                    '<h5>' + method.toUpperCase() + '</h5>' +
+                    '<img title="' + method +'" class="my-preview-img my-preview-img-active" ' +
+                    'src="' + '../' + result_path + '/result.jpg"></li>';
+
+                $('#menu-models').prepend(preview_list_img);
             }
             else {
                 alert('Failed');
