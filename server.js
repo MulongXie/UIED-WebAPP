@@ -52,9 +52,9 @@ app.post('/upload',function(req,res){
 });
 
 app.get('/uied', function (req, res) {
-    console.log('Running UIED');
     // let input_img_path = 'data/example/2.jpg';
     input_img_path = req.query.image_path;
+    console.log('Running UIED on ' + input_img_path);
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/uied/' + name;
     let result_img = output_root + '/result.jpg';

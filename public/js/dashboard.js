@@ -391,12 +391,11 @@ $('.my-preview').click(function () {
     $(this).children('img').addClass('my-preview-img-active');
 
     // clear dashboard area
-    console.log($(this).attr('datatype'));
     if ($(this).attr('datatype') == 'img'){
         $('.box').html('');
     }
     else if($(this).attr('datatype') == 'more'){
-        $('.pop-up').show();
+        show_popup();
     }
 
     // add additional models
@@ -407,6 +406,12 @@ $('.my-preview').click(function () {
 
 /* add additional model pop-up page */
 // close popup while clicking outside
+function show_popup(){
+    $('#add_proc_btn').removeClass('disabled');
+    $('#add_proc_status').text('');
+    $('.pop-up').show();
+}
+
 $(document).click(function (event) {
     let popup = $('.pop-up');
     if (event.target == popup[0]){
@@ -424,17 +429,25 @@ $('#add_proc_btn').click(function () {
 
     let input_img_path = $('#inputImgPath').attr('data-value');
     let method = $("#add_method_select option:selected").attr('value');
+    console.log(input_img_path);
     $.ajax({
         url: '/' + method,
         type: 'get',
+        async: true,
         data:{
             image_path: input_img_path
         },
         success: function (response) {
-            alert('success ' + input_img_path + ' ' + response.result_path);
+            if (response.code == 1){
+                alert('success ' + input_img_path + ' ' + response.result_path);
+                $('#add_proc_btn').removeClass('disabled');
+                $('#add_proc_status').text(method.toUpperCase() + ' Processing Done');
+            }
+            else {
+                alert('Failed');
+            }
         }
     });
 
-    $(this).removeClass('disabled');
-    $('#add_proc_status').text('Processing Done');
+    return false;
 });
