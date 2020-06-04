@@ -86,11 +86,11 @@ function processing_start() {
         },
         success: function (response) {
             if (response.code == 1){
-                alert('success ' + processing_img_path + ' ' + response.result_path);
+                alert('success ' + processing_img_path + ' ' + response.result_path + '/result.jpg');
                 $("#li-nav-result").fadeIn('slow');
                 $('#result').slideDown('slow');
                 $('#display-input-img').attr('src', processing_img_path);
-                $('#display-result-img').attr('src', response.result_path);
+                $('#display-result-img').attr('src', response.result_path + '/result.jpg');
                 $('html, body').animate({
                     scrollTop: $("#result").offset().top
                 })
