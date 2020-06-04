@@ -1,8 +1,20 @@
 $(document).ready(function () {
     dashboard_init();
     set_draggable();
+
+    /* show UI kits */
+    $('#uikits_sidebar').click(function () {
+        let kits = $('#show_kits');
+        kits.animate({
+            width: 'toggle'
+        });
+    });
 });
 
+
+var input_img_path = $('#inputImgPath').attr('data-value');
+var result_path = $('#resultPath').attr('data-value');
+var method = $('#method').attr('data-value');
 
 var scale = 0.6;
 var img_dict = {};
@@ -10,17 +22,12 @@ var classes = [];
 var count_class = {};
 var num_class = 0;
 var index_global = 0;
-
-var input_img_path = $('#inputImgPath').attr('data-value');
-var result_path = $('#resultPath').attr('data-value');
-var method = $('#method').attr('data-value');
+var existing_methods = [method];
 
 
-function dashboard_init(output_root=null) {
+function dashboard_init() {
 
-    if(output_root == null){
-        output_root = '../' + result_path + '/';
-    }
+    var output_root = '../' + result_path + '/';
     // var output_root = '../data/outputs/uied/example2/';
     var clip_root = output_root + 'clips/';
     console.log(output_root);
@@ -90,32 +97,24 @@ function dashboard_init(output_root=null) {
     /* 1. UI components collection kit */
     /* 2. Models preview and selection */
     var left_sidebar_init = function () {
+
+        /* UI kits */
         var components_init = function(){
             $("#menu-uikits").eq(0).addClass('active-page');
             $(".pic>ul").eq(0).addClass("on");
             $("#name").text(classes[0]);
 
+            // UI kit list
             $(".components").click(function () {
                 $(this).addClass("active-page").siblings().removeClass('active-page');
                 $(".pic>ul").removeClass('on').eq($(this).attr('data-type')).addClass("on");
                 document.getElementById("name").innerHTML = $(this).text();
             });
 
-            /* show UI kits */
-            $('#uikits_sidebar').click(function () {
-                let kits = $('#show_kits');
-                kits.animate({
-                    width: 'toggle'
-                });
-            });
-
-            /* component image click function */
+            // click image in UI kits and display in right sidebar
             $(".pic li img").click(function(){
                 var imgsrc = $(this).attr('src');
                 var imgsrc_split = imgsrc.split('/');
-
-                console.log(img_dict);
-                console.log(imgsrc_split[imgsrc_split.length - 2]+imgsrc_split[imgsrc_split.length - 1].split('.')[0]);
 
                 if(imgsrc_split[imgsrc_split.length - 1].split('.')[0] == 'bkg'){
                     var img_info = img_dict['Background0'];
@@ -139,7 +138,7 @@ function dashboard_init(output_root=null) {
                 $("#main-right-sidebar-component").addClass("visible");
             });
 
-            /* allow tooltip */
+            // allow tooltip
             $(function () {
                 $('[data-toggle="tooltip"]').tooltip();
             });
@@ -155,21 +154,23 @@ function dashboard_init(output_root=null) {
 
             $('.my-preview-list').hover(function () {
                 $(this).css('background', 'rgba(51, 122, 183, 0.3)');
-                $(this).children('img').css('border', '2px lightblue solid');
             }, function () {
                 $(this).css('background', '');
-                $(this).children('img').css('border', '');
             });
 
             $('.my-preview-list').click(function () {
                 $('.my-preview-list-active').removeClass('my-preview-list-active');
-                $('.my-preview-img-active').removeClass('my-preview-img-active');
                 $(this).addClass('my-preview-list-active');
-                $(this).children('img').addClass('my-preview-img-active');
 
                 // clear dashboard area
                 if ($(this).attr('datatype') == 'img'){
-                    $('.box').html('');
+                    // $('.box').html('');
+                    let img = $(this).children('img');
+                    result_path = img.attr('src').repeat('result.jpg', '');
+                    method = img.attr('title');
+
+                    // dashboard_init();
+                    // set_draggable();
                 }
                 else if($(this).attr('datatype') == 'more'){
                     show_pop_up();
@@ -444,7 +445,7 @@ function close_pop_up() {
 
 $(document).click(function (event) {
     let popup = $('.pop-up');
-    if (event.target == popup[0]){
+    if (event.target == popup[0] || event.target == $('.my-preview-list')[0]){
         $('.pop-up').hide();
     }
 });
@@ -464,18 +465,25 @@ $('#add_proc_btn').click(function () {
         },
         success: function (response) {
             if (response.code == 1){
-                alert('success ' + input_img_path + ' ' + response.result_path);
+                result_path = response.result_path;
+                alert('success ' + input_img_path + ' ' + result_path);
+
                 $('#add_proc_btn').removeClass('disabled');
                 $('#add_proc_status').text(method.toUpperCase() + ' Processing Done');
+
                 $('.my-preview-list-active').removeClass('my-preview-list-active');
                 $('.my-preview-img-active').removeClass('my-preview-img-active');
 
-                let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-active text-center" datatype="img">' +
-                    '<h5>' + method.toUpperCase() + '</h5>' +
-                    '<img title="' + method +'" class="my-preview-img my-preview-img-active" ' +
-                    'src="' + '../' + result_path + '/result.jpg"></li>';
+                // let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-active text-center" datatype="img">' +
+                //     '<h5>' + method.toUpperCase() + '</h5>' +
+                //     '<img title="' + method +'" class="my-preview-img my-preview-img-active" ' +
+                //     'src="' + '../' + result_path + '/result.jpg"></li>';
+                //
+                // $('#menu-models').prepend(preview_list_img);
 
-                $('#menu-models').prepend(preview_list_img);
+                dashboard_init();
+                set_draggable();
+                close_pop_up();
             }
             else {
                 alert('Failed');
