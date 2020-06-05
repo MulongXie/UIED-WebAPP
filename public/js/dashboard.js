@@ -44,8 +44,16 @@ function dashboard_init() {
             let offset_top = 0;
             let offset_left = 0;
             if (result['compos'][0]['class'] == 'Background'){
-                offset_top = Math.round(($(window).height() - result['compos'][0]['height']*scale - $('#board').offset()['top'])/2);
-                offset_left = Math.round(($('#board').width() - result['compos'][0]['width']*scale - $('#board').offset()['left'])/2);
+                let total_height = result['compos'][0]['height'];
+                let total_width = result['compos'][0]['width'];
+                // scale the result as 0.9 height of vertical height of the window
+                scale = $(window).height() / total_height * 0.9;
+
+                offset_top = Math.round(($(window).height() - total_height*scale - $('#board').offset()['top'])/2);
+                offset_left = Math.round(($('#board').width() - total_width*scale - $('#board').offset()['left'])/2);
+
+                console.log(offset_top);
+                console.log(offset_left);
             }
 
             // put resulting compos on dashboard
@@ -458,9 +466,6 @@ $(document).click(function (event) {
 $('#add_proc_btn').click(function () {
 
     let new_method = $("#add_method_select option:selected").attr('value');
-    console.log(new_method);
-    console.log(existing_methods);
-    console.log(existing_methods.includes(new_method));
     if(existing_methods.includes(new_method)){
         alert(new_method.toUpperCase() + ' is Existing');
     }
