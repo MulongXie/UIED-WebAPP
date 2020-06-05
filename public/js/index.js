@@ -1,158 +1,143 @@
-var using_example = false;
-var uploaded_img_name = '';
-var uploaded_img_path = '';
-var processing_img_path = '';
+jQuery(document).ready(function( $ ) {
+  
+	// Preloader (if the #preloader div exists)
+	$(window).on('load', function () {
+	  if ($('#preloader').length) {
+		$('#preloader').delay(100).fadeOut('slow', function () {
+		  $(this).remove();
+		});
+	  }
+	});
+  
+	// Back to top button
+	$(window).scroll(function() {
+	  if ($(this).scrollTop() > 100) {
+		$('.back-to-top').fadeIn('slow');
+	  } else {
+		$('.back-to-top').fadeOut('slow');
+	  }
+	});
+	$('.back-to-top').click(function(){
+	  $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+	  return false;
+	});
+  
+	// Initiate the wowjs animation library
+	new WOW().init();
+  
+	// Header scroll class
+	$(window).scroll(function() {
+	  if ($(this).scrollTop() > 100) {
+		$('#header').addClass('header-scrolled');
+	  } else {
+		$('#header').removeClass('header-scrolled');
+	  }
+	});
+  
+	if ($(window).scrollTop() > 100) {
+	  $('#header').addClass('header-scrolled');
+	}
+  
+	// Smooth scroll for the navigation and links with .scrollto classes
+	$('.main-nav a, .mobile-nav a, .scrollto').on('click', function() {
+	  if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		var target = $(this.hash);
+		if (target.length) {
+		  var top_space = 0;
+  
+		  if ($('#header').length) {
+			top_space = $('#header').outerHeight();
+  
+			if (! $('#header').hasClass('header-scrolled')) {
+			  top_space = top_space - 20;
+			}
+		  }
+  
+		  $('html, body').animate({
+			scrollTop: target.offset().top - top_space
+		  }, 1500, 'easeInOutExpo');
+  
+		  if ($(this).parents('.main-nav, .mobile-nav').length) {
+			$('.main-nav .active, .mobile-nav .active').removeClass('active');
+			$(this).closest('li').addClass('active');
+		  }
+  
+		  if ($('body').hasClass('mobile-nav-active')) {
+			$('body').removeClass('mobile-nav-active');
+			$('.mobile-nav-toggle i').toggleClass('fa-times fa-bars');
+			$('.mobile-nav-overly').fadeOut();
+		  }
+		  return false;
+		}
+	  }
+	});
 
-// *** Upload customized image ***
-// *******************************
-$("#upload-img-btn").click(function () {
-    $("#upload-img-input").click();
+
+	/*--------------------------------------------------------------
+	# Upload
+	--------------------------------------------------------------*/
+	$('#avatarInput').on('change', function(){
+		this.$avatarModal = $("body").find('#avatar-modal');
+
+		this.$avatarForm = this.$avatarModal.find('.avatar-form');
+		this.$avatarUpload = this.$avatarForm.find('.avatar-upload');
+		this.$avatarSrc = this.$avatarForm.find('.avatar-src');
+		this.$avatarData = this.$avatarForm.find('.avatar-data');
+		this.$avatarInput = this.$avatarForm.find('.avatar-input');
+		this.$avatarSave = this.$avatarForm.find('.avatar-save');
+		this.$avatarBtns = this.$avatarForm.find('.avatar-btns');
+	
+		this.$avatarWrapper = this.$avatarModal.find('.avatar-wrapper');
+		this.$avatarPreview = this.$avatarModal.find('.avatar-preview');
+
+		var canvas  = $(".avatar-wrapper")
+		var context = canvas.get(0).getContext("2d")
+		var img = new Image();
+
+		files = this.$avatarInput.prop('files');
+		if (files.length > 0) {
+			file = files[0];
+			this.url = URL.createObjectURL(file);
+
+			img.src = this.url;
+			img.onload = function() {
+				context.clearRect(0, 0, img.width, img.height);
+				context.canvas.height = img.height;
+				context.canvas.width  = img.width;
+				context.drawImage(img, 0, 0);
+				
+				var cropper = canvas.cropper({
+					autoCropArea: 1,
+					preview: ".avatar-preview"
+				});
+			};
+			
+		}
+
+     	this.$avatarBtns.click(function(e) {
+			var data = $(e.target).data();
+			if (data.method) {
+				canvas.cropper(data.method, data.option);
+			}
+		});
+
+		this.$avatarSave.click(function() {
+			var croppedImageDataURL = canvas.cropper('getCroppedCanvas').toDataURL("image/png"); 
+			$(".display-pic").attr('src', croppedImageDataURL);
+			$("#display-content").removeClass("hide");
+			// $(".display-content").fadeIn(1000);
+			$('html, body').animate({scrollTop:   $('#display-content').offset().top-100}, 1500, 'easeInOutExpo');
+     	});
+	});
+
+
+
+	$(".quickstart-modal-btn").on('click', function() {
+		$(".carousel-inner .img-responsive").on('click', function() {
+			$(".display-pic").attr('src', this.src);
+			$("#display-content").removeClass("hide");
+			$('html, body').animate({scrollTop:   $('#display-content').offset().top-100}, 1500, 'easeInOutExpo');
+		});
+   	});
+  
 });
-
-$("#upload-img-input").on("change", function () {
-    let val = $(this).val();
-    if (val != ''){
-        let split = val.split('\\');
-        uploaded_img_name = split.pop();
-    }
-    $('#upload-img-btn').text(uploaded_img_name);
-    $('#submit-btn').slideDown("slow")
-});
-
-$('#submit-btn').click(function () {
-    using_example = false;
-});
-
-$("#upload-img-form").submit(function () {
-    $(this).ajaxSubmit({
-        success: function (response) {
-            carousel_out();
-            if(response.code == 1){
-                uploaded_img_path = response.imgPath;
-                let showImage = $('#show-upload-image').children('img');
-                console.log('Org image: ' + uploaded_img_path);
-                showImage.attr('src', uploaded_img_path);
-                showImage.fadeIn(2000);
-                method_selection(uploaded_img_name, uploaded_img_path);
-            }else {
-                $('#show-upload-image').html('Upload failed');
-            }
-        }
-    });
-    return false;
-});
-
-function carousel_out() {
-    let carousel = $('#show-examples-carousel');
-    carousel.fadeOut();
-    $("#examples-select").val("empty");
-}
-// *************************************
-
-
-// *** Select provided example image ***
-// *************************************
-$('#examples-select').on('change', function () {
-    using_example = true;
-    let name = $("#examples-select option:selected").text();
-    let car_index = parseInt(name.split('.')[0]) - 1;
-    let carousel = $('#show-examples-carousel');
-    $('#show-upload-image').children('img').hide();
-    carousel.carousel(car_index);
-    carousel.fadeIn();
-    method_selection(name);
-});
-
-$('.my-carousel-img').click(function () {
-    using_example = true;
-    let name = $(this).attr('src').split('/').pop();
-    let index = parseInt(name.split('.')[0]);
-
-    $('#show-examples-carousel').carousel(index - 1);
-    $("#examples-select").val(index);
-    method_selection(name);
-});
-// *************************************
-
-function processing_start() {
-    processing_wait();
-    $.ajax({
-        url: '/uied',
-        type: 'get',
-        data: {
-            image_path: processing_img_path
-        },
-        success: function (response) {
-            if (response.code == 1){
-                alert('success ' + processing_img_path + ' ' + response.result_path);
-                $("#li-nav-result").fadeIn('slow');
-                $('#result').slideDown('slow');
-                $('#display-input-img').attr('src', processing_img_path);
-                $('#display-result-img').attr('src', response.result_path);
-                $('html, body').animate({
-                    scrollTop: $("#result").offset().top
-                })
-            }
-            else {
-                alert('failed')
-            }
-            processing_done();
-        }
-    })
-}
-
-function method_selection(input_name, saved_path=''){
-    $("#select-methods-section").fadeIn();
-    let method_select = $("#method-select");
-    method_select.on('change', function () {
-        let method = $("#method-select option:selected").text();
-        confirm_selection(input_name, method, saved_path);
-    })
-}
-
-function confirm_selection(input_name, method, saved_path='') {
-    let confirm = $("#confirm-input");
-    confirm.fadeIn();
-    if (input_name.search('.jpg|.png') != -1){
-        $("#btn-process").removeClass('disabled');
-        if (using_example){
-            confirm.children('h3').text("Use Image Example " + input_name);
-            confirm.children('h2').text("Use Method " + method);
-            processing_img_path = 'data/example/' + input_name;
-        }
-        else {
-            confirm.children('h3').text("Use Image Example " + input_name);
-            confirm.children('h2').text("Use Method " + method);
-            processing_img_path = saved_path;
-        }
-    }
-    else {
-        confirm.children('h3').text("Only accept image formats(.jpg/.png)");
-        $("#btn-process").addClass('disabled');
-    }
-}
-
-function processing_wait() {
-    $("#btn-process").addClass('disabled');
-    $("#confirm-input").children('p').text('Processing ...')
-}
-
-function processing_done() {
-    $("#btn-process").removeClass('disabled');
-    $("#confirm-input").children('p').text('Processing Done')
-}
-
-function scrollFunc() {
-    let scroll_top = parseInt($(document).scrollTop());
-    let nav_bar = $('#navigation');
-    let nav_container = $('#navigation-container');
-    if(scroll_top > 100){
-        nav_container.css('padding', '0px');
-        nav_bar.css('background', 'white');
-        nav_bar.css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2)')
-    }
-    else {
-        nav_container.css('padding', '60px');
-        nav_bar.css('background', 'rgba(0,0,0,0.2)');
-    }
-}
