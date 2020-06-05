@@ -39,6 +39,7 @@ app.get('/dashboard',function(req,res){
 });
 
 app.post('/upload',function(req,res){
+    console.log(1)
     upload(req,res,function(err) {
         if(err) {
             console.log(err);

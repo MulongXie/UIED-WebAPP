@@ -33,7 +33,7 @@ $("#upload-img-form").submit(function () {
                 console.log('Org image: ' + uploaded_img_path);
                 showImage.attr('src', uploaded_img_path);
                 showImage.fadeIn(2000);
-                method_selection(uploaded_img_name, uploaded_img_path);
+                // method_selection(uploaded_img_name, uploaded_img_path);
             }else {
                 $('#show-upload-image').html('Upload failed');
             }
