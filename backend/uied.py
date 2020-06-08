@@ -2,11 +2,11 @@ import os
 import sys
 # *** set project root directory ***
 root = '/'.join(__file__.split('/')[:-1])
-sys.path.append(os.path.join(root, 'backend/uied'))
-sys.path.append(os.path.join(root, 'backend/uied/detect_compo'))
-sys.path.append(os.path.join(root, 'backend/uied/detect_text_east'))
-sys.path.append(os.path.join(root, 'backend/uied/cnn'))
-sys.path.append(os.path.join(root, 'backend/uied/config'))
+sys.path.append(os.path.join(root, 'uied'))
+sys.path.append(os.path.join(root, 'uied/detect_compo'))
+sys.path.append(os.path.join(root, 'uied/detect_text_east'))
+sys.path.append(os.path.join(root, 'uied/cnn'))
+sys.path.append(os.path.join(root, 'uied/config'))
 # **********************************
 import time
 import cv2

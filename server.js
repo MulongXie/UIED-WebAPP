@@ -28,7 +28,7 @@ app.use(express.static("."));
 
 
 app.get('/',function(req,res){
-    res.sendfile("public/index.html");
+    res.sendfile("public/index_old.html");
 });
 
 app.get('/dashboard',function(req,res){
@@ -60,7 +60,7 @@ app.get('/uied', function (req, res) {
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/uied/' + name;
 
-    var workerProcess = child_process.exec('python uied.py ' + input_img_path + ' ' + output_root,
+    var workerProcess = child_process.exec('python backend/uied.py ' + input_img_path + ' ' + output_root,
         function (error, stdout, stderr) {
             if (error) {
                 console.log(stdout);
@@ -87,7 +87,7 @@ app.get('/yolo', function (req, res) {
     let name = input_img_path.split('/')[1] + input_img_path.split('/')[2].split('.')[0];
     output_root = 'data/outputs/yolo/' + name;
 
-    var workerProcess = child_process.exec('python yolo.py ' + input_img_path + ' ' + output_root,
+    var workerProcess = child_process.exec('python backend/yolo.py ' + input_img_path + ' ' + output_root,
         function (error, stdout, stderr) {
             if (error) {
                 console.log(stdout);

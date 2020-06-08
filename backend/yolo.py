@@ -2,8 +2,8 @@ import os
 import sys
 # *** set project root directory ***
 root = '/'.join(__file__.split('/')[:-1])
-sys.path.append(os.path.join(root, 'backend/yolo'))
-sys.path.append(os.path.join(root, 'backend/yolo/config'))
+sys.path.append(os.path.join(root, 'yolo'))
+sys.path.append(os.path.join(root, 'yolo/config'))
 # **********************************
 import time
 import cv2
