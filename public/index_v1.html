@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index_v1.css">
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+    <div class="container" id="navigation-container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#page-top">UI2CODE</a>
+            <button class="btn navbar-toggle" data-toggle="collapse" data-target="#menu">
+                <span class="glyphicon glyphicon-align-justify"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a class="nav-link slide" href="#masthead">About</a></li>
+                <li><a class="nav-link slide" href="#process">Get Start</a></li>
+                <li><a class="nav-link" href="#result" style="display: none" id="li-nav-result">Result</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main>
+    <div class="container-fluid" id="masthead">
+        <div class="row text-center">
+            <!--<a class="btn btn-primary btn-proc" href="/uied">-->
+                <!--UIED-->
+            <!--</a>-->
+            <h1>MAGICAL TOOL TURING IMAGE TO WORKING CODE</h1>
+            <hr class="my-hr">
+            <p class="lead">UI2CODE reverse engineering system can convert UI design image or screenshot to highly maintainable working code</p>
+            <a class="btn btn-lg btn-primary" style="width: 200px" href="#process">Get Start</a>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="process">
+        <!--Upload or select input-->
+        <div class="container col-lg-5 text-center">
+            <!--Upload-->
+            <h3 class="lead" style="margin-top: -8px">Upload your input image</h3>
+            <div class="btn-group text-center">
+                <a class="btn btn-lg btn-proc" id="upload-img-btn">Upload Image</a>
+                <form id="upload-img-form" enctype="multipart/form-data" action="/upload" method="post">
+                    <input type="submit" class="btn btn-lg" id="submit-btn" value="Upload" name="submit">
+                    <input type="file" class="btn btn-lg btn-proc" id="upload-img-input" name="image" style="margin: 0 auto">
+                </form>
+            </div>
+            <h3 class="lead"> Or </h3>
+            <!--Use example-->
+            <select class="btn btn-lg btn-proc" id="examples-select">
+                <option class="examples-opt" value="empty" selected>Use Examples</option>
+                <option class="examples-opt" value="1">1.jpg</option>
+                <option class="examples-opt" value="2">2.jpg</option>
+                <option class="examples-opt" value="3">3.jpg</option>
+                <option class="examples-opt" value="4">4.jpg</option>
+                <option class="examples-opt" value="5">5.jpg</option>
+            </select>
+
+            <div id="select-methods-section" style="display: none">
+                <h1 class="lead">Select a processing method</h1>
+                <select class="btn btn-lg btn-proc" id="method-select">
+                    <option class="methods-opt" value="empty" selected>Select Detection Method</option>
+                    <option class="methods-opt" value="uied">UIED</option>
+                    <option class="methods-opt" value="yolo">YOLO</option>
+                </select>
+            </div>
+
+            <!--Confirm-->
+            <div class="text-center" id="confirm-input" style="display: none">
+                <h3 class="lead"></h3>
+                <h2 class="lead"></h2>
+                <a class="btn btn-lg btn-proc" id="btn-process" onclick="processing_start()">Process</a>
+                <p class="lead" style="margin-top: 20px"></p>
+            </div>
+        </div>
+
+        <!--Show image-->
+        <div class="container col-lg-7 text-center">
+            <div id="show-examples-carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#show-examples-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="1"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="2"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="3"></li>
+                    <li data-target="#show-examples-carousel" data-slide-to="4"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" style="height: 500px">
+                    <div class="item active">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/1.jpg" alt="1" title="Use example 1.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/2.jpg" alt="2" title="Use example 2.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/3.jpg" alt="3" title="Use example 3.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/4.jpg" alt="4" title="Use example 4.jpg">
+                    </div>
+
+                    <div class="item">
+                        <img class="my-carousel-img" style="height: 500px; margin: 0 auto" src="../data/example/5.jpg" alt="5" title="Use example 5.jpg">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#show-examples-carousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#show-examples-carousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <div id="show-upload-image" style="overflow: auto">
+                <img class="my-display-img" style="display: none">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="result">
+        <div class="row">
+            <div class="col-lg-5 text-center">
+                <h3 class="lead">Your Input GUI Image</h3>
+                <div style="overflow: auto">
+                    <img id="display-input-img" style="height: 500px; margin: 0 auto">
+                </div>
+            </div>
+            <div class="col-lg-2 text-center" style="padding-top: 25rem">
+                <span style="font-size:50px; color: aliceblue" class="glyphicon glyphicon-arrow-right"></span>
+                <div class="text-center" style="margin-top: 5rem">
+                    <a id="btn_go_dashboard" class="btn btn-lg btn-primary" href="/dashboard">Go Dashboard</a>
+                </div>
+            </div>
+            <div class="col-lg-5 text-center">
+                <h3 class="lead">Processing Result</h3>
+                <div style="overflow: auto">
+                    <img id="display-result-img" style="height: 500px; margin: 0 auto">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center" id="contact">
+        <div class="row text-center">
+            <h2 class="my-contact-font-color">Let's Get In Touch!</h2>
+            <hr>
+            <p class="lead my-contact-font-color" style="margin-bottom: 30px">The MAGICAL tool is still developing, contact us if you have some AWESOME thoughts about it!</p>
+        </div>
+        <div class="row text-center my-primary-color">
+            <div class="col-lg-4 col-lg-offset-2">
+                <i class="glyphicon glyphicon-phone-alt my-primary-color" style="font-size: 50px; margin-bottom: 15px"></i>
+                <div>+61 0450674929</div>
+            </div>
+            <div class="col-lg-4">
+                <i class="glyphicon glyphicon-envelope my-primary-color" style="font-size: 50px; margin-bottom: 15px"></i>
+                <div>dsh15325@163.com</div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="small text-center text-muted" style="margin-top: 4rem">Copyright © 2020 - UI2CODE</div>
+    </div>
+</footer>
+
+</body>
+
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+<script src="js/index_v1.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            scrollFunc();
+        });
+    });
+
+</script>
+</html>

@@ -28,7 +28,7 @@ app.use(express.static("."));
 
 
 app.get('/',function(req,res){
-    res.sendfile("public/index_old.html");
+    res.sendfile("public/index_v1.html");
 });
 
 app.get('/dashboard',function(req,res){
