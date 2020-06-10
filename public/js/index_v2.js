@@ -174,17 +174,40 @@ jQuery(document).ready(function( $ ) {
                     input_type: input_type
                 },
                 success: function (resp) {
-                    result_root = resp.result_path;
-                    console.log(resp);
-                    // Processing completed status
-                    $('#btn-process').removeClass('disabled');
-                    $('#btn-show-res').fadeIn('quick');
-                    $('#proc-status').text('Process Done!');
-                    // Allocate image and result
-                    $('#show-input').attr('src', input_img);
-                    $('#show-result').attr('src', result_root + '/' + 'result.jpg');
+                    if (resp.code == 1){
+                        result_root = resp.result_path;
+                        console.log(resp);
+                        // Processing completed status
+                        $('#btn-process').removeClass('disabled');
+                        $('#btn-show-res').fadeIn('quick');
+                        $('#proc-status').text('Process Done!');
+                        // Allocate image and result
+                        $('#show-input').attr('src', input_img);
+                        $('#show-result').attr('src', result_root + '/' + 'result.jpg');
+                    }
+                    else{
+                        alert('Process failed')
+                    }
                 }
             })
 		}
     });
+
+    $('#go-dashboard').click(function () {
+        let method = $("#method-select option:selected").attr('value');
+        let input_img = $('#show-input').attr('src');
+        let output_root = $('#show-result').attr('src').replace('/result.jpg', '');
+
+        let url = '/dashboard?method=' + method + '&input_img=' + input_img + '&output_root=' + output_root;
+        console.log(url);
+        $(location).attr('href', url);
+
+        // let url = new URL('https:/test');
+        // url.searchParams.append('method', method);
+        // url.searchParams.append('input_img', input_img);
+        // url.searchParams.append('out_root', output_root);
+        // console.log(url.href.replace('https:/', ''));
+        // $(location).attr('href',  url.href.replace('https:/', ''));
+    });
+
 });

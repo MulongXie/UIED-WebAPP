@@ -2,10 +2,6 @@ var child_process = require('child_process');
 var express	= require("express");
 var app	= express();
 
-var output_root = '';
-var input_img_path = '';
-var index = 0;
-
 // For base64 upload and save
 var fs = require('fs');
 var bodyParser = require('body-parser');
@@ -23,6 +19,7 @@ app.get('/',function(req,res){
     res.sendfile("public/index_v2.html");
 });
 
+var index = 0;
 app.post('/process_v2', function (req, res) {
     var method = req.body.method;
     var input_type = req.body.input_type;
@@ -60,11 +57,14 @@ app.post('/process_v2', function (req, res) {
 });
 
 app.get('/dashboard',function(req,res){
+    // console.log(req.query);
+    var input_image = req.query.input_img;
+    var output_root = req.query.output_root;
+    var method = req.query.method;
     // using ejs to set result path dynamically
     app.set('view engine', 'ejs');
     app.set('views', 'public');
-
-    res.render('dashboard', {inputImgPath: input_img_path, outputRoot: output_root, method: method})
+    res.render('dashboard', {inputImgPath: input_image, outputRoot: output_root, method: method})
     // res.sendfile("public/dashboard.html");
 });
 
