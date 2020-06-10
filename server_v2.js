@@ -20,12 +20,12 @@ app.get('/',function(req,res){
 });
 
 var index = 0;
-app.post('/process_v2', function (req, res) {
+app.post('/process', function (req, res) {
     var method = req.body.method;
     var input_type = req.body.input_type;
 
     // For uploaded image (base64 format)
-    if (input_type == 'upload'){
+    if (input_type == 'base64'){
         var id = index;
         index ++;
         var output_path = 'data/outputs/' + method + '/' + input_type + id.toString();
@@ -45,7 +45,7 @@ app.post('/process_v2', function (req, res) {
         });
     }
     // For existing examples (.jpg format)
-    else if (input_type == 'example'){
+    else if (input_type == 'image'){
         var input_path = req.body.input_img;
         var input_path_split = input_path.split('/');
         var name = input_path_split[input_path_split.length - 1].split('.')[0];

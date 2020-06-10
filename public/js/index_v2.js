@@ -125,7 +125,7 @@ jQuery(document).ready(function( $ ) {
 			var croppedImageDataURL = canvas.cropper('getCroppedCanvas').toDataURL("image/png"); 
 			$(".display-pic").attr('src', croppedImageDataURL);
 			$("#display-content").removeClass("hide");
-			$("#display-content").attr('data-type', 'upload');
+			$("#display-content").attr('data-type', 'base64');
 			// $(".display-content").fadeIn(1000);
 			$('html, body').animate({scrollTop:   $('#display-content').offset().top-50}, 1500, 'easeInOutExpo');
      	});
@@ -137,7 +137,7 @@ jQuery(document).ready(function( $ ) {
 		$(".carousel-inner .img-responsive").on('click', function() {
 			$(".display-pic").attr('src', this.src);
 			$("#display-content").removeClass("hide");
-            $("#display-content").attr('data-type', 'example');
+            $("#display-content").attr('data-type', 'image');
 			$('html, body').animate({scrollTop:   $('#display-content').offset().top-50}, 1500, 'easeInOutExpo');
 		});
    	});
@@ -155,7 +155,7 @@ jQuery(document).ready(function( $ ) {
         let method = $("#method-select option:selected").attr('value');
         let input_img = $(".display-pic").attr('src');
         let input_type = $("#display-content").attr('data-type');
-        let result_root = ''
+        let result_root = '';
 
         console.log(input_type);
         if(method == 'empty'){
@@ -166,7 +166,7 @@ jQuery(document).ready(function( $ ) {
             $('#btn-process').addClass('disabled');
             $('#proc-status').fadeIn('quick').text('Processing ...');
             $.ajax({
-                url: '/process_v2',
+                url: '/process',
                 type: 'post',
                 data: {
                     input_img: input_img,
