@@ -1,5 +1,6 @@
 jQuery(document).ready(function( $ ) {
-  
+
+    var canvas_loaded = false;
 	// Preloader (if the #preloader div exists)
 	$(window).on('load', function () {
 	  if ($('#preloader').length) {
@@ -100,18 +101,22 @@ jQuery(document).ready(function( $ ) {
 			this.url = URL.createObjectURL(file);
 
 			img.src = this.url;
-			img.onload = function() {
-				context.clearRect(0, 0, img.width, img.height);
-				context.canvas.height = img.height;
-				context.canvas.width  = img.width;
-				context.drawImage(img, 0, 0);
-				
-				var cropper = canvas.cropper({
-					autoCropArea: 1,
-					preview: ".avatar-preview"
-				});
-			};
-			
+            if (canvas_loaded){
+                canvas.cropper('replace', this.url);
+            }else{
+                img.onload = function() {
+                    context.clearRect(0, 0, img.width, img.height);
+                    context.canvas.height = img.height;
+                    context.canvas.width  = img.width;
+                    context.drawImage(img, 0, 0);
+
+                    var cropper = canvas.cropper({
+                        autoCropArea: 1,
+                        preview: ".avatar-preview"
+                    });
+                };
+                canvas_loaded = true;
+            }
 		}
 
      	this.$avatarBtns.click(function(e) {
@@ -147,6 +152,8 @@ jQuery(document).ready(function( $ ) {
     /*--------------------------------------------------------------
 	# Process
 	--------------------------------------------------------------*/
+    var result_root = '';
+    var upload_path = '';
     $("#btn-process").click(function () {
         if ($("#btn-process").hasClass('disabled')){
             console.log('Backend is running');
@@ -156,7 +163,6 @@ jQuery(document).ready(function( $ ) {
         let method = $("#method-select option:selected").attr('value');
         let input_img = $(".display-pic").attr('src');
         let input_type = $("#display-content").attr('data-type');
-        let result_root = '';
 
         console.log(input_type);
         if(method == 'empty'){
@@ -181,24 +187,27 @@ jQuery(document).ready(function( $ ) {
                 success: function (resp) {
                     if (resp.code == 1){
                         result_root = resp.result_path;
+                        upload_path = resp.upload_path;
                         console.log(resp);
-                        // Processing completed status
+
+                        // Allocate image and result on modal
                         $('#proc-status').text('Process Done!');
-                        $('.loader').slideToggle('quick');
-                        $('#btn-process').removeClass('disabled');
+                        $('#show-input').attr('src', input_img);
+                        $('#show-result').attr('src', result_root + '/' + 'result.jpg');
                         $('#btn-show-res').removeClass('disabled');
                         $('#btn-show-res').fadeIn('quick');
                         $('#btn-show-res').attr('data-target', '#result-modal');
                         $('#btn-show-res').css('margin-top', '50px');
-
-                        // Allocate image and result on modal
-                        $('#show-input').attr('src', input_img);
-                        $('#show-result').attr('src', result_root + '/' + 'result.jpg');
                         $('.modal-title').text('Detection Result - ' + method.toUpperCase())
                     }
                     else{
+                        $('#proc-status').text('Process Failed!');
+                        $('#btn-show-res').fadeOut();
                         alert('Process failed')
                     }
+                    // Processing completed status
+                    $('.loader').slideToggle('quick');
+                    $('#btn-process').removeClass('disabled');
                 }
             })
 		}
@@ -206,10 +215,8 @@ jQuery(document).ready(function( $ ) {
 
     $('#go-dashboard').click(function () {
         let method = $("#method-select option:selected").attr('value');
-        let input_img = $('#show-input').attr('src');
-        let output_root = $('#show-result').attr('src').replace('/result.jpg', '');
 
-        let url = '/dashboard?method=' + method + '&input_img=' + input_img + '&output_root=' + output_root;
+        let url = '/dashboard?method=' + method + '&input_img=' + upload_path + '&output_root=' + result_root;
         console.log(url);
         $(location).attr('href', url);
 

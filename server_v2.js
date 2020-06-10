@@ -34,6 +34,7 @@ app.post('/process', function (req, res) {
         // Convert the uploaded base64 image to jpg and process
         fs.writeFile(upload_path, img_base64, 'base64', function (err) {
             if (err == null){
+                console.log('Upload image to', upload_path);
                 // processing
                 element_detection(res, upload_path, output_path, method)
             }
@@ -61,6 +62,7 @@ app.get('/dashboard',function(req,res){
     var input_image = req.query.input_img;
     var output_root = req.query.output_root;
     var method = req.query.method;
+    console.log(input_image, output_root, method);
     // using ejs to set result path dynamically
     app.set('view engine', 'ejs');
     app.set('views', 'public');
@@ -85,7 +87,7 @@ function element_detection(res, input_path, output_path, method) {
                 res.json({code:0});
             }else{
                 console.log('stdout: ' + stdout + '\n');
-                res.json({code:1, result_path:output_path});
+                res.json({code:1, result_path:output_path, upload_path:input_path});
             }
         });
 
