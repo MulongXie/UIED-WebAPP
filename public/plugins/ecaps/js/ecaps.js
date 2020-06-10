@@ -3,7 +3,7 @@ $(document).ready(function() {
     "use strict";
     
     // Options
-    var submenu_animation_speed = 500,
+    var submenu_animation_speed = 200,
         submenu_opacity_animation = true, // set to "false" to remove opacity animation
         page_boxed = false,
         page_sidebar_fixed = false,

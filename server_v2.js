@@ -23,7 +23,7 @@ var index = 0;
 app.post('/process', function (req, res) {
     var method = req.body.method;
     var input_type = req.body.input_type;
-
+    console.log('Type:', input_type);
     // For uploaded image (base64 format)
     if (input_type == 'base64'){
         var id = index;
@@ -45,28 +45,29 @@ app.post('/process', function (req, res) {
             }
         });
     }
-    // For existing examples (.jpg format)
+    // For existing examples and secondary processing on dashboard (.jpg format)
     else if (input_type == 'image'){
         var input_path = req.body.input_img;
         var input_path_split = input_path.split('/');
         var name = input_path_split[input_path_split.length - 1].split('.')[0];
         var output_path = 'data/outputs/' + method + '/' + input_type + name;
+        // Existing examples
+        if (input_path_split[0] == 'http:'){
+            input_path = 'public/images/screen/' + name + '.jpg';
+        }
         element_detection(res, input_path, output_path, method)
     }
-
 });
 
 app.get('/dashboard',function(req,res){
-    // console.log(req.query);
     var input_image = req.query.input_img;
     var output_root = req.query.output_root;
     var method = req.query.method;
-    console.log("Activate Dashboard on", input_image, output_root, method);
+    console.log("Activate Dashboard on", input_image, output_root, method, '\n');
     // using ejs to set result path dynamically
     app.set('view engine', 'ejs');
     app.set('views', 'public');
     res.render('dashboard', {inputImgPath: input_image, outputRoot: output_root, method: method})
-    // res.sendfile("public/dashboard.html");
 });
 
 app.listen(8000,function(){
@@ -91,6 +92,6 @@ function element_detection(res, input_path, output_path, method) {
         });
 
     workerProcess.on('exit', function () {
-        console.log('Program Invoked');
+        console.log('Program Completed');
     });
 }
