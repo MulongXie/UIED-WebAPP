@@ -1152,11 +1152,17 @@ a.carousel-control.right {
 }
 
 
-#btn-process{
+.my-btn{
   margin-top: 50px;
   width: 100%;
-  background-color: #74b5fc;
+  background-color: #3399ff;
   color: white;
+}
+
+#proc-status{
+  font-size: medium;
+  margin-top: 25px;
+  margin-bottom: -20px;
 }
 
 .avatar-wrapper {
@@ -1239,4 +1245,22 @@ a.carousel-control.right {
 
 .avatar-save{
   width:100%;
+}
+
+.display-result-img{
+  max-width: 100%;
+}
+
+.display-result-arrow{
+  font-size: 50px;
+  color: #3399ff;
+  margin-bottom: 10px;
+  top:40%;
+    position: relative;
+}
+
+#go-dashboard{
+    margin-top: 0;
+    top: 45%;
+    position: relative;
 }

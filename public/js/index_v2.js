@@ -127,7 +127,7 @@ jQuery(document).ready(function( $ ) {
 			$("#display-content").removeClass("hide");
 			$("#display-content").attr('data-type', 'upload');
 			// $(".display-content").fadeIn(1000);
-			$('html, body').animate({scrollTop:   $('#display-content').offset().top-100}, 1500, 'easeInOutExpo');
+			$('html, body').animate({scrollTop:   $('#display-content').offset().top-50}, 1500, 'easeInOutExpo');
      	});
 	});
 
@@ -138,7 +138,7 @@ jQuery(document).ready(function( $ ) {
 			$(".display-pic").attr('src', this.src);
 			$("#display-content").removeClass("hide");
             $("#display-content").attr('data-type', 'example');
-			$('html, body').animate({scrollTop:   $('#display-content').offset().top-100}, 1500, 'easeInOutExpo');
+			$('html, body').animate({scrollTop:   $('#display-content').offset().top-50}, 1500, 'easeInOutExpo');
 		});
    	});
 
@@ -147,15 +147,24 @@ jQuery(document).ready(function( $ ) {
 	# Process
 	--------------------------------------------------------------*/
     $("#btn-process").click(function () {
+        if ($("#btn-process").hasClass('disabled')){
+            console.log('Backend is running');
+            return false;
+        }
+
         let method = $("#method-select option:selected").attr('value');
         let input_img = $(".display-pic").attr('src');
         let input_type = $("#display-content").attr('data-type');
+        let result_root = ''
 
         console.log(input_type);
         if(method == 'empty'){
         	alert('Please elect a method');
 		}
 		else{
+            // Processing start
+            $('#btn-process').addClass('disabled');
+            $('#proc-status').fadeIn('quick').text('Processing ...');
             $.ajax({
                 url: '/process_v2',
                 type: 'post',
@@ -165,7 +174,15 @@ jQuery(document).ready(function( $ ) {
                     input_type: input_type
                 },
                 success: function (resp) {
+                    result_root = resp.result_path;
                     console.log(resp);
+                    // Processing completed status
+                    $('#btn-process').removeClass('disabled');
+                    $('#btn-show-res').fadeIn('quick');
+                    $('#proc-status').text('Process Done!');
+                    // Allocate image and result
+                    $('#show-input').attr('src', input_img);
+                    $('#show-result').attr('src', result_root + '/' + 'result.jpg');
                 }
             })
 		}

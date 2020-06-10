@@ -165,7 +165,11 @@
 											</select>
 										</div>
 									</form>
-									<button id="btn-process" class="btn">Process</button>
+                                    <div style="text-align: center">
+                                        <button id="btn-process" class="btn my-btn">Process</button>
+                                        <p id="proc-status" class="lead" style="display: none"></p>
+                                        <button class="btn my-btn" style="display: block" data-toggle="modal" data-target="#result-modal">Check Result </button>
+                                    </div>
 								</div>
 							</div>
 						</div>
@@ -173,7 +177,7 @@
 				</div>
 
 
-				<div id="quickstart-modal" class="modal bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="quickstart" aria-hidden="true">
+				<div id="quickstart-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="quickstart" aria-hidden="true">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<div class="modal-header">
@@ -212,7 +216,7 @@
 					</div>
 				</div>
 
-				<div class="modal" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+				<div id="avatar-modal" class="modal fade" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
 					<div class="modal-dialog modal-lg">
 						<div class="modal-content">
 							<form id="avatar-form" class="avatar-form">
@@ -272,7 +276,30 @@
 					</div>
 				</div>
 			  
-  
+                <div id="result-modal" class="modal fade">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Detection Result</h4>
+                                <button class="close" data-dismiss="modal">&times;</button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-5 text-center">
+                                        <img id="show-input" class="display-result-img" src="images/screen/1.jpg">
+                                    </div>
+                                    <div class="col-lg-2 col-md-2 text-center">
+                                        <p class="glyphicon glyphicon-arrow-right display-result-arrow"></p>
+                                        <button id="go-dashboard" class="btn my-btn" href="/dashboard">Dashboard</button>
+                                    </div>
+                                    <div class="col-lg-5 col-md-5 text-center">
+                                        <img id="show-result" class="display-result-img" src="images/screen/1.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 		</section><!-- #tools -->
 
