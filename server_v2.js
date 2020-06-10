@@ -28,7 +28,7 @@ app.post('/process', function (req, res) {
     if (input_type == 'base64'){
         var id = index;
         index ++;
-        var output_path = 'data/outputs/' + method + '/' + input_type + id.toString();
+        var output_path = 'data/outputs/' + method + '/' + input_type + '_' + id.toString();
         var img_base64 = req.body.input_img.replace(/^data:image\/png;base64,/, "");
         var upload_path = 'data/inputs/' + id.toString() + '.jpg';
         // Convert the uploaded base64 image to jpg and process
@@ -50,7 +50,7 @@ app.post('/process', function (req, res) {
         var input_path = req.body.input_img;
         var input_path_split = input_path.split('/');
         var name = input_path_split[input_path_split.length - 1].split('.')[0];
-        var output_path = 'data/outputs/' + method + '/' + input_type + name;
+        var output_path = 'data/outputs/' + method + '/' + input_type + '_' + name;
         // Existing examples
         if (input_path_split[0] == 'http:'){
             input_path = 'public/images/screen/' + name + '.jpg';
@@ -63,7 +63,7 @@ app.get('/dashboard',function(req,res){
     var input_image = req.query.input_img;
     var output_root = req.query.output_root;
     var method = req.query.method;
-    console.log("Activate Dashboard on", input_image, output_root, method, '\n');
+    console.log("Activate Dashboard on", input_image, output_root, method, '\n\n');
     // using ejs to set result path dynamically
     app.set('view engine', 'ejs');
     app.set('views', 'public');

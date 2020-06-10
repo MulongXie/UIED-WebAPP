@@ -60,7 +60,7 @@ def yolo(input_img_path, output_root):
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    os.makedirs("output", exist_ok=True)
+    # os.makedirs("output", exist_ok=True)
 
     img_refresh = cv2.imread(input_img_path)
     cv2.imwrite(input_img_path, img_refresh)
