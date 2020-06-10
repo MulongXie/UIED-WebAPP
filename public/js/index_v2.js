@@ -94,7 +94,7 @@ jQuery(document).ready(function( $ ) {
 		var context = canvas.get(0).getContext("2d")
 		var img = new Image();
 
-		files = this.$avatarInput.prop('files');
+		var files = this.$avatarInput.prop('files');
 		if (files.length > 0) {
 			file = files[0];
 			this.url = URL.createObjectURL(file);
@@ -125,6 +125,7 @@ jQuery(document).ready(function( $ ) {
 			var croppedImageDataURL = canvas.cropper('getCroppedCanvas').toDataURL("image/png"); 
 			$(".display-pic").attr('src', croppedImageDataURL);
 			$("#display-content").removeClass("hide");
+			$("#display-content").attr('data-type', 'upload');
 			// $(".display-content").fadeIn(1000);
 			$('html, body').animate({scrollTop:   $('#display-content').offset().top-100}, 1500, 'easeInOutExpo');
      	});
@@ -136,8 +137,37 @@ jQuery(document).ready(function( $ ) {
 		$(".carousel-inner .img-responsive").on('click', function() {
 			$(".display-pic").attr('src', this.src);
 			$("#display-content").removeClass("hide");
+            $("#display-content").attr('data-type', 'example');
 			$('html, body').animate({scrollTop:   $('#display-content').offset().top-100}, 1500, 'easeInOutExpo');
 		});
    	});
-  
+
+
+    /*--------------------------------------------------------------
+	# Process
+	--------------------------------------------------------------*/
+    $("#btn-process").click(function () {
+        let method = $("#method-select option:selected").attr('value');
+        let input_img = $(".display-pic").attr('src');
+        let input_type = $("#display-content").attr('data-type');
+
+        console.log(input_type);
+        if(method == 'empty'){
+        	alert('Please elect a method');
+		}
+		else{
+            $.ajax({
+                url: '/process_v2',
+                type: 'post',
+                data: {
+                    input_img: input_img,
+                    method: method,
+                    input_type: input_type
+                },
+                success: function (resp) {
+                    console.log(resp);
+                }
+            })
+		}
+    });
 });

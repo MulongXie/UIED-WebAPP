@@ -24,19 +24,20 @@ app.get('/',function(req,res){
 });
 
 app.post('/process_v2', function (req, res) {
-    var id = index;
-    index ++;
     var method = req.body.method;
     var input_type = req.body.input_type;
 
-    var upload_path = 'data/inputs/' + id.toString() + '.jpg';
-    var output_path = 'data/outputs/' + method + '/' + input_type + id.toString();
-
-    // Convert the uploaded base64 image to jpg and process
+    // For uploaded image (base64 format)
     if (input_type == 'upload'){
-        var img_base64 = req.body.upload_img.replace(/^data:image\/png;base64,/, "");
+        var id = index;
+        index ++;
+        var output_path = 'data/outputs/' + method + '/' + input_type + id.toString();
+        var img_base64 = req.body.input_img.replace(/^data:image\/png;base64,/, "");
+        var upload_path = 'data/inputs/' + id.toString() + '.jpg';
+        // Convert the uploaded base64 image to jpg and process
         fs.writeFile(upload_path, img_base64, 'base64', function (err) {
             if (err == null){
+                // processing
                 element_detection(res, upload_path, output_path, method)
             }
             else {
@@ -46,8 +47,14 @@ app.post('/process_v2', function (req, res) {
             }
         });
     }
+    // For existing examples (.jpg format)
     else if (input_type == 'example'){
-        console.log()
+        var input_path = req.body.input_img;
+        var input_path_split = input_path.split('/');
+        var name = input_path_split[input_path_split.length - 1].split('.')[0];
+        var output_path = 'data/outputs/' + method + '/' + input_type + name;
+        input_path = 'public/images/screen/' + name + '.jpg';
+        element_detection(res, input_path, output_path, method)
     }
 
 });
@@ -67,7 +74,7 @@ app.listen(8000,function(){
 
 
 function element_detection(res, input_path, output_path, method) {
-    console.log('Running ' + method.toUpperCase() + ' on ' + input_path);
+    console.log('Running ' + method.toUpperCase() + ' on ' + input_path + " Save to " + output_path);
     var workerProcess = child_process.exec('python backend/' + method + '.py ' + input_path + ' ' + output_path,
         function (error, stdout, stderr) {
             if (error) {
