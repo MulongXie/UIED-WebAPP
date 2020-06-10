@@ -29,8 +29,8 @@ from matplotlib.ticker import NullLocator
 
 class Option:
     def __init__(self):
-        cwd = pjoin(os.getcwd(), 'backend/yolo')
-        # cwd = os.getcwd()
+        cwd = pjoin(os.getcwd(), 'backend/yolo')   # For really run
+        # cwd = os.getcwd()   # For isolated testing
         self.weights_path = pjoin(cwd, "E:\Mulong\Model\YOLO_cjs_rico\yolov3_ckpt_10.pth")
         # self.weights_path = pjoin(cwd, "model/yolov3_ckpt_10.pth")
         self.model_def = pjoin(cwd, "config/yolov3-rico.cfg")
@@ -61,6 +61,9 @@ def yolo(input_img_path, output_root):
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
     os.makedirs("output", exist_ok=True)
+
+    img_refresh = cv2.imread(input_img_path)
+    cv2.imwrite(input_img_path, img_refresh)
 
     # Set up model
     print("YOLO load model from:", opt.weights_path)
@@ -153,4 +156,4 @@ def yolo(input_img_path, output_root):
         print('Write to:', output_root)
 
 
-# yolo('data/input/19.jpg', 'data/output')
+# yolo('data/input/0.jpg', 'data/output')

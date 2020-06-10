@@ -1,0 +1,94 @@
+{
+    "compos": [
+        {
+            "id": 0,
+            "width": 540,
+            "column_max": 540,
+            "class": "Background",
+            "row_min": 0,
+            "height": 960,
+            "row_max": 960,
+            "column_min": 0
+        },
+        {
+            "id": 1,
+            "width": 527,
+            "column_max": 532,
+            "class": "EditText",
+            "row_min": 206,
+            "height": 48,
+            "row_max": 254,
+            "column_min": 4
+        },
+        {
+            "id": 2,
+            "width": 70,
+            "column_max": 72,
+            "class": "ImageButton",
+            "row_min": 33,
+            "height": 70,
+            "row_max": 103,
+            "column_min": 1
+        },
+        {
+            "id": 3,
+            "width": 525,
+            "column_max": 531,
+            "class": "EditText",
+            "row_min": 156,
+            "height": 51,
+            "row_max": 207,
+            "column_min": 5
+        },
+        {
+            "id": 4,
+            "width": 61,
+            "column_max": 538,
+            "class": "ImageButton",
+            "row_min": 38,
+            "height": 59,
+            "row_max": 97,
+            "column_min": 476
+        },
+        {
+            "id": 5,
+            "width": 509,
+            "column_max": 523,
+            "class": "Button",
+            "row_min": 256,
+            "height": 56,
+            "row_max": 312,
+            "column_min": 13
+        },
+        {
+            "id": 6,
+            "width": 486,
+            "column_max": 513,
+            "class": "Button",
+            "row_min": 487,
+            "height": 53,
+            "row_max": 541,
+            "column_min": 26
+        },
+        {
+            "id": 7,
+            "width": 325,
+            "column_max": 350,
+            "class": "RadioButton",
+            "row_min": 81,
+            "height": 293,
+            "row_max": 375,
+            "column_min": 25
+        },
+        {
+            "id": 8,
+            "width": 271,
+            "column_max": 337,
+            "class": "CheckBox",
+            "row_min": 73,
+            "height": 292,
+            "row_max": 365,
+            "column_min": 65
+        }
+    ]
+}

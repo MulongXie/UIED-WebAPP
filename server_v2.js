@@ -51,7 +51,6 @@ app.post('/process', function (req, res) {
         var input_path_split = input_path.split('/');
         var name = input_path_split[input_path_split.length - 1].split('.')[0];
         var output_path = 'data/outputs/' + method + '/' + input_type + name;
-        input_path = 'public/images/screen/' + name + '.jpg';
         element_detection(res, input_path, output_path, method)
     }
 
@@ -62,7 +61,7 @@ app.get('/dashboard',function(req,res){
     var input_image = req.query.input_img;
     var output_root = req.query.output_root;
     var method = req.query.method;
-    console.log(input_image, output_root, method);
+    console.log("Activate Dashboard on", input_image, output_root, method);
     // using ejs to set result path dynamically
     app.set('view engine', 'ejs');
     app.set('views', 'public');

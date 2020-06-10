@@ -159,9 +159,9 @@ function dashboard_init() {
                     }
                 }
                 // popup more methods selection
-                else if($(this).attr('datatype') == 'more'){
-                    show_pop_up();
-                }
+                // else if($(this).attr('datatype') == 'more'){
+                //     show_pop_up();
+                // }
             });
 
         };
@@ -442,34 +442,37 @@ function set_draggable(){
 
 
 /* add additional model pop-up page */
-function show_pop_up(){
-    $('#add_proc_btn').removeClass('disabled');
-    $('#add_proc_status').text('');
-    $('.pop-up').show();
-}
-
-function close_pop_up() {
-    $('.pop-up').hide();
-}
+// function show_pop_up(){
+//     $('#modal_proc_btn').removeClass('disabled');
+//     $('#modal_proc_status').text('');
+//     $('.pop-up').show();
+// }
+//
+// function close_pop_up() {
+//     $('.pop-up').hide();
+// }
 
 // close popup while clicking outside
-$(document).click(function (event) {
-    let popup = $('.pop-up');
-    if (event.target == popup[0] || event.target == $('.my-preview-list')[0]){
-        $('.pop-up').hide();
-    }
-});
+// $(document).click(function (event) {
+//     let popup = $('.pop-up');
+//     if (event.target == popup[0] || event.target == $('.my-preview-list')[0]){
+//         $('.pop-up').hide();
+//     }
+// });
 
-$('#add_proc_btn').click(function () {
+$('#modal_proc_btn').click(function () {
     let new_method = $("#add_method_select option:selected").attr('value');
+
+    console.log(input_img_path);
+
     if(existing_methods.includes(new_method)){
         alert(new_method.toUpperCase() + ' is Existing');
     }
     else{
         existing_methods.push(new_method);
         method = new_method;
-        $('#add_proc_btn').addClass('disabled');
-        $('#add_proc_status').text('Processing ...');
+        $('#modal_proc_btn').addClass('disabled');
+        $('#modal_proc_status').text('Processing ...').slideDown();
         $.ajax({
             url: '/process',
             type: 'post',
@@ -487,8 +490,8 @@ $('#add_proc_btn').click(function () {
                     result_path = response.result_path;
                     alert('success ' + input_img_path + ' ' + result_path);
 
-                    $('#add_proc_btn').removeClass('disabled');
-                    $('#add_proc_status').text(method.toUpperCase() + ' Processing Done');
+                    $('#modal_proc_btn').removeClass('disabled');
+                    $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
 
                     $('.my-preview-list-active').removeClass('my-preview-list-active');
                     $('.my-preview-img-active').removeClass('my-preview-img-active');

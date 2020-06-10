@@ -22,6 +22,7 @@
     <link href="plugins/switchery/switchery.min.css" rel="stylesheet"/>
     <link href="plugins/nvd3/nv.d3.min.css" rel="stylesheet">
     <link href="plugins/ecaps/css/ecaps.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <!-- Custom Theme Styles -->
     <link href="css/dashboard.css" rel="stylesheet">
 
@@ -46,6 +47,11 @@
                         </a>
                     </li>
                     <li>
+                        <a href="javascript:void(0)" id="upload-new-img" data-toggle="modal" data-target="#modal-new-img">
+                            <i class="menu-icon icon-image" style="font-size: 15px"></i><span>New Image</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="javascript:void(0)" id="uikits_sidebar">
                             <i class="menu-icon icon-flash_on"></i><span>UI Kits</span><i class="accordion-icon fa fa-angle-left"></i>
                         </a>
@@ -58,50 +64,15 @@
                             <i class="menu-icon icon-layers"></i><span>Models</span><i class="accordion-icon fa fa-angle-left"></i>
                         </a>
                         <ul class="sub-menu list-group list-group-flush" id="menu-models" style="padding: 0">
-                            <li class="list-group-item my-preview-list" datatype="more" style="text-align: center"><i class="icon-plus" style="margin-right: 10px"></i>More Models</li>
+                            <li class="list-group-item my-preview-list" datatype="more" style="text-align: center">
+                                <a href="javascript:void(0)" class="text-center" data-toggle="modal" data-target="#modal-new-model">
+                                    <i class="icon-plus" style="margin-right: 10px"></i>
+                                    More Models
+                                </a>
+                            </li>
                             <!--<li class="list-group-item my-preview"><img title="UIED" class="my-preview-img" src="../data/outputs/uied/example2/result.jpg"></li>-->
                         </ul>
                     </li>
-                    <!-- <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon icon-code"></i><span>Forms</span><i class="accordion-icon fa fa-angle-left"></i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon icon-format_list_bulleted"></i><span>Tables</span><i class="accordion-icon fa fa-angle-left"></i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="charts.html">
-                            <i class="menu-icon icon-show_chart"></i><span>Charts</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0)">
-                            <i class="menu-icon icon-my_location"></i><span>Maps</span><i class="accordion-icon fa fa-angle-left"></i>
-                        </a>
-                        <ul class="sub-menu">
-                            <li><a href=""></a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-divider"></li>
-                    <li>
-                        <a href="">
-                            <i class="menu-icon icon-help_outline"></i><span>Tutorial</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i class="menu-icon icon-public"></i><span>Changelog</span><span class="label label-danger">1.0</span>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </div>
@@ -155,23 +126,23 @@
                     <div class="box">
                     </div>
                 </div>
-                <div class="pop-up">
-                    <div id="additional-model" class="card">
-                        <div class="card-header">
-                            <span class="close icon-close" onclick="close_pop_up()"></span>
-                        </div>
-                        <div class="card-body" style="text-align: center">
-                            <h5 style="margin-bottom: 20px"><b>Choose Another Detection Approach</b></h5>
-                            <select class="form-control" id="add_method_select">
-                                <option value="uied">UIED</option>
-                                <option value="yolo">YOLO</option>
-                                <option value="faster-rcnn">Faster RCNN</option>
-                            </select>
-                            <button id="add_proc_btn" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 15px">Process</button>
-                            <p id="add_proc_status"></p>
-                        </div>
-                    </div>
-                </div>
+                <!--<div class="pop-up">-->
+                    <!--<div id="additional-model" class="card">-->
+                        <!--<div class="card-header">-->
+                            <!--<span class="close icon-close" onclick="close_pop_up()"></span>-->
+                        <!--</div>-->
+                        <!--<div class="card-body" style="text-align: center">-->
+                            <!--<h5 style="margin-bottom: 20px"><b>Choose Another Detection Approach</b></h5>-->
+                            <!--<select class="form-control" id="add_method_select">-->
+                                <!--<option value="uied">UIED</option>-->
+                                <!--<option value="yolo">YOLO</option>-->
+                                <!--<option value="faster-rcnn">Faster RCNN</option>-->
+                            <!--</select>-->
+                            <!--<button id="modal_proc_btn" class="btn btn-primary" style="margin-top: 20px; margin-bottom: 15px">Process</button>-->
+                            <!--<p id="modal_proc_status"></p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
             </div>
 
             <!--<div class="page-footer">-->
@@ -254,7 +225,7 @@
             </div>
         </div>
 
-        <!-- Right Component SideBar -->
+        <!-- Right SideBar for New Components-->
         <div class="page-right-sidebar" id="main-right-sidebar-component" style="overflow: auto">
             <div class="page-right-sidebar-inner">
                 <div class="right-sidebar-top">
@@ -320,6 +291,41 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal of Uploading-->
+        <div id="modal-new-img" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Upload New Image</p>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>ABDSDA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="modal-new-model" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Choose Another Detection Approach</p>
+                        <button class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <select class="form-control" id="add_method_select" style="height: 40px">
+                            <option value="uied">UIED</option>
+                            <option value="yolo">YOLO</option>
+                            <option value="faster-rcnn">Faster RCNN</option>
+                        </select>
+                        <button id="modal_proc_btn" class="btn btn-primary" style="margin: 20px auto">Process</button>
+                        <p id="modal_proc_status" style="display: none;"></p>
                     </div>
                 </div>
             </div>
