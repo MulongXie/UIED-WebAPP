@@ -164,6 +164,8 @@ jQuery(document).ready(function( $ ) {
 		else{
             // Processing start
             $('#btn-process').addClass('disabled');
+            $('#btn-show-res').addClass('disabled');
+            $('#btn-show-res').attr('data-target', '');
             $('#proc-status').fadeIn('quick').text('Processing ...');
             $.ajax({
                 url: '/process',
@@ -179,7 +181,9 @@ jQuery(document).ready(function( $ ) {
                         console.log(resp);
                         // Processing completed status
                         $('#btn-process').removeClass('disabled');
+                        $('#btn-show-res').removeClass('disabled');
                         $('#btn-show-res').fadeIn('quick');
+                        $('#btn-show-res').attr('data-target', '#result-modal');
                         $('#proc-status').text('Process Done!');
                         // Allocate image and result
                         $('#show-input').attr('src', input_img);
