@@ -191,9 +191,10 @@ jQuery(document).ready(function( $ ) {
                         $('#btn-show-res').attr('data-target', '#result-modal');
                         $('#btn-show-res').css('margin-top', '50px');
 
-                        // Allocate image and result
+                        // Allocate image and result on modal
                         $('#show-input').attr('src', input_img);
                         $('#show-result').attr('src', result_root + '/' + 'result.jpg');
+                        $('.modal-title').text('Detection Result - ' + method.toUpperCase())
                     }
                     else{
                         alert('Process failed')
