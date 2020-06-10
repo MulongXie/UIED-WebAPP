@@ -1263,7 +1263,7 @@ a.carousel-control.right {
 
 .display-result-arrow{
   font-size: 50px;
-  color: #3399ff;
+  color: #7FB3D5;
   margin-bottom: 10px;
   top:40%;
   position: relative;
@@ -1273,4 +1273,28 @@ a.carousel-control.right {
   margin-top: 0;
   top: 45%;
   position: relative;
+}
+
+/* Loader */
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3399ff;
+  border-bottom: 10px solid #3399ff;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+
+  margin: 35px auto;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

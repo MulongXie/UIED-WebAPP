@@ -164,10 +164,12 @@ jQuery(document).ready(function( $ ) {
 		}
 		else{
             // Processing start
+            $('#proc-status').fadeIn('quick').text('Processing ... (3s-5s ETA)');
+            $('.loader').slideToggle('quick');
             $('#btn-process').addClass('disabled');
             $('#btn-show-res').addClass('disabled');
             $('#btn-show-res').attr('data-target', '');
-            $('#proc-status').fadeIn('quick').text('Processing ...');
+            $('#btn-show-res').css('margin-top', '-40px');
             $.ajax({
                 url: '/process',
                 type: 'post',
@@ -181,11 +183,14 @@ jQuery(document).ready(function( $ ) {
                         result_root = resp.result_path;
                         console.log(resp);
                         // Processing completed status
+                        $('#proc-status').text('Process Done!');
+                        $('.loader').slideToggle('quick');
                         $('#btn-process').removeClass('disabled');
                         $('#btn-show-res').removeClass('disabled');
                         $('#btn-show-res').fadeIn('quick');
                         $('#btn-show-res').attr('data-target', '#result-modal');
-                        $('#proc-status').text('Process Done!');
+                        $('#btn-show-res').css('margin-top', '50px');
+
                         // Allocate image and result
                         $('#show-input').attr('src', input_img);
                         $('#show-result').attr('src', result_root + '/' + 'result.jpg');
