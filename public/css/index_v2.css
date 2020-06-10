@@ -1159,6 +1159,16 @@ a.carousel-control.right {
   color: white;
 }
 
+.my-btn:hover{
+  background: #004a99;
+  color: white;
+}
+
+.my-btn:focus{
+  background-color: #3399ff;
+  color: white;
+}
+
 #proc-status{
   font-size: medium;
   margin-top: 25px;
@@ -1256,7 +1266,7 @@ a.carousel-control.right {
   color: #3399ff;
   margin-bottom: 10px;
   top:40%;
-    position: relative;
+  position: relative;
 }
 
 #go-dashboard{

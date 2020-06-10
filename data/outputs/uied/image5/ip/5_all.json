@@ -1,374 +1,374 @@
 {
     "compos": [
         {
-            "id": 0,
-            "column_max": 450,
+            "column_min": 0,
             "class": "Background",
             "width": 450,
-            "column_min": 0,
-            "height": 800,
+            "column_max": 450,
+            "row_max": 800,
             "row_min": 0,
-            "row_max": 800
+            "id": 0,
+            "height": 800
         },
         {
-            "id": 1,
-            "column_max": 78,
             "column_min": 24,
+            "class": "Compo",
             "width": 54,
+            "column_max": 78,
             "row_max": 82,
-            "height": 37,
             "row_min": 45,
-            "class": "Compo"
+            "id": 1,
+            "height": 37
         },
         {
-            "id": 2,
-            "column_max": 250,
             "column_min": 200,
+            "class": "Compo",
             "width": 50,
+            "column_max": 250,
             "row_max": 75,
-            "height": 19,
             "row_min": 56,
-            "class": "Compo"
+            "id": 2,
+            "height": 19
         },
         {
-            "id": 3,
-            "column_max": 425,
             "column_min": 400,
+            "class": "Compo",
             "width": 25,
+            "column_max": 425,
             "row_max": 82,
-            "height": 27,
             "row_min": 55,
-            "class": "Compo"
+            "id": 3,
+            "height": 27
         },
         {
-            "id": 4,
-            "column_max": 62,
             "column_min": 43,
+            "class": "Compo",
             "width": 19,
+            "column_max": 62,
             "row_max": 141,
-            "height": 20,
             "row_min": 121,
-            "class": "Compo"
+            "id": 4,
+            "height": 20
         },
         {
-            "id": 5,
-            "column_max": 240,
             "column_min": 215,
+            "class": "Compo",
             "width": 25,
+            "column_max": 240,
             "row_max": 139,
-            "height": 20,
             "row_min": 119,
-            "class": "Compo"
+            "id": 5,
+            "height": 20
         },
         {
-            "id": 6,
-            "column_max": 408,
             "column_min": 381,
+            "class": "Compo",
             "width": 27,
+            "column_max": 408,
             "row_max": 140,
-            "height": 18,
             "row_min": 122,
-            "class": "Compo"
+            "id": 6,
+            "height": 18
         },
         {
-            "id": 7,
-            "column_max": 415,
             "column_min": 24,
+            "class": "Compo",
             "width": 391,
+            "column_max": 415,
             "row_max": 255,
-            "height": 83,
             "row_min": 172,
-            "class": "Compo"
+            "id": 7,
+            "height": 83
         },
         {
-            "id": 8,
-            "column_max": 225,
             "column_min": 111,
+            "class": "Compo",
             "width": 114,
+            "column_max": 225,
             "row_max": 211,
-            "height": 23,
             "row_min": 188,
-            "class": "Compo"
+            "id": 8,
+            "height": 23
         },
         {
-            "id": 9,
-            "column_max": 362,
             "column_min": 337,
+            "class": "Compo",
             "width": 25,
+            "column_max": 362,
             "row_max": 225,
-            "height": 31,
             "row_min": 194,
-            "class": "Compo"
+            "id": 9,
+            "height": 31
         },
         {
-            "id": 10,
-            "column_max": 396,
             "column_min": 368,
+            "class": "Compo",
             "width": 28,
+            "column_max": 396,
             "row_max": 225,
-            "height": 29,
             "row_min": 196,
-            "class": "Compo"
+            "id": 10,
+            "height": 29
         },
         {
-            "id": 11,
-            "column_max": 121,
             "column_min": 112,
+            "class": "Compo",
             "width": 9,
+            "column_max": 121,
             "row_max": 226,
-            "height": 7,
             "row_min": 219,
-            "class": "Compo"
+            "id": 11,
+            "height": 7
         },
         {
-            "id": 12,
-            "column_max": 98,
             "column_min": 24,
+            "class": "Compo",
             "width": 74,
+            "column_max": 98,
             "row_max": 338,
-            "height": 78,
             "row_min": 260,
-            "class": "Compo"
+            "id": 12,
+            "height": 78
         },
         {
-            "id": 13,
-            "column_max": 212,
             "column_min": 112,
+            "class": "Compo",
             "width": 100,
+            "column_max": 212,
             "row_max": 295,
-            "height": 19,
             "row_min": 276,
-            "class": "Compo"
+            "id": 13,
+            "height": 19
         },
         {
-            "id": 14,
-            "column_max": 362,
             "column_min": 337,
+            "class": "Compo",
             "width": 25,
+            "column_max": 362,
             "row_max": 312,
-            "height": 30,
             "row_min": 282,
-            "class": "Compo"
+            "id": 14,
+            "height": 30
         },
         {
-            "id": 15,
-            "column_max": 396,
             "column_min": 368,
+            "class": "Compo",
             "width": 28,
+            "column_max": 396,
             "row_max": 311,
-            "height": 28,
             "row_min": 283,
-            "class": "Compo"
+            "id": 15,
+            "height": 28
         },
         {
-            "id": 16,
-            "column_max": 122,
             "column_min": 112,
+            "class": "Compo",
             "width": 10,
+            "column_max": 122,
             "row_max": 313,
-            "height": 7,
             "row_min": 306,
-            "class": "Compo"
+            "id": 16,
+            "height": 7
         },
         {
-            "id": 17,
-            "column_max": 97,
             "column_min": 24,
+            "class": "Compo",
             "width": 73,
+            "column_max": 97,
             "row_max": 426,
-            "height": 76,
             "row_min": 350,
-            "class": "Compo"
+            "id": 17,
+            "height": 76
         },
         {
-            "id": 18,
-            "column_max": 243,
             "column_min": 112,
+            "class": "Compo",
             "width": 131,
+            "column_max": 243,
             "row_max": 382,
-            "height": 18,
             "row_min": 364,
-            "class": "Compo"
+            "id": 18,
+            "height": 18
         },
         {
-            "id": 19,
-            "column_max": 363,
             "column_min": 336,
+            "class": "Compo",
             "width": 27,
+            "column_max": 363,
             "row_max": 404,
-            "height": 29,
             "row_min": 375,
-            "class": "Compo"
+            "id": 19,
+            "height": 29
         },
         {
-            "id": 20,
-            "column_max": 397,
             "column_min": 368,
+            "class": "Compo",
             "width": 29,
+            "column_max": 397,
             "row_max": 403,
-            "height": 29,
             "row_min": 374,
-            "class": "Compo"
+            "id": 20,
+            "height": 29
         },
         {
-            "id": 21,
-            "column_max": 98,
             "column_min": 24,
+            "class": "Compo",
             "width": 74,
+            "column_max": 98,
             "row_max": 517,
-            "height": 78,
             "row_min": 439,
-            "class": "Compo"
+            "id": 21,
+            "height": 78
         },
         {
-            "id": 22,
-            "column_max": 212,
             "column_min": 112,
+            "class": "Compo",
             "width": 100,
+            "column_max": 212,
             "row_max": 476,
-            "height": 19,
             "row_min": 457,
-            "class": "Compo"
+            "id": 22,
+            "height": 19
         },
         {
-            "id": 23,
-            "column_max": 362,
             "column_min": 337,
+            "class": "Compo",
             "width": 25,
+            "column_max": 362,
             "row_max": 494,
-            "height": 30,
             "row_min": 464,
-            "class": "Compo"
+            "id": 23,
+            "height": 30
         },
         {
-            "id": 24,
-            "column_max": 396,
             "column_min": 368,
+            "class": "Compo",
             "width": 28,
+            "column_max": 396,
             "row_max": 495,
-            "height": 30,
             "row_min": 465,
-            "class": "Compo"
+            "id": 24,
+            "height": 30
         },
         {
-            "id": 25,
-            "column_max": 98,
             "column_min": 24,
+            "class": "Compo",
             "width": 74,
+            "column_max": 98,
             "row_max": 607,
-            "height": 80,
             "row_min": 527,
-            "class": "Compo"
+            "id": 25,
+            "height": 80
         },
         {
-            "id": 26,
-            "column_max": 218,
             "column_min": 112,
+            "class": "Compo",
             "width": 106,
+            "column_max": 218,
             "row_max": 564,
-            "height": 19,
             "row_min": 545,
-            "class": "Compo"
+            "id": 26,
+            "height": 19
         },
         {
-            "id": 27,
-            "column_max": 364,
             "column_min": 334,
+            "class": "Compo",
             "width": 30,
+            "column_max": 364,
             "row_max": 583,
-            "height": 31,
             "row_min": 552,
-            "class": "Compo"
+            "id": 27,
+            "height": 31
         },
         {
-            "id": 28,
-            "column_max": 397,
             "column_min": 368,
+            "class": "Compo",
             "width": 29,
+            "column_max": 397,
             "row_max": 583,
-            "height": 29,
             "row_min": 554,
-            "class": "Compo"
+            "id": 28,
+            "height": 29
         },
         {
-            "id": 29,
-            "column_max": 98,
             "column_min": 24,
+            "class": "Compo",
             "width": 74,
+            "column_max": 98,
             "row_max": 695,
-            "height": 75,
             "row_min": 620,
-            "class": "Compo"
+            "id": 29,
+            "height": 75
         },
         {
-            "id": 30,
-            "column_max": 215,
             "column_min": 112,
+            "class": "Compo",
             "width": 103,
+            "column_max": 215,
             "row_max": 652,
-            "height": 20,
             "row_min": 632,
-            "class": "Compo"
+            "id": 30,
+            "height": 20
         },
         {
-            "id": 31,
-            "column_max": 362,
             "column_min": 337,
+            "class": "Compo",
             "width": 25,
+            "column_max": 362,
             "row_max": 671,
-            "height": 26,
             "row_min": 645,
-            "class": "Compo"
+            "id": 31,
+            "height": 26
         },
         {
-            "id": 32,
-            "column_max": 396,
             "column_min": 368,
+            "class": "Compo",
             "width": 28,
+            "column_max": 396,
             "row_max": 673,
-            "height": 30,
             "row_min": 643,
-            "class": "Compo"
+            "id": 32,
+            "height": 30
         },
         {
-            "id": 33,
-            "column_max": 421,
             "column_min": 42,
+            "class": "Compo",
             "width": 379,
+            "column_max": 421,
             "row_max": 778,
-            "height": 96,
             "row_min": 682,
-            "class": "Compo"
+            "id": 33,
+            "height": 96
         },
         {
-            "id": 34,
-            "column_max": 97,
             "column_min": 24,
+            "class": "Compo",
             "width": 73,
+            "column_max": 97,
             "row_max": 786,
-            "height": 76,
             "row_min": 710,
-            "class": "Compo"
+            "id": 34,
+            "height": 76
         },
         {
-            "id": 35,
-            "column_max": 387,
             "column_min": 353,
+            "class": "Compo",
             "width": 34,
+            "column_max": 387,
             "row_max": 745,
-            "height": 37,
             "row_min": 708,
-            "class": "Compo"
+            "id": 35,
+            "height": 37
         },
         {
-            "id": 36,
-            "column_max": 210,
             "column_min": 112,
+            "class": "Compo",
             "width": 98,
+            "column_max": 210,
             "row_max": 745,
-            "height": 19,
             "row_min": 726,
-            "class": "Compo"
+            "id": 36,
+            "height": 19
         }
     ]
 }

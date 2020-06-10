@@ -127,7 +127,7 @@ jQuery(document).ready(function( $ ) {
 			$("#display-content").removeClass("hide");
 			$("#display-content").attr('data-type', 'base64');
 			// $(".display-content").fadeIn(1000);
-			$('html, body').animate({scrollTop:   $('#display-content').offset().top-50}, 1500, 'easeInOutExpo');
+			$('html, body').animate({scrollTop:   $('#display-content').offset().top - 100}, 1500, 'easeInOutExpo');
      	});
 	});
 
@@ -138,7 +138,8 @@ jQuery(document).ready(function( $ ) {
 			$(".display-pic").attr('src', this.src);
 			$("#display-content").removeClass("hide");
             $("#display-content").attr('data-type', 'image');
-			$('html, body').animate({scrollTop:   $('#display-content').offset().top-50}, 1500, 'easeInOutExpo');
+            console.log($('#display-content').offset().top);
+			$('html, body').animate({scrollTop: $('#display-content').offset().top - 100}, 1500, 'easeInOutExpo');
 		});
    	});
 
