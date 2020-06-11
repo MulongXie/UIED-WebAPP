@@ -465,7 +465,10 @@ $('#modal_proc_btn').click(function () {
 
     console.log(input_img_path);
 
-    if(existing_methods.includes(new_method)){
+    if (new_method == 'empty'){
+        alert("Please select a new detection method")
+    }
+    else if(existing_methods.includes(new_method)){
         alert(new_method.toUpperCase() + ' is Existing');
     }
     else{
@@ -488,7 +491,7 @@ $('#modal_proc_btn').click(function () {
             success: function (response) {
                 if (response.code == 1){
                     result_path = response.result_path;
-                    alert('success ' + input_img_path + ' ' + result_path);
+                    alert('Processing Success!');
 
                     $('#modal_proc_btn').removeClass('disabled');
                     $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
@@ -509,4 +512,21 @@ $('#modal_proc_btn').click(function () {
     }
 
     return false;
+});
+
+
+/* Adjust uied's parameters */
+$('#add_method_select').on('change', function () {
+    let selected_method = $("#add_method_select option:selected").attr('value');
+    let params = $("#uied-parameter");
+    if (selected_method == 'uied'){
+        params.slideDown();
+    }
+    else {
+        params.slideUp();
+    }
+});
+
+$('.slider').on('input', function () {
+    $('#' + $(this).attr('id') + '-show').text($(this).val());
 });
