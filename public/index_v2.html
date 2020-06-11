@@ -167,20 +167,10 @@
 									</form>
 									<div id="uied-parameter" style="display: none;">
 										<h5>You can adjust key parameters for UIED to change the detection result (or just leave it)</h5>
-										<!--<ul style="display: inline">-->
-											<!--<li class="param-list">-->
-												<!--<p>AAAA</p>-->
-												<!--<input type="range" min="1" max="100" value="50" class="slider">-->
-											<!--</li>-->
-											<!--<li class="param-list" style="list-style: none">-->
-												<!--<p>AAAA</p>-->
-												<!--<input type="range" min="1" max="100" value="50" class="slider">-->
-											<!--</li>-->
-										<!--</ul>-->
-										<p>AAAA</p>
-										<input type="range" min="1" max="100" value="50" class="slider">
-										<p>AAAA</p>
-										<input type="range" min="1" max="100" value="50" class="slider">
+										<p>Gradient Threshold: <span id="para-grad-show">50</span></p>
+										<input id="para-grad" type="range" min="1" max="100" value="50" class="slider">
+										<p>Block Selection: <span id="para-block-show">3</span></p>
+										<input id="para-block" type="range" min="1" max="10" value="3" class="slider">
 									</div>
                                     <div style="text-align: center">
                                         <button id="btn-process" class="btn my-btn">Process</button>

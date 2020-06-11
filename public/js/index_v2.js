@@ -243,7 +243,7 @@ jQuery(document).ready(function( $ ) {
     });
 
     $('.slider').on('input', function () {
-        $(this).parent().children('p').text($(this).val());
+        $('#' + $(this).attr('id') + '-show').text($(this).val());
     });
 
 });
