@@ -165,18 +165,26 @@
 											</select>
 										</div>
 									</form>
+									<div id="uied-parameter" style="display: none;">
+										<h5>You can adjust key parameters for UIED to change the detection result (or just leave it)</h5>
+										<p>AAAA</p>
+										<input type="range" min="1" max="100" value="50" class="slider">
+										<p>AAAA</p>
+										<input type="range" min="1" max="100" value="50" class="slider">
+										<p>AAAA</p>
+										<input type="range" min="1" max="100" value="50" class="slider">
+									</div>
                                     <div style="text-align: center">
                                         <button id="btn-process" class="btn my-btn">Process</button>
                                         <p id="proc-status" class="lead" style="display: none">aaaaaa</p>
-                                        <div class="loader" style="display: none"></div>
-                                        <button id="btn-show-res" class="btn my-btn" style="display: none" data-toggle="modal" data-target="#result-modal">Check Result </button>
+                                        <div class="loader"></div>
+                                        <button id="btn-show-res" class="btn my-btn" style="display: none; margin-top: 0" data-toggle="modal" data-target="#result-modal">Check Result </button>
                                     </div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-
 
 				<div id="quickstart-modal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="quickstart" aria-hidden="true">
 					<div class="modal-dialog modal-lg">

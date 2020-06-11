@@ -1153,7 +1153,7 @@ a.carousel-control.right {
 
 
 .my-btn{
-  margin-top: 50px;
+  margin-top: 30px;
   width: 100%;
   background-color: #3399ff;
   color: white;
@@ -1171,8 +1171,8 @@ a.carousel-control.right {
 
 #proc-status{
   font-size: medium;
-  margin-top: 25px;
-  margin-bottom: -20px;
+  margin-top: 20px;
+  /*margin-bottom: -20px;*/
 }
 
 .avatar-wrapper {
@@ -1203,10 +1203,6 @@ a.carousel-control.right {
   max-height: 364px;
   max-width: 100%;
 }
-
-/* .avatar-wrapper{
-  max-width: 100%;
-} */
 
 .avatar-preview {
   overflow: hidden;
@@ -1286,7 +1282,8 @@ a.carousel-control.right {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 
-  margin: 35px auto;
+  margin: -5px auto;
+  display: none;
 }
 
 @-webkit-keyframes spin {
@@ -1297,4 +1294,41 @@ a.carousel-control.right {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* Adjust parameters */
+#uied-parameter{
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+#uied-parameter p{
+  margin: 0;
+}
+
+.slider {
+  margin: 5px auto 15px;
+  -webkit-appearance: none;
+  width: 80%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #3399ff;
+  cursor: pointer;
 }

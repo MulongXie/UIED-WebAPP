@@ -175,7 +175,7 @@ jQuery(document).ready(function( $ ) {
             $('#btn-process').addClass('disabled');
             $('#btn-show-res').addClass('disabled');
             $('#btn-show-res').attr('data-target', '');
-            $('#btn-show-res').css('margin-top', '-40px');
+            // $('#btn-show-res').css('margin-top', '-40px');
             $.ajax({
                 url: '/process',
                 type: 'post',
@@ -197,7 +197,7 @@ jQuery(document).ready(function( $ ) {
                         $('#btn-show-res').removeClass('disabled');
                         $('#btn-show-res').fadeIn('quick');
                         $('#btn-show-res').attr('data-target', '#result-modal');
-                        $('#btn-show-res').css('margin-top', '50px');
+                        // $('#btn-show-res').css('margin-top', '50px');
                         $('.modal-title').text('Detection Result - ' + method.toUpperCase())
                     }
                     else{
@@ -227,5 +227,21 @@ jQuery(document).ready(function( $ ) {
         // console.log(url.href.replace('https:/', ''));
         // $(location).attr('href',  url.href.replace('https:/', ''));
     });
+
+	/* Adjust uied's parameters */
+	$('#method-select').on('change', function () {
+		let selected_method = $("#method-select option:selected").attr('value');
+		let params = $("#uied-parameter");
+		if (selected_method == 'uied'){
+
+			params.slideToggle();
+			$('#btn-process').css('margin-top', '10px')
+		}
+		else {
+            params.slideToggle();
+            $('#btn-process').css('margin-top', '30px')
+		}
+    })
+
 
 });
