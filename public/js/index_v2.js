@@ -233,15 +233,17 @@ jQuery(document).ready(function( $ ) {
 		let selected_method = $("#method-select option:selected").attr('value');
 		let params = $("#uied-parameter");
 		if (selected_method == 'uied'){
-
-			params.slideToggle();
+			params.slideDown();
 			$('#btn-process').css('margin-top', '10px')
 		}
 		else {
-            params.slideToggle();
+            params.slideUp();
             $('#btn-process').css('margin-top', '30px')
 		}
-    })
+    });
 
+    $('.slider').on('input', function () {
+        $(this).parent().children('p').text($(this).val());
+    });
 
 });

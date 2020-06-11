@@ -1282,7 +1282,7 @@ a.carousel-control.right {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 
-  margin: -5px auto;
+  margin: 10px auto;
   display: none;
 }
 
@@ -1308,7 +1308,7 @@ a.carousel-control.right {
 }
 
 .slider {
-  margin: 5px auto 15px;
+  margin: 5px auto 10px;
   -webkit-appearance: none;
   width: 80%;
   height: 15px;
@@ -1331,4 +1331,8 @@ a.carousel-control.right {
   height: 15px;
   background: #3399ff;
   cursor: pointer;
+}
+
+.param-list{
+  list-style: none
 }
