@@ -1282,7 +1282,7 @@ a.carousel-control.right {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 
-  margin: 10px auto;
+  margin: 15px auto;
   display: none;
 }
 

@@ -234,7 +234,7 @@ jQuery(document).ready(function( $ ) {
 		let params = $("#uied-parameter");
 		if (selected_method == 'uied'){
 			params.slideDown();
-			$('#btn-process').css('margin-top', '10px')
+			$('#btn-process').css('margin-top', '20px')
 		}
 		else {
             params.slideUp();
