@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/public/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageButton/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/ImageView/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/data/output/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/data/output/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/yolo/test.py" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,24 +42,37 @@
     <splitter split-orientation="horizontal" split-proportion="0.5461493">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server_v2.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
+                <state relative-caret-position="632">
+                  <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="328" column="70" selection-start-line="328" selection-start-column="70" selection-end-line="328" selection-end-column="70" />
+                <state relative-caret-position="5610">
+                  <caret line="330" column="46" selection-start-line="330" selection-start-column="46" selection-end-line="330" selection-end-column="46" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index_v2.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/index_v2.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="8347">
+                  <caret line="586" column="33" selection-start-line="586" selection-start-column="33" selection-end-line="586" selection-end-column="33" />
                   <folding>
-                    <element signature="e#18184#18191#1#HTML" expanded="true" />
-                    <element signature="e#18732#18739#1#HTML" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -50,32 +85,29 @@
           <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="341">
+                <state relative-caret-position="1921">
                   <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="296">
-                  <caret line="519" column="80" selection-start-line="519" selection-start-column="80" selection-end-line="519" selection-end-column="80" />
+                <state relative-caret-position="7803">
+                  <caret line="488" column="35" selection-start-line="488" selection-start-column="35" selection-end-line="488" selection-end-column="35" />
                   <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
                     <element signature="n#!!block;n#set_draggable#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index_v2.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="index_v2.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="177">
-                  <caret line="230" selection-start-line="230" selection-end-line="246" selection-end-column="7" />
+                <state relative-caret-position="461">
+                  <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
                 </state>
               </provider>
             </entry>
@@ -96,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>video</find>
       <find>123</find>
       <find>arr</find>
       <find>Detec</find>
@@ -126,6 +157,7 @@
       <find>loader</find>
       <find>btn-process</find>
       <find>additional-model</find>
+      <find>Success</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -187,102 +219,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
-      <path value="$PROJECT_DIR$/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ansi-styles/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/append-field/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/async/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/balanced-match/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/brace-expansion/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/buffer-from/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/busboy/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/chalk/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/color-convert/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/color-name/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-map/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-stream/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-stream/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-stream/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/concat-stream/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/core-util-is/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/dicer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ejs/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/escape-string-regexp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/filelist/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/formidable/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/has-flag/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/isarray/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/jake/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/minimatch/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/minimist/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/mkdirp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/multer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/nanobar/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/negotiator/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/object-assign/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/on-finished/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/parseurl/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/process-nextick-args/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/proxy-addr/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/range-parser/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/raw-body/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/readable-stream/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/safer-buffer/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/send/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/send/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/serve-static/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/streamsearch/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/string_decoder/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/supports-color/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/toidentifier/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/type-is/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/typedarray/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/unpipe/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/util-deprecate/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/utils-merge/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/vary/package.json" />
-      <path value="$PROJECT_DIR$/node_modules/xtend/package.json" />
+      <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="634" />
-    <option name="width" value="650" />
-    <option name="height" value="698" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -298,17 +247,6 @@
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-              <item name="outputs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
@@ -450,12 +388,14 @@
       <workItem from="1591395113136" duration="1086000" />
       <workItem from="1591648431354" duration="268000" />
       <workItem from="1591651149581" duration="47273000" />
-      <workItem from="1591840753950" duration="14988000" />
+      <workItem from="1591840753950" duration="18602000" />
+      <workItem from="1591953664840" duration="3000" />
+      <workItem from="1591987176546" duration="603000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311100000" />
+    <option name="totallyTimeSpent" value="315320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -466,7 +406,7 @@
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.27668846" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27668846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -677,20 +617,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="55" column="65" selection-start-line="55" selection-start-column="65" selection-end-line="55" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.html" />
     <entry file="file://$PROJECT_DIR$/public/css/index_v2.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -698,10 +625,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7803">
+          <caret line="488" column="35" selection-start-line="488" selection-start-column="35" selection-end-line="488" selection-end-column="35" />
+          <folding>
+            <element signature="n#!!block;n#set_draggable#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="330" column="46" selection-start-line="330" selection-start-column="46" selection-end-line="330" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="200" column="53" selection-start-line="200" selection-start-column="53" selection-end-line="200" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="167" column="56" selection-start-line="167" selection-start-column="56" selection-end-line="167" selection-end-column="56" />
+        <state relative-caret-position="8347">
+          <caret line="586" column="33" selection-start-line="586" selection-start-column="33" selection-end-line="586" selection-end-column="33" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -714,42 +672,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+    <entry file="file://$PROJECT_DIR$/server_v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="230" selection-start-line="230" selection-end-line="246" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="328" column="70" selection-start-line="328" selection-start-column="70" selection-end-line="328" selection-end-column="70" />
-          <folding>
-            <element signature="e#18184#18191#1#HTML" expanded="true" />
-            <element signature="e#18732#18739#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="519" column="80" selection-start-line="519" selection-start-column="80" selection-end-line="519" selection-end-column="80" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="n#!!block;n#set_draggable#0" />
-          </folding>
+        <state relative-caret-position="632">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
         </state>
       </provider>
     </entry>
