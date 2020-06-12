@@ -1,0 +1,3 @@
+data/input/10.jpg data/output
+data/input/0.jpg data/output
+data/input/11.jpg data/output

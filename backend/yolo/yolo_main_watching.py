@@ -62,19 +62,33 @@ class Params:
 
 
 class MyHandler(FileSystemEventHandler):
-    def on_created(self, event):
+    # def on_created(self, event):
+    #     print('event type ', event.event_type, "path ", event.src_path)
+    #     params.input_img_path = event.src_path
+    #     try:
+    #         time.sleep(0.5)
+    #         detect()
+    #     except:
+    #         print("Processing Failed")
+
+    def on_modified(self, event):
         print('event type ', event.event_type, "path ", event.src_path)
-        params.input_img_path = event.src_path
+        new_paths = open(event.src_path).readlines()[-1].split()
+        print(new_paths)
+
+        params.input_img_path = new_paths[0]
+        params.output_root = new_paths[1]
         try:
             time.sleep(0.5)
             detect()
         except:
             print("Processing Failed")
 
+
 def detect():
     opt, model, input_img_path, output_root = params.get_params()
 
-    print("YOLO processing img:", input_img_path)
+    print("YOLO processing img:", input_img_path, " Output Dir:", output_root)
     img_refresh = cv2.imread(input_img_path)
     cv2.imwrite(input_img_path, img_refresh)
     dataloader = DataLoader(
@@ -158,7 +172,7 @@ def detect():
         ip.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, compos['compos'])
         cv2.imwrite(pjoin(output_root, 'result.jpg'), img)
         json.dump(compos, open(pjoin(output_root, "compo.json"), 'w'), indent=4)
-        print('Write to:', output_root)
+        print('Write to:', output_root, '\n')
 
 
 def yolo(input_img_path, output_root):
@@ -174,10 +188,10 @@ def yolo(input_img_path, output_root):
     params.update(opt, model, input_img_path, output_root)
 
     # Actively watch input files
-    path = os.path.join(os.getcwd(), 'data/input')
+    path = os.path.join(os.getcwd(), 'path/')
     observer = Observer()
     event = MyHandler()
-    observer.schedule(event, path, recursive=True)
+    observer.schedule(event, path, recursive=False)
     observer.start()
     print("Watching Input File:", path)
     try:
