@@ -1,3 +1,22 @@
-data/input/10.jpg data/output
-data/input/0.jpg data/output
-data/input/11.jpg data/output
+
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/5.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_5
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/4.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_4
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/5.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_5
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/8.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_8
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/6.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_6
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/6.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_6
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/7.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_7
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/7.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_7
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/4.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_4
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2 data/output/notify.txt
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2 D:\git_file\github\doing\UIED-WebAPPdata/output/notify.txt
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_2 data/outputs/notify.txt
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/8.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_8 data/outputs/notify.txt
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/7.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_7 D:\git_file\github\doing\UIED-WebAPP/data/outputs/notify.txt
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/5.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_5 D:\git_file\github\doing\UIED-WebAPP/data/outputs/notify.txt
+D:\git_file\github\doing\UIED-WebAPP/data/inputs/0.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/base64_0 D:\git_file\github\doing\UIED-WebAPP/data/outputs/notify.txt

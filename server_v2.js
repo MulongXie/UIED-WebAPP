@@ -1,10 +1,11 @@
 var child_process = require('child_process');
+var fs = require('fs');
+var bodyParser = require('body-parser');
+var path = require('path');
 var express	= require("express");
 var app	= express();
 
 // For base64 upload and save
-var fs = require('fs');
-var bodyParser = require('body-parser');
 app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 
@@ -36,7 +37,8 @@ app.post('/process', function (req, res) {
             if (err == null){
                 console.log('Upload image to', upload_path);
                 // processing
-                element_detection(res, upload_path, output_path, method)
+                // element_detection(res, upload_path, output_path, method)
+                element_detection_watching(res, upload_path, output_path, method)
             }
             else {
                 index --;
@@ -55,7 +57,8 @@ app.post('/process', function (req, res) {
         if (input_path_split[0] == 'http:'){
             input_path = 'public/images/screen/' + name + '.jpg';
         }
-        element_detection(res, input_path, output_path, method)
+        // element_detection(res, input_path, output_path, method)
+        element_detection_watching(res, input_path, output_path, method)
     }
 });
 
@@ -94,4 +97,23 @@ function element_detection(res, input_path, output_path, method) {
     workerProcess.on('exit', function () {
         console.log('Program Completed');
     });
+}
+
+function element_detection_watching(res, input_path, output_path, method) {
+    let path_file = 'backend/' + method + '/path/path.txt';     // Pass input image path and output root to backend
+    let notify_file = 'data/outputs/notify.txt';     // Backend notifies the server while process is done
+
+    let abs_input_path = __dirname + '/' + input_path;
+    let abs_output_path = __dirname + '/' + output_path;
+    let abs_notify_file = __dirname + '/' + notify_file;
+
+    console.log('Watching Mode Running ' + method.toUpperCase() + ' on ' + input_path + " Save to " + output_path);
+    fs.appendFile(path_file, '\n' + abs_input_path + ' ' + abs_output_path + ' ' + abs_notify_file, function (err) {
+        if(err){throw err;}
+        let watcher = fs.watch(notify_file, function () {
+            console.log(`${notify_file} Changed and Processing Success \n`);
+            res.json({code:1, result_path:output_path, upload_path:input_path});
+            watcher.close()
+        });
+    })
 }

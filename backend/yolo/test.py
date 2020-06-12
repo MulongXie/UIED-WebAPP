@@ -10,13 +10,13 @@ class MyHandler(FileSystemEventHandler):
 
     def on_modified(self, event):
         print('Changing')
-        # time.sleep(1)
+        time.sleep(3)
         print('event type ', event.event_type, "path ", event.src_path)
         f = open(event.src_path, 'r')
-        print(f.readlines()[-1])
+        print(f.readlines()[-1], '\n')
 
 
-path = os.path.join(os.getcwd(), 'data/input')
+path = os.path.join(os.getcwd(), 'path/')
 observer = Observer()
 event = MyHandler()
 observer.schedule(event, path, recursive=True)

@@ -1,47 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b21a7902-b24f-45ce-ba5d-d4635bf6c5bb" name="Default" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
+    <list default="true" id="b21a7902-b24f-45ce-ba5d-d4635bf6c5bb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../data/outputs/notify.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yolo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../yolo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/path/path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/path/path.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yolo_main_watching.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo_main_watching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/19.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/22.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/ImageView/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_4/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../server_v2.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="yolo_main.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/yolo_main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1224">
-              <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datasets.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/datasets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3961">
-              <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -50,87 +59,32 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>data_config</find>
-    </findStrings>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/train.py" />
-        <option value="$PROJECT_DIR$/test.sh" />
-        <option value="$PROJECT_DIR$/utils/file_utils.py" />
-        <option value="$PROJECT_DIR$/detect.py" />
-        <option value="$PROJECT_DIR$/yolo.py" />
-        <option value="$PROJECT_DIR$/utils/datasets.py" />
-        <option value="$PROJECT_DIR$/utils/ip_utils.py" />
-        <option value="$PROJECT_DIR$/test.py" />
-        <option value="$PROJECT_DIR$/models.py" />
-        <option value="$PROJECT_DIR$/yolo_main.py" />
-      </list>
-    </option>
+  <component name="ProjectId" id="1dEaMTW2FGvQn0sVFu9VVwhauXs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="yolo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yolo" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/Code/django" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\git_file\github\doing\UIED-WebAPP\backend\yolo\path" />
+      <recent name="D:\git_file\github\doing\UIED-WebAPP\backend\yolo\data" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.yolo_main">
-    <configuration name="detect" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PyTorch-YOLOv3_cjs" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="D:\Anaconda\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detect.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.yolo_main_watching">
     <configuration name="ip_utils" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-YOLOv3_cjs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -143,11 +97,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/ip_utils.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-YOLOv3_cjs" />
@@ -161,11 +119,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="yolo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-YOLOv3_cjs" />
@@ -179,11 +141,15 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yolo.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="yolo_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyTorch-YOLOv3_cjs" />
@@ -197,26 +163,52 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yolo_main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yolo_main_watching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PyTorch-YOLOv3_cjs" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/yolo_main_watching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.detect" />
       <item itemvalue="Python.yolo" />
       <item itemvalue="Python.yolo_main" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python.ip_utils" />
+      <item itemvalue="Python.yolo_main_watching" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.yolo_main" />
+        <item itemvalue="Python.yolo_main_watching" />
         <item itemvalue="Python.test" />
+        <item itemvalue="Python.yolo_main" />
         <item itemvalue="Python.ip_utils" />
         <item itemvalue="Python.yolo" />
-        <item itemvalue="Python.detect" />
       </list>
     </recent_temporary>
   </component>
@@ -230,34 +222,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591088292309</updated>
+      <workItem from="1591992659219" duration="7592000" />
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.09483667" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50052685" side_tool="true" weight="0.39978212" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.32897604" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.39869282" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="WindowStateProjectService">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1592000564236">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="278" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592000564236" />
+    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1592001257023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="281" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592001257023" />
+    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1592001257023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="281" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592001257023" />
+    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1592001257023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="281" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592001257023" />
+    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1592001257023">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="914" height="281" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592001257023" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -269,7 +261,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/yolo_main.py</url>
-          <line>92</line>
+          <line>93</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
@@ -280,226 +272,10 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/yolo_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="77" selection-start-line="81" selection-start-column="77" selection-end-line="81" selection-end-column="77" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/datasets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3961">
-          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yolo_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/datasets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3961">
-          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yolo_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/clips/bkg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/ip_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/detect.py" />
-    <entry file="file://$PROJECT_DIR$/train.py" />
-    <entry file="file://$PROJECT_DIR$/demo.sh" />
-    <entry file="file://$PROJECT_DIR$/test.sh" />
-    <entry file="file://$PROJECT_DIR$/detect.py" />
-    <entry file="file://D:/Anaconda/Lib/site-packages/torch/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/rico/classes.names" />
-    <entry file="file://$PROJECT_DIR$/train.py" />
-    <entry file="file://$PROJECT_DIR$/output/3.png" />
-    <entry file="file://$PROJECT_DIR$/demo.sh" />
-    <entry file="file://D:/Anaconda/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="734" selection-start-line="734" selection-end-line="734" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.sh" />
-    <entry file="file://D:/Anaconda/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="178" selection-start-line="178" selection-end-line="178" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/3.json" />
-    <entry file="file://$PROJECT_DIR$/utils/file_utils.py" />
-    <entry file="file://$PROJECT_DIR$/output/ImageView/3.jpg" />
-    <entry file="file://$PROJECT_DIR$/output/ImageView/2.jpg" />
-    <entry file="file://$PROJECT_DIR$/detect.py" />
-    <entry file="file://$PROJECT_DIR$/yolo.py" />
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/torch/utils/data/dataloader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="614" selection-start-line="614" selection-end-line="614" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="2579" selection-start-line="2579" selection-end-line="2579" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/output/bkg.png" />
-    <entry file="file://$PROJECT_DIR$/output/10.png" />
-    <entry file="file://$PROJECT_DIR$/inference.sh" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
-    <entry file="file://$PROJECT_DIR$/info" />
-    <entry file="file://$PROJECT_DIR$/utils/ip_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1581">
-          <caret line="100" column="40" selection-start-line="100" selection-start-column="40" selection-end-line="100" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/output/clips/bkg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/parse_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/input/10.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/torch/nn/modules/conv.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="319" selection-start-line="319" selection-end-line="319" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/torch/nn/modules/container.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/torch/nn/modules/module.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="488" selection-start-line="488" selection-end-line="488" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3961">
-          <caret line="245" column="39" selection-start-line="245" selection-start-column="39" selection-end-line="245" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/datasets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="1657" selection-start-line="1657" selection-end-line="1657" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yolo_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1224">
-          <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/yolo$test.coverage" NAME="test Coverage Results" MODIFIED="1591994546662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolo$yolo_main_watching.coverage" NAME="yolo_main_watching Coverage Results" MODIFIED="1592001473827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

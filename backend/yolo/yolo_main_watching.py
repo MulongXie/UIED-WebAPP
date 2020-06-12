@@ -45,11 +45,12 @@ class Option:
 
 
 class Params:
-    def __init__(self, opt=None, model=None, input_img_path=None, output_root=None):
+    def __init__(self, opt=None, model=None, input_img_path=None, output_root=None, notify_file=None):
         self.opt = opt
         self.model = model
         self.input_img_path = input_img_path
         self.output_root = output_root
+        self.notify_file = notify_file
 
     def update(self, opt, model, input_img_path, output_root):
         self.opt = opt
@@ -58,7 +59,7 @@ class Params:
         self.output_root = output_root
 
     def get_params(self):
-        return self.opt, self.model, self.input_img_path, self.output_root
+        return self.opt, self.model, self.input_img_path, self.output_root, self.notify_file
 
 
 class MyHandler(FileSystemEventHandler):
@@ -72,21 +73,23 @@ class MyHandler(FileSystemEventHandler):
     #         print("Processing Failed")
 
     def on_modified(self, event):
-        print('event type ', event.event_type, "path ", event.src_path)
-        new_paths = open(event.src_path).readlines()[-1].split()
-        print(new_paths)
+        # print('event type ', event.event_type, "path ", event.src_path)
+        paths = open(event.src_path).readlines()[-1].split()
+        # print(new_paths)
 
-        params.input_img_path = new_paths[0]
-        params.output_root = new_paths[1]
-        try:
-            time.sleep(0.5)
-            detect()
-        except:
-            print("Processing Failed")
+        params.input_img_path = paths[0]
+        params.output_root = paths[1]
+        params.notify_file = paths[2]
+        # try:
+        time.sleep(0.5)
+        detect()
+        # except:
+        #     print("Processing Failed")
 
 
 def detect():
-    opt, model, input_img_path, output_root = params.get_params()
+    opt, model, input_img_path, output_root, notify_file = params.get_params()
+    os.makedirs(output_root, exist_ok=True)
 
     print("YOLO processing img:", input_img_path, " Output Dir:", output_root)
     img_refresh = cv2.imread(input_img_path)
@@ -172,10 +175,11 @@ def detect():
         ip.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, compos['compos'])
         cv2.imwrite(pjoin(output_root, 'result.jpg'), img)
         json.dump(compos, open(pjoin(output_root, "compo.json"), 'w'), indent=4)
-        print('Write to:', output_root, '\n')
+        print('Processing Done and Write to:', output_root, '\n')
+        open(notify_file, 'a').write(output_root)
 
 
-def yolo(input_img_path, output_root):
+def yolo(input_img_path=None, output_root=None):
     opt = Option()
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
@@ -205,4 +209,5 @@ def yolo(input_img_path, output_root):
 
 
 params = Params()
-yolo('data/input/0.jpg', 'data/output')
+yolo()
+# yolo('data/input/0.jpg', 'data/output')
