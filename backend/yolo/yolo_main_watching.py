@@ -197,12 +197,12 @@ def yolo(input_img_path=None, output_root=None):
     params.update(opt, model, input_img_path, output_root)
 
     # Actively watch input files
-    path = os.path.join(os.getcwd(), 'parameters/')
+    param_file = os.path.join(os.getcwd(), 'parameters/')
     observer = Observer()
     event = MyHandler()
-    observer.schedule(event, path, recursive=False)
+    observer.schedule(event, param_file, recursive=False)
     observer.start()
-    print("Watching Input File:", path)
+    print("Watching Input File:", param_file)
     try:
         while True:
             time.sleep(1)
