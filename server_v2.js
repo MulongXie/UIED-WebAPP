@@ -101,19 +101,30 @@ function element_detection(res, input_path, output_path, method) {
 
 function element_detection_watching(res, input_path, output_path, method) {
     let path_file = 'backend/' + method + '/path/path.txt';     // Pass input image path and output root to backend
-    let notify_file = 'data/outputs/notify.txt';     // Backend notifies the server while process is done
+    let note_success_file = 'data/outputs/success.txt';     // Backend notifies the server while process is done
+    let note_fail_file = 'data/outputs/failed.txt';     // Backend notifies the server while process is done
 
     let abs_input_path = __dirname + '/' + input_path;
     let abs_output_path = __dirname + '/' + output_path;
-    let abs_notify_file = __dirname + '/' + notify_file;
+    let abs_note_sucs_file = __dirname + '/' + note_success_file;
+    let abs_note_fail_file = __dirname + '/' + note_fail_file;
 
+    let parameters = `\n${abs_input_path} ${abs_output_path} ${abs_note_sucs_file} ${abs_note_fail_file}`;
     console.log('Watching Mode Running ' + method.toUpperCase() + ' on ' + input_path + " Save to " + output_path);
-    fs.appendFile(path_file, '\n' + abs_input_path + ' ' + abs_output_path + ' ' + abs_notify_file, function (err) {
+    fs.appendFile(path_file, parameters, function (err) {
         if(err){throw err;}
-        let watcher = fs.watch(notify_file, function () {
-            console.log(`${notify_file} Changed and Processing Success \n`);
+        let watcher_success = fs.watch(note_success_file, function () {
+            console.log(`${abs_note_sucs_file} Changed and Processing Success \n`);
             res.json({code:1, result_path:output_path, upload_path:input_path});
-            watcher.close()
+            watcher_success.close();
+            watcher_failed.close();
         });
+
+        let watcher_failed = fs.watch(note_fail_file, function () {
+            console.log(`${abs_note_sucs_file} Changed and Processing Failed \n`);
+            res.json({code:0});
+            watcher_failed.close();
+            watcher_success.close();
+        })
     })
 }

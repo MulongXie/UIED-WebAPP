@@ -45,12 +45,14 @@ class Option:
 
 
 class Params:
-    def __init__(self, opt=None, model=None, input_img_path=None, output_root=None, notify_file=None):
+    def __init__(self, opt=None, model=None, input_img_path=None, output_root=None,
+                 note_success_file=None, note_fail_file = None):
         self.opt = opt
         self.model = model
         self.input_img_path = input_img_path
         self.output_root = output_root
-        self.notify_file = notify_file
+        self.note_success_file = note_success_file
+        self.note_fail_file = note_fail_file
 
     def update(self, opt, model, input_img_path, output_root):
         self.opt = opt
@@ -59,7 +61,7 @@ class Params:
         self.output_root = output_root
 
     def get_params(self):
-        return self.opt, self.model, self.input_img_path, self.output_root, self.notify_file
+        return self.opt, self.model, self.input_img_path, self.output_root, self.note_success_file, self.note_fail_file
 
 
 class MyHandler(FileSystemEventHandler):
@@ -79,18 +81,21 @@ class MyHandler(FileSystemEventHandler):
 
         params.input_img_path = paths[0]
         params.output_root = paths[1]
-        params.notify_file = paths[2]
-        # try:
-        time.sleep(0.5)
-        detect()
-        # except:
-        #     print("Processing Failed")
+        params.note_success_file = paths[2]
+        params.note_fail_file = paths[3]
+        try:
+            time.sleep(0.5)
+            detect()
+        except Exception as e:
+            open(params.note_fail_file, 'a').write(params.input_img_path + '\n')
+            print("Process Failed for:", params.input_img_path)
+            print("Exception:", e, '\n')
 
 
 def detect():
-    opt, model, input_img_path, output_root, notify_file = params.get_params()
+    opt, model, input_img_path, output_root, note_success_file, note_fail_file = params.get_params()
     os.makedirs(output_root, exist_ok=True)
-
+    
     print("YOLO processing img:", input_img_path, " Output Dir:", output_root)
     img_refresh = cv2.imread(input_img_path)
     cv2.imwrite(input_img_path, img_refresh)
@@ -176,7 +181,7 @@ def detect():
         cv2.imwrite(pjoin(output_root, 'result.jpg'), img)
         json.dump(compos, open(pjoin(output_root, "compo.json"), 'w'), indent=4)
         print('Processing Done and Write to:', output_root, '\n')
-        open(notify_file, 'a').write(output_root)
+        open(note_success_file, 'a').write(output_root + '\n')
 
 
 def yolo(input_img_path=None, output_root=None):
