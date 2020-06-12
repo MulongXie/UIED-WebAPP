@@ -2,75 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21a7902-b24f-45ce-ba5d-d4635bf6c5bb" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../../test2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/path/path.txt" beforeDir="false" afterPath="$PROJECT_DIR$/path/path.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yolo_main_watching.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo_main_watching.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/inputs/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/inputs/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/notify.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/Button/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/Button/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/CheckBox/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/EditText/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/EditText/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/ImageButton/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/ImageButton/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/RadioButton/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/clips/bkg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/compo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/base64_0/result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/18.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/19.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/20.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/21.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/22.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/23.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/24.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/25.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/26.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/27.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/28.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/29.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/29.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/30.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/31.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/32.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/33.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/34.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/34.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/35.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/36.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/36.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/37.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/38.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/39.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/39.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/40.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/41.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/41.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/42.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/42.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/43.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/ImageView/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/clips/bkg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/compo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/yolo/image_2/result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/images/screen/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/images/screen/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/images/screen/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/images/screen/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../server_v2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../test.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../test.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../uied" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -247,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591088292309</updated>
-      <workItem from="1591992659219" duration="9530000" />
+      <workItem from="1591992659219" duration="10155000" />
     </task>
     <servers />
   </component>
@@ -255,26 +187,26 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1592000564236">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1592004130503">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592000564236" />
-    <state width="914" height="281" key="GridCell.Tab.0.bottom" timestamp="1592003301550">
+    <state x="1220" y="278" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004130503" />
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1592004133980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592003301550" />
-    <state width="914" height="281" key="GridCell.Tab.0.center" timestamp="1592003301550">
+    <state width="1877" height="281" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
+    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1592004133980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592003301550" />
-    <state width="914" height="281" key="GridCell.Tab.0.left" timestamp="1592003301549">
+    <state width="1877" height="281" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
+    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1592004133980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592003301549" />
-    <state width="914" height="281" key="GridCell.Tab.0.right" timestamp="1592003301550">
+    <state width="1877" height="281" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1592004133980">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="914" height="281" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592003301550" />
+    <state width="1877" height="281" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -301,6 +233,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/yolo$test.coverage" NAME="test Coverage Results" MODIFIED="1591994546662" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/yolo$yolo_main_watching.coverage" NAME="yolo_main_watching Coverage Results" MODIFIED="1592003311398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/yolo$yolo_main_watching.coverage" NAME="yolo_main_watching Coverage Results" MODIFIED="1592004532000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

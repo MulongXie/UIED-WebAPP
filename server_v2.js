@@ -100,10 +100,11 @@ function element_detection(res, input_path, output_path, method) {
 }
 
 function element_detection_watching(res, input_path, output_path, method) {
-    let path_file = 'backend/' + method + '/path/path.txt';     // Pass input image path and output root to backend
+    let path_file = 'backend/' + method + '/parameters/parameters.txt';     // Pass input image path and output root to backend
     let note_success_file = 'data/outputs/success.txt';     // Backend notifies the server while process is done
     let note_fail_file = 'data/outputs/failed.txt';     // Backend notifies the server while process is done
 
+    // Absolute paths pass to backend
     let abs_input_path = __dirname + '/' + input_path;
     let abs_output_path = __dirname + '/' + output_path;
     let abs_note_sucs_file = __dirname + '/' + note_success_file;

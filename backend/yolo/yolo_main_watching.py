@@ -95,7 +95,7 @@ class MyHandler(FileSystemEventHandler):
 def detect():
     opt, model, input_img_path, output_root, note_success_file, note_fail_file = params.get_params()
     os.makedirs(output_root, exist_ok=True)
-    
+
     print("YOLO processing img:", input_img_path, " Output Dir:", output_root)
     img_refresh = cv2.imread(input_img_path)
     cv2.imwrite(input_img_path, img_refresh)
@@ -197,7 +197,7 @@ def yolo(input_img_path=None, output_root=None):
     params.update(opt, model, input_img_path, output_root)
 
     # Actively watch input files
-    path = os.path.join(os.getcwd(), 'path/')
+    path = os.path.join(os.getcwd(), 'parameters/')
     observer = Observer()
     event = MyHandler()
     observer.schedule(event, path, recursive=False)

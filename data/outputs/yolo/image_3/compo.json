@@ -1,0 +1,194 @@
+{
+    "compos": [
+        {
+            "column_max": 575,
+            "column_min": 0,
+            "height": 1022,
+            "id": 0,
+            "width": 575,
+            "row_min": 0,
+            "class": "Background",
+            "row_max": 1022
+        },
+        {
+            "column_max": 405,
+            "column_min": 318,
+            "height": 88,
+            "id": 1,
+            "width": 86,
+            "row_min": 885,
+            "class": "ImageView",
+            "row_max": 974
+        },
+        {
+            "column_max": 408,
+            "column_min": 314,
+            "height": 97,
+            "id": 2,
+            "width": 93,
+            "row_min": 755,
+            "class": "ImageView",
+            "row_max": 852
+        },
+        {
+            "column_max": 498,
+            "column_min": 409,
+            "height": 91,
+            "id": 3,
+            "width": 89,
+            "row_min": 884,
+            "class": "ImageView",
+            "row_max": 976
+        },
+        {
+            "column_max": 315,
+            "column_min": 221,
+            "height": 95,
+            "id": 4,
+            "width": 94,
+            "row_min": 882,
+            "class": "ImageView",
+            "row_max": 978
+        },
+        {
+            "column_max": 498,
+            "column_min": 412,
+            "height": 93,
+            "id": 5,
+            "width": 85,
+            "row_min": 757,
+            "class": "ImageView",
+            "row_max": 850
+        },
+        {
+            "column_max": 317,
+            "column_min": 220,
+            "height": 97,
+            "id": 6,
+            "width": 97,
+            "row_min": 754,
+            "class": "ImageView",
+            "row_max": 851
+        },
+        {
+            "column_max": 578,
+            "column_min": 506,
+            "height": 85,
+            "id": 7,
+            "width": 71,
+            "row_min": 888,
+            "class": "ImageView",
+            "row_max": 973
+        },
+        {
+            "column_max": 552,
+            "column_min": 24,
+            "height": 371,
+            "id": 8,
+            "width": 528,
+            "row_min": 53,
+            "class": "ImageView",
+            "row_max": 424
+        },
+        {
+            "column_max": 103,
+            "column_min": 27,
+            "height": 81,
+            "id": 9,
+            "width": 76,
+            "row_min": 764,
+            "class": "ImageView",
+            "row_max": 845
+        },
+        {
+            "column_max": 579,
+            "column_min": 506,
+            "height": 93,
+            "id": 10,
+            "width": 73,
+            "row_min": 757,
+            "class": "ImageView",
+            "row_max": 851
+        },
+        {
+            "column_max": 102,
+            "column_min": 27,
+            "height": 73,
+            "id": 11,
+            "width": 75,
+            "row_min": 891,
+            "class": "ImageButton",
+            "row_max": 965
+        },
+        {
+            "column_max": 537,
+            "column_min": 460,
+            "height": 77,
+            "id": 12,
+            "width": 76,
+            "row_min": 192,
+            "class": "ImageButton",
+            "row_max": 270
+        },
+        {
+            "column_max": 447,
+            "column_min": 356,
+            "height": 85,
+            "id": 13,
+            "width": 90,
+            "row_min": 297,
+            "class": "ImageButton",
+            "row_max": 382
+        },
+        {
+            "column_max": 89,
+            "column_min": 19,
+            "height": 72,
+            "id": 14,
+            "width": 69,
+            "row_min": 58,
+            "class": "ImageView",
+            "row_max": 131
+        },
+        {
+            "column_max": 110,
+            "column_min": 49,
+            "height": 61,
+            "id": 15,
+            "width": 60,
+            "row_min": 203,
+            "class": "ImageView",
+            "row_max": 265
+        },
+        {
+            "column_max": 343,
+            "column_min": 230,
+            "height": 106,
+            "id": 16,
+            "width": 113,
+            "row_min": 597,
+            "class": "ImageButton",
+            "row_max": 704
+        },
+        {
+            "column_max": 83,
+            "column_min": 19,
+            "height": 65,
+            "id": 17,
+            "width": 63,
+            "row_min": 63,
+            "class": "ImageButton",
+            "row_max": 128
+        },
+        {
+            "column_max": 118,
+            "column_min": 43,
+            "height": 75,
+            "id": 18,
+            "width": 75,
+            "row_min": 194,
+            "class": "ImageButton",
+            "row_max": 269
+        }
+    ]
+}
