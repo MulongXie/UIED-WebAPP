@@ -202,13 +202,11 @@ def detect_compos_in_img(compos, binary, org, max_compo_scale=C.THRESHOLD_COMPO_
     compos += compos_new
 
 
-def compo_filter(compos, org):
+def compo_filter(compos, min_area):
     compos_new = []
     for compo in compos:
-        if compo.height < 26 and compo.width < 26:
+        if compo.height * compo.width < min_area:
             continue
-        if compo.category == 'TextView' and compo.height > 100 and compo.width / org.shape[1] < 0.9:
-            compo.category = 'ImageView'
         compos_new.append(compo)
     return compos_new
 

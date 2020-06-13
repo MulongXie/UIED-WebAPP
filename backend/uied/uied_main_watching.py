@@ -27,7 +27,7 @@ def load_models(text, compo):
 
 
 def uied(is_ip=True, is_ocr=True, is_merge=True):
-    models, input_path, output_root, note_success_file = params.get_params()[:-1]
+    models, input_path, output_root, note_success_file, note_fail_file, uied_params = params.get_params()
     print("UIED Running on:", input_path, " Write to:", output_root)
     model_text, model_compo = models
     if is_ocr:
@@ -38,8 +38,7 @@ def uied(is_ip=True, is_ocr=True, is_merge=True):
     if is_ip:
         os.makedirs(pjoin(output_root, 'ip'), exist_ok=True)
         # switch of the classification func
-        ip.compo_detection(input_path, output_root, resize_by_height=800, show=False,
-                           classifier=model_compo)
+        ip.compo_detection(input_path, output_root, uied_params, classifier=model_compo, resize_by_height=800, show=False)
 
     if is_merge:
         import merge

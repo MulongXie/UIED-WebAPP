@@ -40,20 +40,21 @@ def processing_block(org, binary, blocks, block_pad):
     return uicompos_all
 
 
-def compo_detection(input_img_path, output_root,
-                    num=0, resize_by_height=600, block_pad=4,
-                    classifier=None, show=False, write_img=True):
+def compo_detection(input_img_path, output_root, uied_params,
+                    resize_by_height=600, block_pad=4,
+                    classifier=None, show=False):
+    print(uied_params)
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
     ip_root = file.build_directory(pjoin(output_root, "ip"))
 
     # *** Step 1 *** pre-processing: read img -> get binary map
     org, grey = pre.read_img(input_img_path, resize_by_height)
-    binary = pre.binarization(org, write_path=pjoin(ip_root, name + '_binary.png') if write_img else None)
+    binary = pre.binarization(org, grad_min=int(uied_params['param-grad']))
     binary_org = binary.copy()
 
     # *** Step 2 *** block processing: detect block -> calculate hierarchy -> detect components in block
-    blocks = blk.block_division(grey, org, write_path=pjoin(ip_root, name + '_block.png') if write_img else None)
+    blocks = blk.block_division(grey, org, grad_thresh=int(uied_params['param-block']))
     blk.block_hierarchy(blocks)
     uicompos_in_blk = processing_block(org, binary, blocks, block_pad)
 
@@ -66,6 +67,7 @@ def compo_detection(input_img_path, output_root,
     # *** Step 4 *** results refinement: remove top and bottom compos -> merge words into line
     uicompos = det.rm_top_or_bottom_corners(uicompos, org.shape)
     uicompos = det.merge_text(uicompos, org.shape)
+    uicompos = det.compo_filter(uicompos, min_area=int(uied_params['param-minarea']))
     Compo.compos_update(uicompos, org.shape)
     Compo.compos_containment(uicompos)
     file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
@@ -94,7 +96,7 @@ def compo_detection(input_img_path, output_root,
     # uicompos = det.compo_filter(uicompos, org)
     # draw.draw_bounding_box(org, uicompos, show=show)
 
-    draw.draw_bounding_box(org, uicompos, show=show, write_path=pjoin(output_root, 'result.jpg') if write_img else None)
+    draw.draw_bounding_box(org, uicompos, show=show)
     seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
     file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
     print("[Compo Detection Completed in %.3f s]" % (time.clock() - start))

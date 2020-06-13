@@ -163,6 +163,15 @@ jQuery(document).ready(function( $ ) {
         let method = $("#method-select option:selected").attr('value');
         let input_img = $(".display-pic").attr('src');
         let input_type = $("#display-content").attr('data-type');
+        let uied_params = null;
+
+        if (method == 'uied'){
+            uied_params = {};
+        	let params = $(".slider");
+        	for (let i = 0; i < params.length; i++){
+        		uied_params[params[i].id] = params[i].value
+			}
+		}
 
         console.log(input_type);
         if(method == 'empty'){
@@ -182,7 +191,8 @@ jQuery(document).ready(function( $ ) {
                 data: {
                     input_img: input_img,
                     method: method,
-                    input_type: input_type
+                    input_type: input_type,
+					uied_params: uied_params
                 },
                 success: function (resp) {
                     if (resp.code == 1){
@@ -244,6 +254,8 @@ jQuery(document).ready(function( $ ) {
 
     $('.slider').on('input', function () {
         $('#' + $(this).attr('id') + '-show').text($(this).val());
+        let params = $('.slider');
+        console.log(params[0].id, params[0].value)
     });
 
 });

@@ -24,7 +24,9 @@ var index = 0;
 app.post('/process', function (req, res) {
     var method = req.body.method;
     var input_type = req.body.input_type;
-    console.log('Type:', input_type);
+    var uied_params = req.body.uied_params;
+
+    // console.log('Type:', input_type);
     // For uploaded image (base64 format)
     if (input_type == 'base64'){
         var id = index;
@@ -38,7 +40,7 @@ app.post('/process', function (req, res) {
                 console.log('Upload image to', upload_path);
                 // processing
                 // element_detection(res, upload_path, output_path, method)
-                element_detection_watching(res, upload_path, output_path, method)
+                element_detection_watching(res, upload_path, output_path, method, uied_params)
             }
             else {
                 index --;
@@ -58,7 +60,7 @@ app.post('/process', function (req, res) {
             input_path = 'public/images/screen/' + name + '.jpg';
         }
         // element_detection(res, input_path, output_path, method)
-        element_detection_watching(res, input_path, output_path, method)
+        element_detection_watching(res, input_path, output_path, method, uied_params)
     }
 });
 
@@ -99,7 +101,7 @@ function element_detection(res, input_path, output_path, method) {
     });
 }
 
-function element_detection_watching(res, input_path, output_path, method) {
+function element_detection_watching(res, input_path, output_path, method, uied_param) {
     let path_file = 'backend/' + method + '/parameters/parameters.txt';     // Pass input image path and output root to backend
     let note_success_file = 'data/outputs/success.txt';     // Backend notifies the server while process is done
     let note_fail_file = 'data/outputs/failed.txt';     // Backend notifies the server while process is done
@@ -111,6 +113,7 @@ function element_detection_watching(res, input_path, output_path, method) {
     let abs_note_fail_file = __dirname + '/' + note_fail_file;
 
     let parameters = `\n${abs_input_path} ${abs_output_path} ${abs_note_sucs_file} ${abs_note_fail_file}`;
+    if (method == 'uied') parameters += ' ' + JSON.stringify(uied_param);
     console.log('Watching Mode Running ' + method.toUpperCase() + ' on ' + input_path + " Save to " + output_path);
     fs.appendFile(path_file, parameters, function (err) {
         if(err){throw err;}

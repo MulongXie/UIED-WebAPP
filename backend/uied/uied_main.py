@@ -12,8 +12,10 @@ def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=True, is_merg
 
     if is_ocr:
         import ocr_east as ocr
+        import lib_east.eval as eval
+        models = eval.load()
         os.makedirs(pjoin(output_root, 'ocr'), exist_ok=True)
-        ocr.east(input_path, output_root, resize_by_height=None, show=False, write_img=True)
+        ocr.east(input_path, output_root, models, resize_by_height=None, show=False, write_img=True)
 
     if is_ip:
         os.makedirs(pjoin(output_root, 'ip'), exist_ok=True)
