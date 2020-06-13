@@ -111,7 +111,7 @@ def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=N
         cv2.imshow('merge', board)
         cv2.waitKey()
 
-    print('Merge Complete and Save to', pjoin(output_root, 'merge', name + '.json'))
+    print('Merge Complete and Save to', pjoin(output_root, 'compo.json'))
     print(time.ctime(), '\n')
     if show:
         cv2.destroyAllWindows()

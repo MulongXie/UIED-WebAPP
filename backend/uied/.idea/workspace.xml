@@ -4,6 +4,109 @@
     <list default="true" id="b4069649-920d-465f-ac6b-bac85007c2bb" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../yolo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../yolo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yolo/parameters/parameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../yolo/parameters/parameters.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yolo/yolo_main_watching.py" beforeDir="false" afterPath="$PROJECT_DIR$/../yolo/yolo_main_watching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/inputs/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/inputs/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/failed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/failed.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/success.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../data/outputs/success.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Background/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/Compo/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/TextView/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/clips/bkg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/compo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/ip/2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/ip/2_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/ip/2_binary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/ip/2_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/ocr/2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/ocr/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_2/result.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/Compo/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/clips/bkg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/compo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/ip/5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/ip/5_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/ip/5_binary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/ip/5_block.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../data/outputs/uied/image_5/result.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/images/screen/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/images/screen/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../server_v2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +164,7 @@
       <recent name="D:\git_file\github\doing\UIED\detect_text_east" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.uied_main">
+  <component name="RunManager" selected="Python.uied_main_watching">
     <configuration name="main_select_classification" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="UIED" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,28 +201,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_single.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="merge" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="UIED" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/merge.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -172,20 +253,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="uied_main_watching" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="UIED" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/uied_main_watching.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.main_select_classification" />
       <item itemvalue="Python.test" />
-      <item itemvalue="Python.merge" />
       <item itemvalue="Python.main_single" />
       <item itemvalue="Python.uied_main" />
+      <item itemvalue="Python.uied_main_watching" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.uied_main_watching" />
         <item itemvalue="Python.uied_main" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.main_single" />
         <item itemvalue="Python.main_select_classification" />
-        <item itemvalue="Python.merge" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +302,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581826543105</updated>
-      <workItem from="1592004135592" duration="9785000" />
+      <workItem from="1592004135592" duration="17180000" />
     </task>
     <servers />
   </component>
@@ -216,26 +319,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592013826918" />
-    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1592004362651">
+    <state x="1220" y="278" key="FileChooserDialogImpl" timestamp="1592038809757">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="278" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004362651" />
-    <state width="1877" height="221" key="GridCell.Tab.0.bottom" timestamp="1592015011128">
+    <state x="1220" y="278" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592038809757" />
+    <state width="914" height="221" key="GridCell.Tab.0.bottom" timestamp="1592039178447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592015011128" />
-    <state width="1877" height="221" key="GridCell.Tab.0.center" timestamp="1592015011128">
+    <state width="914" height="221" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592039178447" />
+    <state width="914" height="221" key="GridCell.Tab.0.center" timestamp="1592039178447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592015011128" />
-    <state width="1877" height="221" key="GridCell.Tab.0.left" timestamp="1592015011127">
+    <state width="914" height="221" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592039178447" />
+    <state width="914" height="221" key="GridCell.Tab.0.left" timestamp="1592039178446">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592015011127" />
-    <state width="1877" height="221" key="GridCell.Tab.0.right" timestamp="1592015011128">
+    <state width="914" height="221" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592039178446" />
+    <state width="914" height="221" key="GridCell.Tab.0.right" timestamp="1592039178447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="221" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592015011128" />
+    <state width="914" height="221" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592039178447" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -302,5 +405,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/uied$uied_main.coverage" NAME="uied_main Coverage Results" MODIFIED="1592015011121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/uied$uied_main_watching.coverage" NAME="uied_main_watching Coverage Results" MODIFIED="1592039588208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

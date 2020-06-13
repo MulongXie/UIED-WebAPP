@@ -46,15 +46,24 @@ class Option:
 
 class Params:
     def __init__(self, opt=None, model=None, input_img_path=None, output_root=None,
-                 note_success_file=None, note_fail_file = None):
+                 note_success_file=None, note_fail_file=None):
+        # YOLO model setting
         self.opt = opt
         self.model = model
+        # input, output and log path
         self.input_img_path = input_img_path
         self.output_root = output_root
         self.note_success_file = note_success_file
         self.note_fail_file = note_fail_file
 
-    def update(self, opt, model, input_img_path, output_root):
+    def load_params(self, param_file):
+        paths = open(param_file).readlines()[-1].split()
+        self.input_img_path = paths[0]
+        self.output_root = paths[1]
+        self.note_success_file = paths[2]
+        self.note_fail_file = paths[3]
+
+    def update_params(self, opt, model, input_img_path, output_root):
         self.opt = opt
         self.model = model
         self.input_img_path = input_img_path
@@ -76,13 +85,7 @@ class MyHandler(FileSystemEventHandler):
 
     def on_modified(self, event):
         # print('event type ', event.event_type, "path ", event.src_path)
-        paths = open(event.src_path).readlines()[-1].split()
-        # print(new_paths)
-
-        params.input_img_path = paths[0]
-        params.output_root = paths[1]
-        params.note_success_file = paths[2]
-        params.note_fail_file = paths[3]
+        params.load_params(event.src_path)
         try:
             time.sleep(0.5)
             detect()
@@ -194,7 +197,7 @@ def yolo(input_img_path=None, output_root=None):
     model.load_state_dict(torch.load(opt.weights_path))  # load trained model
     model.eval()  # Set in evaluation mode
 
-    params.update(opt, model, input_img_path, output_root)
+    params.update_params(opt, model, input_img_path, output_root)
 
     # Actively watch input files
     param_file = os.path.join(os.getcwd(), 'parameters/')

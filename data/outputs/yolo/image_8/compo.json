@@ -1,0 +1,44 @@
+{
+    "compos": [
+        {
+            "width": 575,
+            "column_max": 575,
+            "height": 1022,
+            "column_min": 0,
+            "id": 0,
+            "class": "Background",
+            "row_max": 1022,
+            "row_min": 0
+        },
+        {
+            "width": 83,
+            "column_max": 112,
+            "height": 93,
+            "column_min": 29,
+            "id": 1,
+            "class": "ImageView",
+            "row_max": 201,
+            "row_min": 107
+        },
+        {
+            "width": 35,
+            "column_max": 560,
+            "height": 40,
+            "column_min": 524,
+            "id": 2,
+            "class": "ImageView",
+            "row_max": 176,
+            "row_min": 135
+        },
+        {
+            "width": 58,
+            "column_max": 571,
+            "height": 62,
+            "column_min": 513,
+            "id": 3,
+            "class": "ImageButton",
+            "row_max": 185,
+            "row_min": 123
+        }
+    ]
+}
