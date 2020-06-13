@@ -1,4 +1,5 @@
 from os.path import join as pjoin
+import os
 import detect_compo.ip_region_proposal as ip
 
 resize_by_height = 800
@@ -7,13 +8,15 @@ resize_by_height = 800
 # PATH_IMG_INPUT = 'E:\\Mulong\\Datasets\\rico\\combined\\23.jpg'
 
 
-def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=False, is_merge=False):
+def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=True, is_merge=True):
 
     if is_ocr:
         import ocr_east as ocr
+        os.makedirs(pjoin(output_root, 'ocr'), exist_ok=True)
         ocr.east(input_path, output_root, resize_by_height=None, show=False, write_img=True)
 
     if is_ip:
+        os.makedirs(pjoin(output_root, 'ip'), exist_ok=True)
         # switch of the classification func
         classifier = None
         if is_clf:
@@ -29,11 +32,11 @@ def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=False, is_mer
 
     if is_merge:
         import merge
-        name = input_path.split('\\')[-1][:-4]
+        os.makedirs(pjoin(output_root, 'merge'), exist_ok=True)
+        name = input_path.split('/')[-1][:-4]
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
-        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=True,
-                          write_img=True)
+        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=False)
 
 
-uied('data/5.jpg', 'data')
+# uied('data/5.jpg', 'data')

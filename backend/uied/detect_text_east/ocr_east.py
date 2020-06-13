@@ -1,6 +1,7 @@
 import time
 from os.path import join as pjoin
 import lib_east.eval as eval
+import os
 
 sess, f_score, f_geometry, input_images = eval.load()
 

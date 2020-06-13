@@ -69,6 +69,7 @@ def compo_detection(input_img_path, output_root,
     Compo.compos_update(uicompos, org.shape)
     Compo.compos_containment(uicompos)
     file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
+    file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
     # uicompos = det.merge_intersected_corner(uicompos, org.shape)
 
     # # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection

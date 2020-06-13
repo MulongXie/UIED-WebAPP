@@ -29,11 +29,11 @@ def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=False, is_mer
 
     if is_merge:
         import merge
-        name = input_path.split('\\')[-1][:-4]
+        name = input_path.split('/')[-1][:-4]
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
-        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=True,
+        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=False,
                           write_img=True)
 
 
-uied('data/5.jpg', 'data')
+# uied('data/5.jpg', 'data')

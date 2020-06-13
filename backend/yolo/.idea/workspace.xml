@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b21a7902-b24f-45ce-ba5d-d4635bf6c5bb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/yolo_main_watching.py" beforeDir="false" afterPath="$PROJECT_DIR$/yolo_main_watching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/data/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/data/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/data/ip/5_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/data/ip/5_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/data/ip/5_block.png" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/data/ip/5_block.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/detect_compo/ip_region_proposal.py" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/detect_compo/ip_region_proposal.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/detect_text_east/ocr_east.py" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/detect_text_east/ocr_east.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/merge.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/uied_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/uied_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../uied/uied_main_watching.py" beforeDir="false" afterPath="$PROJECT_DIR$/../uied/uied_main_watching.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../server_v2.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +191,7 @@
       <option name="presentableId" value="Default" />
       <updated>1591088292309</updated>
       <workItem from="1591992659219" duration="10155000" />
-      <workItem from="1592004366276" duration="331000" />
+      <workItem from="1592004366276" duration="2569000" />
     </task>
     <servers />
   </component>
@@ -192,22 +203,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1220" y="278" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004130503" />
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom" timestamp="1592004133980">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom" timestamp="1592010267132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
-    <state width="1877" height="281" key="GridCell.Tab.0.center" timestamp="1592004133980">
+    <state width="914" height="278" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592010267132" />
+    <state width="914" height="278" key="GridCell.Tab.0.center" timestamp="1592010267132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
-    <state width="1877" height="281" key="GridCell.Tab.0.left" timestamp="1592004133980">
+    <state width="914" height="278" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592010267132" />
+    <state width="914" height="278" key="GridCell.Tab.0.left" timestamp="1592010267132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
-    <state width="1877" height="281" key="GridCell.Tab.0.right" timestamp="1592004133980">
+    <state width="914" height="278" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592010267132" />
+    <state width="914" height="278" key="GridCell.Tab.0.right" timestamp="1592010267132">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="281" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592004133980" />
+    <state width="914" height="278" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1592010267132" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

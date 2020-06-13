@@ -1,2 +1,3 @@
 
 D:\git_file\github\doing\UIED-WebAPP/public/images/screen/5.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/yolo/image_5 D:\git_file\github\doing\UIED-WebAPP/data/outputs/success.txt D:\git_file\github\doing\UIED-WebAPP/data/outputs/failed.txt
+D:\git_file\github\doing\UIED-WebAPP/public/images/screen/2.jpg D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_2 D:\git_file\github\doing\UIED-WebAPP/data/outputs/success.txt D:\git_file\github\doing\UIED-WebAPP/data/outputs/failed.txt
