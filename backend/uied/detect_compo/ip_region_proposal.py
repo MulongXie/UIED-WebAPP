@@ -40,10 +40,11 @@ def processing_block(org, binary, blocks, block_pad):
     return uicompos_all
 
 
-def compo_detection(input_img_path, output_root, uied_params,
+def compo_detection(input_img_path, output_root, uied_params=None,
                     resize_by_height=600, block_pad=4,
                     classifier=None, show=False):
     print(uied_params)
+    if uied_params is None: uied_params = {'param-grad':4, 'param-block':5, 'param-minarea':150}
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
     ip_root = file.build_directory(pjoin(output_root, "ip"))
@@ -96,7 +97,8 @@ def compo_detection(input_img_path, output_root, uied_params,
     # uicompos = det.compo_filter(uicompos, org)
     # draw.draw_bounding_box(org, uicompos, show=show)
 
-    draw.draw_bounding_box(org, uicompos, show=show)
+    result = draw.draw_bounding_box(org, uicompos, show=show)
+    cv2.imwrite(pjoin(output_root, 'result.jpg'), result)
     seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
     file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
     print("[Compo Detection Completed in %.3f s]" % (time.clock() - start))

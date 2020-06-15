@@ -8,7 +8,7 @@ resize_by_height = 800
 # PATH_IMG_INPUT = 'E:\\Mulong\\Datasets\\rico\\combined\\23.jpg'
 
 
-def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=True, is_merge=True):
+def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=False, is_merge=False):
 
     if is_ocr:
         import ocr_east as ocr
@@ -29,7 +29,7 @@ def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=True, is_merg
             classifier['Elements'] = CNN('Elements')
             classifier['Noise'] = CNN('Noise')
 
-        ip.compo_detection(input_path, output_root, resize_by_height=resize_by_height, show=True,
+        ip.compo_detection(input_path, output_root, resize_by_height=resize_by_height, show=False,
                            classifier=classifier)
 
     if is_merge:
