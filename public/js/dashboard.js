@@ -522,7 +522,7 @@ $(document).ready(function () {
 
 
     /*--------------------------------------------------------------
-	# Upload and Process New Image
+	# Upload New Image
 	--------------------------------------------------------------*/
     /* Upload */
     var canvas_loaded = false;
@@ -586,6 +586,7 @@ $(document).ready(function () {
         });
     });
 
+    /* Button for processing new image rather than new model for the same img*/
     $('#btn-upload-process').click(function () {
         // Switch processing button
         $('#modal_proc_btn_new_model').hide();
@@ -599,6 +600,10 @@ $(document).ready(function () {
         $('#modal_proc_btn_new_model').show();
     });
 
+
+    /*--------------------------------------------------------------
+    # Process New Image
+    --------------------------------------------------------------*/
     /* Reinitiate all global variables */
     function init_whole_dashboard() {
         // Dashboard initiation
@@ -617,7 +622,6 @@ $(document).ready(function () {
     }
 
     $('#modal_proc_btn_new_img').click(function () {
-
         let input_img = $(".display-pic").attr('src');
         let selected_method = $("#add_method_select option:selected").attr('value');
 
@@ -641,22 +645,23 @@ $(document).ready(function () {
                         alert('Processing Success!');
                         $('#modal_proc_btn_new_img').prop('disabled', false);
                         $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
-                        $('.my-preview-list-active').removeClass('my-preview-list-active');
-                        $('.my-preview-img-active').removeClass('my-preview-img-active');
 
-                        // Reset global variables
-                        input_img_path = response.upload_path;
-                        result_path = response.result_path;
-                        method = selected_method;
-                        existing_methods = [method];
-                        $('#inputImgPath').attr('data-value', input_img_path);
-                        $('#resultPath').attr('data-value', result_path);
-                        $('#method').attr('data-value', method);
-
+                        // Reload new result
                         let url = '/dashboard?method=' + method + '&input_img=' + input_img_path + '&output_root=' + result_path;
                         console.log(url);
                         $(location).attr('href', url);
 
+                        // Reload new result without page jumping
+                        // Reset global variables
+                        // input_img_path = response.upload_path;
+                        // result_path = response.result_path;
+                        // method = selected_method;
+                        // existing_methods = [method];
+                        // $('#inputImgPath').attr('data-value', input_img_path);
+                        // $('#resultPath').attr('data-value', result_path);
+                        // $('#method').attr('data-value', method);
+                        // $('.my-preview-list-active').removeClass('my-preview-list-active');
+                        // $('.my-preview-img-active').removeClass('my-preview-img-active');
                         // Reset whole dashboard
                         // init_whole_dashboard();
                         // dashboard_init();
