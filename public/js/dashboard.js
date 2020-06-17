@@ -647,7 +647,7 @@ $(document).ready(function () {
                         $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
 
                         // Reload new result
-                        let url = '/dashboard?method=' + method + '&input_img=' + input_img_path + '&output_root=' + result_path;
+                        let url = '/dashboard?method=' + selected_method + '&input_img=' + response.upload_path + '&output_root=' + response.result_path;
                         console.log(url);
                         $(location).attr('href', url);
 
