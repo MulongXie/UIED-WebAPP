@@ -23,6 +23,8 @@
     <link href="plugins/nvd3/nv.d3.min.css" rel="stylesheet">
     <link href="plugins/ecaps/css/ecaps.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <link href="plugins/cropper/css/cropper.min.css" rel="stylesheet">
     <!-- Custom Theme Styles -->
     <link href="css/dashboard.css" rel="stylesheet">
 
@@ -47,7 +49,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="upload-new-img" data-toggle="modal" data-target="#modal-new-img">
+                        <a href="javascript:void(0)" id="upload-new-img" data-toggle="modal" data-target="#avatar-modal">
                             <i class="menu-icon icon-image" style="font-size: 15px"></i><span>New Image</span>
                         </a>
                     </li>
@@ -254,16 +256,136 @@
         </div>
 
         <!---------------------------- Upload New Image --------------------------------->
-        <div id="modal-new-img" class="modal fade">
-            <div class="modal-dialog">
+        <!--<div id="modal-new-img" class="modal fade">-->
+        <!--<div class="modal-dialog">-->
+        <!--<div class="modal-content">-->
+        <!--<div class="modal-header">-->
+        <!--<p class="modal-title">Upload New Image</p>-->
+        <!--<button class="close" data-dismiss="modal">&times;</button>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+        <!--<p>ABDSDA</p>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <!--<div id="avatar-modal" class="modal fade" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">-->
+        <!--<div class="modal-dialog modal-lg">-->
+        <!--<div class="modal-content">-->
+        <!--<form id="avatar-form" class="avatar-form">-->
+        <!--<div class="modal-header">-->
+        <!--<h4 class="modal-title" id="avatar-modal-label">Upload UI design</h4>-->
+        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+        <!--<span aria-hidden="true">&times;</span>-->
+        <!--</button>-->
+        <!--</div>-->
+        <!--<div class="modal-body">-->
+        <!--<div class="avatar-body">-->
+        <!--<div class="avatar-upload">-->
+        <!--<input class="avatar-src" name="avatar_src" type="hidden">-->
+        <!--<input class="avatar-data" name="avatar_data" type="hidden">-->
+        <!--<label for="avatarInput" style="line-height: 35px;">Picture</label>-->
+        <!--<button class="btn btn-danger"  type="button" style="height: 35px; float:left;" onClick="$('input[id=avatarInput]').click();">Select Picture</button>-->
+        <!--<span id="avatar-name"></span>-->
+        <!--<input class="avatar-input hide" id="avatarInput" name="avatar_file" type="file"></div>-->
+        <!--<div class="row">-->
+        <!--<div class="col-md-9">-->
+        <!--<canvas class="avatar-wrapper">-->
+        <!--</canvas>-->
+        <!--</div>-->
+        <!--<div class="col-md-3">-->
+        <!--<div class="avatar-preview preview-lg" id="imageHead"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row avatar-btns">-->
+        <!--<div class="col-md-4" style="text-align: left;">-->
+        <!--<div class="btn-group">-->
+        <!--<button class="btn btn-danger fa fa-large fa-undo" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"></button>-->
+        <!--</div>-->
+        <!--<div class="btn-group">-->
+        <!--<button class="btn btn-danger fa fa-repeat" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"></button>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-5" style="text-align: right;">-->
+        <!--<div class="btn-group">-->
+        <!--<button type="button" class="btn btn-danger fa fa-search-plus" data-method="zoom" data-option="0.1" title="zoomin"></button>-->
+        <!--</div>-->
+        <!--<div class="btn-group">-->
+        <!--<button type="button" class="btn btn-danger fa fa-search-minus" data-method="zoom" data-option="-0.1" title="zoomout"></button>-->
+        <!--</div>-->
+        <!--<div class="btn-group">-->
+        <!--<button type="button" class="btn btn-danger fa fa-refresh" data-method="reset" title="reset"></button>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--<div class="col-md-3">-->
+        <!--<button type="submit" name="submit" class="btn btn-danger avatar-save fa fa-save" data-dismiss="modal" onClick="$('input[id=submit-btn]').click();"> Save</button>-->
+        <!--<input class="hide" id="submit-btn" name="submit">-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</form>-->
+        <!--</div>-->
+        <!--</div>-->
+        <!--</div>-->
+
+        <div id="avatar-modal" class="modal fade" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+            <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <p class="modal-title">Upload New Image</p>
-                        <button class="close" data-dismiss="modal">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <p>ABDSDA</p>
-                    </div>
+                    <form id="avatar-form" class="avatar-form">
+                        <div class="modal-header">
+                            <h4 class="modal-title" id="avatar-modal-label">Upload UI design</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="avatar-body">
+                                <div class="avatar-upload">
+                                    <input class="avatar-src" name="avatar_src" type="hidden">
+                                    <input class="avatar-data" name="avatar_data" type="hidden">
+                                    <label for="avatarInput" style="line-height: 35px;">Picture</label>
+                                    <button class="btn btn-danger"  type="button" style="height: 35px; float:left;" onClick="$('input[id=avatarInput]').click();">Select Picture</button>
+                                    <span id="avatar-name"></span>
+                                    <input class="avatar-input hide" id="avatarInput" name="avatar_file" type="file"></div>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <canvas class="avatar-wrapper">
+                                        </canvas>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="avatar-preview preview-lg" id="imageHead"></div>
+                                    </div>
+                                </div>
+                                <div class="row avatar-btns">
+                                    <div class="col-md-4" style="text-align: left;">
+                                        <div class="btn-group">
+                                            <button class="btn btn-danger fa fa-large fa-undo" data-method="rotate" data-option="-90" type="button" title="Rotate -90 degrees"></button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button class="btn btn-danger fa fa-repeat" data-method="rotate" data-option="90" type="button" title="Rotate 90 degrees"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5" style="text-align: right;">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger fa fa-search-plus" data-method="zoom" data-option="0.1" title="zoomin"></button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger fa fa-search-minus" data-method="zoom" data-option="-0.1" title="zoomout"></button>
+                                        </div>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-danger fa fa-refresh" data-method="reset" title="reset"></button>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button type="submit" name="submit" class="btn btn-danger avatar-save fa fa-save" data-dismiss="modal" onClick="$('input[id=submit-btn]').click();"> Save</button>
+                                        <input class="hide" id="submit-btn" name="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -313,6 +435,8 @@
 <script src="plugins/d3/d3.min.js"></script>
 <script src="plugins/nvd3/nv.d3.min.js"></script>
 <script src="plugins/ecaps/js/ecaps.js"></script>
+
+<script src="plugins/cropper/js/cropper.js"></script>
 
 <!-- Record Processing Result Paths -->
 <div id="inputImgPath" data-value=<%-JSON.stringify(inputImgPath)%>></div>

@@ -2,90 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yolo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/yolo/parameters/parameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/yolo/parameters/parameters.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/success.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/success.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Background/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Background/0.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inputs/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inputs/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inputs/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Background/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/0.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/11.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/13.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/15.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/17.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/20.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/22.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/23.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/25.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/26.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/27.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/28.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/30.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/32.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/34.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/33.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/33.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/35.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/35.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/37.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/37.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/38.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/38.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/40.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/40.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/18.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/23.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/28.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/30.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/33.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/38.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/41.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/bkg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/compo.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/2.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/2.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/2.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Background/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/21.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/25.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/29.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/35.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/bkg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/compo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/5.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/5.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/5_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/5_all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_5/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/dashboard.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -99,14 +73,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.43618932">
       <split-first>
         <leaf>
           <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/server_v2.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="224">
-                  <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+                <state relative-caret-position="595">
+                  <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -115,31 +89,63 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+          <file leaf-file-name="dashboard.html" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/dashboard.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="459">
-                  <caret line="435" lean-forward="true" selection-start-line="435" selection-end-line="435" />
+                <state relative-caret-position="496">
+                  <caret line="445" column="34" lean-forward="true" selection-start-line="445" selection-start-column="34" selection-end-line="445" selection-end-column="34" />
                   <folding>
-                    <element signature="e#477#13904#0" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                    <element signature="e#13932#17791#0" />
-                    <element signature="e#17817#18782#0" />
-                    <element signature="e#20395#22254#0" />
-                    <element signature="e#20603#20839#0" />
-                    <element signature="e#142#248#0" />
+                    <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-544">
+                  <caret line="10" selection-start-line="10" selection-end-line="10" />
+                  <folding>
+                    <element signature="e#798#15268#0" />
+                    <element signature="e#7643#15178#0" />
+                    <element signature="e#15357#19540#0" />
+                    <element signature="e#19570#20643#0" />
+                    <element signature="e#20772#22631#0" />
+                    <element signature="e#22733#23005#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+                <state relative-caret-position="487">
+                  <caret line="445" selection-start-line="445" selection-end-line="445" selection-end-column="39" />
+                  <folding>
+                    <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -152,23 +158,14 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Python Script" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>output_root</find>
-      <find>UI kit</find>
-      <find>mod</find>
-      <find>uplo</find>
-      <find>add_proc_btn</find>
-      <find>add_proc_status</find>
-      <find>data-type</find>
-      <find>console</find>
-      <find>\n</find>
       <find>select-me</find>
       <find>method-select</find>
       <find>my</find>
@@ -190,6 +187,15 @@
       <find>ava</find>
       <find>avatar</find>
       <find>ar</find>
+      <find>avat</find>
+      <find>New image</find>
+      <find>canvas_loaded</find>
+      <find>.avatar-input</find>
+      <find>avatarInput</find>
+      <find>New ima</find>
+      <find>avatar-name</find>
+      <find>try</find>
+      <find>New</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,14 +207,18 @@
         <option value="$PROJECT_DIR$/data/outputs/success.txt" />
         <option value="$PROJECT_DIR$/data/outputs/failed.txt" />
         <option value="$PROJECT_DIR$/backend/yolo/path/path.txt" />
-        <option value="$PROJECT_DIR$/public/index_v2.html" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" />
-        <option value="$PROJECT_DIR$/public/js/index_v2.js" />
         <option value="$PROJECT_DIR$/server_v2.js" />
+        <option value="$PROJECT_DIR$/public/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/public/index_v2.html" />
+        <option value="$PROJECT_DIR$/public/js/index_v2.js" />
+        <option value="$PROJECT_DIR$/public/js/test.js" />
+        <option value="$PROJECT_DIR$/public/test2.html" />
+        <option value="$PROJECT_DIR$/public/test.html" />
+        <option value="$PROJECT_DIR$/public/js/dashboard.js" />
         <option value="$PROJECT_DIR$/public/dashboard.html" />
         <option value="$PROJECT_DIR$/public/dashboard.ejs" />
-        <option value="$PROJECT_DIR$/public/js/dashboard.js" />
       </list>
     </option>
   </component>
@@ -384,23 +394,23 @@
       <workItem from="1591953664840" duration="3000" />
       <workItem from="1591987176546" duration="25258000" />
       <workItem from="1592221374298" duration="3497000" />
-      <workItem from="1592282399506" duration="3272000" />
+      <workItem from="1592282399506" duration="16037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22622000" />
+    <option name="totallyTimeSpent" value="35387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12118019" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12065332" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.21350762" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.21350762" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -464,18 +474,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/dashboard.js</url>
-          <line>518</line>
+          <line>588</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/UIED_WebAPP$test.coverage" NAME="test Coverage Results" MODIFIED="1592000738145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/css/index.css" />
-    <entry file="file://$PROJECT_DIR$/public/index.html" />
     <entry file="file://$PROJECT_DIR$/public/js/index.js" />
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -488,13 +497,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index_old.html" />
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="5306" column="4" selection-start-line="5306" selection-start-column="4" selection-end-line="5306" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/backend/uied/cnn/Config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -516,13 +518,6 @@
     <entry file="file://$PROJECT_DIR$/server.js" />
     <entry file="file://$PROJECT_DIR$/public/css/index_v1.css">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index_v1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_v1.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -558,14 +553,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/test.html" />
-    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1921">
-          <caret line="113" column="1" selection-start-line="113" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -620,17 +607,17 @@
     <entry file="file://D:/4.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
+    <entry file="file://$PROJECT_DIR$/public/js/index_v1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="17">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/index_v2.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="1177" selection-start-line="1177" selection-end-line="1253" selection-end-column="1" />
+        <state relative-caret-position="362">
+          <caret line="1217" column="1" lean-forward="true" selection-start-line="1217" selection-start-column="1" selection-end-line="1217" selection-end-column="1" />
           <folding>
             <element signature="e#19728#19877#0" />
             <element signature="e#19899#19955#0" />
@@ -648,61 +635,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="186" column="22" lean-forward="true" selection-start-line="186" selection-start-column="22" selection-end-line="186" selection-end-column="22" />
+        <state relative-caret-position="229">
+          <caret line="5539" column="4" selection-start-line="5539" selection-start-column="4" selection-end-line="5539" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1167">
+          <caret line="206" column="23" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="80" column="60" lean-forward="true" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#1;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#150#279#0" />
+            <element signature="e#337#467#0" />
+            <element signature="e#505#593#0" />
+            <element signature="e#715#863#0" />
+            <element signature="e#903#952#0" />
+            <element signature="e#1093#1998#0" />
+            <element signature="e#8796#8956#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.html">
+    <entry file="file://$PROJECT_DIR$/public/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="352" column="7" selection-start-line="352" selection-start-column="7" selection-end-line="352" selection-end-column="7" />
+        <state relative-caret-position="170">
+          <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#268#2609#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="13" lean-forward="true" selection-end-line="605" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7850#7857#1" expanded="true" />
+            <element signature="e#10080#10087#1" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12990#12997#1" expanded="true" />
+            <element signature="e#22195#22201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#10080#10087#1" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#5236#5243#1" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+        <state relative-caret-position="595">
+          <caret line="35" column="32" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="435" lean-forward="true" selection-start-line="435" selection-end-line="435" />
+        <state relative-caret-position="-544">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#477#13904#0" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="e#13932#17791#0" />
-            <element signature="e#17817#18782#0" />
-            <element signature="e#20395#22254#0" />
-            <element signature="e#20603#20839#0" />
-            <element signature="e#142#248#0" />
+            <element signature="e#798#15268#0" />
+            <element signature="e#7643#15178#0" />
+            <element signature="e#15357#19540#0" />
+            <element signature="e#19570#20643#0" />
+            <element signature="e#20772#22631#0" />
+            <element signature="e#22733#23005#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="445" column="34" lean-forward="true" selection-start-line="445" selection-start-column="34" selection-end-line="445" selection-end-column="34" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="445" selection-start-line="445" selection-end-line="445" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#select#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
