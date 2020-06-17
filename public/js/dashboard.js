@@ -9,17 +9,17 @@ $(document).ready(function () {
     // var result_path = 'output_root=data/outputs/uied/image_2';
     // var method = 'uied';
 
+    var scale = 0.6;    // Size of shown image on the dashboard
+
+    /*--------------------------------------------------------------
+	# Initialize the Dashboard and Put the Detection Result on It
+	--------------------------------------------------------------*/
     var det_json_result = '';
-    var scale = 0.6;
     var img_dict = {};
     var classes = [];
     var count_class = {};
     var num_class = 0;
-    var index_global = 0;               // useful when adding new compos by clicking kit images
-    var existing_methods = [method];
-
-
-    /******* Initialize the Dashboard and Put the Detection Result on It *******/
+    var index_global = 0;
     function dashboard_init() {
         var output_root = '../' + result_path + '/';
         // var output_root = '../data/outputs/uied/example2/';
@@ -122,7 +122,7 @@ $(document).ready(function () {
             };
 
             var model_previews_init = function(){
-                let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-active text-center" datatype="img">' +
+                let preview_list_img = '<li class="list-group-item my-preview-list my-preview-list-img my-preview-list-active text-center" datatype="img">' +
                     '<h5>' + method.toUpperCase() + '</h5>' +
                     '<img title="' + method +'" class="my-preview-img my-preview-img-active" ' +
                     'src="' + '../' + result_path + '/result.jpg"></li>';
@@ -318,8 +318,11 @@ $(document).ready(function () {
     }
 
 
-    /******* Enable the Drag and Drop Function *******/
+    /*--------------------------------------------------------------
+	# Enable the Drag and Drop Function
+	--------------------------------------------------------------*/
     function drag_and_click(s){
+        /* Drag function */
         var click = {x: 0,y: 0};
         $('.draggable').draggable({
             cursor: "move",
@@ -439,8 +442,14 @@ $(document).ready(function () {
     set_draggable();
 
 
-    /******* Start Processing *******/
-    $('#modal_proc_btn').click(function () {
+    /*--------------------------------------------------------------
+	# Processing by New model
+	--------------------------------------------------------------*/
+    var existing_methods = [method];
+    $('#modal_proc_btn_new_img').hide();
+    $('#modal_proc_btn_new_model').show();
+
+    $('#modal_proc_btn_new_model').click(function () {
         let new_method = $("#add_method_select option:selected").attr('value');
 
         console.log(input_img_path);
@@ -454,15 +463,12 @@ $(document).ready(function () {
         else{
             existing_methods.push(new_method);
             method = new_method;
-            $('#modal_proc_btn').addClass('disabled');
+            $('#modal_proc_btn_new_model').prop('disabled', true);
             $('#modal_proc_status').text('Processing ...').slideDown();
             $.ajax({
                 url: '/process',
                 type: 'post',
                 async: true,
-                // data:{
-                //     image_path: input_img_path
-                // },
                 data:{
                     method: method,
                     input_img: input_img_path,
@@ -473,7 +479,7 @@ $(document).ready(function () {
                         result_path = response.result_path;
                         alert('Processing Success!');
 
-                        $('#modal_proc_btn').removeClass('disabled');
+                        $('#modal_proc_btn_new_model').prop('disabled', false);
                         $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
 
                         $('.my-preview-list-active').removeClass('my-preview-list-active');
@@ -482,7 +488,6 @@ $(document).ready(function () {
                         $('.box').html('');
                         dashboard_init();
                         set_draggable();
-                        close_pop_up();
                     }
                     else {
                         alert('Failed');
@@ -490,12 +495,9 @@ $(document).ready(function () {
                 }
             });
         }
-
         return false;
     });
 
-
-    /******* Detect by More models *******/
     $('#add_method_select').on('change', function () {
         let selected_method = $("#add_method_select option:selected").attr('value');
         let params = $("#uied-parameter");
@@ -511,8 +513,6 @@ $(document).ready(function () {
         $('#' + $(this).attr('id') + '-show').text($(this).val());
     });
 
-
-    /******* Show UI kits *******/
     $('#uikits_sidebar').click(function () {
         let kits = $('#show_kits');
         kits.animate({
@@ -522,11 +522,12 @@ $(document).ready(function () {
 
 
     /*--------------------------------------------------------------
-	# Upload
+	# Upload and Process New Image
 	--------------------------------------------------------------*/
+    /* Upload */
     var canvas_loaded = false;
     $('#avatarInput').on('change', function(){
-        this.$avatarModal = $("body").find('#avatar-modal');
+        this.$avatarModal = $("body").find('#modal-new-img');
 
         this.$avatarForm = this.$avatarModal.find('.avatar-form');
         this.$avatarUpload = this.$avatarForm.find('.avatar-upload');
@@ -546,6 +547,7 @@ $(document).ready(function () {
         var files = this.$avatarInput.prop('files');
         console.log(files);
         if (files.length > 0) {
+            $('#btn-upload-process').prop('disabled', false);
             file = files[0];
             this.url = URL.createObjectURL(file);
 
@@ -581,8 +583,92 @@ $(document).ready(function () {
             $("#display-content").removeClass("hide");
             $("#display-content").attr('data-type', 'base64');
             // $(".display-content").fadeIn(1000);
-            $('html, body').animate({scrollTop:   $('#display-content').offset().top - 100}, 1500, 'easeInOutExpo');
         });
     });
+
+    $('#btn-upload-process').click(function () {
+        // Switch processing button
+        $('#modal_proc_btn_new_model').hide();
+        $('#modal_proc_btn_new_img').show();
+    });
+
+    /* Go back when cancel */
+    $('#modal-new-model').on('hide.bs.modal', function () {
+        console.log('hidden');
+        $('#modal_proc_btn_new_img').hide();
+        $('#modal_proc_btn_new_model').show();
+    });
+
+    /* Reinitiate all global variables */
+    function init_whole_dashboard() {
+        // Dashboard initiation
+        det_json_result = '';
+        img_dict = {};
+        classes = [];
+        count_class = {};
+        num_class = 0;
+        index_global = 0;
+
+        $('#menu-uikits').html('');
+        $('#name').html('');
+        $('.pic').html('');
+        $('.box').html('');
+        $('.my-preview-list-img').remove();
+    }
+
+    $('#modal_proc_btn_new_img').click(function () {
+
+        let input_img = $(".display-pic").attr('src');
+        let selected_method = $("#add_method_select option:selected").attr('value');
+
+        if (selected_method == 'empty'){
+            alert("Please select a new detection method")
+        }
+        else{
+            $('#modal_proc_btn_new_img').prop('disabled', true);
+            $('#modal_proc_status').text('Processing ...').slideDown();
+            $.ajax({
+                url: '/process',
+                type: 'post',
+                async: true,
+                data:{
+                    method: selected_method,
+                    input_img: input_img,
+                    input_type: 'base64'
+                },
+                success: function (response) {
+                    if (response.code == 1){
+                        alert('Processing Success!');
+                        $('#modal_proc_btn_new_img').prop('disabled', false);
+                        $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
+                        $('.my-preview-list-active').removeClass('my-preview-list-active');
+                        $('.my-preview-img-active').removeClass('my-preview-img-active');
+
+                        // Reset global variables
+                        input_img_path = response.upload_path;
+                        result_path = response.result_path;
+                        method = selected_method;
+                        existing_methods = [method];
+                        $('#inputImgPath').attr('data-value', input_img_path);
+                        $('#resultPath').attr('data-value', result_path);
+                        $('#method').attr('data-value', method);
+
+                        let url = '/dashboard?method=' + method + '&input_img=' + input_img_path + '&output_root=' + result_path;
+                        console.log(url);
+                        $(location).attr('href', url);
+
+                        // Reset whole dashboard
+                        // init_whole_dashboard();
+                        // dashboard_init();
+                        // set_draggable();
+                    }
+                    else {
+                        alert('Failed');
+                    }
+                }
+            });
+        }
+        return false;
+    })
 
 });

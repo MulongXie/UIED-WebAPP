@@ -49,7 +49,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)" id="upload-new-img" data-toggle="modal" data-target="#avatar-modal">
+                        <a href="" id="upload-new-img" data-toggle="modal" data-target="#modal-new-img">
                             <i class="menu-icon icon-image" style="font-size: 15px"></i><span>New Image</span>
                         </a>
                     </li>
@@ -67,7 +67,7 @@
                         </a>
                         <ul class="sub-menu list-group list-group-flush" id="menu-models" style="padding: 0">
                             <li class="list-group-item my-preview-list" datatype="more" style="text-align: center">
-                                <a href="javascript:void(0)" class="text-center" data-toggle="modal" data-target="#modal-new-model">
+                                <a href="" class="text-center" data-toggle="modal" data-target="#modal-new-model">
                                     <i class="icon-plus" style="margin-right: 10px"></i>
                                     More Models
                                 </a>
@@ -256,7 +256,7 @@
         </div>
 
         <!---------------------------- Upload New Image --------------------------------->
-        <div id="avatar-modal" class="modal fade" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+        <div id="modal-new-img" class="modal fade" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
                     <form id="avatar-form" class="avatar-form">
@@ -305,7 +305,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-3">
-                                        <button type="submit" name="submit" class="btn btn-primary avatar-save fa fa-save" data-dismiss="modal" onClick="$('input[id=submit-btn]').click();"> Save</button>
+                                        <button type="submit" id="btn-upload-process" disabled='true' class="btn btn-primary avatar-save" data-toggle="modal" data-target="#modal-new-model" data-dismiss="modal">Process</button>
                                         <input class="hide" id="submit-btn" name="submit">
                                     </div>
                                 </div>
@@ -314,9 +314,10 @@
                     </form>
                 </div>
             </div>
+            <img class="display-pic" style="display: none;">
         </div>
 
-        <!----------------------------- Use New Model ----------------------------------->
+        <!--------------------------- Process New Model --------------------------------->
         <div id="modal-new-model" class="modal fade">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -338,7 +339,8 @@
                             <p>Block Selection: <span id="para-block-show">3</span></p>
                             <input id="para-block" type="range" min="1" max="10" value="3" class="slider">
                         </div>
-                        <button id="modal_proc_btn" class="btn btn-primary" style="margin: 20px auto">Process</button>
+                        <button id="modal_proc_btn_new_model" class="btn btn-primary" style="margin: 20px auto">Process</button>
+                        <button id="modal_proc_btn_new_img" class="btn btn-primary" style="display: none; margin: 20px auto">Process</button>
                         <p id="modal_proc_status" style="display: none;"></p>
                     </div>
                 </div>

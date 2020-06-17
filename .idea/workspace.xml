@@ -3,7 +3,58 @@
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inputs/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/inputs/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/inputs/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/base64_1/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/base64_1/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/base64_1/ip/1.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/base64_1/ip/1.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/base64_1/ip/1_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/base64_1/ip/1_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/17.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/18.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/40.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/41.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/42.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/ImageView/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/yolo/image_2/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/yolo/image_2/result.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,14 +67,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.50988615">
       <split-first>
         <leaf>
           <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server_v2.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+                <state relative-caret-position="133">
+                  <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -31,11 +82,15 @@
           <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="323" column="64" selection-start-line="323" selection-start-column="64" selection-end-line="323" selection-end-column="64" />
+                <state relative-caret-position="-584">
+                  <caret line="68" column="70" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="70" />
                   <folding>
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                    <element signature="n#style#0;n#img#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
                     <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -45,37 +100,50 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-505">
-                  <caret line="279" column="71" selection-start-line="279" selection-start-column="71" selection-end-line="279" selection-end-column="71" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="442">
-                  <caret line="536" column="19" lean-forward="true" selection-start-line="536" selection-start-column="19" selection-end-line="536" selection-end-column="19" />
+                <state relative-caret-position="497">
+                  <caret line="659" column="48" lean-forward="true" selection-start-line="659" selection-start-column="48" selection-end-line="659" selection-end-column="48" />
                   <folding>
-                    <element signature="e#798#15268#0" />
+                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="e#4743#7395#0" />
                     <element signature="e#7643#15178#0" />
                     <element signature="e#15357#19540#0" />
+                    <element signature="e#15426#18177#0" />
+                    <element signature="e#18282#19532#0" />
                     <element signature="e#19570#20643#0" />
-                    <element signature="e#20772#22631#0" />
-                    <element signature="e#22733#23005#0" />
+                    <element signature="e#23000#23272#0" />
+                    <element signature="e#23317#23391#0" />
+                    <element signature="e#23594#23700#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="true">
+          <file leaf-file-name="dashboard.css" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2124">
-                  <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+                <state relative-caret-position="17">
+                  <caret line="1" column="4" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="4" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index_v2.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="208">
+                  <caret line="228" column="8" selection-start-line="228" selection-start-column="8" selection-end-line="230" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#150#279#0" />
+                    <element signature="e#337#467#0" />
+                    <element signature="e#505#593#0" />
+                    <element signature="e#715#863#0" />
+                    <element signature="e#903#952#0" />
+                    <element signature="e#1093#1998#0" />
+                    <element signature="e#8796#8956#0" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -96,36 +164,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>btn-sh</find>
-      <find>btn-show-res</find>
-      <find>stat</find>
-      <find>selec</find>
-      <find>margin-top</find>
-      <find>resul</find>
-      <find>check</find>
-      <find>status</find>
-      <find>slideToggle</find>
-      <find>pic</find>
-      <find>loader</find>
-      <find>btn-process</find>
-      <find>additional-model</find>
-      <find>Success</find>
-      <find>ava</find>
-      <find>avatar</find>
-      <find>ar</find>
-      <find>avat</find>
-      <find>New image</find>
-      <find>canvas_loaded</find>
-      <find>.avatar-input</find>
-      <find>avatarInput</find>
-      <find>New ima</find>
-      <find>avatar-name</find>
-      <find>try</find>
       <find>New</find>
       <find>Proce</find>
       <find>button class=&quot;btn btn-danger&quot;</find>
       <find>btn btn-danger</find>
       <find>btn-danger</find>
+      <find>avatar-modal</find>
+      <find>New Im</find>
+      <find>det_json_result</find>
+      <find>scale</find>
+      <find>img_dict</find>
+      <find>classes</find>
+      <find>count_class</find>
+      <find>num_class</find>
+      <find>index_global</find>
+      <find>close_</find>
+      <find>void</find>
+      <find>input_img_path</find>
+      <find>display-pic</find>
+      <find>New image</find>
+      <find>modal_proc_btn</find>
+      <find>btn-new-img-process</find>
+      <find>data-toggle</find>
+      <find>display</find>
+      <find>disabled</find>
+      <find>box</find>
+      <find>show_kits</find>
+      <find>menu-models</find>
+      <find>my-preview-list-img</find>
+      <find>location</find>
+      <find>pic</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,14 +209,14 @@
         <option value="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" />
         <option value="$PROJECT_DIR$/server_v2.js" />
         <option value="$PROJECT_DIR$/public/index_v2.html" />
-        <option value="$PROJECT_DIR$/public/js/index_v2.js" />
         <option value="$PROJECT_DIR$/public/js/test.js" />
         <option value="$PROJECT_DIR$/public/test2.html" />
         <option value="$PROJECT_DIR$/public/test.html" />
-        <option value="$PROJECT_DIR$/public/js/dashboard.js" />
         <option value="$PROJECT_DIR$/public/dashboard.html" />
         <option value="$PROJECT_DIR$/public/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/public/js/index_v2.js" />
         <option value="$PROJECT_DIR$/public/dashboard.ejs" />
+        <option value="$PROJECT_DIR$/public/js/dashboard.js" />
       </list>
     </option>
   </component>
@@ -167,9 +235,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="895" />
-    <option name="width" value="1032" />
-    <option name="height" value="1047" />
+    <option name="x" value="-7" />
+    <option name="y" value="-7" />
+    <option name="width" value="1295" />
+    <option name="height" value="697" />
   </component>
   <component name="ProjectId" id="1dEqOIJS1dT0FVvVMapEa19GYXl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -198,6 +267,12 @@
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,12 +393,12 @@
       <workItem from="1591953664840" duration="3000" />
       <workItem from="1591987176546" duration="25258000" />
       <workItem from="1592221374298" duration="3497000" />
-      <workItem from="1592282399506" duration="17577000" />
+      <workItem from="1592282399506" duration="37198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36927000" />
+    <option name="totallyTimeSpent" value="56548000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -398,11 +473,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/dashboard.js</url>
-          <line>588</line>
+          <line>674</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
@@ -566,51 +641,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="80" column="60" lean-forward="true" selection-start-line="80" selection-start-column="60" selection-end-line="80" selection-end-column="60" />
-          <folding>
-            <element signature="e#150#279#0" />
-            <element signature="e#337#467#0" />
-            <element signature="e#505#593#0" />
-            <element signature="e#715#863#0" />
-            <element signature="e#903#952#0" />
-            <element signature="e#1093#1998#0" />
-            <element signature="e#8796#8956#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="67" lean-forward="true" selection-start-line="67" selection-end-line="67" />
           <folding>
             <element signature="e#268#2609#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" lean-forward="true" selection-end-line="605" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#7850#7857#1" expanded="true" />
-            <element signature="e#10080#10087#1" expanded="true" />
-            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#12990#12997#1" expanded="true" />
-            <element signature="e#22195#22201#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -666,40 +702,87 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server_v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
+        <state relative-caret-position="133">
+          <caret line="108" column="37" selection-start-line="108" selection-start-column="37" selection-end-line="108" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="536" column="19" lean-forward="true" selection-start-line="536" selection-start-column="19" selection-end-line="536" selection-end-column="19" />
+        <state relative-caret-position="-584">
+          <caret line="68" column="70" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="70" />
           <folding>
-            <element signature="e#798#15268#0" />
-            <element signature="e#7643#15178#0" />
-            <element signature="e#15357#19540#0" />
-            <element signature="e#19570#20643#0" />
-            <element signature="e#20772#22631#0" />
-            <element signature="e#22733#23005#0" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="45" column="53" lean-forward="true" selection-start-line="45" selection-start-column="53" selection-end-line="45" selection-end-column="53" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#div#1;n#div#1;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#7850#7857#1" expanded="true" />
+            <element signature="e#10080#10087#1" expanded="true" />
+            <element signature="n#style#0;n#label#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#12990#12997#1" expanded="true" />
+            <element signature="e#22195#22201#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="228" column="8" selection-start-line="228" selection-start-column="8" selection-end-line="230" selection-end-column="38" />
+          <folding>
+            <element signature="e#150#279#0" />
+            <element signature="e#337#467#0" />
+            <element signature="e#505#593#0" />
+            <element signature="e#715#863#0" />
+            <element signature="e#903#952#0" />
+            <element signature="e#1093#1998#0" />
+            <element signature="e#8796#8956#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2124">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="323" column="64" selection-start-line="323" selection-start-column="64" selection-end-line="323" selection-end-column="64" />
+        <state relative-caret-position="497">
+          <caret line="659" column="48" lean-forward="true" selection-start-line="659" selection-start-column="48" selection-end-line="659" selection-end-column="48" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#4743#7395#0" />
+            <element signature="e#7643#15178#0" />
+            <element signature="e#15357#19540#0" />
+            <element signature="e#15426#18177#0" />
+            <element signature="e#18282#19532#0" />
+            <element signature="e#19570#20643#0" />
+            <element signature="e#23000#23272#0" />
+            <element signature="e#23317#23391#0" />
+            <element signature="e#23594#23700#0" />
           </folding>
         </state>
       </provider>
