@@ -156,5 +156,3 @@ def yolo(input_img_path, output_root):
         json.dump(compos, open(pjoin(output_root, "compo.json"), 'w'), indent=4)
         print('Write to:', output_root)
 
-
-# yolo('data/input/0.jpg', 'data/output')

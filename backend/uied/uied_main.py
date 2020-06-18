@@ -8,7 +8,7 @@ resize_by_height = 800
 # PATH_IMG_INPUT = 'E:\\Mulong\\Datasets\\rico\\combined\\23.jpg'
 
 
-def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=False, is_merge=False):
+def uied(input_path, output_root, is_ip=True, is_clf=False, is_ocr=True, is_merge=True):
 
     if is_ocr:
         import ocr_east as ocr

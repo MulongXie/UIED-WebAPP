@@ -10,5 +10,6 @@ import cv2
 
 import yolo_main as yolo
 
+# input_path, output_root = 'yolo/data/input/0.jpg', 'yolo/data/output'
 input_path, output_root = sys.argv[1:3]
 yolo.yolo(input_path, output_root)
