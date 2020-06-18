@@ -1,0 +1,244 @@
+{
+    "compos": [
+        {
+            "class": "Background",
+            "column_min": 0,
+            "row_min": 0,
+            "width": 575,
+            "column_max": 575,
+            "height": 1022,
+            "id": 0,
+            "row_max": 1022
+        },
+        {
+            "class": "ImageView",
+            "column_min": 31,
+            "row_min": 672,
+            "width": 97,
+            "column_max": 129,
+            "height": 99,
+            "id": 1,
+            "row_max": 771
+        },
+        {
+            "class": "ImageView",
+            "column_min": 31,
+            "row_min": 557,
+            "width": 96,
+            "column_max": 127,
+            "height": 99,
+            "id": 2,
+            "row_max": 657
+        },
+        {
+            "class": "ImageView",
+            "column_min": 30,
+            "row_min": 789,
+            "width": 95,
+            "column_max": 126,
+            "height": 97,
+            "id": 3,
+            "row_max": 886
+        },
+        {
+            "class": "ImageView",
+            "column_min": 29,
+            "row_min": 444,
+            "width": 99,
+            "column_max": 128,
+            "height": 100,
+            "id": 4,
+            "row_max": 544
+        },
+        {
+            "class": "ImageView",
+            "column_min": 29,
+            "row_min": 908,
+            "width": 97,
+            "column_max": 127,
+            "height": 94,
+            "id": 5,
+            "row_max": 1003
+        },
+        {
+            "class": "ImageView",
+            "column_min": 475,
+            "row_min": 597,
+            "width": 27,
+            "column_max": 502,
+            "height": 26,
+            "id": 6,
+            "row_max": 624
+        },
+        {
+            "class": "ImageView",
+            "column_min": 475,
+            "row_min": 709,
+            "width": 28,
+            "column_max": 503,
+            "height": 27,
+            "id": 7,
+            "row_max": 736
+        },
+        {
+            "class": "ImageView",
+            "column_min": 29,
+            "row_min": 332,
+            "width": 99,
+            "column_max": 128,
+            "height": 99,
+            "id": 8,
+            "row_max": 432
+        },
+        {
+            "class": "ImageView",
+            "column_min": 475,
+            "row_min": 479,
+            "width": 29,
+            "column_max": 504,
+            "height": 28,
+            "id": 9,
+            "row_max": 508
+        },
+        {
+            "class": "ImageView",
+            "column_min": 474,
+            "row_min": 823,
+            "width": 30,
+            "column_max": 504,
+            "height": 28,
+            "id": 10,
+            "row_max": 852
+        },
+        {
+            "class": "ImageView",
+            "column_min": 432,
+            "row_min": 477,
+            "width": 32,
+            "column_max": 464,
+            "height": 32,
+            "id": 11,
+            "row_max": 509
+        },
+        {
+            "class": "ImageView",
+            "column_min": 430,
+            "row_min": 707,
+            "width": 32,
+            "column_max": 463,
+            "height": 31,
+            "id": 12,
+            "row_max": 739
+        },
+        {
+            "class": "ImageView",
+            "column_min": 432,
+            "row_min": 597,
+            "width": 29,
+            "column_max": 461,
+            "height": 29,
+            "id": 13,
+            "row_max": 627
+        },
+        {
+            "class": "ImageView",
+            "column_min": 28,
+            "row_min": 220,
+            "width": 99,
+            "column_max": 128,
+            "height": 97,
+            "id": 14,
+            "row_max": 318
+        },
+        {
+            "class": "ImageView",
+            "column_min": 414,
+            "row_min": 878,
+            "width": 122,
+            "column_max": 536,
+            "height": 107,
+            "id": 15,
+            "row_max": 985
+        },
+        {
+            "class": "ImageView",
+            "column_min": 475,
+            "row_min": 247,
+            "width": 34,
+            "column_max": 510,
+            "height": 34,
+            "id": 16,
+            "row_max": 281
+        },
+        {
+            "class": "ImageView",
+            "column_min": 473,
+            "row_min": 362,
+            "width": 34,
+            "column_max": 508,
+            "height": 33,
+            "id": 17,
+            "row_max": 395
+        },
+        {
+            "class": "ImageView",
+            "column_min": 432,
+            "row_min": 822,
+            "width": 31,
+            "column_max": 463,
+            "height": 32,
+            "id": 18,
+            "row_max": 854
+        },
+        {
+            "class": "ImageView",
+            "column_min": 511,
+            "row_min": 67,
+            "width": 36,
+            "column_max": 548,
+            "height": 37,
+            "id": 19,
+            "row_max": 105
+        },
+        {
+            "class": "ImageView",
+            "column_min": 488,
+            "row_min": 147,
+            "width": 44,
+            "column_max": 532,
+            "height": 38,
+            "id": 20,
+            "row_max": 186
+        },
+        {
+            "class": "ImageView",
+            "column_min": 429,
+            "row_min": 361,
+            "width": 34,
+            "column_max": 463,
+            "height": 35,
+            "id": 21,
+            "row_max": 396
+        },
+        {
+            "class": "ImageView",
+            "column_min": 28,
+            "row_min": 142,
+            "width": 100,
+            "column_max": 129,
+            "height": 67,
+            "id": 22,
+            "row_max": 210
+        },
+        {
+            "class": "ImageView",
+            "column_min": 425,
+            "row_min": 246,
+            "width": 36,
+            "column_max": 462,
+            "height": 38,
+            "id": 23,
+            "row_max": 285
+        }
+    ]
+}

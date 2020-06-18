@@ -146,8 +146,8 @@ def yolo(input_img_path, output_root):
                  'width': int(x2 - x1), 'height': int(y2 - y1)}
             compos['compos'].append(c)
 
-        cv2.imshow('detection', cv2.resize(img, (int(img.shape[1] / 2), int(img.shape[0] / 2))))
-        cv2.waitKey()
+        # cv2.imshow('detection', cv2.resize(img, (int(img.shape[1] / 2), int(img.shape[0] / 2))))
+        # cv2.waitKey()
 
         # Save generated image with detections
         # ip.dissemble_clip_img_hollow(pjoin(output_root, 'clips'), org, compos['compos'])
