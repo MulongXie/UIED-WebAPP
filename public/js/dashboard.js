@@ -674,6 +674,44 @@ $(document).ready(function () {
             });
         }
         return false;
-    })
+    });
 
+
+    /*--------------------------------------------------------------
+    # Export Result
+    --------------------------------------------------------------*/
+    function get_result_json() {
+        let bkg = $('#draggable_Background_0');
+        let offset_top = parseInt(bkg.css('top'));
+        let offset_left = parseInt(bkg.css('left'));
+
+        console.log(offset_top, offset_left);
+
+        let compos = $('.box').children();
+        let compos_json = {'compos':[]};
+        let idx = 0;
+        for (let i = 0; i < compos.length; i ++){
+            let compo = $("#" + compos[i].id);
+            let top = parseInt(compo.css('top')) - offset_top;
+            let left = parseInt(compo.css('left')) - offset_left;
+            if (top < 0 || left < 0) continue;
+            let c = {'id': i,
+                'class': compo.attr('id').split('_')[1],
+                'row_min': top,
+                'column_min': left,
+                'width': compo.width(),
+                'height': compo.height()
+            };
+            compos_json['compos'].push(c);
+            idx += 1;
+            // console.log(c)
+        }
+        return compos_json;
+    }
+
+    $('#btn-export').click(function () {
+        let json = get_result_json();
+        // console.log(encodeURIComponent(JSON.stringify(json)));
+        $(this).attr('href', 'data:application/json,' + encodeURIComponent(JSON.stringify(json, null, '\t')))
+    })
 });
