@@ -45,8 +45,8 @@ $(document).ready(function () {
                     offset_top = Math.round(($(window).height() - total_height*scale - $('#board').offset()['top'])/2);
                     offset_left = Math.round(($('#board').width() - total_width*scale - $('#board').offset()['left'])/2);
 
-                    console.log(offset_top);
-                    console.log(offset_left);
+                    // console.log(offset_top);
+                    // console.log(offset_left);
                 }
 
                 // put resulting compos on dashboard
@@ -685,8 +685,6 @@ $(document).ready(function () {
         let offset_top = parseInt(bkg.css('top'));
         let offset_left = parseInt(bkg.css('left'));
 
-        console.log(offset_top, offset_left);
-
         let compos = $('.box').children();
         let compos_json = {'compos':[]};
         let idx = 0;
@@ -700,11 +698,11 @@ $(document).ready(function () {
                 'row_min': top,
                 'column_min': left,
                 'width': compo.width(),
-                'height': compo.height()
+                'height': compo.height(),
+                'clip': compo.find('img').attr('src')
             };
             compos_json['compos'].push(c);
             idx += 1;
-            // console.log(c)
         }
         return compos_json;
     }
@@ -712,7 +710,24 @@ $(document).ready(function () {
     $('#btn-export').click(function () {
         // $(this).attr('href', 'data:application/json,' + encodeURIComponent(JSON.stringify(json, null, '\t')))
 
-        let json = get_result_json();
+        let compos_json = get_result_json();
+        let compound_json_path = result_path + '/compound.json';
+
+        $.ajax({
+            url: '/export',
+            type: 'post',
+            async: true,
+            data:{
+                result_json_path: compound_json_path,
+                input_img_path: input_img_path,
+                compos: compos_json
+            },
+            success: function (resp) {
+                let compound_img = resp.compound_img_base64;
+                $('#compound').attr('src', 'data:image/png;base64,' + compound_img);
+            }
+        });
+
         // var zip = new JSZip();
         // zip.file("result.json", JSON.stringify(json, null, '\t'));
         // document.getElementById('compound-img').toBlob(function (blob) {

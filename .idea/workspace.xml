@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/compound_img.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/dashboard.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/dashboard.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/4.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_v2.js" afterDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,50 +21,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/server_v2.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="363">
-                  <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="467">
-                  <caret line="725" lean-forward="true" selection-start-line="725" selection-end-line="725" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                    <element signature="e#26886#27241#0" />
-                    <element signature="e#27294#29740#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="365" selection-start-line="365" selection-end-line="365" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server_v2.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="131">
+              <caret line="85" column="65" lean-forward="true" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="731" column="33" lean-forward="true" selection-start-line="731" selection-start-column="33" selection-end-line="731" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -72,8 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>button class=&quot;btn btn-danger&quot;</find>
-      <find>btn btn-danger</find>
       <find>btn-danger</find>
       <find>avatar-modal</find>
       <find>New Im</find>
@@ -102,6 +96,8 @@
       <find>pic</find>
       <find>UI2CODE</find>
       <find>canvas</find>
+      <find>console</find>
+      <find>fs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,12 +106,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/yolo.py" />
-        <option value="$PROJECT_DIR$/backend/uied.py" />
-        <option value="$PROJECT_DIR$/backend/yolo/yolo_main.py" />
-        <option value="$PROJECT_DIR$/public/dashboard.html" />
         <option value="$PROJECT_DIR$/public/js/dashboard.js" />
-        <option value="$PROJECT_DIR$/public/dashboard.ejs" />
       </list>
     </option>
   </component>
@@ -130,9 +121,8 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
@@ -152,6 +142,11 @@
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
@@ -206,7 +201,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Node.js.server_v2.js">
-    <configuration name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server.js" working-dir="$PROJECT_DIR$" />
+    <configuration name="dashboard.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="dashboard.js" working-dir="$PROJECT_DIR$/public/js" />
     <configuration name="server_v2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server_v2.js" working-dir="$PROJECT_DIR$" />
     <configuration name="test.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$" />
     <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/public" />
@@ -234,7 +229,7 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.server.js" />
+      <item itemvalue="Node.js.dashboard.js" />
       <item itemvalue="Node.js.server_v2.js" />
       <item itemvalue="Node.js.test.js" />
       <item itemvalue="Node.js.test.js (1)" />
@@ -285,23 +280,23 @@
       <workItem from="1591987176546" duration="25258000" />
       <workItem from="1592221374298" duration="3497000" />
       <workItem from="1592282399506" duration="38655000" />
-      <workItem from="1592437072875" duration="13658000" />
+      <workItem from="1592437072875" duration="22338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11020000" />
+    <option name="totallyTimeSpent" value="38000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1548999" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26923078" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3496732" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35313532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info id="Favorites" order="4" side_tool="true" />
@@ -366,7 +361,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/public/js/dashboard.js</url>
-          <line>728</line>
+          <line>743</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
@@ -377,7 +372,6 @@
     <SUITE FILE_PATH="coverage/UIED_WebAPP$uied.coverage" NAME="uied Coverage Results" MODIFIED="1592437358222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/outputs/uied/example0/result.jpg" />
     <entry file="file://$PROJECT_DIR$/server.js" />
     <entry file="file://$PROJECT_DIR$/public/css/index_v1.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -596,31 +590,36 @@
     <entry file="file://$PROJECT_DIR$/public/images/about-img.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+    <entry file="file://$PROJECT_DIR$/data/outputs/uied/image_2/compound.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="725" lean-forward="true" selection-start-line="725" selection-end-line="725" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-            <element signature="e#26886#27241#0" />
-            <element signature="e#27294#29740#0" />
-          </folding>
+        <state relative-caret-position="6171">
+          <caret line="363" column="1" lean-forward="true" selection-start-line="363" selection-start-column="1" selection-end-line="363" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="365" selection-start-line="365" selection-end-line="365" />
+        <state relative-caret-position="208">
+          <caret line="354" column="18" selection-start-line="354" selection-start-column="18" selection-end-line="354" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server_v2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="68" column="44" lean-forward="true" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+        <state relative-caret-position="131">
+          <caret line="85" column="65" lean-forward="true" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="731" column="33" lean-forward="true" selection-start-line="731" selection-start-column="33" selection-end-line="731" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -75,6 +75,39 @@ app.get('/dashboard',function(req,res){
     res.render('dashboard', {inputImgPath: input_image, outputRoot: output_root, method: method})
 });
 
+app.post('/export', function (req, res) {
+    let input_img_path = req.body.input_img_path;
+    let compound_json_path = req.body.result_json_path;
+    let compos = req.body.compos;
+
+    console.log(compound_json_path);
+    fs.writeFile(compound_json_path, JSON.stringify(compos, null, '\t'), function (err) {
+        if (! err){
+            let processer = child_process.exec('python backend/compound_img.py ' + input_img_path + ' ' + compound_json_path,
+                function (error, stdout, stderr) {
+                    if (error){
+                        console.log(stdout);
+                        console.log(error.stack);
+                        console.log('Error code: '+error.code);
+                        console.log('Signal received: '+error.signal);
+                        res.json({code:0});
+                    }
+                    else {
+                        console.log('Synthesize compound img successfully');
+                        console.log(stdout);
+                        res.json({code:1, compound_img_base64:stdout})
+                    }
+                });
+
+            processer.on('exit', function () {
+                console.log('Program Completed');
+            });
+        }
+    });
+
+
+});
+
 app.listen(8000,function(){
     console.log("Working on port 8000");
 });
