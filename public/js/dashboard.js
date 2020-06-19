@@ -723,13 +723,23 @@ $(document).ready(function () {
                 compos: compos_json
             },
             success: function (resp) {
-                let compound_img = resp.compound_img_base64;
-                $('#compound').attr('src', 'data:image/png;base64,' + compound_img);
+                if (resp.code == 1){
+                    let compound_img = resp.compound_img_base64;
+                    var zip = new JSZip();
+                    zip.file("result.json", JSON.stringify(compos_json, null, '\t'));
+                    zip.file("result.jpg", compound_img, {base64: true});
+                    zip.generateAsync({type:"blob"}, function () {
+                        }).then(function(content) {
+                            // see FileSaver.js
+                            saveAs(content, "example.zip");
+                        });
+                }
+                else {
+                    alert("Export Failed")
+                }
             }
         });
 
-        // var zip = new JSZip();
-        // zip.file("result.json", JSON.stringify(json, null, '\t'));
         // document.getElementById('compound-img').toBlob(function (blob) {
         //     zip.file('result.png', blob);
         //     zip.generateAsync({type:"blob"}, function () {

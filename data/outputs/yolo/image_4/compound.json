@@ -12,8 +12,8 @@
 		{
 			"id": "1",
 			"class": "ImageView",
-			"row_min": "674",
-			"column_min": "34",
+			"row_min": "536",
+			"column_min": "422",
 			"width": "92",
 			"height": "95",
 			"clip": "../data/outputs/yolo/image_4/clips/ImageView/1.jpg"
@@ -21,8 +21,8 @@
 		{
 			"id": "2",
 			"class": "ImageView",
-			"row_min": "561",
-			"column_min": "31",
+			"row_min": "690",
+			"column_min": "239",
 			"width": "94",
 			"height": "97",
 			"clip": "../data/outputs/yolo/image_4/clips/ImageView/2.jpg"
@@ -48,8 +48,8 @@
 		{
 			"id": "5",
 			"class": "ImageView",
-			"row_min": "335",
-			"column_min": "30",
+			"row_min": "433",
+			"column_min": "281",
 			"width": "98",
 			"height": "95",
 			"clip": "../data/outputs/yolo/image_4/clips/ImageView/5.jpg"
@@ -57,8 +57,8 @@
 		{
 			"id": "6",
 			"class": "ImageView",
-			"row_min": "449",
-			"column_min": "29",
+			"row_min": "545",
+			"column_min": "197",
 			"width": "96",
 			"height": "94",
 			"clip": "../data/outputs/yolo/image_4/clips/ImageView/6.jpg"
@@ -111,8 +111,8 @@
 		{
 			"id": "12",
 			"class": "ImageView",
-			"row_min": "733",
-			"column_min": "501",
+			"row_min": "705",
+			"column_min": "379",
 			"width": "50",
 			"height": "29",
 			"clip": "../data/outputs/yolo/image_4/clips/ImageView/12.jpg"
