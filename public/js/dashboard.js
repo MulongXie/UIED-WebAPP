@@ -710,8 +710,19 @@ $(document).ready(function () {
     }
 
     $('#btn-export').click(function () {
+        // $(this).attr('href', 'data:application/json,' + encodeURIComponent(JSON.stringify(json, null, '\t')))
+
         let json = get_result_json();
-        // console.log(encodeURIComponent(JSON.stringify(json)));
-        $(this).attr('href', 'data:application/json,' + encodeURIComponent(JSON.stringify(json, null, '\t')))
+        // var zip = new JSZip();
+        // zip.file("result.json", JSON.stringify(json, null, '\t'));
+        // document.getElementById('compound-img').toBlob(function (blob) {
+        //     zip.file('result.png', blob);
+        //     zip.generateAsync({type:"blob"}, function () {
+        //     }).then(function(content) {
+        //         // see FileSaver.js
+        //         saveAs(content, "example.zip");
+        //     });
+        // });
+
     })
 });
