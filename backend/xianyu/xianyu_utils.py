@@ -28,7 +28,7 @@ def dissemble_clip_img(clip_root, org, compos):
         clip = org[row_min:row_max, col_min: col_max]
 
         cv2.imwrite(c_path, clip)
-    cv2.imwrite(os.path.join(clip_root, 'bkg.jpg'), bkg)
+    cv2.imwrite(os.path.join(clip_root, 'bkg.png'), bkg)
 
 
 def resize_by_height(org, resize_height):
@@ -79,11 +79,14 @@ def draw_bounding_box(org, slices, color=(0, 255, 0), line=2, name='board', show
     return board
 
 
-def cvt_json(corners, category):
+def cvt_json(corners, category, img_shape):
     '''
     :param corners: [[col_min, row_min, col_max, row_max]]
     '''
-    components = {'compos':[]}
+    components = {'compos':[
+        {'id': 0, 'class': 'Background', 'column_min': 0, 'row_min': 0, 'column_max': img_shape[1],
+             'row_max': img_shape[0], 'width': img_shape[1], 'height': img_shape[0]}
+    ]}
     for i in range(len(corners)):
         corner = corners[i]
         c = {'class': category[i], 'id': i,

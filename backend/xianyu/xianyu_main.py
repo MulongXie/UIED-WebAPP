@@ -114,7 +114,7 @@ def xianyu(input_path_img,
     compo = detect_compo(img, show=show)
     text = ocr.ocr(org, show=show)
     compo_merge, categories = merge.incorporate(img, compo, text, show=show)
-    compos = utils.cvt_json(compo_merge, categories)
+    compos = utils.cvt_json(compo_merge, categories, img.shape)
 
     utils.dissemble_clip_img(clip_root, img, compos)
     utils.draw_bounding_box_class(img, compo_merge, categories, output=output_path_img)
