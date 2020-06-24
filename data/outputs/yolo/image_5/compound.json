@@ -1,0 +1,220 @@
+{
+	"compos": [
+		{
+			"id": "0",
+			"class": "Background",
+			"row_min": "0",
+			"column_min": "0",
+			"width": "575",
+			"height": "1022",
+			"clip": "../data/outputs/yolo/image_5/clips/bkg.png"
+		},
+		{
+			"id": "1",
+			"class": "ImageView",
+			"row_min": "663",
+			"column_min": "67",
+			"width": "98",
+			"height": "99",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/1.jpg"
+		},
+		{
+			"id": "2",
+			"class": "ImageView",
+			"row_min": "548",
+			"column_min": "67",
+			"width": "96",
+			"height": "100",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/2.jpg"
+		},
+		{
+			"id": "3",
+			"class": "ImageView",
+			"row_min": "780",
+			"column_min": "66",
+			"width": "96",
+			"height": "97",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/3.jpg"
+		},
+		{
+			"id": "4",
+			"class": "ImageView",
+			"row_min": "435",
+			"column_min": "65",
+			"width": "99",
+			"height": "100",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/4.jpg"
+		},
+		{
+			"id": "5",
+			"class": "ImageView",
+			"row_min": "899",
+			"column_min": "65",
+			"width": "97",
+			"height": "95",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/5.jpg"
+		},
+		{
+			"id": "6",
+			"class": "ImageView",
+			"row_min": "588",
+			"column_min": "511",
+			"width": "27",
+			"height": "27",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/6.jpg"
+		},
+		{
+			"id": "7",
+			"class": "ImageView",
+			"row_min": "700",
+			"column_min": "511",
+			"width": "29",
+			"height": "27",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/7.jpg"
+		},
+		{
+			"id": "8",
+			"class": "ImageView",
+			"row_min": "323",
+			"column_min": "65",
+			"width": "99",
+			"height": "100",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/8.jpg"
+		},
+		{
+			"id": "9",
+			"class": "ImageView",
+			"row_min": "470",
+			"column_min": "511",
+			"width": "29",
+			"height": "29",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/9.jpg"
+		},
+		{
+			"id": "10",
+			"class": "ImageView",
+			"row_min": "814",
+			"column_min": "510",
+			"width": "30",
+			"height": "29",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/10.jpg"
+		},
+		{
+			"id": "11",
+			"class": "ImageView",
+			"row_min": "468",
+			"column_min": "468",
+			"width": "32",
+			"height": "32",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/11.jpg"
+		},
+		{
+			"id": "12",
+			"class": "ImageView",
+			"row_min": "698",
+			"column_min": "466",
+			"width": "33",
+			"height": "32",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/12.jpg"
+		},
+		{
+			"id": "13",
+			"class": "ImageView",
+			"row_min": "588",
+			"column_min": "468",
+			"width": "29",
+			"height": "30",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/13.jpg"
+		},
+		{
+			"id": "14",
+			"class": "ImageView",
+			"row_min": "211",
+			"column_min": "64",
+			"width": "100",
+			"height": "98",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/14.jpg"
+		},
+		{
+			"id": "15",
+			"class": "ImageView",
+			"row_min": "869",
+			"column_min": "450",
+			"width": "122",
+			"height": "107",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/15.jpg"
+		},
+		{
+			"id": "16",
+			"class": "ImageView",
+			"row_min": "238",
+			"column_min": "511",
+			"width": "35",
+			"height": "34",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/16.jpg"
+		},
+		{
+			"id": "17",
+			"class": "ImageView",
+			"row_min": "353",
+			"column_min": "509",
+			"width": "34",
+			"height": "33",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/17.jpg"
+		},
+		{
+			"id": "18",
+			"class": "ImageView",
+			"row_min": "813",
+			"column_min": "468",
+			"width": "31",
+			"height": "32",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/18.jpg"
+		},
+		{
+			"id": "19",
+			"class": "ImageView",
+			"row_min": "58",
+			"column_min": "547",
+			"width": "37",
+			"height": "38",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/19.jpg"
+		},
+		{
+			"id": "20",
+			"class": "ImageView",
+			"row_min": "138",
+			"column_min": "524",
+			"width": "45",
+			"height": "39",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/20.jpg"
+		},
+		{
+			"id": "21",
+			"class": "ImageView",
+			"row_min": "352",
+			"column_min": "465",
+			"width": "34",
+			"height": "35",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/21.jpg"
+		},
+		{
+			"id": "22",
+			"class": "ImageView",
+			"row_min": "133",
+			"column_min": "66",
+			"width": "96",
+			"height": "64",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/22.jpg"
+		},
+		{
+			"id": "23",
+			"class": "ImageView",
+			"row_min": "237",
+			"column_min": "461",
+			"width": "37",
+			"height": "39",
+			"clip": "../data/outputs/yolo/image_5/clips/ImageView/23.jpg"
+		}
+	]
+}
