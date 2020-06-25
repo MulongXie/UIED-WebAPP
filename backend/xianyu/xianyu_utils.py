@@ -89,7 +89,7 @@ def cvt_json(corners, category, img_shape):
     ]}
     for i in range(len(corners)):
         corner = corners[i]
-        c = {'class': category[i], 'id': i,
+        c = {'class': category[i], 'id': i + 1,
              'column_min': corner[0], 'row_min': corner[1], 'column_max': corner[2], 'row_max': corner[3],
              'width': corner[2] - corner[0], 'height': corner[3] - corner[1]}
         components['compos'].append(c)
