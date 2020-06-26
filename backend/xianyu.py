@@ -13,4 +13,4 @@ import xianyu_main as xy
 input_path, output_root = sys.argv[1:3]
 print("Processing:", input_path, 'to', output_root)
 
-xy.xianyu(input_path, output_root, show=True)
+xy.xianyu(input_path, output_root)
