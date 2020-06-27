@@ -7,8 +7,8 @@ sys.path.append(os.path.join(root, 'remaui/data'))
 # **********************************
 import remaui_main as remaui
 
-# input_path = 'backend\\remaui\\data\\input\\14.jpg'
-# output_root = 'backend\\remaui\\data\\output'
+# input_path = 'remaui\\data\\input\\14.jpg'
+# output_root = 'remaui\\data\\output'
 input_path, output_root = sys.argv[1:3]
 if not os.path.exists(output_root):
     os.mkdir(output_root)
