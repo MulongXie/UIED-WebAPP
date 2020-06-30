@@ -67,6 +67,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
                     resize_by_height=600, block_pad=4,
                     classifier=None, show=False):
 
+    print('*** output:', output_root, ' ***')
     if uied_params is None: uied_params = {'param-grad':5, 'param-block':5, 'param-minarea':150}
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
@@ -113,10 +114,13 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     # *** Step 6 *** element classification: all category classification
     if classifier is not None:
         classifier['Elements'].predict(seg.clipping(org, uicompos), uicompos)
-        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(ip_root, name + '_result.png'))
+        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(ip_root, name + '_cls.png'))
 
-    seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
+    Compo.compos_update(uicompos, org.shape)
     file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
+    file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
+    draw.draw_bounding_box(org, uicompos, show=show, name='final-result', write_path=pjoin(output_root, 'result.jpg'))
+    seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
 
     print("[Compo Detection Completed in %.3f s] %s" % (time.clock() - start, input_img_path))
     if show:
