@@ -1336,3 +1336,8 @@ a.carousel-control.right {
 .param-list{
   list-style: none
 }
+
+option:disabled{
+    cursor: not-allowed;
+    color: aqua
+}
