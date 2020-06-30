@@ -256,13 +256,13 @@ def predict(sess, f_score, f_geometry, input_images, resize_by_height, show=Fals
         corners = resize_label(corners, resize_by_height, im.shape[0])
         im = cv2.resize(im, (int(resize_by_height/im.shape[0] * im.shape[1]), resize_by_height))
     save_corners_json(res_file, corners)
+    broad = draw_bounding_box(im[:, :, ::-1], corners)
 
     if not FLAGS.no_write_images:
         img_path = os.path.join(FLAGS.output_dir, os.path.basename(img_path)[:-4] + '.png')
-        cv2.imwrite(img_path, im[:, :, ::-1])
+        cv2.imwrite(img_path, broad)
     
     if show:
-        broad = draw_bounding_box(im[:, :, ::-1], corners)
         cv2.imshow('east', cv2.resize(broad, (500, 1000)))
         cv2.waitKey()
 

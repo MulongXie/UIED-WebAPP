@@ -40,10 +40,33 @@ def processing_block(org, binary, blocks, block_pad):
     return uicompos_all
 
 
+def nesting_inspection(org, grey, compos):
+    nesting_compos = []
+    for i, compo in enumerate(compos):
+        if compo.height > 50:
+            replace = False
+            clip_org = compo.compo_clipping(org)
+            clip_grey = compo.compo_clipping(grey)
+            n_compos = blk.block_division(clip_grey, org, show=False)
+            Compo.cvt_compos_relative_pos(n_compos, compo.bbox.col_min, compo.bbox.row_min)
+
+            for n_compo in n_compos:
+                if n_compo.redundant:
+                    compos[i] = n_compo
+                    replace = True
+                    break
+
+            if not replace:
+                nesting_compos += n_compos
+            # cv2.imshow('clip', clip_org)
+            # cv2.waitKey()
+    return nesting_compos
+
+
 def compo_detection(input_img_path, output_root, uied_params=None,
                     resize_by_height=600, block_pad=4,
                     classifier=None, show=False):
-    print(uied_params)
+
     if uied_params is None: uied_params = {'param-grad':4, 'param-block':5, 'param-minarea':150}
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
@@ -54,53 +77,47 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     binary = pre.binarization(org, grad_min=int(uied_params['param-grad']))
     binary_org = binary.copy()
 
-    # *** Step 2 *** block processing: detect block -> calculate hierarchy -> detect components in block
-    blocks = blk.block_division(grey, org, grad_thresh=int(uied_params['param-block']))
-    blk.block_hierarchy(blocks)
-    uicompos_in_blk = processing_block(org, binary, blocks, block_pad)
+    # *** Step 2 *** element detection
+    det.rm_line(binary, show=show)
+    uicompos = det.component_detection(binary)
 
-    # *** Step 3 *** non-block part processing: remove lines -> erase blocks from binary -> detect left components
-    # det.rm_line(binary, show=show)
-    blk.block_bin_erase_all_blk(binary, blocks, block_pad)
-    uicompos_not_in_blk = det.component_detection(binary)
-    uicompos = uicompos_in_blk + uicompos_not_in_blk
-
-    # *** Step 4 *** results refinement: remove top and bottom compos -> merge words into line
-    uicompos = det.rm_top_or_bottom_corners(uicompos, org.shape)
-    uicompos = det.merge_text(uicompos, org.shape)
-    uicompos = det.compo_filter(uicompos, min_area=int(uied_params['param-minarea']))
+    # *** Step 4 *** results refinement
+    # uicompos = det.rm_top_or_bottom_corners(uicompos, org.shape)
+    file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
+    # uicompos = det.merge_text(uicompos, org.shape)
+    uicompos = det.merge_intersected_corner(uicompos, org.shape)
     Compo.compos_update(uicompos, org.shape)
     Compo.compos_containment(uicompos)
-    file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
-    file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
-    # uicompos = det.merge_intersected_corner(uicompos, org.shape)
+    draw.draw_bounding_box(org, uicompos, show=show, name='no-nesting')
 
-    # # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection
-    # if classifier['Image'] is not None:
-    #     classifier['Image'].predict(seg.clipping(org, uicompos), uicompos)
-    #     draw.draw_bounding_box_class(org, uicompos, show=show)
-    #     uicompos = det.rm_noise_in_large_img(uicompos, org)
-    #     draw.draw_bounding_box_class(org, uicompos, show=show)
-    #     det.detect_compos_in_img(uicompos, binary_org, org)
-    #     draw.draw_bounding_box(org, uicompos, show=show)
+    # *** Step 5 ** nesting inspection
+    uicompos += nesting_inspection(org, grey, uicompos)
+    uicompos = det.compo_filter(uicompos, min_area=int(uied_params['param-minarea']))
+    Compo.compos_update(uicompos, org.shape)
+    draw.draw_bounding_box(org, uicompos, show=show, name='ip-nesting', write_path=pjoin(ip_root, name + '_ip.png'))
 
-    # if classifier['Noise'] is not None:
+    # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection
+    if classifier is not None:
+        classifier['Image'].predict(seg.clipping(org, uicompos), uicompos)
+        draw.draw_bounding_box_class(org, uicompos, show=show)
+        uicompos = det.rm_noise_in_large_img(uicompos, org)
+        draw.draw_bounding_box_class(org, uicompos, show=show)
+        det.detect_compos_in_img(uicompos, binary_org, org)
+        draw.draw_bounding_box(org, uicompos, show=show)
+
+    # if classifier is not None:
     #     classifier['Noise'].predict(seg.clipping(org, uicompos), uicompos)
     #     draw.draw_bounding_box_class(org, uicompos, show=show)
     #     uicompos = det.rm_noise_compos(uicompos)
 
     # *** Step 6 *** element classification: all category classification
-    # if classifier['Elements'] is not None:
-    #     classifier['Elements'].predict(seg.clipping(org, uicompos), uicompos)
-    #     draw.draw_bounding_box_class(org, uicompos, show=show, write_path=pjoin(ip_root, name + '_cls.png'))
+    if classifier is not None:
+        classifier['Elements'].predict(seg.clipping(org, uicompos), uicompos)
+        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(ip_root, name + '_result.png'))
 
-    # uicompos = det.compo_filter(uicompos, org)
-    # draw.draw_bounding_box(org, uicompos, show=show)
-
-    result = draw.draw_bounding_box(org, uicompos, show=show)
-    cv2.imwrite(pjoin(output_root, 'result.jpg'), result)
     seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
-    file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
-    print("[Compo Detection Completed in %.3f s]" % (time.clock() - start))
+    file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
+
+    print("[Compo Detection Completed in %.3f s] %s" % (time.clock() - start, input_img_path))
     if show:
         cv2.destroyAllWindows()

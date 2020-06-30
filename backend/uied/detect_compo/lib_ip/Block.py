@@ -14,6 +14,7 @@ class Block(Component):
         self.children = []
         self.uicompo_ = None
         self.top_or_botm = None
+        self.redundant = False
 
     def block_is_uicompo(self, image_shape, max_compo_scale):
         '''
