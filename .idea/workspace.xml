@@ -2,127 +2,142 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/backend/uied/data/input/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uied/data/input/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uied/data/input/413.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uied/data/input/472.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uied/data/input/493.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/uied/data/input/497.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/screen/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/10.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/11.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/12.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/13.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/14.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/15.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/16.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/17.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/17.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/18.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/18.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/19.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/19.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/20.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/21.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/22.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/22.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/23.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/23.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/24.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/24.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/25.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/25.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/26.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/26.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/27.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/27.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/28.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/28.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/30.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/30.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/31.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/31.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/32.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/32.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/5.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/6.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/8.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/remaui/data/output/clips/compo/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Block/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Block/39.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/13.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/13.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/11300.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/11300_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/11300_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/18116_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/214.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/214_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/214_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/24.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/245.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/245_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/245_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/24_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/24_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/30800.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/30800_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/30800_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/5_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/5_binary.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/5_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/66529.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/66529_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/66529_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/8_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/8_ip.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ocr/5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ocr/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Background/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/10.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/10.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/11.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/11.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/12.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/12.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/14.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/14.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/15.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/15.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/16.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/16.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/20.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/20.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/21.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/21.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/29.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/33.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/34.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/36.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/35.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/38.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index_v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index_v2.html" afterDir="false" />
     </list>
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="server_v2.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server_v2.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="391">
-                  <caret line="152" column="58" selection-start-line="152" selection-start-column="58" selection-end-line="152" selection-end-column="58" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="remaui.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/remaui.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="compos.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/data/outputs/remaui/image_5/compos.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="85">
-                  <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index_v2.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="343">
-                  <caret line="88" column="55" lean-forward="true" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
-                  <folding>
-                    <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="dashboard.ejs" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="356" column="18" selection-start-line="356" selection-start-column="18" selection-end-line="356" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
-                  <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-                  <folding>
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index_v2.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2907" />
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -136,10 +151,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>img_dict</find>
-      <find>classes</find>
-      <find>count_class</find>
-      <find>num_class</find>
       <find>index_global</find>
       <find>close_</find>
       <find>void</find>
@@ -166,69 +177,23 @@
       <find>li</find>
       <find>export</find>
       <find>about</find>
+      <find>Segmentation fault</find>
+      <find>fault</find>
+      <find>_block</find>
+      <find>opt</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/public/js/dashboard.js" />
-        <option value="$PROJECT_DIR$/public/index_v2.html" />
-        <option value="$PROJECT_DIR$/backend/xianyu.py" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/package.json" />
-    </packageJsonPaths>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectId" id="1dEqOIJS1dT0FVvVMapEa19GYXl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -239,8 +204,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../fork/pixtoapp" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend/uied/data/input" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -252,25 +218,22 @@
       <recent name="D:\git_file\github\doing\UIED-WebAPP\public\images\clip" />
       <recent name="D:\git_file\github\doing\UIED-WebAPP\public" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\git_file\github\doing\UIED-WebAPP\backend\uied\data\input" />
+      <recent name="D:\git_file\github\doing\UIED-WebAPP\backend\xianyu\data\input" />
+    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Node.js.server_v2.js">
-    <configuration name="server_v2.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="server_v2.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="test.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$" />
-    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$/public" />
-    <configuration name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$/public/js" />
-    <configuration name="ocr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.uied">
+    <configuration name="server_v2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server_v2.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js (1)" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$/public/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="remaui" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="UIED-WebAPP" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,12 +241,34 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/xianyu" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/xianyu/ocr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/remaui.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="uied" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="UIED-WebAPP" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/uied.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -315,13 +300,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.server_v2.js" />
-      <item itemvalue="Node.js.test.js" />
-      <item itemvalue="Node.js.test.js (1)" />
+      <item itemvalue="Python.remaui" />
+      <item itemvalue="Python.uied" />
+      <item itemvalue="Python.xianyu" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.server_v2.js" />
+        <item itemvalue="Python.uied" />
       </list>
     </recent_temporary>
   </component>
@@ -373,290 +358,49 @@
       <workItem from="1592777914717" duration="4450000" />
       <workItem from="1592907038826" duration="5557000" />
       <workItem from="1593033765233" duration="1270000" />
+      <workItem from="1593237374090" duration="538000" />
+      <workItem from="1593237922370" duration="1712000" />
+      <workItem from="1593324177258" duration="743000" />
+      <workItem from="1593395963077" duration="2000" />
+      <workItem from="1593552918623" duration="37000" />
+      <workItem from="1593553387319" duration="324000" />
+      <workItem from="1593553912767" duration="629000" />
+      <workItem from="1593554806434" duration="1628000" />
+      <workItem from="1593556450683" duration="404000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6213000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09747102" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32570806" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1593045701493">
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1593554160635">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="275" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593045701493" />
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom" timestamp="1593044627500">
+    <state x="1220" y="275" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593554160635" />
+    <state x="2733" y="119" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593324198353" />
+    <state width="1877" height="345" key="GridCell.Tab.0.bottom" timestamp="1593557213547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593044627500" />
-    <state width="1877" height="234" key="GridCell.Tab.0.center" timestamp="1593044627500">
+    <state width="1877" height="345" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593557213547" />
+    <state width="1237" height="203" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
+    <state width="1877" height="345" key="GridCell.Tab.0.center" timestamp="1593557213547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593044627500" />
-    <state width="1877" height="234" key="GridCell.Tab.0.left" timestamp="1593044627500">
+    <state width="1877" height="345" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593557213547" />
+    <state width="1237" height="203" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
+    <state width="1877" height="345" key="GridCell.Tab.0.left" timestamp="1593557213547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593044627500" />
-    <state width="1877" height="234" key="GridCell.Tab.0.right" timestamp="1593044627500">
+    <state width="1877" height="345" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593557213547" />
+    <state width="1237" height="203" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
+    <state width="1877" height="345" key="GridCell.Tab.0.right" timestamp="1593557213547">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="234" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593044627500" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/public/js/dashboard.js</url>
-          <line>753</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1877" height="345" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593557213547" />
+    <state width="1237" height="203" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UIED_WebAPP$xianyu.coverage" NAME="xianyu Coverage Results" MODIFIED="1593035074277" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
-    <SUITE FILE_PATH="coverage/UIED_WebAPP$test.coverage" NAME="test Coverage Results" MODIFIED="1592000738145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/UIED_WebAPP$uied.coverage" NAME="uied Coverage Results" MODIFIED="1592437358222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
-    <SUITE FILE_PATH="coverage/UIED_WebAPP$ocr.coverage" NAME="ocr Coverage Results" MODIFIED="1593035022783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend/xianyu" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="61" selection-start-line="61" selection-start-column="61" selection-end-line="61" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2890">
-          <caret line="170" column="66" selection-start-line="170" selection-start-column="63" selection-end-line="170" selection-end-column="66" />
-          <folding>
-            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5797">
-          <caret line="341" column="39" lean-forward="true" selection-start-line="341" selection-start-column="39" selection-end-line="341" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7684">
-          <caret line="452" column="50" selection-start-line="452" selection-start-column="50" selection-end-line="452" selection-end-column="50" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index_v2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22729">
-          <caret line="1337" column="1" selection-start-line="1337" selection-start-column="1" selection-end-line="1337" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2635">
-          <caret line="155" column="62" selection-start-line="155" selection-start-column="62" selection-end-line="155" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2006">
-          <caret line="118" column="32" lean-forward="true" selection-start-line="118" selection-start-column="32" selection-end-line="118" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3196">
-          <caret line="188" column="43" selection-start-line="188" selection-start-column="43" selection-end-line="188" selection-end-column="43" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2839">
-          <caret line="167" column="106" selection-start-line="167" selection-start-column="106" selection-end-line="170" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5695">
-          <caret line="335" column="66" selection-start-line="335" selection-start-column="66" selection-end-line="335" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Temp/web/index_v2.html" />
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5695">
-          <caret line="335" selection-start-line="335" selection-end-line="335" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Temp/web/index_v2.html" />
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5695">
-          <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Temp/web/index_v2.html" />
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="40" lean-forward="true" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="5550" column="62" lean-forward="true" selection-start-line="5550" selection-start-column="62" selection-end-line="5550" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Temp/web/index_v2.html" />
-    <entry file="file://$PROJECT_DIR$/public/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/test.html" />
-    <entry file="file://$PROJECT_DIR$/public/dashboard.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="356" column="18" selection-start-line="356" selection-start-column="18" selection-end-line="356" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/index_v2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="1337" column="1" selection-start-line="1337" selection-start-column="1" selection-end-line="1337" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/index_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2907" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/xianyu/xianyu_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="152" column="58" selection-start-line="152" selection-start-column="58" selection-end-line="152" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/outputs/remaui/image_2/2.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/remaui.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/outputs/remaui/image_5/compos.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/xianyu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index_v2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="88" column="55" lean-forward="true" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
-          <folding>
-            <element signature="n#section#1;n#main#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/UIED_WebAPP$uied.coverage" NAME="uied Coverage Results" MODIFIED="1593558236200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
