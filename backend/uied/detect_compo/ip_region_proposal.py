@@ -67,7 +67,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
                     resize_by_height=600, block_pad=4,
                     classifier=None, show=False):
 
-    if uied_params is None: uied_params = {'param-grad':4, 'param-block':5, 'param-minarea':150}
+    if uied_params is None: uied_params = {'param-grad':5, 'param-block':5, 'param-minarea':150}
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
     ip_root = file.build_directory(pjoin(output_root, "ip"))

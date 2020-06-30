@@ -201,6 +201,8 @@ def compo_filter(compos, min_area):
     for compo in compos:
         if compo.height * compo.width < min_area:
             continue
+        if compo.width / compo.height > 25 or compo.height / compo.height > 25:
+            continue
         compos_new.append(compo)
     return compos_new
 
