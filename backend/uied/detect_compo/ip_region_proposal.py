@@ -91,7 +91,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     file.save_corners_json(pjoin(ip_root, name + '_all.json'), uicompos)
     # uicompos = det.merge_text(uicompos, org.shape)
     draw.draw_bounding_box(org, uicompos, show=show, name='no-merge')
-    uicompos = det.merge_intersected_corner(uicompos, org.shape)
+    uicompos = det.merge_intersected_corner(uicompos, org)
     Compo.compos_update(uicompos, org.shape)
     Compo.compos_containment(uicompos)
     draw.draw_bounding_box(org, uicompos, show=show, name='no-nesting')
@@ -100,7 +100,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     uicompos += nesting_inspection(org, grey, uicompos)
     uicompos = det.compo_filter(uicompos, min_area=int(uied_params['param-minarea']))
     Compo.compos_update(uicompos, org.shape)
-    draw.draw_bounding_box(org, uicompos, show=show, name='ip-nesting', write_path=pjoin(ip_root, name + '_ip.png'))
+    draw.draw_bounding_box(org, uicompos, show=show, name='ip-nesting', write_path=pjoin(output_root, 'result.jpg'))
 
     # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection
     if classifier is not None:
@@ -119,12 +119,11 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     # *** Step 6 *** element classification: all category classification
     if classifier is not None:
         classifier['Elements'].predict(seg.clipping(org, uicompos), uicompos)
-        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(ip_root, name + '_cls.png'))
+        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(output_root, 'result.jpg'))
 
     Compo.compos_update(uicompos, org.shape)
     file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
     file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
-    draw.draw_bounding_box(org, uicompos, show=show, name='final-result', write_path=pjoin(output_root, 'result.jpg'))
     seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
 
     print("[Compo Detection Completed in %.3f s] %s" % (time.clock() - start, input_img_path))

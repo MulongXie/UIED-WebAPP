@@ -11,27 +11,28 @@ from config.CONFIG_UIED import Config
 C = Config()
 
 
-def merge_intersected_corner(compos, org_shape, max_compo_scale=C.THRESHOLD_COMPO_MAX_SCALE):
+def merge_intersected_corner(compos, org):
     changed = False
     new_compos= []
-    row, col = org_shape[:2]
+    Compo.compos_update(compos, org.shape)
     for i in range(len(compos)):
         merged = False
         for j in range(len(new_compos)):
-            relation = compos[i].compo_relation(compos[j])
+            relation = compos[i].compo_relation(new_compos[j])
             if relation == 2 or relation == -1:
+                # draw.draw_bounding_box(org, [compos[i], new_compos[j]], name='b-merge', show=True)
                 new_compos[j].compo_merge(compos[i])
+                # draw.draw_bounding_box(org, [new_compos[j]], name='a-merge', show=True)
                 merged = True
                 changed = True
                 break
         if not merged:
             new_compos.append(compos[i])
 
-    Compo.compos_update(compos, org_shape)
     if not changed:
         return compos
     else:
-        return merge_intersected_corner(new_compos, org_shape)
+        return merge_intersected_corner(new_compos, org)
 
 
 def merge_text(compos, org_shape, max_word_gad=C.THRESHOLD_TEXT_MAX_WORD_GAP, max_word_height_ratio=C.THRESHOLD_TEXT_MAX_HEIGHT):
