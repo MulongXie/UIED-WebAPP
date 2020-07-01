@@ -1,6 +1,7 @@
 import cv2
 from os.path import join as pjoin
 import time
+import json
 import numpy as np
 
 import lib_ip.ip_preprocessing as pre
@@ -67,8 +68,11 @@ def compo_detection(input_img_path, output_root, uied_params=None,
                     resize_by_height=600, block_pad=4,
                     classifier=None, show=False):
 
-    print('*** output:', output_root, ' ***')
-    if uied_params is None: uied_params = {'param-grad':5, 'param-block':5, 'param-minarea':150}
+    if uied_params is None:
+        uied_params = {'param-grad':5, 'param-block':5, 'param-minarea':150}
+    else:
+        uied_params = json.loads(uied_params)
+        print(uied_params)
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
     ip_root = file.build_directory(pjoin(output_root, "ip"))

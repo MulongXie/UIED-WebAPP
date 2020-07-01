@@ -26,6 +26,10 @@ app.post('/process', function (req, res) {
     var input_type = req.body.input_type;
     var uied_params = req.body.uied_params;
 
+    if (uied_params != null){
+        uied_params = JSON.stringify(uied_params).replace(/"/g, '\\\"')
+    }
+
     // console.log('Type:', input_type);
     // For uploaded image (base64 format)
     if (input_type == 'base64'){
@@ -39,7 +43,7 @@ app.post('/process', function (req, res) {
             if (err == null){
                 console.log('Upload image to', upload_path);
                 // processing
-                element_detection(res, upload_path, output_path, method)
+                element_detection(res, upload_path, output_path, method, uied_params)
                 // element_detection_watching(res, upload_path, output_path, method, uied_params)
             }
             else {
@@ -59,7 +63,7 @@ app.post('/process', function (req, res) {
         if (input_path_split[0] == 'http:'){
             input_path = 'public/images/screen/' + name + '.jpg';
         }
-        element_detection(res, input_path, output_path, method)
+        element_detection(res, input_path, output_path, method, uied_params)
         // element_detection_watching(res, input_path, output_path, method, uied_params)
     }
 });
@@ -104,8 +108,6 @@ app.post('/export', function (req, res) {
             });
         }
     });
-
-
 });
 
 app.listen(8000,function(){
@@ -113,9 +115,9 @@ app.listen(8000,function(){
 });
 
 
-function element_detection(res, input_path, output_path, method) {
+function element_detection(res, input_path, output_path, method, uied_params) {
     console.log('Running ' + method.toUpperCase() + ' on ' + input_path + " Save to " + output_path);
-    var workerProcess = child_process.exec('python backend/' + method + '.py ' + input_path + ' ' + output_path,
+    var workerProcess = child_process.exec('python backend/' + method + '.py ' + input_path + ' ' + output_path + ' ' + uied_params,
         function (error, stdout, stderr) {
             if (error) {
                 console.log(stdout);

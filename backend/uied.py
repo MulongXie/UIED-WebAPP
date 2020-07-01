@@ -13,9 +13,9 @@ import cv2
 
 import uied_main as uied
 
-input_path, output_root = 'uied/data/input/9.jpg', 'uied/data/output'
-# input_path, output_root = sys.argv[1:3]
+# input_path, output_root = 'uied/data/input/9.jpg', 'uied/data/output'
+input_path, output_root, params = sys.argv[1:4]
 if not os.path.exists(output_root):
     os.mkdir(output_root)
 
-uied.uied(input_path, output_root)
+uied.uied(input_path, output_root, params)

@@ -82,6 +82,7 @@ class TesseractOCR :
             self.mHandle.Recognize()
             iterator = self.mHandle.GetIterator()
             fontAttribute = iterator.WordFontAttributes()
+            # fontAttribute = None
             wrapper.x = box['x'] + parentX
             wrapper.y = box['y'] + parentY
             wrapper.width = box['w']
@@ -297,10 +298,11 @@ class TesseractOCR :
 
         file = "D:\\git_file\\github\\doing\\UIED-WebAPP\\backend\\remaui\\fonts//" + fontName + ".ttf"
 
+        # print(file)
         font = ImageFont.truetype(file, fontSize)
         fontSize= font.getsize(ocrTextWrapper.text)
         return fontSize[1]
-    
+
     def validCharacter(self,word) :
         return self.mHandle.IsValidCharacter(word)
         
