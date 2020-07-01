@@ -254,8 +254,8 @@ jQuery(document).ready(function( $ ) {
 
     $('.slider').on('input', function () {
         $('#' + $(this).attr('id') + '-show').text($(this).val());
-        let params = $('.slider');
-        console.log(params[0].id, params[0].value)
+        // let params = $('.slider');
+        // console.log(params[0].id, params[0].value)
     });
 
 });

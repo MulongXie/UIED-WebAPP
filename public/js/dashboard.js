@@ -446,11 +446,13 @@ $(document).ready(function () {
 	# Processing by New model
 	--------------------------------------------------------------*/
     var existing_methods = [method];
+    let uied_params = null;
     $('#modal_proc_btn_new_img').hide();
     $('#modal_proc_btn_new_model').show();
 
     $('#modal_proc_btn_new_model').click(function () {
         let new_method = $("#add_method_select option:selected").attr('value');
+        method = new_method;
 
         console.log(input_img_path);
 
@@ -458,43 +460,64 @@ $(document).ready(function () {
             alert("Please select a new detection method")
         }
         else if(existing_methods.includes(new_method)){
+            // if (new_method == 'uied'){
+            //     uied_params = {};
+            //     let params = $(".slider");
+            //     for (let i = 0; i < params.length; i++){
+            //         uied_params[params[i].id] = params[i].value
+            //     }
+            //     new_method = 'uied' + '\n' + JSON.stringify(uied_params)
+            //
+            //     if (existing_methods.includes(new_method)){
+            //         alert(new_method.toUpperCase() + ' is Existing');
+            //         return false;
+            //     }
+            // }
+            // else {
+            //     alert(new_method.toUpperCase() + ' is Existing');
+            //     return false;
+            // }
             alert(new_method.toUpperCase() + ' is Existing');
+            return false;
         }
-        else{
-            existing_methods.push(new_method);
-            method = new_method;
-            $('#modal_proc_btn_new_model').prop('disabled', true);
-            $('#modal_proc_status').text('Processing ...').slideDown();
-            $.ajax({
-                url: '/process',
-                type: 'post',
-                async: true,
-                data:{
-                    method: method,
-                    input_img: input_img_path,
-                    input_type: 'image'
-                },
-                success: function (response) {
-                    if (response.code == 1){
-                        result_path = response.result_path;
-                        alert('Processing Success!');
 
-                        $('#modal_proc_btn_new_model').prop('disabled', false);
-                        $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
+        $('#modal_proc_btn_new_model').prop('disabled', true);
+        $('#modal_proc_status').text('Processing ...').slideDown();
+        $.ajax({
+            url: '/process',
+            type: 'post',
+            async: true,
+            data:{
+                method: method,
+                input_img: input_img_path,
+                input_type: 'image',
+                uied_params: uied_params
+            },
+            success: function (response) {
+                if (response.code == 1){
+                    alert('Processing Success!');
+                    result_path = response.result_path;
+                    existing_methods.push(new_method);
+                    method = new_method;
 
-                        $('.my-preview-list-active').removeClass('my-preview-list-active');
-                        $('.my-preview-img-active').removeClass('my-preview-img-active');
+                    $('#modal_proc_btn_new_model').prop('disabled', false);
+                    $('#modal_proc_status').text(method.toUpperCase() + ' Processing Done');
 
-                        $('.box').html('');
-                        dashboard_init();
-                        set_draggable();
-                    }
-                    else {
-                        alert('Failed');
-                    }
+                    $('.my-preview-list-active').removeClass('my-preview-list-active');
+                    $('.my-preview-img-active').removeClass('my-preview-img-active');
+
+                    $('.box').html('');
+                    dashboard_init();
+                    set_draggable();
                 }
-            });
-        }
+                else {
+                    alert('Failed');
+                    $('#modal_proc_btn_new_model').prop('disabled', false);
+                    $('#modal_proc_status').text(method.toUpperCase() + ' Processing Failed');
+                }
+            }
+        });
+
         return false;
     });
 
@@ -669,6 +692,8 @@ $(document).ready(function () {
                     }
                     else {
                         alert('Failed');
+                        $('#modal_proc_btn_new_img').prop('disabled', false);
+                        $('#modal_proc_status').text(method.toUpperCase() + ' Processing Failed');
                     }
                 }
             });
