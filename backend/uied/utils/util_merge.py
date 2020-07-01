@@ -23,8 +23,8 @@ def draw_bounding_box_class(org, corners, compo_class, color_map=C.COLOR, line=2
             class_colors[compo_class[i]] = (rint(0,255), rint(0,255), rint(0,255))
 
         board = cv2.rectangle(board, (corners[i][0], corners[i][1]), (corners[i][2], corners[i][3]), class_colors[compo_class[i]], line)
-        board = cv2.putText(board, compo_class[i], (corners[i][0]+5, corners[i][1]+20),
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, class_colors[compo_class[i]], 2)
+        # board = cv2.putText(board, compo_class[i], (corners[i][0]+5, corners[i][1]+20),
+        #                     cv2.FONT_HERSHEY_SIMPLEX, 0.5, class_colors[compo_class[i]], 2)
     if show:
         cv2.imshow(name, board)
         cv2.waitKey(0)
@@ -137,6 +137,55 @@ def refine_corner(corners, shrink):
         (col_min, row_min, col_max, row_max) = corner
         corner_new.append((col_min + shrink, row_min + shrink, col_max - shrink, row_max - shrink))
     return corner_new
+
+
+def is_redundant(a, b):
+    area_a = (a[2] - a[0]) * (a[3] - a[1])
+    area_b = (b[2] - b[0]) * (b[3] - b[1])
+    col_min_s = max(a[0], b[0])
+    row_min_s = max(a[1], b[1])
+    col_max_s = min(a[2], b[2])
+    row_max_s = min(a[3], b[3])
+    w = np.maximum(0, col_max_s - col_min_s)
+    h = np.maximum(0, row_max_s - row_min_s)
+    inter = w * h
+    if inter == 0:
+        return False
+    iou = inter / (area_a + area_b - inter)
+    if iou > 0.8:
+        return True
+
+def merge_two_compos(corner_a, corner_b):
+    (col_min_a, row_min_a, col_max_a, row_max_a) = corner_a
+    (col_min_b, row_min_b, col_max_b, row_max_b) = corner_b
+
+    col_min = min(col_min_a, col_min_b)
+    col_max = max(col_max_a, col_max_b)
+    row_min = min(row_min_a, row_min_b)
+    row_max = max(row_max_a, row_max_b)
+    return [col_min, row_min, col_max, row_max]
+
+
+def merge_redundant_corner(compos, classes):
+    changed = False
+    new_compos = []
+    new_classes = []
+    for i in range(len(compos)):
+        merged = False
+        for j in range(len(new_compos)):
+            if is_redundant(compos[i], compos[j]):
+                new_compos[j] = merge_two_compos(compos[i], compos[j])
+                merged = True
+                changed = True
+                break
+        if not merged:
+            new_compos.append(compos[i])
+            new_classes.append(classes[i])
+
+    if not changed:
+        return compos, classes
+    else:
+        return merge_redundant_corner(new_compos, new_classes)
 
 
 def dissemble_clip_img_fill(clip_root, org, compos, flag='most'):

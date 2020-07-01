@@ -11,7 +11,7 @@ from config.CONFIG import Config
 C = Config()
 
 
-def nms(org, corners_compo_old, compos_class_old, corner_text):
+def merge_by_text(org, corners_compo_old, compos_class_old, corner_text):
     def merge_two_corners(corner_a, corner_b):
         (col_min_a, row_min_a, col_max_a, row_max_a) = corner_a
         (col_min_b, row_min_b, col_max_b, row_max_b) = corner_b
@@ -72,7 +72,6 @@ def nms(org, corners_compo_old, compos_class_old, corner_text):
 
 
 def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=None, show=False):
-
     name = img_path.split('/')[-1][:-4]
     org = cv2.imread(img_path)
 
@@ -98,12 +97,14 @@ def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=N
     draw_bounding_box_class(org_resize, bbox_compos, class_compos, show=show, name='ip')
     draw_bounding_box(org_resize, bbox_text, show=show, name='ocr')
 
-    corners_compo_new, compos_class_new = nms(org_resize, bbox_compos, class_compos, bbox_text)
-    corners_compo_new = refine_corner(corners_compo_new, shrink=0)
-    board = draw_bounding_box_class(org_resize, corners_compo_new, compos_class_new)
-    draw_bounding_box_non_text(org_resize, corners_compo_new, compos_class_new, org_shape=org.shape, show=show)
+    corners_compo_merged, compos_class_merged = merge_by_text(org_resize, bbox_compos, class_compos, bbox_text)
+    corners_compo_merged, compos_class_merged = merge_redundant_corner(corners_compo_merged, compos_class_merged)
+    corners_compo_merged = refine_corner(corners_compo_merged, shrink=0)
 
-    compos_json = save_corners_json(pjoin(output_root, 'compo.json'), background, corners_compo_new, compos_class_new)
+
+    board = draw_bounding_box_class(org_resize, corners_compo_merged, compos_class_merged)
+    draw_bounding_box_non_text(org_resize, corners_compo_merged, compos_class_merged, org_shape=org.shape, show=show)
+    compos_json = save_corners_json(pjoin(output_root, 'compo.json'), background, corners_compo_merged, compos_class_merged)
     dissemble_clip_img_fill(pjoin(output_root, 'clips'), org_resize, compos_json)
     cv2.imwrite(pjoin(output_root, 'result.jpg'), board)
 
