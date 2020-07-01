@@ -48,7 +48,7 @@ def draw_bounding_box_non_text(org, corners_compo, compos_class, org_shape=None,
             board = cv2.rectangle(board, (corner[0], corner[1]), (corner[2], corner[3]), color, line)
     if show:
         board_org_size = cv2.resize(board, (org_shape[1], org_shape[0]))
-        board_org_size = board_org_size[100:-110]
+        # board_org_size = board_org_size[100:-110]
         cv2.imshow(name, cv2.resize(board_org_size, (board.shape[1], board.shape[0])))
         cv2.waitKey(0)
     return board

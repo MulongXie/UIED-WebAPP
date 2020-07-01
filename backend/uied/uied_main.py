@@ -8,14 +8,14 @@ resize_by_height = 800
 # PATH_IMG_INPUT = 'E:\\Mulong\\Datasets\\rico\\combined\\23.jpg'
 
 
-def uied(input_path, output_root, params=None, is_ip=True, is_clf=False, is_ocr=False, is_merge=False):
+def uied(input_path, output_root, params=None, is_ip=False, is_clf=True, is_ocr=True, is_merge=False):
 
     if is_ocr:
         import ocr_east as ocr
         import lib_east.eval as eval
         models = eval.load()
         os.makedirs(pjoin(output_root, 'ocr'), exist_ok=True)
-        ocr.east(input_path, output_root, models, resize_by_height=None, show=False, write_img=True)
+        ocr.east(input_path, output_root, models, resize_by_height=None, show=True, write_img=True)
 
     if is_ip:
         os.makedirs(pjoin(output_root, 'ip'), exist_ok=True)
@@ -38,7 +38,7 @@ def uied(input_path, output_root, params=None, is_ip=True, is_clf=False, is_ocr=
         name = input_path.split('/')[-1][:-4]
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
-        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=False)
+        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resize_by_height, show=True)
 
 
 # uied('data/5.jpg', 'data')
