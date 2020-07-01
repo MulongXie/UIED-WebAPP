@@ -38,8 +38,8 @@ def nms(org, corners_compo_old, compos_class_old, corner_text):
             row_min_s = max(a[1], b[1])
             col_max_s = min(a[2], b[2])
             row_max_s = min(a[3], b[3])
-            w = np.maximum(0, col_max_s - col_min_s + 1)
-            h = np.maximum(0, row_max_s - row_min_s + 1)
+            w = np.maximum(0, col_max_s - col_min_s)
+            h = np.maximum(0, row_max_s - row_min_s)
             inter = w * h
             if inter == 0:
                 continue
@@ -53,7 +53,7 @@ def nms(org, corners_compo_old, compos_class_old, corner_text):
             # draw_bounding_box(broad, [b], color=(255,0,0), line=2, show=True)
 
             # text area
-            if iou > 0.5 or ioa >= 0.9:
+            if ioa >= 0.68 or iou > 0.6:
                 new_corner = merge_two_corners(a, b)
                 break
             # text_area += inter
