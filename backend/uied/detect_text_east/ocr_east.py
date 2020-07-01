@@ -4,7 +4,7 @@ import lib_east.eval as eval
 import os
 
 
-def east(input_img_path, output_label_path, models, resize_by_height=None, show=False, write_img=False):
+def east(input_img_path, output_label_path, models, resize_by_height=None, show=False, write_img=True):
     start = time.clock()
     sess, f_score, f_geometry, input_images = models
     # print("OCR Starts for %s" %input_img_path)
