@@ -100,16 +100,16 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     uicompos += nesting_inspection(org, grey, uicompos)
     uicompos = det.compo_filter(uicompos, min_area=int(uied_params['param-minarea']))
     Compo.compos_update(uicompos, org.shape)
-    draw.draw_bounding_box(org, uicompos, show=show, name='ip-nesting', write_path=pjoin(output_root, 'result.jpg'))
+    draw.draw_bounding_box(org, uicompos, show=show, name='ip-nesting', write_path=pjoin(ip_root, 'result.jpg'))
 
     # *** Step 5 *** Image Inspection: recognize image -> remove noise in image -> binarize with larger threshold and reverse -> rectangular compo detection
-    if classifier is not None:
-        classifier['Image'].predict(seg.clipping(org, uicompos), uicompos)
-        draw.draw_bounding_box_class(org, uicompos, show=show)
-        uicompos = det.rm_noise_in_large_img(uicompos, org)
-        draw.draw_bounding_box_class(org, uicompos, show=show)
-        det.detect_compos_in_img(uicompos, binary_org, org)
-        draw.draw_bounding_box(org, uicompos, show=show)
+    # if classifier is not None:
+    #     classifier['Image'].predict(seg.clipping(org, uicompos), uicompos)
+    #     draw.draw_bounding_box_class(org, uicompos, show=show)
+    #     uicompos = det.rm_noise_in_large_img(uicompos, org)
+    #     draw.draw_bounding_box_class(org, uicompos, show=show)
+    #     det.detect_compos_in_img(uicompos, binary_org, org)
+    #     draw.draw_bounding_box(org, uicompos, show=show)
 
     # if classifier is not None:
     #     classifier['Noise'].predict(seg.clipping(org, uicompos), uicompos)
@@ -119,7 +119,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     # *** Step 6 *** element classification: all category classification
     if classifier is not None:
         classifier['Elements'].predict(seg.clipping(org, uicompos), uicompos)
-        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(output_root, 'result.jpg'))
+        draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(ip_root, 'result.jpg'))
 
     Compo.compos_update(uicompos, org.shape)
     file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)

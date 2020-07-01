@@ -90,8 +90,8 @@ def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=N
     for text in texts['compos']:
         bbox_text.append([text['column_min'], text['row_min'], text['column_max'], text['row_max']])
 
-    bbox_text = refine_text(org, bbox_text, 20, 10)
-    bbox_text = resize_label(bbox_text, resize_by_height, org.shape[0])
+    # bbox_text = refine_text(org, bbox_text, 20, 10)
+    # bbox_text = resize_label(bbox_text, resize_by_height, org.shape[0])
 
     org_resize = resize_img_by_height(org, resize_by_height)
     draw_bounding_box_class(org_resize, bbox_compos, class_compos, show=show, name='ip')
@@ -112,7 +112,7 @@ def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=N
         cv2.imshow('merge', board)
         cv2.waitKey()
 
-    print('Merge Complete and Save to', pjoin(output_root, 'compo.json'))
+    print('Merge Complete and Save to', pjoin(output_root, 'result.jpg'))
     print(time.ctime(), '\n')
     if show:
         cv2.destroyAllWindows()

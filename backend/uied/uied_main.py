@@ -15,7 +15,7 @@ def uied(input_path, output_root, params=None, is_ip=True, is_clf=True, is_ocr=T
         import lib_east.eval as eval
         models = eval.load()
         os.makedirs(pjoin(output_root, 'ocr'), exist_ok=True)
-        ocr.east(input_path, output_root, models, resize_by_height=None, show=False)
+        ocr.east(input_path, output_root, models, resize_by_height=resize_by_height, show=False)
 
     if is_ip:
         os.makedirs(pjoin(output_root, 'ip'), exist_ok=True)
@@ -25,9 +25,9 @@ def uied(input_path, output_root, params=None, is_ip=True, is_clf=True, is_ocr=T
             classifier = {}
             from CNN import CNN
 
-            classifier['Image'] = CNN('Image')
+            # classifier['Image'] = CNN('Image')
             classifier['Elements'] = CNN('Elements')
-            classifier['Noise'] = CNN('Noise')
+            # classifier['Noise'] = CNN('Noise')
 
         ip.compo_detection(input_path, output_root, uied_params=params, resize_by_height=resize_by_height, show=False,
                            classifier=classifier)

@@ -272,6 +272,7 @@ def predict(sess, f_score, f_geometry, input_images, resize_by_height, show=Fals
 
     # broad = draw_bounding_box(im[:, :, ::-1], corners, name='before', show=show)
     corners = merge_text(corners)
+    print('merged')
     broad = draw_bounding_box(im[:, :, ::-1], corners, name='result', show=show)
     save_corners_json(res_file, corners)
 
