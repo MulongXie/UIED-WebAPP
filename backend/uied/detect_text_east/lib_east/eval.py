@@ -41,7 +41,8 @@ def draw_bounding_box(org, corners, color=(0, 0, 255), line=2, show=False, name=
     for i in range(len(corners)):
         board = cv2.rectangle(board, (corners[i][0], corners[i][1]), (corners[i][2], corners[i][3]), color, line)
     if show:
-        cv2.imshow(name, cv2.resize(board, (500, 800)))
+        # cv2.imshow(name, cv2.resize(board, (500, 800)))
+        cv2.imshow(name, board)
         cv2.waitKey(0)
     return board
 
@@ -272,7 +273,6 @@ def predict(sess, f_score, f_geometry, input_images, resize_by_height, show=Fals
 
     # broad = draw_bounding_box(im[:, :, ::-1], corners, name='before', show=show)
     corners = merge_text(corners)
-    print('merged')
     broad = draw_bounding_box(im[:, :, ::-1], corners, name='result', show=show)
     save_corners_json(res_file, corners)
 

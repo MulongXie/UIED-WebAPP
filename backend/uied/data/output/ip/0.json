@@ -2,9 +2,9 @@
     "compos": [
         {
             "column_max": 800,
-            "height": 450,
-            "row_min": 0,
             "class": "Background",
+            "row_min": 0,
+            "height": 450,
             "id": 0,
             "column_min": 0,
             "row_max": 450,
@@ -15,7 +15,7 @@
             "class": "ImageView",
             "row_min": 0,
             "height": 7,
-            "id": 0,
+            "id": 1,
             "column_min": 0,
             "row_max": 7,
             "width": 26
@@ -25,7 +25,7 @@
             "class": "ImageView",
             "row_min": 18,
             "height": 392,
-            "id": 1,
+            "id": 2,
             "column_min": 0,
             "row_max": 410,
             "width": 798
@@ -35,7 +35,7 @@
             "class": "ImageView",
             "row_min": 78,
             "height": 271,
-            "id": 2,
+            "id": 3,
             "column_min": 88,
             "row_max": 349,
             "width": 623
@@ -45,7 +45,7 @@
             "class": "TextView",
             "row_min": 85,
             "height": 97,
-            "id": 3,
+            "id": 4,
             "column_min": 101,
             "row_max": 182,
             "width": 596
@@ -55,7 +55,7 @@
             "class": "TextView",
             "row_min": 221,
             "height": 121,
-            "id": 4,
+            "id": 5,
             "column_min": 101,
             "row_max": 342,
             "width": 290
@@ -65,7 +65,7 @@
             "class": "ImageView",
             "row_min": 221,
             "height": 121,
-            "id": 5,
+            "id": 6,
             "column_min": 407,
             "row_max": 342,
             "width": 290
@@ -75,7 +75,7 @@
             "class": "TextView",
             "row_min": 265,
             "height": 52,
-            "id": 6,
+            "id": 7,
             "column_min": 141,
             "row_max": 317,
             "width": 52
@@ -85,7 +85,7 @@
             "class": "ImageView",
             "row_min": 265,
             "height": 52,
-            "id": 7,
+            "id": 8,
             "column_min": 218,
             "row_max": 317,
             "width": 52
@@ -95,7 +95,7 @@
             "class": "ImageView",
             "row_min": 265,
             "height": 52,
-            "id": 8,
+            "id": 9,
             "column_min": 293,
             "row_max": 317,
             "width": 52
@@ -105,7 +105,7 @@
             "class": "ImageView",
             "row_min": 275,
             "height": 120,
-            "id": 9,
+            "id": 10,
             "column_min": 713,
             "row_max": 395,
             "width": 84
@@ -115,7 +115,7 @@
             "class": "TextView",
             "row_min": 353,
             "height": 53,
-            "id": 10,
+            "id": 11,
             "column_min": 88,
             "row_max": 406,
             "width": 623
@@ -125,7 +125,7 @@
             "class": "TextView",
             "row_min": 363,
             "height": 29,
-            "id": 11,
+            "id": 12,
             "column_min": 345,
             "row_max": 392,
             "width": 108
