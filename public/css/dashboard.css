@@ -234,3 +234,8 @@
 .avatar-save{
     width:100%;
 }
+
+option:disabled{
+    cursor: not-allowed;
+    color:gainsboro;
+}

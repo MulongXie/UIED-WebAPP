@@ -279,6 +279,7 @@ def predict(sess, f_score, f_geometry, input_images, resize_by_height, show=Fals
     if not FLAGS.no_write_images:
         img_path = os.path.join(FLAGS.output_dir, os.path.basename(img_path)[:-4] + '.png')
         cv2.imwrite(img_path, broad)
+        cv2.imwrite(os.path.join(FLAGS.output_dir, 'result.jpg'), broad)
 
 
 def load():

@@ -122,6 +122,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
         draw.draw_bounding_box_class(org, uicompos, show=show, name='cls', write_path=pjoin(ip_root, 'result.jpg'))
 
     Compo.compos_update(uicompos, org.shape)
+    draw.draw_bounding_box(org, uicompos, show=show, name='final', write_path=pjoin(output_root, 'result.jpg'))
     file.save_corners_json(pjoin(ip_root, name + '.json'), uicompos)
     file.save_corners_json(pjoin(output_root, 'compo.json'), uicompos)
     seg.dissemble_clip_img_fill(pjoin(output_root, 'clips'), org, uicompos)
