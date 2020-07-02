@@ -218,7 +218,17 @@ jQuery(document).ready(function( $ ) {
                     // Processing completed status
                     $('.loader').slideToggle('quick');
                     $('#btn-process').removeClass('disabled');
-                }
+                },
+				error: function (jqXHR) {
+					console.log(jqXHR);
+					if(jqXHR.status == 413){
+						$('#proc-status').text('Image too Large!');
+						$('#btn-show-res').fadeOut();
+						$('.loader').slideToggle('quick');
+						$('#btn-process').removeClass('disabled');
+						alert('Uploaded image size too large');
+					}
+				}
             })
 		}
     });
