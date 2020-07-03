@@ -88,7 +88,7 @@ def rm_top_or_bottom_corners(components, org_shape, top_bottom_height=C.THRESHOL
     return new_compos
 
 
-def rm_line_h_v(binary, flag='v', show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
+def rm_line_v_h(binary, flag='v', show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
     def check_continuous_line(line, edge):
         continuous_length = 0
         line_start = -1
@@ -107,40 +107,44 @@ def rm_line_h_v(binary, flag='v', show=False, max_line_thickness=C.THRESHOLD_LIN
         else:
             return None
 
-    if flag == 'v':
-        width = binary.shape[1]
-        start_row = -1
-        for i, row in enumerate(binary):
-            line_v = check_continuous_line(row, width)
-            if line_v is not None:
-                # new line
-                if start_row == -1:
-                    start_row = i
-            else:
-                # checking line
-                if start_row != -1:
-                    if i - start_row < max_line_thickness:
-                        binary[start_row: i] = 0
-                    start_row = -1
+    map_line = np.zeros(binary.shape[:2], dtype=np.uint8)
 
-    elif flag == 'h':
-        height = binary.shape[0]
-        start_col = -1
-        for i in range(height):
-            col = binary[:, i]
-            line_h = check_continuous_line(col, height)
-            if line_h is not None:
-                # new line
-                if start_col == -1:
-                    start_col = i
-            else:
-                # checking line
-                if start_col != -1:
-                    if i - start_col < max_line_thickness:
-                        binary[:, start_col: i] = 0
-                    start_col = -1
-    
+    width = binary.shape[1]
+    start_row = -1
+    for i, row in enumerate(binary):
+        line_v = check_continuous_line(row, width)
+        if line_v is not None:
+            # new line
+            if start_row == -1:
+                start_row = i
+        else:
+            # checking line
+            if start_row != -1:
+                if i - start_row < max_line_thickness:
+                    # binary[start_row: i] = 0
+                    map_line[start_row: i] = binary[start_row: i]
+                start_row = -1
+
+    height = binary.shape[0]
+    start_col = -1
+    for i in range(height):
+        col = binary[:, i]
+        line_h = check_continuous_line(col, height)
+        if line_h is not None:
+            # new line
+            if start_col == -1:
+                start_col = i
+        else:
+            # checking line
+            if start_col != -1:
+                if i - start_col < max_line_thickness:
+                    # binary[:, start_col: i] = 0
+                    map_line[:, start_col: i] = binary[:, start_col: i]
+                start_col = -1
+
+    binary -= map_line
     cv2.imshow('no-line', binary)
+    cv2.imshow('lines', map_line)
     cv2.waitKey()
 
 
