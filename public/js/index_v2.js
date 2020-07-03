@@ -179,7 +179,7 @@ jQuery(document).ready(function( $ ) {
 		}
 		else{
             // Processing start
-            $('#proc-status').fadeIn('quick').text('Processing ... (3s-5s ETA)');
+            $('#proc-status').fadeIn('quick').text('Processing ... (3s-15s ETA)');
             $('.loader').slideToggle('quick');
             $('#btn-process').addClass('disabled');
             $('#btn-show-res').addClass('disabled');
