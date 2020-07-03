@@ -88,7 +88,7 @@ def rm_top_or_bottom_corners(components, org_shape, top_bottom_height=C.THRESHOL
     return new_compos
 
 
-def rm_line_v_h(binary, flag='v', show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
+def rm_line_v_h(binary, show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
     def check_continuous_line(line, edge):
         continuous_length = 0
         line_start = -1
@@ -143,9 +143,11 @@ def rm_line_v_h(binary, flag='v', show=False, max_line_thickness=C.THRESHOLD_LIN
                 start_col = -1
 
     binary -= map_line
-    cv2.imshow('no-line', binary)
-    cv2.imshow('lines', map_line)
-    cv2.waitKey()
+
+    if show:
+        cv2.imshow('no-line', binary)
+        cv2.imshow('lines', map_line)
+        cv2.waitKey()
 
 
 def rm_line(binary,
