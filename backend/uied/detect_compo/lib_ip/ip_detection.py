@@ -88,6 +88,64 @@ def rm_top_or_bottom_corners(components, org_shape, top_bottom_height=C.THRESHOL
     return new_compos
 
 
+def rm_line2(binary, flag='v',show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
+    def check_continuous_line(line, edge):
+        continuous_length = 0
+        line_start = -1
+        for j, p in enumerate(line):
+            if p > 0:
+                if line_start == -1:
+                    line_start = j
+                continuous_length += 1
+            elif continuous_length > 0:
+                if continuous_length / edge > 0.6:
+                    return [line_start, j]
+                line_start = -1
+        return None
+
+    if flag == 'v':
+        width = binary.shape[1]
+        start_row = -1
+        for i, row in enumerate(binary):
+            line_v = check_continuous_line(row, width)
+            if line_v is not None:
+                # new line
+                if start_row == -1:
+                    start_row = i
+            else:
+                # checking line
+                if start_row != -1:
+                    if i - start_row < max_line_thickness:
+                        binary[start_row: i] = 0
+                    start_row = -1
+
+    elif flag == 'h':
+        height = binary.shape[0]
+        start_col = -1
+        board = np.zeros(binary.shape[:2], dtype=np.uint8)
+        for i in range(height):
+            col = binary[:, i]
+            line_h = check_continuous_line(col, height)
+
+            print(line_h)
+            board[:, i] = col
+            cv2.imshow('board', board)
+            cv2.waitKey()
+
+            if line_h is not None:
+                # new line
+                if start_col == -1:
+                    start_col = i
+            else:
+                # checking line
+                if start_col != -1:
+                    if i - start_col < max_line_thickness:
+                        binary[start_col: i] = 0
+                    start_col = -1
+    cv2.imshow('no-line', binary)
+    cv2.waitKey()
+
+
 def rm_line(binary,
                  max_line_thickness=C.THRESHOLD_LINE_THICKNESS,
                  min_line_length_ratio=C.THRESHOLD_LINE_MIN_LENGTH,
