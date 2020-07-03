@@ -88,7 +88,7 @@ def rm_top_or_bottom_corners(components, org_shape, top_bottom_height=C.THRESHOL
     return new_compos
 
 
-def rm_line2(binary, flag='v',show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
+def rm_line_h_v(binary, flag='v', show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNESS):
     def check_continuous_line(line, edge):
         continuous_length = 0
         line_start = -1
@@ -101,7 +101,11 @@ def rm_line2(binary, flag='v',show=False, max_line_thickness=C.THRESHOLD_LINE_TH
                 if continuous_length / edge > 0.6:
                     return [line_start, j]
                 line_start = -1
-        return None
+
+        if continuous_length / edge > 0.6:
+            return [line_start, len(line)]
+        else:
+            return None
 
     if flag == 'v':
         width = binary.shape[1]
@@ -122,16 +126,9 @@ def rm_line2(binary, flag='v',show=False, max_line_thickness=C.THRESHOLD_LINE_TH
     elif flag == 'h':
         height = binary.shape[0]
         start_col = -1
-        board = np.zeros(binary.shape[:2], dtype=np.uint8)
         for i in range(height):
             col = binary[:, i]
             line_h = check_continuous_line(col, height)
-
-            print(line_h)
-            board[:, i] = col
-            cv2.imshow('board', board)
-            cv2.waitKey()
-
             if line_h is not None:
                 # new line
                 if start_col == -1:
@@ -140,8 +137,9 @@ def rm_line2(binary, flag='v',show=False, max_line_thickness=C.THRESHOLD_LINE_TH
                 # checking line
                 if start_col != -1:
                     if i - start_col < max_line_thickness:
-                        binary[start_col: i] = 0
+                        binary[:, start_col: i] = 0
                     start_col = -1
+    
     cv2.imshow('no-line', binary)
     cv2.waitKey()
 
