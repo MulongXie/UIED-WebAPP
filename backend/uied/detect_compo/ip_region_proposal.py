@@ -80,7 +80,6 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     # *** Step 1 *** pre-processing: read img -> get binary map
     org, grey = pre.read_img(input_img_path, resize_by_height)
     binary = pre.binarization(org, grad_min=int(uied_params['param-grad']))
-    binary_org = binary.copy()
 
     # *** Step 2 *** element detection
     det.rm_line(binary, show=show)
