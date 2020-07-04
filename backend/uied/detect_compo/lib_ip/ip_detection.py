@@ -127,7 +127,7 @@ def rm_line_v_h(binary, show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNES
 
     height = binary.shape[0]
     start_col = -1
-    for i in range(height):
+    for i in range(width):
         col = binary[:, i]
         line_h = check_continuous_line(col, height)
         if line_h is not None:
