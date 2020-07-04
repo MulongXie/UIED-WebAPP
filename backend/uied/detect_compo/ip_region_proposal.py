@@ -82,6 +82,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     binary = pre.binarization(org, grad_min=int(uied_params['param-grad']))
 
     # *** Step 2 *** element detection
+    # det.rm_line(binary, show=show)
     det.rm_line_v_h(binary, show=show)
     uicompos = det.component_detection(binary)
 

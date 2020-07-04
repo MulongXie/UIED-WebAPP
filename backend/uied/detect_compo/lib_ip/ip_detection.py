@@ -100,6 +100,7 @@ def rm_line_v_h(binary, show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNES
             elif continuous_length > 0:
                 if continuous_length / edge > 0.6:
                     return [line_start, j]
+                continuous_length = 0
                 line_start = -1
 
         if continuous_length / edge > 0.6:
@@ -108,6 +109,7 @@ def rm_line_v_h(binary, show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNES
             return None
 
     map_line = np.zeros(binary.shape[:2], dtype=np.uint8)
+    cv2.imshow('binary', binary)
 
     width = binary.shape[1]
     start_row = -1
