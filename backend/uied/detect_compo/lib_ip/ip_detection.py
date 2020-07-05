@@ -108,23 +108,33 @@ def rm_line_v_h(binary, show=False, max_line_thickness=C.THRESHOLD_LINE_THICKNES
         else:
             return None
 
+    def extract_line_area(line, start_idx, flag='v'):
+        for e, l in enumerate(line):
+            if flag == 'v':
+                map_line[start_idx + e, l[0]:l[1]] = binary[start_idx + e, l[0]:l[1]]
+
     map_line = np.zeros(binary.shape[:2], dtype=np.uint8)
     cv2.imshow('binary', binary)
 
     width = binary.shape[1]
     start_row = -1
+    line_area = []
     for i, row in enumerate(binary):
         line_v = check_continuous_line(row, width)
         if line_v is not None:
             # new line
             if start_row == -1:
                 start_row = i
+                line_area = []
+            line_area.append(line_v)
         else:
             # checking line
             if start_row != -1:
                 if i - start_row < max_line_thickness:
                     # binary[start_row: i] = 0
-                    map_line[start_row: i] = binary[start_row: i]
+                    # map_line[start_row: i] = binary[start_row: i]
+                    print(line_area, start_row, i)
+                    extract_line_area(line_area, start_row)
                 start_row = -1
 
     height = binary.shape[0]
