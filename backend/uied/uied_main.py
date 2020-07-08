@@ -41,8 +41,8 @@ def uied(input_path, output_root, params=None,
                            resize_by_height=resized_height, show=False)
 
     if is_merge:
-        import merge
         # os.makedirs(pjoin(output_root, 'merge'), exist_ok=True)
+        import merge
         name = input_path.split('/')[-1][:-4]
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
