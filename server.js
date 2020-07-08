@@ -135,35 +135,3 @@ function element_detection(res, input_path, output_path, method, uied_params) {
         console.log('Program Completed');
     });
 }
-
-function element_detection_watching(res, input_path, output_path, method, uied_param) {
-    let path_file = 'backend/' + method + '/parameters/parameters.txt';     // Pass input image path and output root to backend
-    let note_success_file = 'data/outputs/success.txt';     // Backend notifies the server while process is done
-    let note_fail_file = 'data/outputs/failed.txt';     // Backend notifies the server while process is done
-
-    // Absolute paths pass to backend
-    let abs_input_path = __dirname + '/' + input_path;
-    let abs_output_path = __dirname + '/' + output_path;
-    let abs_note_sucs_file = __dirname + '/' + note_success_file;
-    let abs_note_fail_file = __dirname + '/' + note_fail_file;
-
-    let parameters = `\n${abs_input_path} ${abs_output_path} ${abs_note_sucs_file} ${abs_note_fail_file}`;
-    if (method == 'uied') parameters += ` ${JSON.stringify(uied_param)}`;
-    console.log('Watching Mode Running ' + method.toUpperCase() + ' on ' + input_path + " Save to " + output_path);
-    fs.appendFile(path_file, parameters, function (err) {
-        if(err){throw err;}
-        let watcher_success = fs.watch(note_success_file, function () {
-            console.log(`${abs_note_sucs_file} Changed and Processing Success \n`);
-            res.json({code:1, result_path:output_path, upload_path:input_path});
-            watcher_success.close();
-            watcher_failed.close();
-        });
-
-        let watcher_failed = fs.watch(note_fail_file, function () {
-            console.log(`${abs_note_fail_file} Changed and Processing Failed \n`);
-            res.json({code:0});
-            watcher_failed.close();
-            watcher_success.close();
-        })
-    })
-}
