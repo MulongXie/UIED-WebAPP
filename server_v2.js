@@ -18,6 +18,8 @@ app.use(express.static("."));
 
 app.get('/',function(req,res){
     res.sendfile("public/index_v2.html");
+    let time = Date()
+    console.log("Connecting at", time.toLocaleString())
 });
 
 var index = 0;

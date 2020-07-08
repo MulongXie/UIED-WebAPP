@@ -1,0 +1,84 @@
+{
+    "compos": [
+        {
+            "height": 1080,
+            "column_max": 1920,
+            "class": "Background",
+            "id": 0,
+            "row_max": 1080,
+            "column_min": 0,
+            "width": 1920,
+            "row_min": 0
+        },
+        {
+            "height": 56,
+            "column_max": 1055,
+            "class": "ImageView",
+            "id": 1,
+            "row_max": 774,
+            "column_min": 998,
+            "width": 57,
+            "row_min": 718
+        },
+        {
+            "height": 139,
+            "column_max": 664,
+            "class": "ImageView",
+            "id": 2,
+            "row_max": 771,
+            "column_min": 511,
+            "width": 152,
+            "row_min": 631
+        },
+        {
+            "height": 54,
+            "column_max": 1891,
+            "class": "ImageView",
+            "id": 3,
+            "row_max": 105,
+            "column_min": 1836,
+            "width": 55,
+            "row_min": 50
+        },
+        {
+            "height": 106,
+            "column_max": 1095,
+            "class": "Button",
+            "id": 4,
+            "row_max": 967,
+            "column_min": 810,
+            "width": 285,
+            "row_min": 861
+        },
+        {
+            "height": 95,
+            "column_max": 445,
+            "class": "Button",
+            "id": 5,
+            "row_max": 962,
+            "column_min": 234,
+            "width": 211,
+            "row_min": 867
+        },
+        {
+            "height": 100,
+            "column_max": 1095,
+            "class": "ImageButton",
+            "id": 6,
+            "row_max": 963,
+            "column_min": 843,
+            "width": 252,
+            "row_min": 863
+        },
+        {
+            "height": 88,
+            "column_max": 1905,
+            "class": "ImageView",
+            "id": 7,
+            "row_max": 156,
+            "column_min": 1694,
+            "width": 211,
+            "row_min": 67
+        }
+    ]
+}
