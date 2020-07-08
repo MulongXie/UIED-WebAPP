@@ -2,74 +2,88 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Background/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Block/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/TextView/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/bkg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/compo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/2_all.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ip/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/2.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/ocr/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Background/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Block/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/Compo/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/TextView/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/clips/bkg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/compo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/5_all.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ip/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ocr/5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ocr/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/ocr/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/uied/image_5/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/Button/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageButton/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageButton/13.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageButton/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageButton/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageButton/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/ImageView/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/clips/bkg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/compo.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/outputs/yolo/image_5/result.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/success.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/success.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_v2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Background/0.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Background/0.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Compo/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Compo/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Compo/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/clips/Text/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/uied/image_2/clips/Compo/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/xianyu/image_5/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/xianyu/image_5/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index_v1.css" beforeDir="false" afterPath="$PROJECT_DIR$/deprecated/index_v1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/index_v2.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index_v2.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/index_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_watching.js" afterDir="false" />
     </list>
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="uied_main_watching.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/backend/uied/uied_main_watching.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="72">
-                  <caret line="115" selection-start-line="115" selection-end-line="115" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="merge.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/uied/merge.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="watcher.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/backend/uied/utils/watcher.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="109">
-                  <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="uied_main.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/backend/uied/uied_main.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="41" selection-start-line="41" selection-end-line="41" />
-                  <folding>
-                    <element signature="e#0#33#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -92,25 +106,6 @@
   <component name="ProjectId" id="1dEqOIJS1dT0FVvVMapEa19GYXl" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -140,20 +135,8 @@
       <recent name="D:\git_file\github\doing\UIED-WebAPP\public" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Node.js.server_v2.js">
-    <configuration name="server_v2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server_v2.js" working-dir="$PROJECT_DIR$">
+  <component name="RunManager" selected="Node.js.server.js">
+    <configuration name="server.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
@@ -217,7 +200,7 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Node.js.server_v2.js" />
+      <item itemvalue="Node.js.server.js" />
       <item itemvalue="Node.js.test.js" />
     </list>
   </component>
@@ -315,28 +298,6 @@
     </task>
     <servers />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16375199" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3291592" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-    </layout>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -351,28 +312,28 @@
     <state x="813" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594035926463" />
     <state x="1220" y="275" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593565433459" />
     <state x="2733" y="119" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593324198353" />
-    <state width="1259" height="191" key="GridCell.Tab.0.bottom" timestamp="1594250194756">
+    <state width="1259" height="191" key="GridCell.Tab.0.bottom" timestamp="1594251382173">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594250194756" />
+    <state width="1259" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594251382173" />
     <state width="1877" height="271" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486650" />
     <state width="1237" height="203" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="1259" height="191" key="GridCell.Tab.0.center" timestamp="1594250194756">
+    <state width="1259" height="191" key="GridCell.Tab.0.center" timestamp="1594251382172">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594250194756" />
+    <state width="1259" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594251382172" />
     <state width="1877" height="271" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486649" />
     <state width="1237" height="203" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="1259" height="191" key="GridCell.Tab.0.left" timestamp="1594250194755">
+    <state width="1259" height="191" key="GridCell.Tab.0.left" timestamp="1594251382172">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594250194755" />
+    <state width="1259" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594251382172" />
     <state width="1877" height="271" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486649" />
     <state width="1237" height="203" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="1259" height="191" key="GridCell.Tab.0.right" timestamp="1594250194756">
+    <state width="1259" height="191" key="GridCell.Tab.0.right" timestamp="1594251382173">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594250194756" />
+    <state width="1259" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594251382173" />
     <state width="1877" height="271" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486650" />
     <state width="1237" height="203" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1593581657092">
@@ -387,96 +348,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593569232667" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/uied/detect_text_east/ocr_east.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Anaconda/Lib/site-packages/tensorflow/python/training/saver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="1013" column="4" selection-start-line="1013" selection-start-column="4" selection-end-line="1013" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2 - Copy.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-238">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/detect_text_east/lib_east/eval.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../Anaconda/Lib/json/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="318" selection-start-line="318" selection-end-line="318" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/merge.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="114" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="118" selection-start-line="118" selection-end-line="118" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/cnn/CNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="91" selection-start-line="91" selection-end-line="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/utils/watcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/uied_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/uied/uied_main_watching.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="115" selection-start-line="115" selection-end-line="115" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

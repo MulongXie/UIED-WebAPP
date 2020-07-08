@@ -34,3 +34,5 @@ D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_2
 D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_1
 D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_5
 D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_5
+D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_2
+D:\git_file\github\doing\UIED-WebAPP/data/outputs/uied/image_5
