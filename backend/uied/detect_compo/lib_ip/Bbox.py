@@ -68,7 +68,7 @@ class Bbox:
         ioa = inter / self.box_area
         iob = inter / bbox_b.box_area
 
-        if iou == 0 and ioa ==0 and iob == 0:
+        if iou == 0 and ioa == 0 and iob == 0:
             return 0
 
         # import lib_ip.ip_preprocessing as pre

@@ -9,8 +9,6 @@ import lib_ip.ip_draw as draw
 import lib_ip.ip_detection as det
 import lib_ip.ip_segment as seg
 import lib_ip.file_utils as file
-import lib_ip.ocr_classify_text as ocr
-import lib_ip.ip_detection_utils as util
 import lib_ip.block_division as blk
 import lib_ip.Component as Compo
 from config.CONFIG_UIED import Config
@@ -110,7 +108,6 @@ def compo_detection(input_img_path, output_root, uied_params=None,
     #     draw.draw_bounding_box_class(org, uicompos, show=show)
     #     det.detect_compos_in_img(uicompos, binary_org, org)
     #     draw.draw_bounding_box(org, uicompos, show=show)
-
     # if classifier is not None:
     #     classifier['Noise'].predict(seg.clipping(org, uicompos), uicompos)
     #     draw.draw_bounding_box_class(org, uicompos, show=show)

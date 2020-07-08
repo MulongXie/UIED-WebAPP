@@ -101,7 +101,6 @@ def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=N
     corners_compo_merged, compos_class_merged = merge_redundant_corner(corners_compo_merged, compos_class_merged)
     corners_compo_merged = refine_corner(corners_compo_merged, shrink=0)
 
-
     board = draw_bounding_box_class(org_resize, corners_compo_merged, compos_class_merged)
     draw_bounding_box_non_text(org_resize, corners_compo_merged, compos_class_merged, org_shape=org.shape, show=show)
     compos_json = save_corners_json(pjoin(output_root, 'compo.json'), background, corners_compo_merged, compos_class_merged)
