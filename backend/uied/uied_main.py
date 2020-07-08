@@ -13,16 +13,18 @@ def resize_height_by_longest_edge(img_path, resize_length=800):
         return int(resize_length * (height / width))
 
 
-def uied(input_path, output_root, params=None, is_ip=True, is_clf=False, is_ocr=False, is_merge=False):
+def uied(input_path, output_root, params=None,
+         is_ip=True, is_clf=False, is_ocr=False, is_merge=False):
 
     resized_height = resize_height_by_longest_edge(input_path)
 
     if is_ocr:
+        os.makedirs(pjoin(output_root, 'ocr'), exist_ok=True)
         import ocr_east as ocr
         import lib_east.eval as eval
         models = eval.load()
-        os.makedirs(pjoin(output_root, 'ocr'), exist_ok=True)
-        ocr.east(input_path, output_root, models, resize_by_height=resized_height, show=False)
+        ocr.east(input_path, output_root, models,
+                 resize_by_height=resized_height, show=False)
 
     if is_ip:
         os.makedirs(pjoin(output_root, 'ip'), exist_ok=True)
@@ -31,13 +33,12 @@ def uied(input_path, output_root, params=None, is_ip=True, is_clf=False, is_ocr=
         if is_clf:
             classifier = {}
             from CNN import CNN
-
             # classifier['Image'] = CNN('Image')
             classifier['Elements'] = CNN('Elements')
             # classifier['Noise'] = CNN('Noise')
-
-        ip.compo_detection(input_path, output_root, uied_params=params, resize_by_height=resized_height, show=True,
-                           classifier=classifier)
+        ip.compo_detection(input_path, output_root,
+                           uied_params=params, classifier=classifier,
+                           resize_by_height=resized_height, show=False)
 
     if is_merge:
         import merge
@@ -45,7 +46,6 @@ def uied(input_path, output_root, params=None, is_ip=True, is_clf=False, is_ocr=
         name = input_path.split('/')[-1][:-4]
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
-        merge.incorporate(input_path, compo_path, ocr_path, output_root, resize_by_height=resized_height, show=False)
+        merge.incorporate(input_path, compo_path, ocr_path, output_root,
+                          resize_by_height=resized_height, show=False)
 
-
-# uied('data/5.jpg', 'data')
