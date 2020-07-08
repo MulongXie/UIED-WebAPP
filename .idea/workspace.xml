@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/merge.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/merge.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/parameters/parameters.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/uied_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/uied_main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/uied_main_watching.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/uied_main_watching.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/utils/watcher.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/utils/watcher.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/failed.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/failed.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/outputs/success.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/outputs/success.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_3/ocr/3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_3/ocr/3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_3/ocr/result.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index_v1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/index_v1.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server_v1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/screen/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/screen/1.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server_v2.js" beforeDir="false" afterPath="$PROJECT_DIR$/server_v2.js" afterDir="false" />
     </list>
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,8 +21,8 @@
           <file leaf-file-name="uied_main_watching.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/backend/uied/uied_main_watching.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="41">
-                  <caret line="114" column="19" lean-forward="true" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+                <state relative-caret-position="72">
+                  <caret line="115" selection-start-line="115" selection-end-line="115" />
                   <folding>
                     <element signature="e#0#9#0" expanded="true" />
                   </folding>
@@ -72,7 +59,7 @@
             <entry file="file://$PROJECT_DIR$/backend/uied/uied_main.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="544">
-                  <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+                  <caret line="41" selection-start-line="41" selection-end-line="41" />
                   <folding>
                     <element signature="e#0#33#0" expanded="true" />
                   </folding>
@@ -97,13 +84,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/backend/uied/uied_main_watching.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="951" />
     <option name="width" value="975" />
@@ -124,11 +104,6 @@
             <path>
               <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
               <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UIED-WebAPP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UIED-WebAPP" type="462c0819:PsiDirectoryNode" />
-              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -177,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.uied_main_watching">
+  <component name="RunManager" selected="Node.js.server_v2.js">
     <configuration name="server_v2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/server_v2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -242,15 +217,9 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.uied_main" />
-      <item itemvalue="Python.uied_main_watching" />
-      <item itemvalue="Python.yolo" />
+      <item itemvalue="Node.js.server_v2.js" />
+      <item itemvalue="Node.js.test.js" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.uied_main_watching" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -348,7 +317,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16375199" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -383,28 +351,28 @@
     <state x="813" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594035926463" />
     <state x="1220" y="275" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593565433459" />
     <state x="2733" y="119" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593324198353" />
-    <state width="1259" height="191" key="GridCell.Tab.0.bottom" timestamp="1594248068012">
+    <state width="1259" height="191" key="GridCell.Tab.0.bottom" timestamp="1594250194756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594248068012" />
+    <state width="1259" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594250194756" />
     <state width="1877" height="271" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486650" />
     <state width="1237" height="203" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="1259" height="191" key="GridCell.Tab.0.center" timestamp="1594248068012">
+    <state width="1259" height="191" key="GridCell.Tab.0.center" timestamp="1594250194756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594248068012" />
+    <state width="1259" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594250194756" />
     <state width="1877" height="271" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486649" />
     <state width="1237" height="203" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="1259" height="191" key="GridCell.Tab.0.left" timestamp="1594248068011">
+    <state width="1259" height="191" key="GridCell.Tab.0.left" timestamp="1594250194755">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594248068011" />
+    <state width="1259" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594250194755" />
     <state width="1877" height="271" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486649" />
     <state width="1237" height="203" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="1259" height="191" key="GridCell.Tab.0.right" timestamp="1594248068012">
+    <state width="1259" height="191" key="GridCell.Tab.0.right" timestamp="1594250194756">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1259" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594248068012" />
+    <state width="1259" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594250194756" />
     <state width="1877" height="271" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486650" />
     <state width="1237" height="203" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1593581657092">
@@ -428,15 +396,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda/Lib/site-packages/tensorflow/python/training/saver.py">
+    <entry file="file://$PROJECT_DIR$/../../../../Anaconda/Lib/site-packages/tensorflow/python/training/saver.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="1013" column="4" selection-start-line="1013" selection-start-column="4" selection-end-line="1013" selection-end-column="4" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server_v2.js">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/server_v2 - Copy.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -452,7 +417,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Anaconda/Lib/json/__init__.py">
+    <entry file="file://$PROJECT_DIR$/../../../../Anaconda/Lib/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
           <caret line="318" selection-start-line="318" selection-end-line="318" />
@@ -493,17 +458,20 @@
     <entry file="file://$PROJECT_DIR$/backend/uied/uied_main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server_v2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/uied/uied_main_watching.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="114" column="19" lean-forward="true" selection-start-line="114" selection-start-column="19" selection-end-line="114" selection-end-column="19" />
+        <state relative-caret-position="72">
+          <caret line="115" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
