@@ -1366,3 +1366,11 @@ option:disabled{
 #example-nav{
   /*font-weight: bold;*/
 }
+
+.team-developer{
+  border-right: #999999 solid;
+}
+
+.team-subtit{
+  margin: 20px auto;
+}
