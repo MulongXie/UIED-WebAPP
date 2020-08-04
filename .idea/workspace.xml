@@ -3,6 +3,45 @@
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/cnn/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/cnn/CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/config/CONFIG.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/config/CONFIG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Block/26.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Block/27.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Block/28.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/22.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/25.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/Compo/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/bkg.png" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/clips/bkg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/compo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/3.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ip/3.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/3_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ip/3_all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ip/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/result.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/detect_text_east/lib_east/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/detect_text_east/lib_east/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/uied/uied_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/uied_main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +76,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UIED" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../UIED/run_single.py" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../UIED/detect_compo/ip_region_proposal.py" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../UIED/run_single.py" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -129,15 +168,10 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.uied" />
       <item itemvalue="Python.uied_main_watching" />
       <item itemvalue="Python.yolo" />
-      <item itemvalue="Python.uied" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.uied" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -240,6 +274,7 @@
       <workItem from="1595464162640" duration="167000" />
       <workItem from="1595464621697" duration="15000" />
       <workItem from="1595464803980" duration="1811000" />
+      <workItem from="1596499325352" duration="2258000" />
     </task>
     <servers />
   </component>
@@ -247,46 +282,46 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1595464447758">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1596499865507">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593732574892" />
-    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1595464447758" />
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1595466117731">
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596499865507" />
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1596499457860">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="813" y="180" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1594421522207" />
     <state x="1220" y="275" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593565433459" />
     <state x="2733" y="119" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593324198353" />
-    <state x="1220" y="275" key="FileChooserDialogImpl/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1595466117731" />
-    <state width="916" height="267" key="GridCell.Tab.0.bottom" timestamp="1595466616108">
+    <state x="1220" y="275" key="FileChooserDialogImpl/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596499457860" />
+    <state width="916" height="272" key="GridCell.Tab.0.bottom" timestamp="1596501508151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594251743922" />
     <state width="1877" height="271" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486650" />
     <state width="1237" height="203" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="916" height="267" key="GridCell.Tab.0.bottom/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1595466616108" />
-    <state width="916" height="267" key="GridCell.Tab.0.center" timestamp="1595466616107">
+    <state width="916" height="272" key="GridCell.Tab.0.bottom/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596501508151" />
+    <state width="916" height="272" key="GridCell.Tab.0.center" timestamp="1596501508151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594251743921" />
     <state width="1877" height="271" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486649" />
     <state width="1237" height="203" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="916" height="267" key="GridCell.Tab.0.center/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1595466616107" />
-    <state width="916" height="267" key="GridCell.Tab.0.left" timestamp="1595466616107">
+    <state width="916" height="272" key="GridCell.Tab.0.center/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596501508151" />
+    <state width="916" height="272" key="GridCell.Tab.0.left" timestamp="1596501508151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594251743921" />
     <state width="1877" height="271" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486649" />
     <state width="1237" height="203" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="916" height="267" key="GridCell.Tab.0.left/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1595466616107" />
-    <state width="916" height="267" key="GridCell.Tab.0.right" timestamp="1595466616108">
+    <state width="916" height="272" key="GridCell.Tab.0.left/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596501508151" />
+    <state width="916" height="272" key="GridCell.Tab.0.right" timestamp="1596501508151">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594251743921" />
     <state width="1877" height="271" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593815486650" />
     <state width="1237" height="203" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="916" height="267" key="GridCell.Tab.0.right/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1595466616108" />
+    <state width="916" height="272" key="GridCell.Tab.0.right/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596501508151" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1593581657092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -299,8 +334,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1593569232667" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/UIED_WebAPP$uied.coverage" NAME="uied Coverage Results" MODIFIED="1595465376945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/backend" />
   </component>
 </project>
