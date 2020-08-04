@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/screen/9.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
