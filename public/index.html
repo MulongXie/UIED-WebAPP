@@ -73,7 +73,7 @@
     <section id="about">
         <div class="container">
             <header class="section-header">
-                <h3>About Us</h3>
+                <h3>About UIED</h3>
                 <p>
                     Detecting Graphical User Interface (GUI) elements in GUI images is a domain-specific object detection task.
                     It supports many software engineering tasks, such as GUI animation and testing, GUI search and code generation.<br>
@@ -83,7 +83,7 @@
             <div class="row about-container">
                 <div class="col-lg-6 content order-lg-1 order-2">
                     <p>
-                        We provide a support on:
+                        We provide support on:
                     </p>
 
                     <div class="icon-box wow fadeInUp">
@@ -99,7 +99,7 @@
                     </div>
 
                     <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="icon"><i class="fa fa-print"></i></div>
+                        <div class="icon"><i class="fa fa-cogs"></i></div>
                         <h4 class="title">Software Engineering Output</h4>
                         <p class="description">Compounded GUI & Json Export</p>
                     </div>
@@ -208,29 +208,80 @@
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
+                        <div>
+                            <ul class="nav nav-tabs nav-justified" id="example-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#carousel-app">Mobile App</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#carousel-web">Webpage</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#carousel-drawn">Hand-drawn Design</a>
+                                </li>
+                            </ul>
+                        </div>
                         <div class="modal-body">
                             <div class="carousel-example">
-                                <div id="simple-content-carousel" class="carousel flexible slide" data-ride="carousel" data-interval="2000" data-wrap="true">
+                                <div id="carousel-app" class="my-carousel-page my-carousel-active carousel flexible slide" data-ride="carousel" data-interval="2000" data-wrap="true">
                                     <div class="items justify-content-center">
-                                        <img class="img-responsive" src="images/screen/1.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/2.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/3.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/4.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/5.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/6.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/7.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/8.jpg" data-dismiss="modal"/>
-                                        <img class="img-responsive" src="images/screen/9.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/1.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/2.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/3.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/4.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/5.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/6.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/7.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/8.jpg" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/app/9.jpg" data-dismiss="modal"/>
                                     </div>
                                     <div class="carousel-inner" role="listbox"> </div>
-                                    <a class="left carousel-control" href="#simple-content-carousel" role="button" data-slide="prev">
-                                        <span class="fa fa-angle-left" aria-hidden="true"></span>
+                                    <a class="left carousel-control" href="#carousel-app" role="button" data-slide="prev">
+                                        <span class="fa fa-arrow-circle-left" aria-hidden="true"></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="right carousel-control" href="#simple-content-carousel" role="button" data-slide="next">
-                                        <span class="fa fa-angle-right" aria-hidden="true"></span>
+                                    <a class="right carousel-control" href="#carousel-app" role="button" data-slide="next">
+                                        <span class="fa fa-arrow-circle-right" aria-hidden="true"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
+                                </div>
+
+                                <div id="carousel-web" class="my-carousel-page carousel flexible slide" data-ride="carousel" data-interval="2000" data-wrap="true">
+                                    <div class="items justify-content-center">
+                                        <img class="img-responsive" src="images/example/web/9.png" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/web/4.png" data-dismiss="modal"/>
+                                        <img class="img-responsive" src="images/example/web/10.png" data-dismiss="modal"/>
+
+                                    </div>
+                                    <div class="carousel-inner" role="listbox"> </div>
+<!--                                    <a class="left carousel-control" href="#carousel-web" role="button" data-slide="prev">-->
+<!--                                        <span class="fa fa-arrow-circle-left" aria-hidden="true"></span>-->
+<!--                                        <span class="sr-only">Previous</span>-->
+<!--                                    </a>-->
+<!--                                    <a class="right carousel-control" href="#carousel-web" role="button" data-slide="next">-->
+<!--                                        <span class="fa fa-arrow-circle-right" aria-hidden="true"></span>-->
+<!--                                        <span class="sr-only">Next</span>-->
+<!--                                    </a>-->
+                                </div>
+
+                                <div id="carousel-drawn" class="my-carousel-page">
+                                    <img class="img-responsive" style="max-height: 90%; max-width: 400px; margin:0 auto;" src="images/example/drawn/1.jpg" data-dismiss="modal"/>
+                                </div>
+
+
+<!--                                <div id="carousel-drawn" class="my-carousel-page carousel flexible slide" data-ride="carousel" data-interval="2000" data-wrap="true">-->
+<!--                                    <div class="items justify-content-center">-->
+<!--                                        <img class="img-responsive" style="max-height: 90%; width: 500px" src="images/example/drawn/1.jpg" data-dismiss="modal"/>-->
+<!--                                    </div>-->
+<!--                                    <div class="carousel-inner" role="listbox"> </div>-->
+<!--                                    <a class="left carousel-control" href="#carousel-drawn" role="button" data-slide="prev">-->
+<!--                                        <span class="fa fa-arrow-circle-left" aria-hidden="true"></span>-->
+<!--                                        <span class="sr-only">Previous</span>-->
+<!--                                    </a>-->
+<!--                                    <a class="right carousel-control" href="#carousel-drawn" role="button" data-slide="next">-->
+<!--                                        <span class="fa fa-arrow-circle-right" aria-hidden="true"></span>-->
+<!--                                        <span class="sr-only">Next</span>-->
+<!--                                    </a>-->
                                 </div>
                             </div>
                         </div>
@@ -308,14 +359,14 @@
                         <div class="modal-body">
                             <div class="row">
                                 <div class="col-lg-5 col-md-5 text-center">
-                                    <img id="show-input" class="display-result-img" src="images/screen/1.jpg">
+                                    <img id="show-input" class="display-result-img" src="images/example/app/1.jpg">
                                 </div>
                                 <div class="col-lg-2 col-md-2 text-center">
                                     <p class="glyphicon glyphicon-arrow-right display-result-arrow"></p>
                                     <button id="go-dashboard" class="btn my-btn">Dashboard</button>
                                 </div>
                                 <div class="col-lg-5 col-md-5 text-center">
-                                    <img id="show-result" class="display-result-img" src="images/screen/1.jpg">
+                                    <img id="show-result" class="display-result-img" src="images/example/app/1.jpg">
                                 </div>
                             </div>
                         </div>

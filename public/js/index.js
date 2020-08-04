@@ -137,7 +137,9 @@ jQuery(document).ready(function( $ ) {
 	});
 
 
-
+	/*--------------------------------------------------------------
+	# Quick Start with Examples
+	--------------------------------------------------------------*/
 	$(".quickstart-modal-btn").on('click', function() {
 		$(".carousel-inner .img-responsive").on('click', function() {
 			$(".display-pic").attr('src', this.src);
@@ -147,6 +149,17 @@ jQuery(document).ready(function( $ ) {
 			$('html, body').animate({scrollTop: $('#display-content').offset().top - 100}, 1500, 'easeInOutExpo');
 		});
    	});
+
+	$("#example-nav a").click(function () {
+		$("#example-nav a").removeClass('active');
+		$(this).addClass('active');
+
+		let href = $(this).attr('href');
+		let page = $('#' + href.slice(1, href.length));
+
+		page.siblings().removeClass('my-carousel-active');
+		page.addClass('my-carousel-active');
+	})
 
 
     /*--------------------------------------------------------------

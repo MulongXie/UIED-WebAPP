@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        .d{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <p>Justified tabs:</p>
+    <ul id="u" class="nav nav-tabs nav-justified">
+        <li class="nav-item">
+            <a class="nav-link active" href="#d1">Active</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#d2">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#d3">Link</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#d4">Disabled</a>
+        </li>
+    </ul>
+
+    <div class="container">
+        <div class="d container h-100" id="d1">
+            abcdsa
+        </div>
+
+        <div class="d container h-100" id="d2">
+            222222222222222
+        </div>
+
+        <div class="d container h-100" id="d3">
+            3333333333333
+        </div>
+
+        <div class="d container h-100" id="d4">
+            444444444444
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        $('#u a').click(function () {
+            $('#u a').removeClass('active');
+            $(this).addClass('active');
+
+            let href = $(this).attr('href')
+            let page = href.slice(1, href.length)
+            console.log(href.slice(1, href.length))
+
+            $('#' + page).siblings().hide()
+            $('#' + page).show()
+
+
+
+        })
+
+    });
+
+</script>
+
+</body>
+</html>
