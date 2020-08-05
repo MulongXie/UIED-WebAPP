@@ -130,35 +130,59 @@
             <div class="col-lg-6 wow fadeInUp text-center">
                 <img src="images/method.png" class="img-fluid about-img" alt="">
             </div>
-            <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
-                <h4>Our Detection Approach</h4>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+                <h4>Our Detection Approach <a href="https://github.com/MulongXie/UIED"><img class="icon-img" src="images/git.png"></a></h4>
                 <p class="lead">Our top-down divide-and-conquer approach detects GUI text and GUI elements separately</p>
                 <ul class="list-group">
-
                     <li class="list-group-item about-container">
                         <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon"><i class="fa fa-cogs"></i></div>
-                            <h4 class="title">Software Engineering Output</h4>
-                            <p class="description">Compounded GUI & Json Export</p>
+                            <div class="icon"><i class="fa fa-file-text"></i></div>
+                            <h4 class="title">Text Detection</h4>
+                            <p class="description">We use a state-of-the-art scene text detector
+                                <a href="https://github.com/argman/EAST">EAST</a>
+                                to detect the text element on GUI.</p>
                         </div>
                     </li>
 
                     <li class="list-group-item about-container">
                         <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon"><i class="fa fa-cogs"></i></div>
-                            <h4 class="title">Software Engineering Output</h4>
-                            <p class="description">Compounded GUI & Json Export</p>
+                            <div class="icon"><i class="fa fa-window-maximize"></i></div>
+                            <h4 class="title">Graphic Element Detection</h4>
+                            <p class="description">We adopt a top-down strategy that first segments layout block and then locates atomic elements.</p>
                         </div>
+
+                        <div id="branch" class="wow fadeInUp" data-wow-delay="0.4s">
+                                <ul >
+                                    <li>
+                                        <p><span class="bullet"></span>
+                                            <span class="list-title">Block Detection - </span>
+                                            <span class="description">Segment the UI by layout blocks</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><span class="bullet"></span>
+                                            <span class="list-title">Component Extraction</span>
+                                            <span class="description">Locate components from binary map of each block</span>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p><span class="bullet"></span>
+                                            <span class="list-title">Element Classification</span>
+                                            <span class="description">Classify categories of extracted elements</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                        </div>
+
                     </li>
 
                     <li class="list-group-item about-container">
                         <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
-                            <div class="icon"><i class="fa fa-cogs"></i></div>
-                            <h4 class="title">Software Engineering Output</h4>
-                            <p class="description">Compounded GUI & Json Export</p>
+                            <div class="icon"><i class="fa fa-joomla"></i></div>
+                            <h4 class="title">Merge</h4>
+                            <p class="description">The approach incorporates results from the two branches to produce the final result.</p>
                         </div>
                     </li>
-
                 </ul>
             </div>
         </div>

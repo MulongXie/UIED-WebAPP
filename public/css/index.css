@@ -156,8 +156,8 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  margin: 3px 0;
+  max-height: 30px;
 }
 
 .main-pages {
@@ -358,10 +358,10 @@ h6 {
 .section-header p {
   text-align: center;
   margin: auto;
-  font-size: 15px;
+  font-size: 20px;
   padding-bottom: 60px;
   color: #556877;
-  width: 50%;
+  width: 70%;
 }
 
 /* Section with background
@@ -377,6 +377,10 @@ h6 {
 #about {
   background: #fff;
   padding: 60px 0;
+}
+
+#about .about-container{
+  z-index: 0;
 }
 
 #about .about-container .background {
@@ -462,7 +466,7 @@ h6 {
 #about .about-container .icon-box .description {
   margin-left: 80px;
   line-height: 24px;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 #about .about-extra {
@@ -481,6 +485,44 @@ h6 {
 
 #about li{
   border: none;
+}
+
+.icon-img{
+  height: 30px;
+  margin-top: -6px;
+  margin-left: 5px;
+}
+
+#branch{
+  margin-top: -25px;
+  z-index: 1;
+}
+
+#branch ul{
+  list-style-type: none;
+  margin-left: 80px;
+  padding: 0;
+}
+
+#branch .list-title{
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+#branch .bullet {
+  background: #007bff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+
+  margin-right: 10px;
+}
+
+#branch .col-10{
+  padding: 0;
 }
 
 /* tools Section
