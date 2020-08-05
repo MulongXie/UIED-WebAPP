@@ -142,7 +142,6 @@ jQuery(document).ready(function( $ ) {
 	--------------------------------------------------------------*/
 	$(".quickstart-modal-btn").on('click', function() {
 		$(".carousel-inner .img-responsive").on('click', function() {
-			alert(this.src)
 			$(".display-pic").attr('src', this.src);
 			$("#display-content").removeClass("hide");
             $("#display-content").attr('data-type', 'image');

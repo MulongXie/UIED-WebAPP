@@ -58,7 +58,7 @@ app.post('/process', function (req, res) {
         var output_path = 'data/outputs/' + method + '/' + input_type + '_' + name;
         // Existing examples
         if (input_path_split[0] == 'http:'){
-            input_path = 'public/images/example/' + input_path_split[input_path_split.length - 2] + '/' + name + '.jpg';
+            input_path = 'public/images/example/' + input_path_split[input_path_split.length - 2] + '/' + input_path_split[input_path_split.length - 1];
         }
         element_detection(res, input_path, output_path, method, uied_params)
     }
