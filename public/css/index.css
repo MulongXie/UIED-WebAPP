@@ -540,7 +540,7 @@ h6 {
   border-radius: 10px;
   margin: 0 10px 40px 10px;
   background: #fff;
-  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.3);
   transition: all 0.3s ease-in-out;
 }
 
@@ -663,7 +663,6 @@ h6 {
 --------------------------------*/
 
 #team {
-  background: #fff;
   padding: 60px 0;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
@@ -1429,7 +1428,7 @@ option:disabled{
 
 #demo{
   padding: 60px 0;
-  background: #b3cce6;
+  background: #ecf5ff;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
