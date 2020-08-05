@@ -469,9 +469,18 @@ h6 {
   padding-top: 60px;
 }
 
-#about .about-extra h4 {
+#about h4 {
   font-weight: 600;
   font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.about-img{
+  height: 70vh;
+}
+
+#about li{
+  border: none;
 }
 
 /* tools Section
@@ -479,7 +488,7 @@ h6 {
 
 #tools {
   padding: 60px 0 40px 0;
-  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 #tools .box {
@@ -535,6 +544,7 @@ h6 {
 #video {
   padding: 60px 0;
   background: #004a99;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 #video .section-header h3,
@@ -1360,7 +1370,7 @@ option:disabled{
 }
 
 .teampic{
-  height: 170px;
+  height: 150px;
 }
 
 #example-nav{
@@ -1373,4 +1383,32 @@ option:disabled{
 
 .team-subtit{
   margin: 20px auto;
+}
+
+#demo{
+  padding: 60px 0;
+  background: #b3cce6;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.3);
+}
+
+.demo-step li{
+  background: whitesmoke;
+  margin-bottom: 50px;
+}
+
+.round
+{
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+
+  background: #2b669a;
+  color: whitesmoke;
+  text-align: center;
+
+  font: 36px Arial, sans-serif;
+
+  margin-left: -40px;
+  margin-top: -35px;
 }
