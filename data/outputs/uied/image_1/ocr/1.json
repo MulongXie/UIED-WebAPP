@@ -1,0 +1,112 @@
+{
+    "compos": [
+        {
+            "row_min": 162,
+            "row_max": 180,
+            "column_min": 534,
+            "column_max": 639
+        },
+        {
+            "row_min": 17,
+            "row_max": 33,
+            "column_min": 62,
+            "column_max": 129
+        },
+        {
+            "row_min": 409,
+            "row_max": 425,
+            "column_min": 617,
+            "column_max": 693
+        },
+        {
+            "row_min": 370,
+            "row_max": 391,
+            "column_min": 529,
+            "column_max": 706
+        },
+        {
+            "row_min": 63,
+            "row_max": 85,
+            "column_min": 537,
+            "column_max": 672
+        },
+        {
+            "row_min": 425,
+            "row_max": 438,
+            "column_min": 157,
+            "column_max": 261
+        },
+        {
+            "row_min": 11,
+            "row_max": 28,
+            "column_min": 250,
+            "column_max": 334
+        },
+        {
+            "row_min": 50,
+            "row_max": 73,
+            "column_min": 79,
+            "column_max": 292
+        },
+        {
+            "row_min": 13,
+            "row_max": 28,
+            "column_min": 144,
+            "column_max": 205
+        },
+        {
+            "row_min": 424,
+            "row_max": 435,
+            "column_min": 327,
+            "column_max": 432
+        },
+        {
+            "row_min": 186,
+            "row_max": 205,
+            "column_min": 97,
+            "column_max": 169
+        },
+        {
+            "row_min": 84,
+            "row_max": 96,
+            "column_min": 263,
+            "column_max": 311
+        },
+        {
+            "row_min": 100,
+            "row_max": 112,
+            "column_min": 270,
+            "column_max": 310
+        },
+        {
+            "row_min": 88,
+            "row_max": 104,
+            "column_min": 363,
+            "column_max": 483
+        },
+        {
+            "row_min": 107,
+            "row_max": 119,
+            "column_min": 202,
+            "column_max": 238
+        },
+        {
+            "row_min": 57,
+            "row_max": 71,
+            "column_min": 533,
+            "column_max": 581
+        },
+        {
+            "row_min": 163,
+            "row_max": 181,
+            "column_min": 99,
+            "column_max": 150
+        },
+        {
+            "row_min": 89,
+            "row_max": 101,
+            "column_min": 201,
+            "column_max": 231
+        }
+    ]
+}
