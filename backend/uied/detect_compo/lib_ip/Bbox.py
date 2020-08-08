@@ -1,5 +1,5 @@
 import numpy as np
-import lib_ip.ip_draw as draw
+import detect_compo.lib_ip.ip_draw as draw
 
 
 class Bbox:
@@ -85,8 +85,8 @@ class Bbox:
         if iob >= 1:
             return 1
         # not intersected with each other
-        # if iou <= 0.05:
-        if iou == 0:
+        # if iou == 0:
+        if iou <= 0.05:
             return 0
         # intersected
         return 2
