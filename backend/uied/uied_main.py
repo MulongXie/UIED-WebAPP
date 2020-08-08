@@ -13,7 +13,7 @@ def resize_height_by_longest_edge(img_path, resize_length=800):
 
 
 def uied(input_path, output_root, params=None,
-         is_ip=True, is_clf=True, is_ocr=True, is_merge=True):
+         is_ip=True, is_clf=False, is_ocr=True, is_merge=True):
 
     resized_height = resize_height_by_longest_edge(input_path)
 

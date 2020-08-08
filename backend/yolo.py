@@ -12,4 +12,6 @@ import yolo_main as yolo
 
 # input_path, output_root = 'yolo/data/input/0.jpg', 'yolo/data/output'
 input_path, output_root = sys.argv[1:3]
+os.makedirs(output_root, exist_ok=True)
+
 yolo.yolo(input_path, output_root)

@@ -11,6 +11,6 @@ import xianyu_main as xy
 # input_path = 'xianyu/data/input/11.jpg'
 # output_root = 'xianyu/data/output'
 input_path, output_root = sys.argv[1:3]
-print("Processing:", input_path, 'to', output_root)
+os.makedirs(output_root, exist_ok=True)
 
 xy.xianyu(input_path, output_root)
