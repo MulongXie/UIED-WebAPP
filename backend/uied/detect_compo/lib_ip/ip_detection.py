@@ -18,6 +18,7 @@ def merge_intersected_corner(compos, org, max_gap=(0, 0), max_ele_height=25):
         cur_compo = compos[i]
         for j in range(len(new_compos)):
             relation = cur_compo.compo_relation(new_compos[j], max_gap)
+            # print(relation)
             # draw.draw_bounding_box(org, [cur_compo, new_compos[j]], name='b-merge', show=True)
             if relation == 1 or relation == -1 or \
                     (relation == 2 and new_compos[j].height < max_ele_height and cur_compo.height < max_ele_height):
@@ -33,7 +34,7 @@ def merge_intersected_corner(compos, org, max_gap=(0, 0), max_ele_height=25):
     if not changed:
         return compos
     else:
-        return merge_intersected_corner(new_compos, org)
+        return merge_intersected_corner(new_compos, org, max_gap, max_ele_height)
 
 
 def merge_text(compos, org_shape, max_word_gad=4, max_word_height=20):
@@ -329,6 +330,7 @@ def component_detection(binary,
                 region = np.nonzero(mask_copy[1:-1, 1:-1])
                 region = list(zip(region[0], region[1]))
 
+                # filter out some compos
                 # ignore small area
                 if len(region) < min_obj_area:
                     continue
@@ -337,12 +339,14 @@ def component_detection(binary,
                 # ignore small area
                 if component.width <= 3 or component.height <= 3:
                     continue
-                if test:
-                    print('Area:%d' % (len(region)))
-                    draw.draw_boundary([component], binary.shape, show=True)
                 # check if it is line by checking the length of edges
                 if component.compo_is_line(line_thickness):
                     continue
+
+                if test:
+                    print('Area:%d' % (len(region)))
+                    draw.draw_boundary([component], binary.shape, show=True)
+
                 compos_all.append(component)
 
                 if rec_detect:

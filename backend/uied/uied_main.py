@@ -38,7 +38,7 @@ def uied(input_path, output_root, params=None,
             # classifier['Noise'] = CNN('Noise')
         ip.compo_detection(input_path, output_root,
                            uied_params=params, classifier=classifier,
-                           resize_by_height=resized_height, show=True)
+                           resize_by_height=resized_height, show=False)
 
     if is_merge:
         import merge
@@ -47,5 +47,5 @@ def uied(input_path, output_root, params=None,
         compo_path = pjoin(output_root, 'ip', str(name) + '.json')
         ocr_path = pjoin(output_root, 'ocr', str(name) + '.json')
         merge.incorporate(input_path, compo_path, ocr_path, output_root,
-                          resize_by_height=resized_height, show=True)
+                          resize_by_height=resized_height, show=False)
 
