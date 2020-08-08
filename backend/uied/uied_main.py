@@ -13,7 +13,7 @@ def resize_height_by_longest_edge(img_path, resize_length=800):
 
 
 def uied(input_path, output_root, params=None,
-         is_ip=True, is_clf=False, is_ocr=False, is_merge=True):
+         is_ip=True, is_clf=True, is_ocr=True, is_merge=True):
 
     resized_height = resize_height_by_longest_edge(input_path)
 
@@ -38,7 +38,7 @@ def uied(input_path, output_root, params=None,
             # classifier['Noise'] = CNN('Noise')
         ip.compo_detection(input_path, output_root,
                            uied_params=params, classifier=classifier,
-                           resize_by_height=resized_height, show=False)
+                           resize_by_height=resized_height, show=True)
 
     if is_merge:
         import merge
