@@ -2,31 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3a54d6b6-237f-46dd-9d34-2b447a821e43" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageButton/10.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/12.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/13.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/15.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/17.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/19.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/20.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/7.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/8.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/ImageView/9.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/SeekBar/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/clips/TextView/11.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/compo.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/compo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/30800.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ip/30800.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/30800_all.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ip/30800_all.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ip/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ip/result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/ocr/30800.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/ocr/30800.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/data/output/result.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/data/output/result.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/detect_compo/ip_region_proposal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/uied/uied_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/uied/uied_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Background/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Block/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Block/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/11.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/13.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Compo/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Text/0.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Text/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Text/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Text/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Text/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/Text/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/clips/bkg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/compo.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/ip/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/ip/1_all.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/ip/result.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/ocr/1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/ocr/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/ocr/result.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/outputs/uied/image_1/result.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -274,7 +280,7 @@
       <workItem from="1596896305707" duration="20000" />
       <workItem from="1596927100492" duration="1611000" />
       <workItem from="1596928821459" duration="818000" />
-      <workItem from="1596931210972" duration="3799000" />
+      <workItem from="1596931210972" duration="4309000" />
     </task>
     <servers />
   </component>
@@ -295,34 +301,34 @@
     <state x="2733" y="119" key="FileChooserDialogImpl/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593324198353" />
     <state x="1220" y="275" key="FileChooserDialogImpl/1920.0.1280.693/0.0.1920.1040/3840.0.1280.984@0.0.1920.1040" timestamp="1596685527218" />
     <state x="1220" y="275" key="FileChooserDialogImpl/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596499457860" />
-    <state width="936" height="124" key="GridCell.Tab.0.bottom" timestamp="1596955694888">
+    <state width="936" height="124" key="GridCell.Tab.0.bottom" timestamp="1596956514395">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1594251743922" />
     <state width="938" height="124" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1596932817045" />
     <state width="1237" height="203" key="GridCell.Tab.0.bottom/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="936" height="124" key="GridCell.Tab.0.bottom/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596955694888" />
-    <state width="936" height="124" key="GridCell.Tab.0.center" timestamp="1596955694888">
+    <state width="936" height="124" key="GridCell.Tab.0.bottom/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596956514395" />
+    <state width="936" height="124" key="GridCell.Tab.0.center" timestamp="1596956514394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1594251743921" />
     <state width="938" height="124" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1596932817045" />
     <state width="1237" height="203" key="GridCell.Tab.0.center/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="936" height="124" key="GridCell.Tab.0.center/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596955694888" />
-    <state width="936" height="124" key="GridCell.Tab.0.left" timestamp="1596955694887">
+    <state width="936" height="124" key="GridCell.Tab.0.center/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596956514394" />
+    <state width="936" height="124" key="GridCell.Tab.0.left" timestamp="1596956514394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1594251743921" />
     <state width="938" height="124" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1596932817045" />
     <state width="1237" height="203" key="GridCell.Tab.0.left/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="936" height="124" key="GridCell.Tab.0.left/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596955694887" />
-    <state width="936" height="124" key="GridCell.Tab.0.right" timestamp="1596955694888">
+    <state width="936" height="124" key="GridCell.Tab.0.left/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596956514394" />
+    <state width="936" height="124" key="GridCell.Tab.0.right" timestamp="1596956514394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1259" height="191" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1594251743921" />
     <state width="938" height="124" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@0.0.1920.1040" timestamp="1596932817045" />
     <state width="1237" height="203" key="GridCell.Tab.0.right/1920.-64.1280.693/0.0.1920.1040@1920.-64.1280.693" timestamp="1593244022508" />
-    <state width="936" height="124" key="GridCell.Tab.0.right/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596955694888" />
+    <state width="936" height="124" key="GridCell.Tab.0.right/1920.0.1280.693/3840.0.1280.984/0.0.1920.1040@0.0.1920.1040" timestamp="1596956514394" />
     <state x="92" y="92" width="1736" height="856" key="dock-window-1" timestamp="1593581657092">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
