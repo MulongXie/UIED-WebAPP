@@ -84,13 +84,13 @@ class MyHandler(FileSystemEventHandler):
     def on_modified(self, event):
         # print('event type', event.event_type, "path", event.src_path)
         params.load_params(event.src_path)
-        # try:
-        #     time.sleep(0.5)
-        uied()
-        # except Exception as e:
-        #     open(params.note_fail_file, 'a').write(params.input_img_path + '\n')
-        #     print("Process Failed for:", params.input_img_path)
-        #     print("Exception:", e, '\n')
+        try:
+            # time.sleep(0.5)
+            uied()
+        except Exception as e:
+            open(params.note_fail_file, 'a').write(params.input_img_path + '\n')
+            print("Process Failed for:", params.input_img_path)
+            print("Exception:", e, '\n')
 
 
 def main_watching(input_img_path=None, output_root=None):
