@@ -20,7 +20,7 @@ class Params:
         self.output_root = params[1]
         self.note_success_file = params[2]
         self.note_fail_file = params[3]
-        self.uied_params = json.loads(params[4])
+        self.uied_params = params[4]
 
     def update_params(self, models, input_img_path, output_root):
         self.models = models

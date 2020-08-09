@@ -208,6 +208,6 @@ def incorporate(img_path, compo_path, text_path, output_root, resize_by_height=N
     cv2.imwrite(pjoin(output_root, 'result.jpg'), board)
 
     print('Merge Complete and Save to', pjoin(output_root, 'result.jpg'))
-    print(time.ctime(), '\n')
+    # print(time.ctime(), '\n')
     if show:
         cv2.destroyAllWindows()

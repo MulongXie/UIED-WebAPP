@@ -1,6 +1,7 @@
 from os.path import join as pjoin
 import cv2
 import os
+import time
 
 
 def resize_height_by_longest_edge(img_path, resize_length=800):
@@ -15,6 +16,7 @@ def resize_height_by_longest_edge(img_path, resize_length=800):
 def uied(input_path, output_root, params=None,
          is_ip=True, is_clf=False, is_ocr=True, is_merge=True):
 
+    start = time.clock()
     resized_height = resize_height_by_longest_edge(input_path)
 
     if is_ocr:
@@ -49,3 +51,5 @@ def uied(input_path, output_root, params=None,
         merge.incorporate(input_path, compo_path, ocr_path, output_root,
                           resize_by_height=resized_height, show=False)
 
+    print("[UIED complete in %.3fs]" % (time.clock() - start))
+    print(time.ctime(), '\n')
