@@ -13,7 +13,7 @@ import cv2
 
 import uied_main as uied
 
-# input_path, output_root, params = 'uied/data/input/3.jpg', 'uied/data/output', None
+# input_path, output_root, params = 'uied/data/input/30800.jpg', 'uied/data/output', None
 input_path, output_root, params = sys.argv[1:4]
 os.makedirs(output_root, exist_ok=True)
 
