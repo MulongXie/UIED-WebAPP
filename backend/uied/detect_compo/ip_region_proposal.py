@@ -70,7 +70,7 @@ def compo_detection(input_img_path, output_root, uied_params=None,
         uied_params = {'param-grad':5, 'param-block':5, 'param-minarea':50}
     else:
         uied_params = json.loads(uied_params)
-        # print(uied_params)
+    print(uied_params)
     start = time.clock()
     name = input_img_path.split('/')[-1][:-4]
     ip_root = file.build_directory(pjoin(output_root, "ip"))

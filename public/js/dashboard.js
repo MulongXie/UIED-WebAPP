@@ -453,7 +453,13 @@ $(document).ready(function () {
     $('#modal_proc_btn_new_model').click(function () {
         let new_method = $("#add_method_select option:selected").attr('value');
         method = new_method;
-
+        if (new_method == 'uied') {
+            uied_params = {};
+            let params = $(".slider");
+            for (let i = 0; i < params.length; i++) {
+                uied_params[params[i].id] = params[i].value
+            }
+        }
         console.log(input_img_path);
 
         if (new_method == 'empty'){
