@@ -17,7 +17,7 @@ app.use(express.static("."));
 
 
 app.get('/',function(req,res){
-    res.sendfile("public/index_v2.html");
+    res.sendfile("public/index.html");
     let time = Date()
     console.log("Connecting at", time.toLocaleString())
 });
@@ -63,7 +63,7 @@ app.post('/process', function (req, res) {
         var output_path = 'data/outputs/' + method + '/' + input_type + '_' + name;
         // Existing examples
         if (input_path_split[0] == 'http:'){
-            input_path = 'public/images/screen/' + name + '.jpg';
+            input_path = 'public/images/example/' + input_path_split[input_path_split.length - 2] + '/' + input_path_split[input_path_split.length - 1];
         }
         if (method == 'uied'){
             element_detection_watching(res, input_path, output_path, method, uied_params)

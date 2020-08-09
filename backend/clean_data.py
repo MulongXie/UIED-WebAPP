@@ -5,9 +5,12 @@ import shutil
 
 
 root = '/'.join(__file__.split('/')[:-2])
-outputs = [f for f in glob(pjoin(root, 'data', 'outputs', '*')) if '.' not in f]
-
+output_root = pjoin(root, 'data', 'outputs')
+outputs = [f for f in glob(pjoin(output_root, '*')) if '.' not in f]
 for output in outputs:
     print(output)
     shutil.rmtree(output)
     os.mkdir(output)
+
+open(pjoin(output_root, 'success.txt'), 'w').write('')
+open(pjoin(output_root, 'failed.txt'), 'w').write('')
