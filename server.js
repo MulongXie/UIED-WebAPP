@@ -94,7 +94,6 @@ app.post('/export', function (req, res) {
                     }
                     else {
                         console.log('Synthesize compound img successfully');
-                        console.log(stdout);
                         res.json({code:1, compound_img_base64:stdout})
                     }
                 });
