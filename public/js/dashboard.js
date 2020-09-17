@@ -723,13 +723,13 @@ $(document).ready(function () {
             let compo = $("#" + compos[i].id);
             let top = parseInt(compo.css('top')) - offset_top;
             let left = parseInt(compo.css('left')) - offset_left;
-            if (top < 0 || left < 0) continue;
+            // if (top < 0 || left < 0) continue;
             let c = {'id': i,
                 'class': compo.attr('id').split('_')[1],
-                'row_min': top,
-                'column_min': left,
-                'width': compo.width(),
-                'height': compo.height(),
+                'row_min': Math.round(top),
+                'column_min': Math.round(left),
+                'width': Math.round(compo.width()),
+                'height': Math.round(compo.height()),
                 'clip': compo.find('img').attr('src')
             };
             compos_json['compos'].push(c);

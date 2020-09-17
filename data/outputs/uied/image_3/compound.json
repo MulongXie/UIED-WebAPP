@@ -1,0 +1,193 @@
+{
+	"compos": [
+		{
+			"id": "0",
+			"class": "Background",
+			"row_min": "0",
+			"column_min": "0",
+			"width": "494",
+			"height": "800",
+			"clip": "../data/outputs/uied/image_3/clips/bkg.png"
+		},
+		{
+			"id": "1",
+			"class": "Text",
+			"row_min": "18",
+			"column_min": "25",
+			"width": "72",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/0.jpg"
+		},
+		{
+			"id": "2",
+			"class": "Text",
+			"row_min": "18",
+			"column_min": "168",
+			"width": "32",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/1.jpg"
+		},
+		{
+			"id": "3",
+			"class": "Text",
+			"row_min": "18",
+			"column_min": "266",
+			"width": "83",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/2.jpg"
+		},
+		{
+			"id": "4",
+			"class": "Text",
+			"row_min": "18",
+			"column_min": "410",
+			"width": "43",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/3.jpg"
+		},
+		{
+			"id": "5",
+			"class": "Compo",
+			"row_min": "-22",
+			"column_min": "0",
+			"width": "492",
+			"height": "194",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/4.jpg"
+		},
+		{
+			"id": "6",
+			"class": "Text",
+			"row_min": "274",
+			"column_min": "180",
+			"width": "133",
+			"height": "26",
+			"clip": "../data/outputs/uied/image_3/clips/Text/5.jpg"
+		},
+		{
+			"id": "7",
+			"class": "Compo",
+			"row_min": "285",
+			"column_min": "-136",
+			"width": "238",
+			"height": "176",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/6.jpg"
+		},
+		{
+			"id": "8",
+			"class": "Compo",
+			"row_min": "318",
+			"column_min": "334",
+			"width": "238",
+			"height": "174",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/7.jpg"
+		},
+		{
+			"id": "9",
+			"class": "Compo",
+			"row_min": "512",
+			"column_min": "141",
+			"width": "20",
+			"height": "26",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/8.jpg"
+		},
+		{
+			"id": "10",
+			"class": "Text",
+			"row_min": "514",
+			"column_min": "383",
+			"width": "100",
+			"height": "23",
+			"clip": "../data/outputs/uied/image_3/clips/Text/9.jpg"
+		},
+		{
+			"id": "11",
+			"class": "Text",
+			"row_min": "517",
+			"column_min": "9",
+			"width": "34",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/10.jpg"
+		},
+		{
+			"id": "12",
+			"class": "Text",
+			"row_min": "516",
+			"column_min": "166",
+			"width": "74",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/11.jpg"
+		},
+		{
+			"id": "13",
+			"class": "Text",
+			"row_min": "518",
+			"column_min": "251",
+			"width": "33",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/12.jpg"
+		},
+		{
+			"id": "14",
+			"class": "Compo",
+			"row_min": "553",
+			"column_min": "6",
+			"width": "238",
+			"height": "176",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/13.jpg"
+		},
+		{
+			"id": "15",
+			"class": "Compo",
+			"row_min": "553",
+			"column_min": "248",
+			"width": "238",
+			"height": "176",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/14.jpg"
+		},
+		{
+			"id": "16",
+			"class": "Compo",
+			"row_min": "746",
+			"column_min": "109",
+			"width": "28",
+			"height": "22",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/15.jpg"
+		},
+		{
+			"id": "17",
+			"class": "Compo",
+			"row_min": "744",
+			"column_min": "356",
+			"width": "27",
+			"height": "24",
+			"clip": "../data/outputs/uied/image_3/clips/Compo/16.jpg"
+		},
+		{
+			"id": "18",
+			"class": "Text",
+			"row_min": "776",
+			"column_min": "94",
+			"width": "56",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/17.jpg"
+		},
+		{
+			"id": "19",
+			"class": "Text",
+			"row_min": "776",
+			"column_min": "343",
+			"width": "54",
+			"height": "19",
+			"clip": "../data/outputs/uied/image_3/clips/Text/18.jpg"
+		},
+		{
+			"id": "20",
+			"class": "Block",
+			"row_min": "192",
+			"column_min": "552",
+			"width": "189",
+			"height": "102",
+			"clip": "../data/outputs/uied/image_3/clips/Block/19.jpg"
+		}
+	]
+}
